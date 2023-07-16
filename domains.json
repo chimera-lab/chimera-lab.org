@@ -1,0 +1,17 @@
+{
+  "chimera-lab": {
+    "automation": {},
+    "chat": {},
+    "bot": {},
+    "demo": {
+      "hairdresser": {},
+      "catering": {},
+      "restaurant": {},
+      "product": {},
+      "ecommerce": {}
+    },
+    "network" : {},
+    "diy": {},
+    "notes": {}
+  }
+}
