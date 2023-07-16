@@ -1,0 +1,7 @@
+[submodule "automation"]
+	path = automation
+	url = git@github.com:chimera-lab/automation.git
+[submodule "network"]
+	path = network
+	url = git@github.com:chimera-lab/network.git
+
