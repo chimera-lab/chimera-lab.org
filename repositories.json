@@ -15,12 +15,13 @@
     "chat": [
       "rocketchat-scaffold"
     ],
-    "bot": [
+    "bots": [
       "rocketchat-botpress-scaffold",
       "botpress-scaffold"
     ],
     "analytics": [
-      "home_devices"
+      "home_devices",
+      "website"
     ],
     "network" : {
       "servers" : [
@@ -46,15 +47,20 @@
       ]
     },
     "diy": [
-      "Home Samba",
-      "Music server",
-      "Ssh server",
-      "Ubuntu installation"
+      "home-samba",
+      "music-server",
+      "ssh-server",
+      "ubuntu-installation"
     ],
     "notes": {
       "linux" : [
         "tools"
       ]
-    }
+    },
+    "scaffold" : [
+      "template-repository",
+      "laravel-multi-theme",
+      "laravel-theme-1"
+    ]
   }
 }
