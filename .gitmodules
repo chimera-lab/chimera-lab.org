@@ -11,3 +11,6 @@
 [submodule "ideas"]
 	path = ideas
 	url = git@github.com:chimera-lab/ideas.git
+[submodule "art"]
+	path = art
+	url = git@github.com:chimera-lab/art.git
