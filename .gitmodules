@@ -8,3 +8,6 @@
 [submodule "legal"]
 	path = legal
 	url = git@github.com:chimera-lab/legal.git
+[submodule "ideas"]
+	path = ideas
+	url = git@github.com:chimera-lab/ideas.git
