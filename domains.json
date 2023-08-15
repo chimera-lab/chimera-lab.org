@@ -1,17 +1,53 @@
 {
   "chimera-lab": {
-    "automation": {},
-    "chat": {},
-    "bot": {},
-    "demo": {
-      "hairdresser": {},
-      "catering": {},
-      "restaurant": {},
-      "product": {},
-      "ecommerce": {}
+    "art": {},
+    "automation": {
+      "ubuntu": {
+        "ubuntu-apps-installation": {}
+      },
+      "windows": {
+        "windows-apps-installation": {}
+      }
     },
-    "network" : {},
+    "bot": {
+      "botpress_ecommerce_bot_scaffold": {}
+    },
+    "chat": {
+      "rocketchat_and_botpress_scaffold": {}
+    },
+    "computing": {
+      "os'": {
+        "ubuntu-installation": {},
+        "windows-installation": {}
+      }
+    },
+    "demo": {
+      "catering": {},
+      "ecommerce": {},
+      "hairdresser": {},
+      "product": {},
+      "restaurant": {}
+    },
     "diy": {},
-    "notes": {}
+    "glossary": {},
+    "network": {},
+    "notes": {},
+    "repairments": {
+      "samsung_sdfa323": {}
+    },
+    "templates": {
+      "template_diy_repo": {},
+      "template_howto_repo": {},
+      "template_notes_repo": {},
+      "template_repository": {}
+    },
+    "tools": {},
+    "web": {
+      "laravel_api_scaffold": {},
+      "laravel_auth_scaffold": {},
+      "laravel_blog_scaffold": {},
+      "laravel_ecommerce_scaffold": {},
+      "laravel_single_product_scaffold": {}
+    }
   }
 }
