@@ -20,3 +20,6 @@
 [submodule "computing"]
 	path = computing
 	url = git@github.com:chimera-lab/computing.git
+[submodule "finance"]
+	path = finance
+	url = git@github.com:chimera-lab/finance.git
