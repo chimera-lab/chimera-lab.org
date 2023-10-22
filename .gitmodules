@@ -17,3 +17,6 @@
 [submodule "template"]
 	path = template
 	url = git@github.com:chimera-lab/template.git
+[submodule "computing"]
+	path = computing
+	url = git@github.com:chimera-lab/computing.git

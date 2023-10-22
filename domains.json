@@ -19,6 +19,9 @@
       "os'": {
         "ubuntu-installation": {},
         "windows-installation": {}
+      },
+      "storage" : {
+        "zfs" : {}
       }
     },
     "demo": {
