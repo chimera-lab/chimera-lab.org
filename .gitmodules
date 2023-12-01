@@ -23,3 +23,6 @@
 [submodule "finance"]
 	path = finance
 	url = git@github.com:chimera-lab/finance.git
+[submodule "administration"]
+	path = administration
+	url = git@github.com:chimera-lab/administration.git
