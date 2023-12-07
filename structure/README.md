@@ -16,13 +16,20 @@
     - [openai.overview](#openaioverview)
   - [automation](#automation)
     - [automation-home.project](#automation-homeproject)
+    - [ubuntu-automation.overview](#ubuntu-automationoverview)
+      - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
+    - [windows-automation.overview](#windows-automationoverview)
+      - [windows-apps-installation.overview](#windows-apps-installationoverview)
   - [contributions](#contributions)
     - [laradock](#laradock)
   - [devops](#devops)
     - [docker.overview](#dockeroverview)
   - [diy](#diy)
-    - [network-storage.project](#network-storageproject)
-    - [music-server.project](#music-serverproject)
+    - [network-storage.diy](#network-storagediy)
+    - [music-server.diy](#music-serverdiy)
+  - [finance](#finance)
+    - [monthly-finace](#monthly-finace)
+    - [yearly-finace](#yearly-finace)
   - [hardware](#hardware)
     - [hardware-programming](#hardware-programming)
   - [ideas](#ideas)
@@ -36,11 +43,17 @@
     - [tasks-lab](#tasks-lab)
   - [network](#network)
     - [iot](#iot)
+    - [network-protocols](#network-protocols)
+      - [network-websockets.overview](#network-websocketsoverview)
   - [original](#original)
     - [homepage-builder.project](#homepage-builderproject)
   - [operating-systems](#operating-systems)
     - [linux.overview](#linuxoverview)
+      - [linux-tools](#linux-tools)
+      - [ubuntu.overview](#ubuntuoverview)
+        - [ubuntu-installation.overview](#ubuntu-installationoverview)
     - [windows.overview](#windowsoverview)
+      - [windows-installation.overview](#windows-installationoverview)
   - [security](#security)
     - [firewall](#firewall)
       - [ufw.overview](#ufwoverview)
@@ -64,6 +77,7 @@
     - [template.overview](#templateoverview)
     - [template.project](#templateproject)
     - [template.scaffold](#templatescaffold)
+    - [template.diy](#templatediy)
 
 ## [administration](https://github.com/chimera-lab/administration)
 
@@ -95,6 +109,14 @@
 
 ### [automation-home.project](https://github.com/chimera-lab/automation)
 
+### [ubuntu-automation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
+
+#### [ubuntu-apps-installation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
+
+### [windows-automation.overview](https://github.com/chimera-lab/windows-installation.overview)
+
+#### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
+
 ## [contributions](https://github.com/chimera-lab/contributions)
 
 ### [laradock](https://github.com/chimera-lab/laradock)
@@ -105,9 +127,15 @@
 
 ## [diy](https://github.com/chimera-lab/diy)
 
-### [network-storage.project](https://github.com/chimera-lab/home-storage.project)
+### [network-storage.diy](https://github.com/chimera-lab/home-storage.diy)
 
-### [music-server.project](https://github.com/chimera-lab/home-storage.project)
+### [music-server.diy](https://github.com/chimera-lab/home-storage.diy)
+
+## [finance](https://github.com/chimera-lab/hardware)
+
+### [monthly-finace](https://github.com/chimera-lab/monthly-finace)
+
+### [yearly-finace](https://github.com/chimera-lab/yearly-finace)
 
 ## [hardware](https://github.com/chimera-lab/hardware)
 
@@ -135,6 +163,10 @@
 
 ### [iot](https://github.com/chimera-lab/iot)
 
+### [network-protocols](https://github.com/chimera-lab/network-protocols)
+
+#### [network-websockets.overview](https://github.com/chimera-lab/network-websockets)
+
 ## [original](https://github.com/chimera-lab/original)
 
 ### [homepage-builder.project](https://github.com/chimera-lab/homepage-builder.project)
@@ -143,7 +175,15 @@
 
 ### [linux.overview](https://github.com/chimera-lab/linux)
 
+#### [linux-tools](https://github.com/chimera-lab/ubuntu)
+
+#### [ubuntu.overview](https://github.com/chimera-lab/ubuntu)
+
+##### [ubuntu-installation.overview](https://github.com/chimera-lab/ubuntu-installation.overview)
+
 ### [windows.overview](https://github.com/chimera-lab/windows)
+
+#### [windows-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
 ## [security](https://github.com/chimera-lab/security)
 
@@ -190,3 +230,5 @@
 ### [template.project](https://github.com/chimera-lab/template.project)
 
 ### [template.scaffold](https://github.com/chimera-lab/template.scaffold)
+
+### [template.diy](https://github.com/chimera-lab/template.scaffold)

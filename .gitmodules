@@ -25,9 +25,12 @@
 [submodule "contributions"]
 	path = contributions
 	url = git@github.com:chimera-lab/contributions.git
-[submodule "ai"]
-	path = ai
-	url = git@github.com:chimera-lab/ai.git
 [submodule "administration"]
 	path = administration
 	url = git@github.com:chimera-lab/administration.git
+[submodule "operating-systems"]
+	path = operating-systems
+	url = git@github.com:chimera-lab/operating-systems.git
+[submodule "artificial-intelligence"]
+	path = artificial-intelligence
+	url = git@github.com:chimera-lab/artificial-intelligence.git
