@@ -28,8 +28,8 @@
     - [network-storage.diy](#network-storagediy)
     - [music-server.diy](#music-serverdiy)
   - [finance](#finance)
-    - [monthly-finace](#monthly-finace)
-    - [yearly-finace](#yearly-finace)
+    - [monthly-finance](#monthly-finance)
+    - [yearly-finance](#yearly-finance)
   - [hardware](#hardware)
     - [hardware-programming](#hardware-programming)
   - [ideas](#ideas)
@@ -42,9 +42,14 @@
     - [sdata-drive](#sdata-drive)
     - [tasks-lab](#tasks-lab)
   - [network](#network)
+    - [network-security.overview](#network-securityoverview)
+      - [firewalls.overview](#firewallsoverview)
+        - [ufw.overview](#ufwoverview)
+        - [nftables.overview](#nftablesoverview)
+        - [iptables.overview](#iptablesoverview)
     - [iot](#iot)
     - [network-protocols](#network-protocols)
-      - [network-websockets.overview](#network-websocketsoverview)
+      - [websockets.overview](#websocketsoverview)
   - [original](#original)
     - [homepage-builder.project](#homepage-builderproject)
   - [operating-systems](#operating-systems)
@@ -55,10 +60,11 @@
     - [windows.overview](#windowsoverview)
       - [windows-installation.overview](#windows-installationoverview)
   - [security](#security)
-    - [firewall](#firewall)
-      - [ufw.overview](#ufwoverview)
-      - [nftables.overview](#nftablesoverview)
-      - [iptables.overview](#iptablesoverview)
+    - [network-security.overview](#network-securityoverview-1)
+      - [firewalls.overview](#firewallsoverview-1)
+        - [ufw.overview](#ufwoverview-1)
+        - [nftables.overview](#nftablesoverview-1)
+        - [iptables.overview](#iptablesoverview-1)
     - [anti-virus](#anti-virus)
   - [software](#software)
     - [applications](#applications)
@@ -109,11 +115,11 @@
 
 ### [automation-home.project](https://github.com/chimera-lab/automation)
 
-### [ubuntu-automation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
+### [ubuntu-automation.overview](https://github.com/chimera-lab/ubuntu-automation.overview)
 
 #### [ubuntu-apps-installation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
 
-### [windows-automation.overview](https://github.com/chimera-lab/windows-installation.overview)
+### [windows-automation.overview](https://github.com/chimera-lab/windows-automation.overview)
 
 #### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
@@ -131,11 +137,11 @@
 
 ### [music-server.diy](https://github.com/chimera-lab/home-storage.diy)
 
-## [finance](https://github.com/chimera-lab/hardware)
+## [finance](https://github.com/chimera-lab/finance)
 
-### [monthly-finace](https://github.com/chimera-lab/monthly-finace)
+### [monthly-finance](https://github.com/chimera-lab/monthly-finance)
 
-### [yearly-finace](https://github.com/chimera-lab/yearly-finace)
+### [yearly-finance](https://github.com/chimera-lab/yearly-finance)
 
 ## [hardware](https://github.com/chimera-lab/hardware)
 
@@ -155,17 +161,27 @@
 
 ### [solar-system](https://github.com/chimera-lab/solar-system)
 
-### [sdata-drive](https://github.com/chimera-lab/solar-system)
+### [sdata-drive](https://github.com/chimera-lab/sdata-drive)
 
 ### [tasks-lab](https://github.com/chimera-lab/tasks-lab)
 
 ## [network](https://github.com/chimera-lab/network)
 
+### [network-security.overview](https://github.com/chimera-lab/network-security.overview)
+
+#### [firewalls.overview](https://github.com/chimera-lab/firewalls.overview)
+
+##### [ufw.overview](https://github.com/chimera-lab/ufw)
+
+##### [nftables.overview](https://github.com/chimera-lab/nftables)
+
+##### [iptables.overview](https://github.com/chimera-lab/iptables)
+
 ### [iot](https://github.com/chimera-lab/iot)
 
 ### [network-protocols](https://github.com/chimera-lab/network-protocols)
 
-#### [network-websockets.overview](https://github.com/chimera-lab/network-websockets)
+#### [websockets.overview](https://github.com/chimera-lab/websockets)
 
 ## [original](https://github.com/chimera-lab/original)
 
@@ -173,35 +189,37 @@
 
 ## [operating-systems](https://github.com/chimera-lab/operating-systems)
 
-### [linux.overview](https://github.com/chimera-lab/linux)
+### [linux.overview](https://github.com/chimera-lab/linux-overview)
 
-#### [linux-tools](https://github.com/chimera-lab/ubuntu)
+#### [linux-tools](https://github.com/chimera-lab/linux-tools)
 
 #### [ubuntu.overview](https://github.com/chimera-lab/ubuntu)
 
 ##### [ubuntu-installation.overview](https://github.com/chimera-lab/ubuntu-installation.overview)
 
-### [windows.overview](https://github.com/chimera-lab/windows)
+### [windows.overview](https://github.com/chimera-lab/windows.overview)
 
 #### [windows-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
 ## [security](https://github.com/chimera-lab/security)
 
-### [firewall](https://github.com/chimera-lab/firewall)
+### [network-security.overview](https://github.com/chimera-lab/network-security)
 
-#### [ufw.overview](https://github.com/chimera-lab/ufw)
+#### [firewalls.overview](https://github.com/chimera-lab/firewalls.overview)
 
-#### [nftables.overview](https://github.com/chimera-lab/nftables)
+##### [ufw.overview](https://github.com/chimera-lab/ufw)
 
-#### [iptables.overview](https://github.com/chimera-lab/iptables)
+##### [nftables.overview](https://github.com/chimera-lab/nftables)
 
-### [anti-virus](https://github.com/chimera-lab/firewall)
+##### [iptables.overview](https://github.com/chimera-lab/iptables)
+
+### [anti-virus](https://github.com/chimera-lab/anti-virus)
 
 ## [software](https://github.com/chimera-lab/software)
 
 ### [applications](https://github.com/chimera-lab/applications)
 
-### [software-development](https://github.com/chimera-lab/programming)
+### [software-development](https://github.com/chimera-lab/software-development)
 
 #### [php-development](https://github.com/chimera-lab/php-programming)
 

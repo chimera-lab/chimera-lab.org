@@ -34,3 +34,6 @@
 [submodule "artificial-intelligence"]
 	path = artificial-intelligence
 	url = git@github.com:chimera-lab/artificial-intelligence.git
+[submodule "security"]
+	path = security
+	url = git@github.com:chimera-lab/security.git
