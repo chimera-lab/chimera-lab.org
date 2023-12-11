@@ -1,5 +1,7 @@
 # Chimera-LAB
 
+This organization was created in order to document and share technology implementations. It contains projects, notes and ideas about technology.
+
 - [Chimera-LAB](#chimera-lab)
   - [administration](#administration)
     - [ansible.overview](#ansibleoverview)
@@ -84,6 +86,7 @@
     - [template.project](#templateproject)
     - [template.scaffold](#templatescaffold)
     - [template.diy](#templatediy)
+    - [template.topic](#templatetopic)
 
 ## [administration](https://github.com/chimera-lab/administration)
 
@@ -250,3 +253,5 @@
 ### [template.scaffold](https://github.com/chimera-lab/template.scaffold)
 
 ### [template.diy](https://github.com/chimera-lab/template.scaffold)
+
+### [template.topic](https://github.com/chimera-lab/template.topic)
