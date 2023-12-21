@@ -3,38 +3,38 @@
 This organization was created in order to document and share technology implementations. It contains projects, notes and ideas about technology.
 
 - [Chimera-LAB](#chimera-lab)
-  - [administration](#administration)
+  - [administration.topic](#administrationtopic)
     - [ansible.overview](#ansibleoverview)
     - [open-ssh.overview](#open-sshoverview)
-  - [analytics](#analytics)
+  - [analytics.topic](#analyticstopic)
     - [analytics-home.project](#analytics-homeproject)
-  - [art](#art)
-    - [architecture](#architecture)
-    - [music](#music)
-    - [painting](#painting)
+  - [art.topic](#arttopic)
+    - [architecture.topic](#architecturetopic)
+    - [music.topic](#musictopic)
+    - [painting.topic](#paintingtopic)
       - [chimera-lab](#chimera-lab-1)
-    - [sculpture](#sculpture)
-  - [artificial-intelligence](#artificial-intelligence)
+    - [sculpture.topic](#sculpturetopic)
+  - [artificial-intelligence.topic](#artificial-intelligencetopic)
     - [openai.overview](#openaioverview)
-  - [automation](#automation)
+  - [automation.topic](#automationtopic)
     - [automation-home.project](#automation-homeproject)
     - [ubuntu-automation.overview](#ubuntu-automationoverview)
       - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
     - [windows-automation.overview](#windows-automationoverview)
       - [windows-apps-installation.overview](#windows-apps-installationoverview)
-  - [contributions](#contributions)
+  - [contributions.topic](#contributionstopic)
     - [laradock](#laradock)
   - [devops](#devops)
     - [docker.overview](#dockeroverview)
   - [diy](#diy)
     - [network-storage.diy](#network-storagediy)
     - [music-server.diy](#music-serverdiy)
-  - [finance](#finance)
+  - [finance.topic](#financetopic)
     - [monthly-finance](#monthly-finance)
     - [yearly-finance](#yearly-finance)
-  - [hardware](#hardware)
-    - [hardware-programming](#hardware-programming)
-  - [ideas](#ideas)
+  - [hardware.topic](#hardwaretopic)
+    - [hardware-programming.topic](#hardware-programmingtopic)
+  - [ideas.topic](#ideastopic)
     - [desktop-lab](#desktop-lab)
     - [desktop-sorter](#desktop-sorter)
     - [emojijoiner](#emojijoiner)
@@ -43,28 +43,28 @@ This organization was created in order to document and share technology implemen
     - [solar-system](#solar-system)
     - [sdata-drive](#sdata-drive)
     - [tasks-lab](#tasks-lab)
-  - [network](#network)
-    - [network-security.overview](#network-securityoverview)
-      - [firewalls.overview](#firewallsoverview)
+  - [network.topic](#networktopic)
+    - [network-security.topic](#network-securitytopic)
+      - [firewalls.topic](#firewallstopic)
         - [ufw.overview](#ufwoverview)
         - [nftables.overview](#nftablesoverview)
         - [iptables.overview](#iptablesoverview)
-    - [iot](#iot)
-    - [network-protocols](#network-protocols)
+    - [iot.topic](#iottopic)
+    - [network-protocols.topic](#network-protocolstopic)
       - [websockets.overview](#websocketsoverview)
-  - [original](#original)
+  - [original.topic](#originaltopic)
     - [homepage-builder.project](#homepage-builderproject)
-  - [operating-systems](#operating-systems)
+  - [operating-systems.topic](#operating-systemstopic)
     - [linux.overview](#linuxoverview)
       - [linux-tools](#linux-tools)
       - [ubuntu.overview](#ubuntuoverview)
         - [ubuntu-installation.overview](#ubuntu-installationoverview)
     - [windows.overview](#windowsoverview)
       - [windows-installation.overview](#windows-installationoverview)
-  - [security](#security)
-    - [network-security.overview](#network-securityoverview-1)
-      - [firewalls.overview](#firewallsoverview-1)
-        - [ufw.overview](#ufwoverview-1)
+  - [security.topic](#securitytopic)
+    - [network-security.topic](#network-securitytopic-1)
+      - [firewalls.topic](#firewallstopic-1)
+        - [ufw.topic](#ufwtopic)
         - [nftables.overview](#nftablesoverview-1)
         - [iptables.overview](#iptablesoverview-1)
     - [anti-virus](#anti-virus)
@@ -88,33 +88,33 @@ This organization was created in order to document and share technology implemen
     - [template.diy](#templatediy)
     - [template.topic](#templatetopic)
 
-## [administration](https://github.com/chimera-lab/administration)
+## [administration.topic](https://github.com/chimera-lab/administration.topic)
 
 ### [ansible.overview](https://github.com/chimera-lab/ansible.overview)
 
 ### [open-ssh.overview](https://github.com/chimera-lab/open-ssh.overview)
 
-## [analytics](https://github.com/chimera-lab/analytics)
+## [analytics.topic](https://github.com/chimera-lab/analytics.topic)
 
 ### [analytics-home.project](https://github.com/chimera-lab/analytics)
 
-## [art](https://github.com/chimera-lab/art)
+## [art.topic](https://github.com/chimera-lab/art.topic)
 
-### [architecture](https://github.com/chimera-lab/architecture)
+### [architecture.topic](https://github.com/chimera-lab/architecture.topic)
 
-### [music](https://github.com/chimera-lab/music)
+### [music.topic](https://github.com/chimera-lab/music.topic)
 
-### [painting](https://github.com/chimera-lab/painting)
+### [painting.topic](https://github.com/chimera-lab/painting.topic)
 
 #### [chimera-lab](https://github.com/chimera-lab/chimera-lab)
 
-### [sculpture](https://github.com/chimera-lab/sculpture)
+### [sculpture.topic](https://github.com/chimera-lab/sculpture.topic)
 
-## [artificial-intelligence](https://github.com/chimera-lab/artificial-intelligence)
+## [artificial-intelligence.topic](https://github.com/chimera-lab/artificial-intelligence.topic)
 
 ### [openai.overview](https://github.com/chimera-lab/openai)
 
-## [automation](https://github.com/chimera-lab/automation)
+## [automation.topic](https://github.com/chimera-lab/automation.topic)
 
 ### [automation-home.project](https://github.com/chimera-lab/automation)
 
@@ -126,7 +126,7 @@ This organization was created in order to document and share technology implemen
 
 #### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
-## [contributions](https://github.com/chimera-lab/contributions)
+## [contributions.topic](https://github.com/chimera-lab/contributions.topic)
 
 ### [laradock](https://github.com/chimera-lab/laradock)
 
@@ -140,17 +140,17 @@ This organization was created in order to document and share technology implemen
 
 ### [music-server.diy](https://github.com/chimera-lab/home-storage.diy)
 
-## [finance](https://github.com/chimera-lab/finance)
+## [finance.topic](https://github.com/chimera-lab/finance.topic)
 
 ### [monthly-finance](https://github.com/chimera-lab/monthly-finance)
 
 ### [yearly-finance](https://github.com/chimera-lab/yearly-finance)
 
-## [hardware](https://github.com/chimera-lab/hardware)
+## [hardware.topic](https://github.com/chimera-lab/hardware.topic)
 
-### [hardware-programming](https://github.com/chimera-lab/programming)
+### [hardware-programming.topic](https://github.com/chimera-lab/programming.topic)
 
-## [ideas](https://github.com/chimera-lab/ideas)
+## [ideas.topic](https://github.com/chimera-lab/ideas.topic)
 
 ### [desktop-lab](https://github.com/chimera-lab/desktop-lab)
 
@@ -168,29 +168,29 @@ This organization was created in order to document and share technology implemen
 
 ### [tasks-lab](https://github.com/chimera-lab/tasks-lab)
 
-## [network](https://github.com/chimera-lab/network)
+## [network.topic](https://github.com/chimera-lab/network.topic)
 
-### [network-security.overview](https://github.com/chimera-lab/network-security.overview)
+### [network-security.topic](https://github.com/chimera-lab/network-security.topic)
 
-#### [firewalls.overview](https://github.com/chimera-lab/firewalls.overview)
+#### [firewalls.topic](https://github.com/chimera-lab/firewalls.topic)
 
 ##### [ufw.overview](https://github.com/chimera-lab/ufw)
 
-##### [nftables.overview](https://github.com/chimera-lab/nftables)
+##### [nftables.overview](https://github.com/chimera-lab/nftables.overview)
 
-##### [iptables.overview](https://github.com/chimera-lab/iptables)
+##### [iptables.overview](https://github.com/chimera-lab/iptables.overview)
 
-### [iot](https://github.com/chimera-lab/iot)
+### [iot.topic](https://github.com/chimera-lab/iot.topic)
 
-### [network-protocols](https://github.com/chimera-lab/network-protocols)
+### [network-protocols.topic](https://github.com/chimera-lab/network-protocols.topic)
 
-#### [websockets.overview](https://github.com/chimera-lab/websockets)
+#### [websockets.overview](https://github.com/chimera-lab/websockets.overview)
 
-## [original](https://github.com/chimera-lab/original)
+## [original.topic](https://github.com/chimera-lab/original.topic)
 
 ### [homepage-builder.project](https://github.com/chimera-lab/homepage-builder.project)
 
-## [operating-systems](https://github.com/chimera-lab/operating-systems)
+## [operating-systems.topic](https://github.com/chimera-lab/operating-systems.topic)
 
 ### [linux.overview](https://github.com/chimera-lab/linux-overview)
 
@@ -204,13 +204,13 @@ This organization was created in order to document and share technology implemen
 
 #### [windows-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
-## [security](https://github.com/chimera-lab/security)
+## [security.topic](https://github.com/chimera-lab/security.topic)
 
-### [network-security.overview](https://github.com/chimera-lab/network-security)
+### [network-security.topic](https://github.com/chimera-lab/network-security)
 
-#### [firewalls.overview](https://github.com/chimera-lab/firewalls.overview)
+#### [firewalls.topic](https://github.com/chimera-lab/firewalls.topic)
 
-##### [ufw.overview](https://github.com/chimera-lab/ufw)
+##### [ufw.topic](https://github.com/chimera-lab/ufw.topic)
 
 ##### [nftables.overview](https://github.com/chimera-lab/nftables)
 

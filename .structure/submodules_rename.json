@@ -1,0 +1,95 @@
+{
+    "repositories":[
+        {
+            "new": "art.topic",
+            "old": "art",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "artificial-intelligence.topic",
+            "old": "artificial-intelligence",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "automation.topic",
+            "old": "automation",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "contributions.topic",
+            "old": "contributions",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "finance.topic",
+            "old": "finance",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "ideas.topic",
+            "old": "ideas",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "network.topic",
+            "old": "network",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "firewalls.topic",
+            "old": "firewalls",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "network-protocols.topic",
+            "old": "network-protocols.topic",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "operating-systems.topic",
+            "old": "operating-systems",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "security.topic",
+            "old": "security",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "firewalls.topic",
+            "old": "firewalls.overvie",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        },
+        {
+            "new": "template.topic",
+            "old": "template",
+            "owner":"chimera-lab",
+            "template":"chimera-lab/template-topic",
+            "visibility": "private"
+        }
+    ]
+}

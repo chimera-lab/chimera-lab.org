@@ -10,9 +10,6 @@
 [submodule "ideas"]
 	path = ideas
 	url = git@github.com:chimera-lab/ideas.git
-[submodule "art"]
-	path = art
-	url = git@github.com:chimera-lab/art.git
 [submodule "template"]
 	path = template
 	url = git@github.com:chimera-lab/template.git
@@ -25,9 +22,6 @@
 [submodule "contributions"]
 	path = contributions
 	url = git@github.com:chimera-lab/contributions.git
-[submodule "administration"]
-	path = administration
-	url = git@github.com:chimera-lab/administration.git
 [submodule "operating-systems"]
 	path = operating-systems
 	url = git@github.com:chimera-lab/operating-systems.git
@@ -37,3 +31,9 @@
 [submodule "security"]
 	path = security
 	url = git@github.com:chimera-lab/security.git
+[submodule "art.topic"]
+	path = art.topic
+	url = git@github.com:chimera-lab/art.topic.git
+[submodule "administration.topic"]
+	path = administration.topic
+	url = git@github.com:chimera-lab/administration.topic.git
