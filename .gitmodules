@@ -1,39 +1,39 @@
-[submodule "network"]
-	path = network
-	url = git@github.com:chimera-lab/network.git
-[submodule "automation"]
-	path = automation
-	url = git@github.com:chimera-lab/automation.git
-[submodule "legal"]
-	path = legal
-	url = git@github.com:chimera-lab/legal.git
-[submodule "ideas"]
-	path = ideas
-	url = git@github.com:chimera-lab/ideas.git
-[submodule "template"]
-	path = template
-	url = git@github.com:chimera-lab/template.git
-[submodule "computing"]
-	path = computing
-	url = git@github.com:chimera-lab/computing.git
-[submodule "finance"]
-	path = finance
-	url = git@github.com:chimera-lab/finance.git
-[submodule "contributions"]
-	path = contributions
-	url = git@github.com:chimera-lab/contributions.git
-[submodule "operating-systems"]
-	path = operating-systems
-	url = git@github.com:chimera-lab/operating-systems.git
-[submodule "artificial-intelligence"]
-	path = artificial-intelligence
-	url = git@github.com:chimera-lab/artificial-intelligence.git
-[submodule "security"]
-	path = security
-	url = git@github.com:chimera-lab/security.git
 [submodule "art.topic"]
 	path = art.topic
 	url = git@github.com:chimera-lab/art.topic.git
 [submodule "administration.topic"]
 	path = administration.topic
 	url = git@github.com:chimera-lab/administration.topic.git
+[submodule "security.topic"]
+	path = security.topic
+	url = git@github.com:chimera-lab/security.topic.git
+[submodule "operating-systems.topic"]
+	path = operating-systems.topic
+	url = git@github.com:chimera-lab/operating-systems.topic.git
+[submodule "artificial-intelligence.topic"]
+	path = artificial-intelligence.topic
+	url = git@github.com:chimera-lab/artificial-intelligence.topic.git
+[submodule "contributions.topic"]
+	path = contributions.topic
+	url = git@github.com:chimera-lab/contributions.topic.git
+[submodule "finance.topic"]
+	path = finance.topic
+	url = git@github.com:chimera-lab/finance.topic.git
+[submodule "ideas.topic"]
+	path = ideas.topic
+	url = git@github.com:chimera-lab/ideas.topic.git
+[submodule "network.topic"]
+	path = network.topic
+	url = git@github.com:chimera-lab/network.topic.git
+[submodule "computing.topic"]
+	path = computing.topic
+	url = git@github.com:chimera-lab/computing.topic.git
+[submodule "legal.topic"]
+	path = legal.topic
+	url = git@github.com:chimera-lab/legal.topic.git
+[submodule "automation.topic"]
+	path = automation.topic
+	url = git@github.com:chimera-lab/automation.topic.git
+[submodule "template.topic"]
+	path = template.topic
+	url = git@github.com:chimera-lab/template.topic.git

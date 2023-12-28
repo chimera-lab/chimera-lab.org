@@ -44,13 +44,15 @@ if [ -d /home/$USER/.backup/$repo ]; then
     exit 1;
 else
     #Backup
-    mkdir -p /home/$USER/.backup
-    cp -r . /home/$USER/.backup/
-    echo "DEBUG: /home/$USER/.backup"
-    ls /home/$USER/.backup
-    echo "DEBUG: /home/$USER/.backup"
-    ls /home/$USER/.backup/
+    mkdir -p /home/$USER/.backup/$repo
+    cp -r . /home/$USER/.backup/$repo/
     echo -e "\e[1;32mBacking up the repository to /home/$USER/.backup/$repo...\e[0m\n\n"
+fi
+
+if [ $name == $repo ]; then
+    # Needs deletion
+    echo -e "\e[1;31m$owner/$repo already exists, need for deletion...\e[0m\n\n"
+    gh repo delete
 fi
 
 # Create from new template
@@ -62,23 +64,21 @@ git remote add new_origin git@github.com:$owner/$name.git
 # Add local files
 git pull new_origin main --no-rebase --allow-unrelated-histories
 
-# Push to remote
-git push new_origin main
-
-# pull new repository
-cd ../
-git clone git@github.com:$owner/$name.git
-cd $name
-
 # Make changes
-echo "Make sure the new repository at /tmp/change-git-template/$name is ready to add *, commit and push
+echo -e "Make sure the new changes at \e[1;34m/tmp/change-git-template/$repo\e[0m are ready to add *, commit and push.
 click ANY KEY to continue!"
+
+sleep 2
+
+code .
 
 read continue
 
-git add * && commit -m "Automated repository rebuild" && git push origin
+git add * && git add .github* && git commit -m "Automated repository rebuild" && git push new_origin main
 
 # Delete on origin
-gh repo delete $owner/$name
+if [ $name != $repo ]; then
+    gh repo delete $owner/$repo
+fi
 
 exit 0

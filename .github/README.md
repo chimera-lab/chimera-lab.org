@@ -6,6 +6,10 @@ This organization was created in order to document and share technology implemen
   - [administration.topic](#administrationtopic)
     - [ansible.overview](#ansibleoverview)
     - [open-ssh.overview](#open-sshoverview)
+    - [ubuntu-administration.topic](#ubuntu-administrationtopic)
+      - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
+    - [windows-administration.topic](#windows-administrationtopic)
+      - [windows-apps-installation.overview](#windows-apps-installationoverview)
   - [analytics.topic](#analyticstopic)
     - [analytics-home.project](#analytics-homeproject)
   - [art.topic](#arttopic)
@@ -18,15 +22,11 @@ This organization was created in order to document and share technology implemen
     - [openai.overview](#openaioverview)
   - [automation.topic](#automationtopic)
     - [automation-home.project](#automation-homeproject)
-    - [ubuntu-automation.overview](#ubuntu-automationoverview)
-      - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
-    - [windows-automation.overview](#windows-automationoverview)
-      - [windows-apps-installation.overview](#windows-apps-installationoverview)
   - [contributions.topic](#contributionstopic)
     - [laradock](#laradock)
-  - [devops](#devops)
+  - [devops.topic](#devopstopic)
     - [docker.overview](#dockeroverview)
-  - [diy](#diy)
+  - [diy.topic](#diytopic)
     - [network-storage.diy](#network-storagediy)
     - [music-server.diy](#music-serverdiy)
   - [finance.topic](#financetopic)
@@ -81,18 +81,26 @@ This organization was created in order to document and share technology implemen
           - [php-laravel-product](#php-laravel-product)
           - [php-laravel-restaurant](#php-laravel-restaurant)
       - [mysql.overview](#mysqloverview)
-  - [template](#template)
-    - [template.overview](#templateoverview)
-    - [template.project](#templateproject)
-    - [template.scaffold](#templatescaffold)
-    - [template.diy](#templatediy)
-    - [template.topic](#templatetopic)
+  - [template.topic](#templatetopic)
+    - [template-overview](#template-overview)
+    - [template-project](#template-project)
+    - [template-scaffold](#template-scaffold)
+    - [template-diy](#template-diy)
+    - [template-topic](#template-topic)
 
 ## [administration.topic](https://github.com/chimera-lab/administration.topic)
 
 ### [ansible.overview](https://github.com/chimera-lab/ansible.overview)
 
 ### [open-ssh.overview](https://github.com/chimera-lab/open-ssh.overview)
+
+### [ubuntu-administration.topic](https://github.com/chimera-lab/ubuntu-automation.overview)
+
+#### [ubuntu-apps-installation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
+
+### [windows-administration.topic](https://github.com/chimera-lab/windows-automation.overview)
+
+#### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
 
 ## [analytics.topic](https://github.com/chimera-lab/analytics.topic)
 
@@ -118,23 +126,15 @@ This organization was created in order to document and share technology implemen
 
 ### [automation-home.project](https://github.com/chimera-lab/automation)
 
-### [ubuntu-automation.overview](https://github.com/chimera-lab/ubuntu-automation.overview)
-
-#### [ubuntu-apps-installation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
-
-### [windows-automation.overview](https://github.com/chimera-lab/windows-automation.overview)
-
-#### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
-
 ## [contributions.topic](https://github.com/chimera-lab/contributions.topic)
 
 ### [laradock](https://github.com/chimera-lab/laradock)
 
-## [devops](https://github.com/chimera-lab/devops)
+## [devops.topic](https://github.com/chimera-lab/devops)
 
 ### [docker.overview](https://github.com/chimera-lab/docker.overview)
 
-## [diy](https://github.com/chimera-lab/diy)
+## [diy.topic](https://github.com/chimera-lab/diy)
 
 ### [network-storage.diy](https://github.com/chimera-lab/home-storage.diy)
 
@@ -244,14 +244,14 @@ This organization was created in order to document and share technology implemen
 
 #### [mysql.overview](https://github.com/chimera-lab/mysql-overview)
 
-## [template](https://github.com/chimera-lab/template)
+## [template.topic](https://github.com/chimera-lab/template-topic)
 
-### [template.overview](https://github.com/chimera-lab/template.overview)
+### [template-overview](https://github.com/chimera-lab/template-overview)
 
-### [template.project](https://github.com/chimera-lab/template.project)
+### [template-project](https://github.com/chimera-lab/template-project)
 
-### [template.scaffold](https://github.com/chimera-lab/template.scaffold)
+### [template-scaffold](https://github.com/chimera-lab/template-scaffold)
 
-### [template.diy](https://github.com/chimera-lab/template.scaffold)
+### [template-diy](https://github.com/chimera-lab/template-scaffold)
 
-### [template.topic](https://github.com/chimera-lab/template.topic)
+### [template-topic](https://github.com/chimera-lab/template-topic)
