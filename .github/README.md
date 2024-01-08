@@ -55,8 +55,9 @@ This organization was created in order to document and share technology implemen
   - [original.topic](#originaltopic)
     - [homepage-builder.project](#homepage-builderproject)
   - [operating-systems.topic](#operating-systemstopic)
-    - [linux.overview](#linuxoverview)
+    - [linux.topic](#linuxtopic)
       - [linux-tools](#linux-tools)
+      - [ubuntu.topic](#ubuntutopic)
       - [ubuntu.overview](#ubuntuoverview)
         - [ubuntu-installation.overview](#ubuntu-installationoverview)
     - [windows.overview](#windowsoverview)
@@ -192,11 +193,13 @@ This organization was created in order to document and share technology implemen
 
 ## [operating-systems.topic](https://github.com/chimera-lab/operating-systems.topic)
 
-### [linux.overview](https://github.com/chimera-lab/linux-overview)
+### [linux.topic](https://github.com/chimera-lab/linux.topic)
 
 #### [linux-tools](https://github.com/chimera-lab/linux-tools)
 
-#### [ubuntu.overview](https://github.com/chimera-lab/ubuntu)
+#### [ubuntu.topic](https://github.com/chimera-lab/ubuntu.topic)
+
+#### [ubuntu.overview](https://github.com/chimera-lab/ubuntu.overview)
 
 ##### [ubuntu-installation.overview](https://github.com/chimera-lab/ubuntu-installation.overview)
 
