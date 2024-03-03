@@ -37,3 +37,6 @@
 [submodule "template.topic"]
 	path = template.topic
 	url = git@github.com:chimera-lab/template.topic.git
+[submodule "devops.topic"]
+	path = devops.topic
+	url = git@github.com:chimera-lab/devops.topic.git
