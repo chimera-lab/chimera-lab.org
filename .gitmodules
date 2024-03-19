@@ -40,3 +40,9 @@
 [submodule "devops.topic"]
 	path = devops.topic
 	url = git@github.com:chimera-lab/devops.topic.git
+[submodule "partnership.topic"]
+	path = partnership.topic
+	url = git@github.com:chimera-lab/partnership.topic.git
+[submodule "personal.topic"]
+	path = personal.topic
+	url = git@github.com:chimera-lab/personal.topic.git

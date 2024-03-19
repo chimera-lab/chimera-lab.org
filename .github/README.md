@@ -25,7 +25,16 @@ This organization was created in order to document and share technology implemen
   - [contributions.topic](#contributionstopic)
     - [laradock](#laradock)
   - [devops.topic](#devopstopic)
-    - [docker.overview](#dockeroverview)
+    - [docker.topic](#dockertopic)
+      - [docker.overview](#dockeroverview)
+      - [docker-scaffold.topic](#docker-scaffoldtopic)
+        - [laravel-workspace\_docker.scaffold](#laravel-workspace_dockerscaffold)
+        - [laravel-php-fpm\_docker.scaffold](#laravel-php-fpm_dockerscaffold)
+        - [mysql\_docker.scaffold](#mysql_dockerscaffold)
+        - [nginx\_docker.scaffold](#nginx_dockerscaffold)
+        - [php-cli\_docker.scaffold](#php-cli_dockerscaffold)
+        - [php-fpm\_docker.scaffold](#php-fpm_dockerscaffold)
+        - [php-admin\_docker.scaffold](#php-admin_dockerscaffold)
   - [diy.topic](#diytopic)
     - [network-storage.diy](#network-storagediy)
     - [music-server.diy](#music-serverdiy)
@@ -56,12 +65,16 @@ This organization was created in order to document and share technology implemen
     - [homepage-builder.project](#homepage-builderproject)
   - [operating-systems.topic](#operating-systemstopic)
     - [linux.topic](#linuxtopic)
-      - [linux-tools](#linux-tools)
+      - [linux-tools.overview](#linux-toolsoverview)
       - [ubuntu.topic](#ubuntutopic)
       - [ubuntu.overview](#ubuntuoverview)
         - [ubuntu-installation.overview](#ubuntu-installationoverview)
     - [windows.overview](#windowsoverview)
       - [windows-installation.overview](#windows-installationoverview)
+  - [partnership.topic](#partnershiptopic)
+    - [mauserpt.topic](#mauserpttopic)
+      - [mauserpt-ean-scrapper\_infra.project](#mauserpt-ean-scrapper_infraproject)
+        - [mauserpt-ean-scrapper.project](#mauserpt-ean-scrapperproject)
   - [security.topic](#securitytopic)
     - [network-security.topic](#network-securitytopic-1)
       - [firewalls.topic](#firewallstopic-1)
@@ -83,6 +96,7 @@ This organization was created in order to document and share technology implemen
           - [php-laravel-restaurant](#php-laravel-restaurant)
       - [mysql.overview](#mysqloverview)
   - [template.topic](#templatetopic)
+    - [template-repository](#template-repository)
     - [template-overview](#template-overview)
     - [template-project](#template-project)
     - [template-scaffold](#template-scaffold)
@@ -133,7 +147,25 @@ This organization was created in order to document and share technology implemen
 
 ## [devops.topic](https://github.com/chimera-lab/devops)
 
-### [docker.overview](https://github.com/chimera-lab/docker.overview)
+### [docker.topic](https://github.com/chimera-lab/docker.overview)
+
+#### [docker.overview](https://github.com/chimera-lab/docker.overview)
+
+#### [docker-scaffold.topic](https://github.com/chimera-lab/docker-scaffold.topic)
+
+##### [laravel-workspace_docker.scaffold](https://github.com/chimera-lab/laravel-workspace_docker.scaffold)
+
+##### [laravel-php-fpm_docker.scaffold](https://github.com/chimera-lab/laravel-php-fpm_docker.scaffold)
+
+##### [mysql_docker.scaffold](https://github.com/chimera-lab/mysql_docker.scaffold)
+
+##### [nginx_docker.scaffold](https://github.com/chimera-lab/nginx_docker.scaffold)
+
+##### [php-cli_docker.scaffold](https://github.com/chimera-lab/php-cli_docker.scaffold)
+
+##### [php-fpm_docker.scaffold](https://github.com/chimera-lab/php-fpm_docker.scaffold)
+
+##### [php-admin_docker.scaffold](https://github.com/chimera-lab/php-admin_docker.scaffold)
 
 ## [diy.topic](https://github.com/chimera-lab/diy)
 
@@ -195,7 +227,7 @@ This organization was created in order to document and share technology implemen
 
 ### [linux.topic](https://github.com/chimera-lab/linux.topic)
 
-#### [linux-tools](https://github.com/chimera-lab/linux-tools)
+#### [linux-tools.overview](https://github.com/chimera-lab/linux-tools.overview)
 
 #### [ubuntu.topic](https://github.com/chimera-lab/ubuntu.topic)
 
@@ -206,6 +238,14 @@ This organization was created in order to document and share technology implemen
 ### [windows.overview](https://github.com/chimera-lab/windows.overview)
 
 #### [windows-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
+
+## [partnership.topic](https://github.com/chimera-lab/partnership.topic)
+
+### [mauserpt.topic](https://github.com/chimera-lab/mauserpt.topic)
+
+#### [mauserpt-ean-scrapper_infra.project](https://github.com/chimera-lab/mauserpt-ean-scrapper_infra.project)
+
+##### [mauserpt-ean-scrapper.project](https://github.com/chimera-lab/mauserpt-ean-scrapper.project)
 
 ## [security.topic](https://github.com/chimera-lab/security.topic)
 
@@ -248,6 +288,8 @@ This organization was created in order to document and share technology implemen
 #### [mysql.overview](https://github.com/chimera-lab/mysql-overview)
 
 ## [template.topic](https://github.com/chimera-lab/template-topic)
+
+### [template-repository](https://github.com/chimera-lab/template-repository)
 
 ### [template-overview](https://github.com/chimera-lab/template-overview)
 
