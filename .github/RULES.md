@@ -10,7 +10,10 @@ These rules should be applied to every README document present on the organizati
 
 ### Templates
 
-- Version must be present.
+- Version must be present as (version=a.b.c).
+  - 'a' - changes require revision.
+  - 'b' - changes can be resolved.
+  - 'c' - changes can be ignored.
 - Any change to the template that modifies the document structure should have its version updated.
 - Every header should have an emoji prefix as documented in [Document Headers](#document-headers)
 
@@ -18,53 +21,69 @@ These rules should be applied to every README document present on the organizati
 
 Document headers must always have an emoji, must match the following terms or be the same as the previous header.
 
-##### :loudspeaker: Introduction
+##### :paperclip: Appendix
 
-##### :world_map: Guides
-
-##### :footprints: Guide Steps
-
-##### :notebook: Notes
-
-##### :books: References
-
-##### :newspaper: Sources
+##### :book: Chapter
 
 ##### :hammer_and_wrench: Common problems
 
-##### :link: See also
+##### :wrench: Configuration
+
+##### :busts_in_silhouette: Contributing
 
 ##### :medal_military: Credits
 
-##### :warning: Warnings
+##### :control_knobs: Customization
 
-##### :clipboard: Requirements
+##### :page_facing_up: Files
+
+##### :inbox_tray: Installation
+
+##### :loudspeaker: Introduction
 
 ##### :package: Material
 
-##### :toolbox: Tools
-
-##### :electric_plug: Hardware
-
-##### :gear: Software
-
-##### :memo: To-do list
+##### :notebook: Notes
 
 ##### :telescope: Overview
 
-##### :paperclip: Appendix
+##### :books: References
+
+##### :clipboard: Requirements
+
+##### :link: See also
+
+##### :gear: Software
+
+##### :building_construction: Structure
+
+##### :newspaper: Sources
 
 ##### :file_cabinet: Submodule
 
+##### :triangular_ruler: Technologies
+
+##### :mag: Terminology
+
+##### :memo: To-do list
+
+##### :toolbox: Tools
+
+##### :keyboard: Usage
+
+##### :scroll: License
+
+##### :warning: Warnings
+
 #### Link prefixes
 
-##### :mag: Terms
+##### :globe_with_meridians: External link
 
 ##### :open_file_folder: Chimera LAB's repositories
 
 ##### :file_folder: Other repositories
 
-##### :globe_with_meridians: External link
+##### :mag: Terms
 
 #### Links
 
@@ -81,4 +100,3 @@ Document headers must always have an emoji, must match the following terms or be
 - Links related to the document should have their name prefixed with their icon as documented in  [Document Headers](#document-headers).
   - Example: `[:paperclip: Appendix](#paperclip-appendix)` [:paperclip: Appendix](#paperclip-appendix)
   - Example: `[:notebook: Notes](#notebook-notes)` [:notebook: Notes](#notebook-notes)
-
