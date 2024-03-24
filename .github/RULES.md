@@ -79,7 +79,7 @@ Document headers must always have an emoji, must match the following terms or be
 
 ##### :globe_with_meridians: External link
 
-##### :open_file_folder: Chimera LAB's repositories
+##### :file_cabinet: Chimera LAB's repositories
 
 ##### :file_folder: Other repositories
 
