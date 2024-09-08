@@ -4,8 +4,9 @@ This organization was created in order to document and share technology implemen
 
 - [Chimera-LAB](#chimera-lab)
   - [administration.topic](#administrationtopic)
-    - [ansible.overview](#ansibleoverview)
-    - [open-ssh.overview](#open-sshoverview)
+    - [administration-tools.topic](#administration-toolstopic)
+      - [ansible.overview](#ansibleoverview)
+      - [open-ssh.overview](#open-sshoverview)
     - [ubuntu-administration.topic](#ubuntu-administrationtopic)
       - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
     - [windows-administration.topic](#windows-administrationtopic)
@@ -82,11 +83,11 @@ This organization was created in order to document and share technology implemen
         - [nftables.overview](#nftablesoverview-1)
         - [iptables.overview](#iptablesoverview-1)
     - [anti-virus](#anti-virus)
-  - [software](#software)
-    - [applications](#applications)
-    - [software-development](#software-development)
-      - [php-development](#php-development)
-        - [php-laravel.overview](#php-laraveloverview)
+  - [software.topic](#softwaretopic)
+    - [software-development.topic](#software-developmenttopic)
+      - [php.topic](#phptopic)
+        - [php-laravel.topic](#php-laraveltopic)
+          - [php-laravel-domains.app](#php-laravel-domainsapp)
           - [php-laravel-api](#php-laravel-api)
           - [php-laravel-catering](#php-laravel-catering)
           - [php-laravel-ecommerce](#php-laravel-ecommerce)
@@ -105,9 +106,11 @@ This organization was created in order to document and share technology implemen
 
 ## [administration.topic](https://github.com/chimera-lab/administration.topic)
 
-### [ansible.overview](https://github.com/chimera-lab/ansible.overview)
+### [administration-tools.topic](https://github.com/chimera-lab/ansible.overview)
 
-### [open-ssh.overview](https://github.com/chimera-lab/open-ssh.overview)
+#### [ansible.overview](https://github.com/chimera-lab/ansible.overview)
+
+#### [open-ssh.overview](https://github.com/chimera-lab/open-ssh.overview)
 
 ### [ubuntu-administration.topic](https://github.com/chimera-lab/ubuntu-automation.overview)
 
@@ -261,15 +264,15 @@ This organization was created in order to document and share technology implemen
 
 ### [anti-virus](https://github.com/chimera-lab/anti-virus)
 
-## [software](https://github.com/chimera-lab/software)
+## [software.topic](https://github.com/chimera-lab/software.topic)
 
-### [applications](https://github.com/chimera-lab/applications)
+### [software-development.topic](https://github.com/chimera-lab/software-development)
 
-### [software-development](https://github.com/chimera-lab/software-development)
+#### [php.topic](https://github.com/chimera-lab/php-programming)
 
-#### [php-development](https://github.com/chimera-lab/php-programming)
+##### [php-laravel.topic](https://github.com/chimera-lab/php-laravel.overview)
 
-##### [php-laravel.overview](https://github.com/chimera-lab/php-laravel.overview)
+###### [php-laravel-domains.app](https://github.com/chimera-lab/php-laravel-api)
 
 ###### [php-laravel-api](https://github.com/chimera-lab/php-laravel-api)
 

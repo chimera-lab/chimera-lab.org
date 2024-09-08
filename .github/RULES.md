@@ -8,14 +8,49 @@ These rules should be applied to every README document present on the organizati
 
 - Repository should always have a suffix name, use an appropriated organization template to name it.
 
+### Projects
+
+### Commits
+
+### Issues
+
+#### Milestones
+
+#### Labels
+
+- bug
+  - Something isn't working
+- documentation
+  - Improvements or additions to documentation
+- duplicate
+  - This issue or pull request already exists
+- enhancement
+  - New feature or request
+- good first issue
+  - Good for newcomers
+- help wanted
+  - Extra attention is needed
+- invalid
+  - This doesn't seem right
+- question
+  - Further information is requested
+- wontfix
+  - This will not be worked on
+
+### Branchs
+
 ### Templates
 
-- Version must be present as (version=a.b.c).
+- Version must be present as `<!--(version=a.b.c)-->`.
   - 'a' - changes require revision.
   - 'b' - changes can be resolved.
   - 'c' - changes can be ignored.
 - Any change to the template that modifies the document structure should have its version updated.
 - Every header should have an emoji prefix as documented in [Document Headers](#document-headers)
+
+#### Child MarkDown Documentation
+
+Child documents should be presented in the template prefixed with "README.".
 
 #### Document Headers
 
