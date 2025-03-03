@@ -46,3 +46,6 @@
 [submodule "personal.topic"]
 	path = personal.topic
 	url = git@github.com:chimera-lab/personal.topic.git
+[submodule "original.topic"]
+	path = original.topic
+	url = git@github.com:chimera-lab/original.topic.git

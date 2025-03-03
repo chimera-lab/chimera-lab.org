@@ -48,6 +48,19 @@ These rules should be applied to every README document present on the organizati
 - Any change to the template that modifies the document structure should have its version updated.
 - Every header should have an emoji prefix as documented in [Document Headers](#document-headers)
 
+#### List of Templates
+
+- template.template
+  - topic.template
+  - overview.template
+  - diy.template
+  - scaffold.template
+    - docker_scaffold.template
+  - app.template
+    - laravel_app.template
+  - project.template
+  - org.template
+
 #### Child MarkDown Documentation
 
 Child documents should be presented in the template prefixed with "README.".
