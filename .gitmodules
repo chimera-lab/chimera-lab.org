@@ -49,3 +49,6 @@
 [submodule "original.topic"]
 	path = original.topic
 	url = git@github.com:chimera-lab/original.topic.git
+[submodule "projects.topic"]
+	path = projects.topic
+	url = git@github.com:chimera-lab/projects.topic.git
