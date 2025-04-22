@@ -1,0 +1,41 @@
+@startmindmap tst
+<style>
+mindmapDiagram { 
+    node {
+        BackgroundColor #FF0000
+    }
+    :depth(1) {
+        BackgroundColor #00FF00
+    }
+    :depth(2) {
+        BackgroundColor #0000FF
+        FontColor white
+    }
+    :depth(3) {
+        BackgroundColor #FFFF00
+    }
+    :depth(4) {
+        BackgroundColor #FF00FF
+    }
+    :depth(5) {
+        BackgroundColor #00FFFF
+    }
+}
+</style>
+
+top to bottom direction
+
++ **chimera-lab.com**
+++ **www**
+++ **chat**
+++ **blog**
+++ **store**
+++ **app**
++++ **catering**
++++ **restaurant**
++++ **hairdresser**
++++ **blog**
++++ **product**
+++ **dev**
+
+@endmindmap

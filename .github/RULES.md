@@ -54,8 +54,6 @@ These rules should be applied to every README document present on the organizati
   - [:open_file_folder: chimera-lab/topic.template](https://github.com/chimera-lab/topic.template)
   - [:open_file_folder: chimera-lab/overview.template](https://github.com/chimera-lab/overview.template)
   - [:open_file_folder: chimera-lab/diy.template](https://github.com/chimera-lab/diy.template)
-  - [:open_file_folder: chimera-lab/scaffold.template](https://github.com/chimera-lab/scaffold.template)
-    - [:open_file_folder: chimera-lab/docker_scaffold.template](https://github.com/chimera-lab/docker_scaffold.template)
   - [:open_file_folder: chimera-lab/app.template](https://github.com/chimera-lab/app.template)
     - [:open_file_folder: chimera-lab/laravel_app.template](https://github.com/chimera-lab/laravel_app.template)
   - [:open_file_folder: chimera-lab/project.template](https://github.com/chimera-lab/project.template)

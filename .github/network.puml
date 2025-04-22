@@ -1,0 +1,56 @@
+@startuml Chimera Lab Network
+title Chimera Lab Network
+
+<style>
+  database {
+    BackgroundColor LightYellow
+    BorderColor DarkRed
+    FontColor DarkBlue
+    FontSize 12
+  }
+</style>
+
+cloud "Internet" as inet
+node "Router" as router
+inet -- router
+
+frame "Chimera Lab" {
+    node "Lab Workstation" as lab_workstation
+    node "Lab Laptop" as lab_laptop
+    node "Lab Studio" as lab_studio
+    node "Lab Server" as lab_server
+    database "External SSD 256GB" as external_ssd
+    database "External HDD 1TB" as external_hdd
+
+    router -- lab_workstation
+    router -- lab_laptop
+    router -- lab_studio
+    router -- lab_server
+    router -- external_ssd
+    router -- external_hdd
+}
+
+frame "Lab Workstation" {
+    database "SDA 256GB" as lab_workstation_sda
+    database "SDB 256GB" as lab_workstation_sdb
+    lab_workstation -- lab_workstation_sda
+    lab_workstation -- lab_workstation_sdb
+}
+
+frame "Lab Laptop" {
+    database "SDA 256GB" as lab_laptop_sda
+    lab_laptop -- lab_laptop_sda
+}
+
+frame "Lab Studio" {
+    database "SDA 1TB" as lab_studio_sda
+    lab_studio -- lab_studio_sda
+}
+
+frame "Lab Server" {
+    database "SDA 256GB" as lab_server_sda
+    database "SDB 256GB" as lab_server_sdb
+    lab_server -- lab_server_sda
+    lab_server -- lab_server_sdb
+}
+@enduml
