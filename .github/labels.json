@@ -1,0 +1,249 @@
+{
+    "common": [
+        {
+            "name": "bug",
+            "description": "Something isn't working",
+            "color": "#d73a4a"
+        },
+        {
+            "name": "documentation",
+            "description": "Improvements or additions to documentation",
+            "color": "#0366d6"
+        },
+        {
+            "name": "duplicate",
+            "description": "This issue or pull request already exists",
+            "color": "#7e7e7e"
+        },
+        {
+            "name": "enhancement",
+            "description": "New feature or request",
+            "color": "#22863a"
+        },
+        {
+            "name": "good first issue",
+            "description": "Good for newcomers",
+            "color": "#7057ff"
+        },
+        {
+            "name": "help wanted",
+            "description": "Extra attention is needed",
+            "color": "#ff7f50"
+        },
+        {
+            "name": "invalid",
+            "description": "This doesn't seem right",
+            "color": "#e4e669"
+        },
+        {
+            "name": "question",
+            "description": "Further information is requested",
+            "color": "#ff69b4"
+        },
+        {
+            "name": "wontfix",
+            "description": "This will not be worked on",
+            "color": "#4b0000"
+        }
+    ],
+    "general": [
+        {
+            "name": "logic",
+            "description": "Business or application logic",
+            "color": "#af52fd"
+        },
+        {
+            "name": "performance",
+            "description": "Performance related",
+            "color": "#fbca04"
+        },
+        {
+            "name": "testing",
+            "description": "Tests and quality assurance",
+            "color": "#a4cc83"
+        },
+        {
+            "name": "security",
+            "description": "Security concerns",
+            "color": "#b31d28"
+        },
+        {
+            "name": "logging",
+            "description": "Handling, storing, or visualizing logs",
+            "color": "#5319e7"
+        },
+        {
+            "name": "configuration",
+            "description": "Managing system configurations",
+            "color": "#f6f8fa"
+        },
+        {
+            "name": "authentication",
+            "description": "Verifying user or system identity",
+            "color": "#8a2be2"
+        },
+        {
+            "name": "authorization",
+            "description": "Controlling access permissions",
+            "color": "#ff1493"
+        }
+    ],
+    "infrastructure": [
+        {
+            "name": "software",
+            "description": "General-purpose software project",
+            "color": "#00bfff"
+        },
+        {
+            "name": "infrastructure",
+            "description": "System infrastructure provisioning or configuration",
+            "color": "#1d76db"
+        },
+        {
+            "name": "containerization",
+            "description": "Use of containers to package and deploy software",
+            "color": "#d93f0b"
+        },
+        {
+            "name": "orchestration",
+            "description": "Managing container lifecycle and deployments",
+            "color": "#e36209"
+        },
+        {
+            "name": "automation",
+            "description": "Automating infrastructure",
+            "color": "#006b75"
+        },
+        {
+            "name": "load-balancing",
+            "description": "Distributing traffic across systems",
+            "color": "#c1440e"
+        },
+        {
+            "name": "monitoring",
+            "description": "Observing system performance and health",
+            "color": "#7e7e7e"
+        },
+        {
+            "name": "cicd",
+            "description": "Continuous integration and deployment pipelines",
+            "color": "#0052cc"
+        },
+        {
+            "name": "observability",
+            "description": "Visibility into system operations and metrics",
+            "color": "#ff7f50"
+        },
+        {
+            "name": "storage",
+            "description": "Projects using databases or storage solutions",
+            "color": "#22863a"
+        },
+        {
+            "name": "frontend",
+            "description": "Client-side applications, UI, or user interaction",
+            "color": "#0e8a16"
+        },
+        {
+            "name": "backend",
+            "description": "Server-side services or infrastructure",
+            "color": "#6f42c1"
+        },
+        {
+            "name": "microservice",
+            "description": "Microservice architecture components",
+            "color": "#f9d0c4"
+        }
+    ],
+    "interface": [
+        {
+            "name": "ui",
+            "description": "Related to user interface design",
+            "color": "#e11d21"
+        },
+        {
+            "name": "ux",
+            "description": "Related to user experience and usability",
+            "color": "#ffa07a"
+        },
+        {
+            "name": "desktop",
+            "description": "Web-based applications with user-facing interfaces",
+            "color": "#0366d6"
+        },
+        {
+            "name": "mobile",
+            "description": "Projects targeting iOS or Android platforms",
+            "color": "#f66a0a"
+        },
+        {
+            "name": "cli",
+            "description": "Command-line interface applications",
+            "color": "#e99695"
+        }
+    ],
+    "embedded": [
+        {
+            "name": "hardware",
+            "description": "Related to physical components or electronics",
+            "color": "#9370db"
+        },
+        {
+            "name": "firmware",
+            "description": "Embedded software running on hardware devices",
+            "color": "#20b2aa"
+        },
+        {
+            "name": "operating-system",
+            "description": "OS-level projects or dependencies",
+            "color": "#40e0d0"
+        }
+    ],
+    "study": [
+        {
+            "name": "terminology",
+            "description": "Related to glossary, terms, definitions",
+            "color": "#4f9f04"
+        },
+        {
+            "name": "configuration",
+            "description": "Setup, environment, or files configuration",
+            "color": "#aacb0c"
+        },
+        {
+            "name": "guides",
+            "description": "Step-by-step tutorials or instructions",
+            "color": "#9bb611"
+        },
+        {
+            "name": "chapters",
+            "description": "Content divided by chapters or sections",
+            "color": "#c1440e"
+        },
+        {
+            "name": "problems",
+            "description": "Known issues or troubleshooting notes",
+            "color": "#af52fd"
+        },
+        {
+            "name": "appendix",
+            "description": "Supplemental notes, references, or credits",
+            "color": "#f39abe"
+        },
+        {
+            "name": "exercise",
+            "description": "Practice tasks or exercises",
+            "color": "#758981"
+        },
+        {
+            "name": "example",
+            "description": "Code or content examples",
+            "color": "#9cbea5"
+        },
+        {
+            "name": "review",
+            "description": "Content or code needing review or feedback",
+            "color": "#a4cc83"
+        }
+    ]
+}

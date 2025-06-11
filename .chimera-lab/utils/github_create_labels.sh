@@ -1,0 +1,1 @@
+jq -c '.study[]' ../../.github/labels.json | while read -r tag; do gh label create --force "$(echo "$tag" | jq -r '.name')" --description "$(echo "$tag" | jq -r '.description')" --color "$(echo "$tag" | jq -r '.color')"; done
