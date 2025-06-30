@@ -1,8 +1,28 @@
 # Chimera-LAB
 
-This organization was created in order to document and share technology implementations. It contains projects, notes and ideas about technology.
+This organization reflects a developing philosophy focused on structuring and sharing projects, ideas and study material in a clear, modular, and reusable way. The aim is to maintain personal organization while allowing for easy sharing, consistency, and external input when needed.
+
+A supporting tool is in development to automate and simplify this process. It is based on a customizable standard for folder and documentation structure, enabling the centralization and reuse of shared elements like terms, config blocks, and content fragments. Documentation can be created manually or assisted through IDE plugins, and templates can be extended to build modular structures.
+
+Planned features include:
+- modular templates with explicit rules
+- template inheritance for reusable structure
+- automatic documentation generation with reusable headers
+- centralized terms and reference management
+- advanced tagging and categorization
+- integrated backups and version control
+- merge control restricted to the owner
+- project and repository planning using structured files
+- graph generation to visualize relationships between folders, templates, and planned repositories
+
+The goal is to simplify how technical knowledge is maintained, updated, and shared — keeping everything structured, adaptable, and under control.
+
+Feedback is welcome and appreciated.
+
+## Repositories
 
 - [Chimera-LAB](#chimera-lab)
+  - [Repositories](#repositories)
   - [administration.topic](#administrationtopic)
     - [administration-tools.topic](#administration-toolstopic)
       - [ansible.overview](#ansibleoverview)
