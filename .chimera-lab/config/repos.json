@@ -1,12 +1,8 @@
 {
     "planned" : [
-        {
-            "name" : "stack.template",
-            "template" : "template.template",
-            "parent" : "template.topic"
-        }
    ],
    "ignored" : [
-        "docker-scaffold.topic"
+        "docker-scaffold.topic",
+        "docker_scaffold.template"
    ]
 }

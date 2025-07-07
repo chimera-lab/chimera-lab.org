@@ -25,9 +25,6 @@
 [submodule "network.topic"]
 	path = network.topic
 	url = git@github.com:chimera-lab/network.topic.git
-[submodule "computing.topic"]
-	path = computing.topic
-	url = git@github.com:chimera-lab/computing.topic.git
 [submodule "legal.topic"]
 	path = legal.topic
 	url = git@github.com:chimera-lab/legal.topic.git
