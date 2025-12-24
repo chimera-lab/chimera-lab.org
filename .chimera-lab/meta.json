@@ -55,5 +55,6 @@
       "config/repo.json"
     ],
     "validation_required": true
-  }
+  },
+  "template": "fake.template"
 }
