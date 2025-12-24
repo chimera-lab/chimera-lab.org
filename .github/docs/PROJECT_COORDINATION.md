@@ -20,7 +20,7 @@ This document establishes the framework for effective multi-project coordination
 
 Features contained within one repository use standard GitHub issues:
 
-```
+```text
 Repository: chimera-lab-cli.app
 ├── Feature: Add new command
 ├── Assigned to: CLI team
@@ -29,6 +29,7 @@ Repository: chimera-lab-cli.app
 ```
 
 **Process**:
+
 1. Create issue in repository
 2. Link to milestone for release planning
 3. Use labels for categorization
@@ -39,6 +40,7 @@ Repository: chimera-lab-cli.app
 Features that span multiple repositories require coordination:
 
 **Example**: "Support OAuth in all applications"
+
 - Affects: `chimera-lab-chat.project`, `chimera-lab-blog.project`, `chimera-lab-store.project`
 - Shared implementation: `chimera-lab-auth.package` (new library)
 - Coordination point: Feature tracking issue in central organization repo
@@ -139,21 +141,25 @@ Coordinate via:
 ### Types of Dependencies
 
 **Code Dependencies**:
+
 - Package/library used by another project
 - Example: `chimera-lab-laravel.package` used by `chimera-lab-blog.project`
 - Managed via: composer.json, package.json, requirements.txt
 
 **Feature Dependencies**:
+
 - Feature in one repo depends on feature in another
 - Example: Blog can't deploy v2.0 until auth package v1.0 is released
 - Managed via: Issue milestones and linked issues
 
 **Data Dependencies**:
+
 - Data format or API changes affecting multiple repos
 - Example: User schema change affects chat, blog, and store
 - Managed via: Migration plans and coordinated deployments
 
 **Infrastructure Dependencies**:
+
 - Shared infrastructure (database, cache, message queue)
 - Example: All apps use same Redis instance
 - Managed via: Deployment coordination and maintenance windows
@@ -275,21 +281,25 @@ Milestone: Q1 2024 Release
 ### Release Types
 
 **Independent Release** (Single Repository):
+
 - Repository has no cross-repo dependencies
 - Process: Standard semantic versioning
 - Example: `docker.overview` v1.1.0
 
 **Dependent Release** (With Dependencies):
+
 - Repository depends on other repos
 - Must wait for dependencies to be released first
 - Example: `chimera-lab-blog.project` depends on `chimera-lab-auth.package`
 
 **Coordinated Release** (Multiple Repositories):
+
 - Multiple repos released together
 - Requires synchronization
 - Example: Q1 2024 release with blog, chat, and store updates
 
 **Breaking Change Release**:
+
 - Requires migration steps for dependent projects
 - Requires notification and timeline
 - Requires version bump and migration guide
@@ -298,7 +308,7 @@ Milestone: Q1 2024 Release
 
 #### Independent Release
 
-```
+```text
 Repository: chimera-lab-docker-stack.project
 Version: 1.2.0 (v1.1.0 → v1.2.0)
 Type: Minor (new feature, backwards compatible)
@@ -314,7 +324,7 @@ Type: Minor (new feature, backwards compatible)
 
 #### Dependent Release
 
-```
+```text
 Repository: chimera-lab-blog.project
 Depends on: chimera-lab-auth.package v2.0
 
@@ -400,6 +410,7 @@ For each release:
 Migrations affect multiple repositories simultaneously:
 
 **Examples**:
+
 - Change all repositories from Node.js 16 to 18
 - Migrate from one database to another
 - Change authentication system organization-wide
@@ -408,6 +419,7 @@ Migrations affect multiple repositories simultaneously:
 ### Migration Planning Process
 
 1. **Proposal Phase**:
+
    ```markdown
    # Proposal: Migrate to Node.js 18
    
@@ -460,16 +472,19 @@ Migrations affect multiple repositories simultaneously:
 ### Migration Coordination
 
 **Communication**:
+
 - Create GitHub issue for each step
 - Label: `scope:org-wide`, `type:migration`
 - Update daily in organization meeting/discussion
 
 **Rollback Plan**:
+
 - Document rollback steps for each repository
 - Keep old version available during transition
 - Define rollback conditions (e.g., "if > 5% performance regression")
 
 **Success Metrics**:
+
 - All tests passing in new environment
 - Performance metrics within acceptable range
 - Zero critical bugs in production
@@ -483,7 +498,7 @@ Migrations affect multiple repositories simultaneously:
 
 Use GitHub issues for documentation:
 
-```
+```text
 Issue #100: Support OAuth across applications
 
 Description: [Complete feature description]
@@ -517,6 +532,7 @@ Use GitHub Discussions for conversations:
 For complex coordination:
 
 **Weekly Sync** (Optional, if > 3 active projects):
+
 - Attendees: Project leads, organization manager
 - Duration: 30 minutes
 - Agenda:
@@ -526,6 +542,7 @@ For complex coordination:
   4. Next week actions (5 min)
 
 **Monthly Planning** (Quarterly if slow):
+
 - Attendees: All project leads, architects
 - Duration: 2 hours
 - Agenda:
@@ -537,6 +554,7 @@ For complex coordination:
 ### Status Updates
 
 **Weekly Status Template**:
+
 ```markdown
 # Project Status: [Project Name]
 
@@ -564,7 +582,7 @@ For complex coordination:
 
 Document project dependencies:
 
-```
+```text
 chimera-lab.org
 
 [auth.package] v2.0
@@ -623,6 +641,7 @@ For libraries with breaking changes:
 For dependent projects:
 
 1. **Create Migration Guide**:
+
    ```markdown
    # Migration Guide: [Library] v2.0
    
@@ -636,8 +655,9 @@ For dependent projects:
    $auth = new AuthService($config);
    $user = $auth->login();
    ```
-   
+
    ### After (v2.0)
+
    ```php
    $auth = Auth::factory($config);
    $user = $auth->authenticate();
@@ -682,18 +702,22 @@ If project conflict arises:
 ### Conflict Types
 
 **Resource Conflict**:
+
 - Problem: Two projects need same person
 - Solution: Priority by milestone, shuffle tasks
 
 **Timeline Conflict**:
+
 - Problem: Dependent releases have incompatible timelines
 - Solution: Adjust timeline, add buffer, communicate early
 
 **Technical Conflict**:
+
 - Problem: Two approaches to shared problem
 - Solution: Technical review, consensus, document decision
 
 **Priority Conflict**:
+
 - Problem: Projects prioritize features differently
 - Solution: Business prioritization, leadership decision
 

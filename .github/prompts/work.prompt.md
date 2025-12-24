@@ -16,10 +16,10 @@ Execute the assigned task within chimera-lab.org organization following structur
 4. Check for cross-repository dependencies
 
 **SECOND: Gather Technical Context**
-- **For organization structure**: Review [organization.knowledge.md](/.github/knowledge/organization.knowledge.md) and [ORGANIZATION_STRUCTURE.md](/.github/docs/ORGANIZATION_STRUCTURE.md)
-- **For templates**: Review [templates.knowledge.md](/.github/knowledge/templates.knowledge.md)
-- **For repository management**: Review [repository.knowledge.md](/.github/knowledge/repository.knowledge.md)
-- **For rules and validation**: Review [RULES.md](/.github/RULES.md)
+- **For organization structure**: Review [organization.knowledge.md](../knowledge/organization.knowledge.md) and [ORGANIZATION_STRUCTURE.md](../docs/ORGANIZATION_STRUCTURE.md)
+- **For templates**: Review [templates.knowledge.md](../knowledge/templates.knowledge.md)
+- **For repository management**: Review [repository.knowledge.md](../knowledge/repository.knowledge.md)
+- **For rules and validation**: Review [RULES.md](../RULES.md)
 - **For metadata**: Check `.chimera-lab/config/` files
 
 ## Planning Phase
@@ -148,7 +148,7 @@ console.print(table)
 ## Quality Checklist
 
 **Before Marking Task Complete**:
-- [ ] Code follows patterns from [CLI_GUIDELINES.md](../.github/docs/CLI_GUIDELINES.md)
+- [ ] Code follows patterns from [CLI_GUIDELINES.md](../docs/CLI_GUIDELINES.md)
 - [ ] Type hints on all public functions
 - [ ] Docstrings on all commands and functions
 - [ ] Error handling with clear messages
@@ -194,10 +194,10 @@ cmr <command> --invalid-option
 4. **CHANGELOG**: Document changes (coordinate with Project Manager)
 
 **Knowledge Base Updates**:
-- New commands → [commands.knowledge.md](../.github/knowledge/commands.knowledge.md)
-- New patterns → [system.knowledge.md](../.github/knowledge/system.knowledge.md)
-- Repository features → [repository.knowledge.md](../.github/knowledge/repository.knowledge.md)
-- Automation features → [automation.knowledge.md](../.github/knowledge/automation.knowledge.md)
+- New commands → [commands.knowledge.md](../knowledge/commands.knowledge.md)
+- New patterns → [system.knowledge.md](../knowledge/system.knowledge.md)
+- Repository features → [repository.knowledge.md](../knowledge/repository.knowledge.md)
+- Automation features → [automation.knowledge.md](../knowledge/automation.knowledge.md)
 
 ## Completion Criteria
 
