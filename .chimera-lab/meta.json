@@ -1,0 +1,59 @@
+{
+  "organization": {
+    "name": "chimera-lab.org",
+    "title": "Chimera Lab Organization",
+    "description": "Multi-repository organization for knowledge, tools, and projects across multiple domains",
+    "url": "https://chimera-lab.org",
+    "github_url": "https://github.com/chimera-lab"
+  },
+  "contact": {
+    "email": "contact@chimera-lab.org",
+    "website": "https://chimera-lab.org",
+    "repository": "https://github.com/chimera-lab/chimera-lab.org"
+  },
+  "version": "1.0.0",
+  "last_updated": "2024-01-15",
+  "governance": {
+    "primary_language": "en",
+    "timezone": "UTC",
+    "decision_model": "consensus"
+  },
+  "structure": {
+    "organization_type": "super-repository",
+    "management_pattern": "topic-based",
+    "repository_types": [
+      "topic",
+      "project",
+      "app",
+      "package",
+      "scaffold",
+      "template",
+      "overview",
+      "diy"
+    ]
+  },
+  "repositories": {
+    "total_count": 50,
+    "active_count": 45,
+    "archived_count": 5,
+    "topics": 18,
+    "projects": 15,
+    "apps": 3,
+    "packages": 2,
+    "scaffolds": 4,
+    "templates": 12,
+    "overviews": 10,
+    "diy": 1
+  },
+  "metadata_management": {
+    "location": ".chimera-lab/",
+    "files": [
+      "meta.json",
+      "settings.json",
+      "config/labels.json",
+      "config/milestones.json",
+      "config/repo.json"
+    ],
+    "validation_required": true
+  }
+}
