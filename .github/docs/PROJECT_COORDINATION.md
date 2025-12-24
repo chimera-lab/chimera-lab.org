@@ -642,7 +642,6 @@ For dependent projects:
    $auth = Auth::factory($config);
    $user = $auth->authenticate();
    ```
-   ```
 
 2. **Offer Support**:
    - Available for questions

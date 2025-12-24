@@ -484,19 +484,6 @@ git commit -m "chore(submodules): resolve conflict in <submodule-name>"
 git push
 ```
 
-**Organization becoming large** (many submodules):
-- Keep topics organized hierarchically
-- Archive or deprecate unused topics
-- Use `.chimera-lab/config/repo.json` to ignore stale repos
-- Consider splitting into multiple organizations if > 50 active submodules
-
-### Getting Help
-
-For organization-wide issues, create issue in organization root with label `type:org-rule` or `scope:cross-repo`.
-
-For individual repository issues, create issue in respective repository.
-
-For template-related issues, create issue in template repository or organization root with label `type:template`.
 
 ---
 
