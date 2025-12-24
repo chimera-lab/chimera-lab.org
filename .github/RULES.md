@@ -1,251 +1,460 @@
-# Chimera-lab - README Documents Syntax Rules
+# Chimera-LAB Organization Rules
 
-These rules should be applied to every README document present on the organization. It create a pattern that can be easily understood.
+Comprehensive rules and conventions for chimera-lab.org multi-repository organization structure, documentation, and management.
 
-- [Chimera-lab - README Documents Syntax Rules](#chimera-lab---readme-documents-syntax-rules)
-  - [Repository](#repository)
-    - [Name](#name)
-    - [Projects](#projects)
-      - [Stages](#stages)
-    - [Commits](#commits)
+- [Chimera-LAB Organization Rules](#chimera-lab-organization-rules)
+  - [Organization Structure](#organization-structure)
+    - [Super-Repository Pattern](#super-repository-pattern)
+    - [Topic-Based Organization](#topic-based-organization)
+    - [Submodules](#submodules)
+  - [Repository Naming](#repository-naming)
+    - [Required Suffixes](#required-suffixes)
+    - [Naming Conventions](#naming-conventions)
+  - [Repository Structure](#repository-structure)
+    - [Required Files](#required-files)
+    - [Metadata Files (.chimera-lab/)](#metadata-files-chimera-lab)
+    - [Template Submodule](#template-submodule)
+  - [Documentation Standards](#documentation-standards)
+    - [README.md Requirements](#readmemd-requirements)
+    - [Document Headers](#document-headers)
+    - [Link Prefixes](#link-prefixes)
+  - [Project Management](#project-management)
+    - [Project Stages](#project-stages)
     - [Issues](#issues)
-      - [Milestones](#milestones)
-      - [Labels](#labels)
-        - [Common](#common)
-        - [General](#general)
-        - [Infrastructure](#infrastructure)
-        - [Interface](#interface)
-        - [Embedded](#embedded)
-        - [Study](#study)
-    - [Branchs](#branchs)
-    - [Templates](#templates)
-      - [List of Templates](#list-of-templates)
-      - [Child MarkDown Documentation](#child-markdown-documentation)
-      - [Document Headers](#document-headers)
-        - [:paperclip: Appendix](#paperclip-appendix)
-        - [:book: Chapter](#book-chapter)
-        - [:hammer\_and\_wrench: Common problems](#hammer_and_wrench-common-problems)
-        - [:wrench: Configuration](#wrench-configuration)
-        - [:busts\_in\_silhouette: Contributing](#busts_in_silhouette-contributing)
-        - [:medal\_military: Credits](#medal_military-credits)
-        - [:control\_knobs: Customization](#control_knobs-customization)
-        - [:page\_facing\_up: Files](#page_facing_up-files)
-        - [:inbox\_tray: Installation](#inbox_tray-installation)
-        - [:loudspeaker: Introduction](#loudspeaker-introduction)
-        - [:package: Material](#package-material)
-        - [:notebook: Notes](#notebook-notes)
-        - [:telescope: Overview](#telescope-overview)
-        - [:books: References](#books-references)
-        - [:clipboard: Requirements](#clipboard-requirements)
-        - [:link: See also](#link-see-also)
-        - [:gear: Software](#gear-software)
-        - [:building\_construction: Structure](#building_construction-structure)
-        - [:newspaper: Sources](#newspaper-sources)
-        - [:file\_cabinet: Submodule](#file_cabinet-submodule)
-        - [:triangular\_ruler: Technologies](#triangular_ruler-technologies)
-        - [:mag: Terminology](#mag-terminology)
-        - [:memo: To-do list](#memo-to-do-list)
-        - [:toolbox: Tools](#toolbox-tools)
-        - [:keyboard: Usage](#keyboard-usage)
-        - [:scroll: License](#scroll-license)
-        - [:warning: Warnings](#warning-warnings)
-      - [Link prefixes](#link-prefixes)
-        - [:globe\_with\_meridians: External link](#globe_with_meridians-external-link)
-        - [:file\_cabinet: Chimera LAB's repositories](#file_cabinet-chimera-labs-repositories)
-        - [:file\_folder: Other repositories](#file_folder-other-repositories)
-        - [:mag: Terms](#mag-terms)
-      - [Links](#links)
+    - [Milestones](#milestones)
+    - [Labels](#labels)
+  - [Git Workflow](#git-workflow)
+    - [Commits](#commits)
+    - [Branches](#branchs)
+    - [Submodule Updates](#submodule-updates)
+  - [Templates](#templates)
+    - [Template Hierarchy](#template-hierarchy)
+    - [Template Application](#template-application)
+    - [Template Versioning](#template-versioning)
+  - [Validation](#validation)
+    - [Structure Validation](#structure-validation)
+    - [Metadata Validation](#metadata-validation)
 
-## Repository
+## Organization Structure
 
-### Name
+### Super-Repository Pattern
 
-- Repository should always have a suffix name, use an appropriated organization template to name it.
+chimera-lab.org uses super-repository pattern:
+- Organization root is a Git repository tracking all sub-repositories
+- Each topic/project is a Git submodule
+- Centralized metadata in `.chimera-lab/`
+- Coordinated updates via submodule references
 
-### Projects
+### Topic-Based Organization
 
-#### Stages
+Content organized in topic hierarchy:
+- Top-level topics group related knowledge/projects
+- Sub-topics provide deeper categorization
+- Repositories nested within appropriate topics
+- Maximum recommended depth: 3-4 levels
 
-| Stage           | Goal                | Exit Criteria Questions                                         |
-|-----------------|---------------------|-----------------------------------------------------------------|
-| **Ideating**    | Generate ideas      | Is there a clear problem and a viable solution idea?            |
-| **Planning**    | Define direction    | Is there a basic roadmap with tasks and time estimates?         |
-| **Building**    | Create MVP          | Are the main features working without critical crashes?         |
-| **Presenting**  | Make it usable      | Can someone use or demo the basic interface with guidance?      |
-| **Sharing**     | Show to the world   | Is it published with clear info and a way to get feedback?      |
-| **Polishing**   | Refine              | Is the code clean, modular, and the infra/configs stable?       |
-| **Releasing**   | Launch as product   | Is it ready for public use with support and monetization?       |
+**Example Structure**:
+```
+devops.topic/
+├── docker.topic/
+│   ├── docker.overview/
+│   └── docker-scaffold.topic/
+└── kubernetes.overview/
+```
 
-### Commits
+### Submodules
+
+**Requirements**:
+- Every topic/project must be a Git submodule
+- Submodule URL must be HTTPS or SSH GitHub URL
+- Submodule path must match directory structure
+- `.gitmodules` file maintained in organization root
+
+**Management**:
+```bash
+# Update all submodules
+git submodule update --remote --merge
+
+# Add new submodule
+git submodule add <repo-url> <path>
+```
+
+## Repository Naming
+
+### Required Suffixes
+
+Every repository MUST use one of these suffixes:
+
+| Suffix | Purpose | Example |
+|--------|---------|---------|
+| `.topic` | Knowledge topic/organization unit | `devops.topic` |
+| `.project` | Dedicated development project | `chimera-lab-blog.project` |
+| `.app` | Standalone application | `chimera-lab-cli.app` |
+| `.package` | Reusable library/package | `chimera-lab-laravel.package` |
+| `.scaffold` | Boilerplate generator | `wordpress-plugin-abstraction.scaffold` |
+| `.template` | GitHub repository template | `app.template` |
+| `.overview` | Study material/overview | `docker.overview` |
+| `.diy` | DIY/hardware project | `network-storage.diy` |
+
+### Naming Conventions
+
+- Use lowercase-with-hyphens format
+- Name must be descriptive and concise
+- Suffix must match repository purpose
+- No special characters except hyphens
+- No spaces in names
+
+**Valid**: `chimera-lab-cli.app`, `docker.overview`, `devops.topic`  
+**Invalid**: `ChimeraLabCLI.app`, `docker_overview`, `devops topic`
+
+## Repository Structure
+
+### Required Files
+
+Every repository MUST contain:
+
+```
+repository-name.suffix/
+├── .chimera-lab/
+│   └── meta.json                 # REQUIRED
+├── .github/
+│   └── .template/                # REQUIRED (Git submodule)
+├── .gitignore                    # REQUIRED
+├── LICENSE                       # REQUIRED
+└── README.md                     # REQUIRED
+```
+
+### Metadata Files (.chimera-lab/)
+
+**`meta.json`** (REQUIRED):
+```json
+{
+  "name": "repository-name.suffix",
+  "template": "template-name.template",
+  "parent": "parent-topic",
+  "level": 2,
+  "is_template": false
+}
+```
+
+**Fields**:
+- `name` - Repository name with suffix
+- `template` - Template used (from template.topic/)
+- `parent` - Parent topic directory
+- `level` - Hierarchical depth (0=org, 1=top-topic, 2+=nested)
+- `is_template` - Boolean indicating if this is a template
+
+**Optional Files**:
+- `issues.json` - Issue definitions
+- `milestones.json` - Milestone definitions
+- `labels.json` - Label definitions
+
+### Template Submodule
+
+Every repository MUST include template as submodule:
+
+```bash
+# Template stored in .github/.template/
+.github/.template/  → Git submodule pointing to template repository
+```
+
+**Purpose**:
+- Track template version used
+- Enable template updates
+- Maintain consistency with template structure
+
+## Documentation Standards
+
+### README.md Requirements
+
+Every README.md MUST:
+- Include template version comment: `<!--(version=a.b.c)-->`
+- Follow template structure from applied template
+- Use emoji prefixes for headers (see [Document Headers](#document-headers))
+- Include TOC for documents >100 lines
+- Maintain link conventions (see [Link Prefixes](#link-prefixes))
+
+**Template Version**:
+```markdown
+<!--(version=1.2.3)-->
+# Repository Name
+
+```
+
+**Version Semantics**:
+- `a` (major) - Changes require manual revision
+- `b` (minor) - Changes can be automatically resolved  
+- `c` (patch) - Changes can be safely ignored
+
+### Document Headers
+
+Document headers MUST have emoji prefixes:
+
+| Emoji | Header | Usage |
+|-------|--------|-------|
+| :paperclip: | Appendix | Supplemental notes, references |
+| :book: | Chapter | Content chapters or sections |
+| :hammer_and_wrench: | Common problems | Known issues and troubleshooting |
+| :wrench: | Configuration | Setup and configuration |
+| :busts_in_silhouette: | Contributing | Contribution guidelines |
+| :medal_military: | Credits | Acknowledgments and credits |
+| :control_knobs: | Customization | Customization options |
+| :chains: | Dependencies | Project dependencies |
+| :page_facing_up: | Files | File descriptions |
+| :inbox_tray: | Installation | Installation instructions |
+| :loudspeaker: | Introduction | Introduction section |
+| :package: | Material | Learning materials |
+| :notebook: | Notes | Additional notes |
+| :telescope: | Overview | Overview or summary |
+| :books: | References | External references |
+| :clipboard: | Requirements | Prerequisites and requirements |
+| :link: | See also | Related content |
+| :gear: | Software | Software information |
+| :building_construction: | Structure | Project structure |
+| :newspaper: | Sources | Information sources |
+| :file_cabinet: | Submodule | Submodule information |
+| :triangular_ruler: | Technologies | Technologies used |
+| :mag: | Terminology | Terms and definitions |
+| :memo: | To-do list | Task lists |
+| :toolbox: | Tools | Tools and utilities |
+| :keyboard: | Usage | Usage instructions |
+| :scroll: | License | License information |
+| :warning: | Warnings | Important warnings |
+
+### Link Prefixes
+
+Links MUST use appropriate prefixes:
+
+| Prefix | Type | Usage |
+|--------|------|-------|
+| :globe_with_meridians: | External link | Links outside chimera-lab |
+| :file_cabinet: | Chimera LAB repository | Internal chimera-lab repos |
+| :file_folder: | Other repository | Non-chimera-lab repos |
+| :mag: | Term/glossary | Terminology references |
+
+**Example**:
+```markdown
+- [:globe_with_meridians: Docker Documentation](https://docs.docker.com)
+- [:file_cabinet: chimera-lab-cli.app](https://github.com/chimera-lab/chimera-lab-cli.app)
+- [:mag: Containerization](#terminology)
+```
+
+## Project Management
+
+### Project Stages
+
+Projects follow 7-stage milestone system:
+
+| Stage | Goal | Exit Criteria |
+|-------|------|---------------|
+| **1 - Ideating** | Generate ideas | Clear problem + viable solution idea? |
+| **2 - Planning** | Define direction | Basic roadmap with tasks/estimates? |
+| **3 - Building** | Create MVP | Main features working without crashes? |
+| **4 - Presenting** | Make it usable | Someone can demo with guidance? |
+| **5 - Sharing** | Show to world | Published with feedback mechanism? |
+| **6 - Polishing** | Refine | Clean code, modular, stable infra? |
+| **7 - Releasing** | Launch as product | Ready for public use + support? |
 
 ### Issues
 
-#### Milestones
+**Organization-level issues** tracked in organization root  
+**Project-specific issues** tracked in respective repositories
 
-#### Labels
+**Issue Requirements**:
+- Clear title describing issue
+- Detailed description
+- Appropriate labels applied
+- Milestone assigned (if applicable)
+- Linked to related issues
 
-##### Common
+### Milestones
 
-- **bug** — Something isn't working `#d73a4a`
-- **documentation** — Improvements or additions to documentation `#0366d6`
-- **duplicate** — This issue or pull request already exists `#7e7e7e`
-- **enhancement** — New feature or request `#22863a`
-- **good first issue** — Good for newcomers `#7057ff`
-- **help wanted** — Extra attention is needed `#ff7f50`
-- **invalid** — This doesn't seem right `#e4e669`
-- **question** — Further information is requested `#ff69b4`
-- **wontfix** — This will not be worked on `#4b0000`
+Default milestones stored in `.chimera-lab/config/milestones.json`
 
-##### General
+Repositories may override with custom milestones in `.chimera-lab/milestones.json`
 
-- **logic** — Business or application logic `#af52fd`
-- **performance** — Performance related `#fbca04`
-- **testing** — Tests and quality assurance `#a4cc83`
-- **security** — Security concerns `#b31d28`
-- **logging** — Handling, storing, or visualizing logs `#5319e7`
-- **configuration** — Managing system configurations `#f6f8fa`
-- **authentication** — Verifying user or system identity `#8a2be2`
-- **authorization** — Controlling access permissions `#ff1493`
+### Labels
 
-##### Infrastructure
+Labels organized by category. Default labels in `.chimera-lab/config/labels.json`
 
-- **software** — General-purpose software project `#00bfff`
-- **infrastructure** — System infrastructure provisioning or configuration `#1d76db`
-- **containerization** — Use of containers to package and deploy software `#d93f0b`
-- **orchestration** — Managing container lifecycle and deployments `#e36209`
-- **automation** — Automating infrastructure `#006b75`
-- **load-balancing** — Distributing traffic across systems `#c1440e`
-- **monitoring** — Observing system performance and health `#7e7e7e`
-- **cicd** — Continuous integration and deployment pipelines `#0052cc`
-- **observability** — Visibility into system operations and metrics `#ff7f50`
-- **storage** — Projects using databases or storage solutions `#22863a`
-- **frontend** — Client-side applications, UI, or user interaction `#0e8a16`
-- **backend** — Server-side services or infrastructure `#6f42c1`
-- **microservice** — Microservice architecture components `#f9d0c4`
+**Categories**:
+- **Common** - Standard GitHub labels
+- **General** - Application logic, performance, testing
+- **Infrastructure** - DevOps, containers, CI/CD
+- **Interface** - UI/UX, desktop, mobile, CLI
+- **Embedded** - Hardware, firmware, OS-level
+- **Study** - Terminology, guides, chapters
 
-##### Interface
+Full label list available in `.github/docs/reference/labels-org.json`
 
-- **ui** — Related to user interface design `#e11d21`
-- **ux** — Related to user experience and usability `#ffa07a`
-- **desktop** — Web-based applications with user-facing interfaces `#0366d6`
-- **mobile** — Projects targeting iOS or Android platforms `#f66a0a`
-- **cli** — Command-line interface applications `#e99695`
+## Git Workflow
 
-##### Embedded
+### Commits
 
-- **hardware** — Related to physical components or electronics `#9370db`
-- **firmware** — Embedded software running on hardware devices `#20b2aa`
-- **operating-system** — OS-level projects or dependencies `#40e0d0`
+**Conventional Commits** format:
+```
+type(scope): description
 
-##### Study
+[optional body]
+[optional footer]
+```
 
-- **terminology** — Related to glossary, terms, definitions `#4f9f04`
-- **configuration** — Setup, environment, or files configuration `#aacb0c`
-- **guides** — Step-by-step tutorials or instructions `#9bb611`
-- **chapters** — Content divided by chapters or sections `#c1440e`
-- **problems** — Known issues or troubleshooting notes `#af52fd`
-- **appendix** — Supplemental notes, references, or credits `#f39abe`
-- **exercise** — Practice tasks or exercises `#758981`
-- **example** — Code or content examples `#9cbea5`
-- **review** — Content or code needing review or feedback `#a4cc83`
+**Types**:
+- `feat` - New feature
+- `fix` - Bug fix
+- `docs` - Documentation
+- `style` - Formatting
+- `refactor` - Code refactoring
+- `test` - Tests
+- `chore` - Maintenance
+
+**Scopes**: Repository-specific (e.g., `docs`, `ci`, `api`)
+
+**Examples**:
+```
+feat(templates): add Laravel app template
+docs(readme): update installation instructions
+chore(submodules): update all submodule references
+```
 
 ### Branchs
 
-### Templates
+**Branch Naming**:
+- `main` - Primary branch
+- `feature/<name>` - Feature branches
+- `bugfix/<name>` - Bug fix branches
+- `docs/<name>` - Documentation branches
+- `hotfix/<name>` - Urgent fixes
 
-- Version must be present as `<!--(version=a.b.c)-->`.
-  - 'a' - changes require revision.
-  - 'b' - changes can be resolved.
-  - 'c' - changes can be ignored.
-- Any change to the template that modifies the document structure should have its version updated.
-- Every header should have an emoji prefix as documented in [Document Headers](#document-headers)
+### Submodule Updates
 
-#### List of Templates
+**Workflow**:
+1. Work in submodule repository
+2. Commit and push changes in submodule
+3. Return to organization root
+4. Update submodule reference: `git add <submodule-path>`
+5. Commit: `git commit -m "chore(submodules): update <repo-name>"`
+6. Push organization changes
 
-- [:open_file_folder: chimera-lab/repository.template](https://github.com/chimera-lab/repository.template)
-  - [:open_file_folder: chimera-lab/topic.template](https://github.com/chimera-lab/topic.template)
-  - [:open_file_folder: chimera-lab/overview.template](https://github.com/chimera-lab/overview.template)
-  - [:open_file_folder: chimera-lab/diy.template](https://github.com/chimera-lab/diy.template)
-  - [:open_file_folder: chimera-lab/app.template](https://github.com/chimera-lab/app.template)
-    - [:open_file_folder: chimera-lab/laravel_app.template](https://github.com/chimera-lab/laravel_app.template)
-  - [:open_file_folder: chimera-lab/project.template](https://github.com/chimera-lab/project.template)
-  - [:open_file_folder: chimera-lab/scaffold.template](https://github.com/chimera-lab/scaffold.template)
-    - [:open_file_folder: chimera-lab/docker_scaffold.template](https://github.com/chimera-lab/docker_scaffold.template)
-  - [:open_file_folder: chimera-lab/org.template](https://github.com/chimera-lab/org.template)
+**Bulk Updates**:
+```bash
+# Update all submodules
+.chimera-lab/utils/git_update_submodules.sh
 
-#### Child MarkDown Documentation
+# Commit all submodule changes
+.chimera-lab/utils/git_commit_submodules.sh
+```
 
-Child documents should be presented in the template prefixed with "README.".
+## Templates
 
-#### Document Headers
+### Template Hierarchy
 
-Document headers must always have an emoji, must match the following terms or be the same as the previous header.
+Templates inherit from base `repository.template`:
 
-##### :paperclip: Appendix
+```
+repository.template (base)
+├── topic.template
+├── overview.template
+├── diy.template
+├── app.template
+│   ├── typescript_app.template
+│   └── laravel_app.template
+├── project.template
+├── package.template
+├── scaffold.template
+│   └── docker_scaffold.template
+└── org.template
+```
 
-##### :book: Chapter
+Full list: See `template.topic/` or `.github/knowledge/templates.knowledge.md`
 
-##### :hammer_and_wrench: Common problems
+### Template Application
 
-##### :wrench: Configuration
+**Via GitHub**:
+1. Use "Use this template" button on template repository
+2. Create new repository from template
+3. Add as submodule to organization
+4. Add template as submodule to `.github/.template/`
 
-##### :busts_in_silhouette: Contributing
+**Via CLI** (if chimera-lab-cli available):
+```bash
+cmr repo create --name new-repo.suffix --template template-name.template --topic parent.topic
+```
 
-##### :medal_military: Credits
+### Template Versioning
 
-##### :control_knobs: Customization
+Templates use semantic versioning: `MAJOR.MINOR.PATCH`
 
-##### :page_facing_up: Files
+**In template README.md**:
+```markdown
+<!--(version=1.2.3)-->
+```
 
-##### :inbox_tray: Installation
+**Update Process**:
+1. Update template repository
+2. Identify affected repositories
+3. Apply updates using utility scripts or CLI
+4. Test and validate
+5. Update documentation
 
-##### :loudspeaker: Introduction
+## Validation
 
-##### :package: Material
+### Structure Validation
 
-##### :notebook: Notes
+Organization structure validation checks:
+- [ ] All directories have correct suffix
+- [ ] All repositories are Git submodules
+- [ ] `.chimera-lab/meta.json` present in all repos
+- [ ] `.github/.template/` submodule present
+- [ ] Required files present (README.md, LICENSE, .gitignore)
+- [ ] Topic hierarchy logical (max 3-4 levels)
 
-##### :telescope: Overview
+**Validation Tools**:
+```bash
+# Via CLI (if available)
+cmr validate structure
+cmr rules check
+```
 
-##### :books: References
+### Metadata Validation
 
-##### :clipboard: Requirements
+Metadata validation checks:
+- [ ] `.chimera-lab/config/*.json` valid JSON
+- [ ] Repository meta.json fields complete
+- [ ] Template references valid
+- [ ] Parent-child relationships correct
+- [ ] Hierarchical levels accurate
 
-##### :link: See also
+**Validation**:
+```bash
+# Check JSON syntax
+jq empty .chimera-lab/config/labels.json
+jq empty .chimera-lab/config/milestones.json
+jq empty .chimera-lab/config/repo.json
 
-##### :gear: Software
+# Via CLI (if available)
+cmr validate metadata
+```
 
-##### :building_construction: Structure
+---
 
-##### :newspaper: Sources
+## Enforcement
 
-##### :file_cabinet: Submodule
+These rules are:
+- **REQUIRED** - Must be followed for all repositories
+- **Enforced** - Via automated validation when possible
+- **Coordinated** - By organization-manager AI agent
+- **Documented** - In organization knowledge base
 
-##### :triangular_ruler: Technologies
+Exceptions require organization-level approval and documentation.
 
-##### :mag: Terminology
+## References
 
-##### :memo: To-do list
-
-##### :toolbox: Tools
-
-##### :keyboard: Usage
-
-##### :scroll: License
-
-##### :warning: Warnings
-
-#### Link prefixes
-
-##### :globe_with_meridians: External link
-
-##### :file_cabinet: Chimera LAB's repositories
-
-##### :file_folder: Other repositories
-
-##### :mag: Terms
-
-#### Links
+- [ORGANIZATION_STRUCTURE.md](/.github/docs/ORGANIZATION_STRUCTURE.md) - Repository conventions
+- [ORGANIZATION_MANAGEMENT.md](/.github/docs/ORGANIZATION_MANAGEMENT.md) - Management workflows
+- [NAMING_CONVENTIONS.md](/.github/docs/NAMING_CONVENTIONS.md) - Detailed naming guide
+- [templates.knowledge.md](/.github/knowledge/templates.knowledge.md) - Template management
+- [organization.knowledge.md](/.github/knowledge/organization.knowledge.md) - Organization concepts
 
 - External link names shoud be prefixed with `:globe_with_meridians:` :globe_with_meridians:.
   - Example: `:globe_with_meridians: [Wikipedia](https://www.wikipedia.org/)` [:globe_with_meridians: Wikipedia](https://www.wikipedia.org/)
