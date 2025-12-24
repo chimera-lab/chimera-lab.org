@@ -1,325 +1,386 @@
-# Chimera-LAB
-
-This organization reflects a developing philosophy focused on structuring and sharing projects, ideas and study material in a clear, modular, and reusable way. The aim is to maintain personal organization while allowing for easy sharing, consistency, and external input when needed.
-
-A supporting tool is in development to automate and simplify this process. It is based on a customizable standard for folder and documentation structure, enabling the centralization and reuse of shared elements like terms, config blocks, and content fragments. Documentation can be created manually or assisted through IDE plugins, and templates can be extended to build modular structures.
-
-Planned features include:
-- modular templates with explicit rules
-- template inheritance for reusable structure
-- automatic documentation generation with reusable headers
-- centralized terms and reference management
-- advanced tagging and categorization
-- integrated backups and version control
-- merge control restricted to the owner
-- project and repository planning using structured files
-- graph generation to visualize relationships between folders, templates, and planned repositories
-
-The goal is to simplify how technical knowledge is maintained, updated, and shared — keeping everything structured, adaptable, and under control.
-
-Feedback is welcome and appreciated.
-
-## Repositories
-
-- [Chimera-LAB](#chimera-lab)
-  - [Repositories](#repositories)
-  - [administration.topic](#administrationtopic)
-    - [administration-tools.topic](#administration-toolstopic)
-      - [ansible.overview](#ansibleoverview)
-      - [open-ssh.overview](#open-sshoverview)
-    - [ubuntu-administration.topic](#ubuntu-administrationtopic)
-      - [ubuntu-apps-installation.overview](#ubuntu-apps-installationoverview)
-    - [windows-administration.topic](#windows-administrationtopic)
-      - [windows-apps-installation.overview](#windows-apps-installationoverview)
-  - [analytics.topic](#analyticstopic)
-    - [analytics-home.project](#analytics-homeproject)
-  - [art.topic](#arttopic)
-    - [architecture.topic](#architecturetopic)
-    - [music.topic](#musictopic)
-    - [painting.topic](#paintingtopic)
-      - [chimera-lab](#chimera-lab-1)
-    - [sculpture.topic](#sculpturetopic)
-  - [artificial-intelligence.topic](#artificial-intelligencetopic)
-    - [openai.overview](#openaioverview)
-  - [automation.topic](#automationtopic)
-    - [automation-home.project](#automation-homeproject)
-  - [contributions.topic](#contributionstopic)
-    - [laradock](#laradock)
-  - [devops.topic](#devopstopic)
-    - [docker.topic](#dockertopic)
-      - [docker.overview](#dockeroverview)
-      - [docker-scaffold.topic](#docker-scaffoldtopic)
-        - [laravel-workspace\_docker.scaffold](#laravel-workspace_dockerscaffold)
-        - [laravel-php-fpm\_docker.scaffold](#laravel-php-fpm_dockerscaffold)
-        - [mysql\_docker.scaffold](#mysql_dockerscaffold)
-        - [nginx\_docker.scaffold](#nginx_dockerscaffold)
-        - [php-cli\_docker.scaffold](#php-cli_dockerscaffold)
-        - [php-fpm\_docker.scaffold](#php-fpm_dockerscaffold)
-        - [php-admin\_docker.scaffold](#php-admin_dockerscaffold)
-  - [diy.topic](#diytopic)
-    - [network-storage.diy](#network-storagediy)
-    - [music-server.diy](#music-serverdiy)
-  - [finance.topic](#financetopic)
-    - [monthly-finance](#monthly-finance)
-    - [yearly-finance](#yearly-finance)
-  - [hardware.topic](#hardwaretopic)
-    - [hardware-programming.topic](#hardware-programmingtopic)
-  - [ideas.topic](#ideastopic)
-    - [desktop-lab](#desktop-lab)
-    - [desktop-sorter](#desktop-sorter)
-    - [emojijoiner](#emojijoiner)
-    - [homepage-builder](#homepage-builder)
-    - [one-site](#one-site)
-    - [solar-system](#solar-system)
-    - [sdata-drive](#sdata-drive)
-    - [tasks-lab](#tasks-lab)
-  - [network.topic](#networktopic)
-    - [network-security.topic](#network-securitytopic)
-      - [firewalls.topic](#firewallstopic)
-        - [ufw.overview](#ufwoverview)
-        - [nftables.overview](#nftablesoverview)
-        - [iptables.overview](#iptablesoverview)
-    - [iot.topic](#iottopic)
-    - [network-protocols.topic](#network-protocolstopic)
-      - [websockets.overview](#websocketsoverview)
-  - [original.topic](#originaltopic)
-    - [homepage-builder.project](#homepage-builderproject)
-  - [operating-systems.topic](#operating-systemstopic)
-    - [linux.topic](#linuxtopic)
-      - [linux-tools.overview](#linux-toolsoverview)
-      - [ubuntu.topic](#ubuntutopic)
-      - [ubuntu.overview](#ubuntuoverview)
-        - [ubuntu-installation.overview](#ubuntu-installationoverview)
-    - [windows.overview](#windowsoverview)
-      - [windows-installation.overview](#windows-installationoverview)
-  - [partnership.topic](#partnershiptopic)
-    - [mauserpt.topic](#mauserpttopic)
-      - [mauserpt-ean-scrapper\_infra.project](#mauserpt-ean-scrapper_infraproject)
-        - [mauserpt-ean-scrapper.project](#mauserpt-ean-scrapperproject)
-  - [security.topic](#securitytopic)
-    - [network-security.topic](#network-securitytopic-1)
-      - [firewalls.topic](#firewallstopic-1)
-        - [ufw.topic](#ufwtopic)
-        - [nftables.overview](#nftablesoverview-1)
-        - [iptables.overview](#iptablesoverview-1)
-    - [anti-virus](#anti-virus)
-  - [software.topic](#softwaretopic)
-    - [software-development.topic](#software-developmenttopic)
-      - [php.topic](#phptopic)
-        - [php-laravel.topic](#php-laraveltopic)
-          - [php-laravel-domains.app](#php-laravel-domainsapp)
-          - [php-laravel-api](#php-laravel-api)
-          - [php-laravel-catering](#php-laravel-catering)
-          - [php-laravel-ecommerce](#php-laravel-ecommerce)
-          - [php-laravel-gui-multi-theme](#php-laravel-gui-multi-theme)
-          - [php-laravel-hairdresser](#php-laravel-hairdresser)
-          - [php-laravel-product](#php-laravel-product)
-          - [php-laravel-restaurant](#php-laravel-restaurant)
-      - [mysql.overview](#mysqloverview)
-  - [template.topic](#templatetopic)
-    - [template-repository](#template-repository)
-    - [template-overview](#template-overview)
-    - [template-project](#template-project)
-    - [template-scaffold](#template-scaffold)
-    - [template-diy](#template-diy)
-    - [template-topic](#template-topic)
+# Chimera Lab Organization
 
-## [administration.topic](https://github.com/chimera-lab/administration.topic)
+Multi-repository organization for knowledge, tools, and projects across multiple domains.
 
-### [administration-tools.topic](https://github.com/chimera-lab/ansible.overview)
+## About
 
-#### [ansible.overview](https://github.com/chimera-lab/ansible.overview)
+**chimera-lab.org** is a structured multi-repository organization designed to manage knowledge, applications, and projects in a modular, reusable way. The organization uses:
 
-#### [open-ssh.overview](https://github.com/chimera-lab/open-ssh.overview)
+- **Topic-based hierarchy** - Knowledge organized by domain
+- **Standardized structure** - Templates for consistency
+- **Super-repository pattern** - Git submodules for coordinated management  
+- **Metadata-driven governance** - Centralized configuration
+- **AI agent system** - Automation for coordination and management
 
-### [ubuntu-administration.topic](https://github.com/chimera-lab/ubuntu-automation.overview)
+### Core Philosophy
 
-#### [ubuntu-apps-installation.overview](https://github.com/chimera-lab/ubuntu-apps-installation.overview)
+Maintain organizational structure while enabling:
+- Clear separation of concerns
+- Easy sharing and reuse
+- Consistency across repositories
+- Scalable growth
+- Efficient coordination
 
-### [windows-administration.topic](https://github.com/chimera-lab/windows-automation.overview)
+---
 
-#### [windows-apps-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
+## Quick Navigation
 
-## [analytics.topic](https://github.com/chimera-lab/analytics.topic)
+### Key Documentation
 
-### [analytics-home.project](https://github.com/chimera-lab/analytics)
+1. **[ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)** - Complete overview of all topics and repositories
+2. **[NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md)** - Repository naming rules and suffixes
+3. **[ORGANIZATION_MANAGEMENT.md](./docs/ORGANIZATION_MANAGEMENT.md)** - Operational procedures and workflows
+4. **[PROJECT_COORDINATION.md](./docs/PROJECT_COORDINATION.md)** - Multi-project coordination framework
+5. **[RULES.md](./RULES.md)** - Organization rules and standards
 
-## [art.topic](https://github.com/chimera-lab/art.topic)
+### For Contributors
 
-### [architecture.topic](https://github.com/chimera-lab/architecture.topic)
+- **Getting Started**: Review [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md) to understand repository types
+- **Creating Repositories**: See [ORGANIZATION_MANAGEMENT.md](./docs/ORGANIZATION_MANAGEMENT.md#adding-repositories)
+- **Using Templates**: Check [templates.knowledge.md](./knowledge/templates.knowledge.md)
+- **Understanding Structure**: Read [ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)
 
-### [music.topic](https://github.com/chimera-lab/music.topic)
+### For Project Managers
 
-### [painting.topic](https://github.com/chimera-lab/painting.topic)
+- **Feature Tracking**: [PROJECT_COORDINATION.md](./docs/PROJECT_COORDINATION.md) - Cross-repository features
+- **Dependency Management**: [PROJECT_COORDINATION.md - Dependency Management](./docs/PROJECT_COORDINATION.md#dependency-management)
+- **Release Coordination**: [PROJECT_COORDINATION.md - Release Coordination](./docs/PROJECT_COORDINATION.md#release-coordination)
+- **Communication**: [PROJECT_COORDINATION.md - Communication Patterns](./docs/PROJECT_COORDINATION.md#communication-patterns)
 
-#### [chimera-lab](https://github.com/chimera-lab/chimera-lab)
+### For Repository Managers
 
-### [sculpture.topic](https://github.com/chimera-lab/sculpture.topic)
+- **Template Management**: [create-template.prompt.md](./prompts/create-template.prompt.md), [apply-template.prompt.md](./prompts/apply-template.prompt.md), [update-template.prompt.md](./prompts/update-template.prompt.md)
+- **Metadata Configuration**: [METADATA_CONFIGURATION.md](./docs/METADATA_CONFIGURATION.md)
+- **Label Management**: [labels.json](./labels.json)
+- **Submodule Workflow**: [ORGANIZATION_MANAGEMENT.md - Submodule Operations](./docs/ORGANIZATION_MANAGEMENT.md#submodule-workflow)
 
-## [artificial-intelligence.topic](https://github.com/chimera-lab/artificial-intelligence.topic)
+---
 
-### [openai.overview](https://github.com/chimera-lab/openai)
+## Organization Structure
 
-## [automation.topic](https://github.com/chimera-lab/automation.topic)
+### Top-Level Topics
 
-### [automation-home.project](https://github.com/chimera-lab/automation)
+| Topic | Purpose | Examples |
+|-------|---------|----------|
+| **administration** | Admin tools and Linux/Windows management | Ansible, SSH, Supervisor |
+| **art** | Creative assets and designs | Logos, artworks |
+| **artificial-intelligence** | AI/ML resources and tools | OpenAI guides, embeddings |
+| **automation** | Automation frameworks | CI/CD, workflows |
+| **devops** | Infrastructure and DevOps | Docker, Kubernetes, deployment |
+| **finance** | Financial tracking | Budget tools, crypto |
+| **ideas** | Project proposals | Brainstorming, planning |
+| **legal** | Legal documents and policies | Privacy, terms, licenses |
+| **network** | Networking and protocols | Security, IoT, protocols |
+| **operating-systems** | OS knowledge | Linux, Windows, components |
+| **original** | Original implementations | CLI tool, original projects |
+| **projects** | Main project portfolio | Blog, chat, store, website |
+| **security** | Security practices | Network security, tools |
+| **template** | Repository templates | Base, app, project, etc. |
 
-## [contributions.topic](https://github.com/chimera-lab/contributions.topic)
+### Repository Types
 
-### [laradock](https://github.com/chimera-lab/laradock)
+```
+.topic     →  Knowledge organization (hierarchical)
+.project   →  Dedicated projects (full applications)
+.app       →  Applications/tools (executables)
+.package   →  Libraries/packages (reusable code)
+.scaffold  →  Boilerplates (code generators)
+.template  →  GitHub templates (standardized structure)
+.overview  →  Learning material (educational content)
+.diy       →  DIY/hardware projects
+```
 
-## [devops.topic](https://github.com/chimera-lab/devops)
+Full guide: [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md)
 
-### [docker.topic](https://github.com/chimera-lab/docker.overview)
+---
 
-#### [docker.overview](https://github.com/chimera-lab/docker.overview)
+## Agent System
 
-#### [docker-scaffold.topic](https://github.com/chimera-lab/docker-scaffold.topic)
+The organization uses AI agents for automation and coordination:
 
-##### [laravel-workspace_docker.scaffold](https://github.com/chimera-lab/laravel-workspace_docker.scaffold)
+| Agent | Purpose | Responsibilities |
+|-------|---------|------------------|
+| **organization-manager** | Multi-repo orchestration | Structure integrity, templates, coordination |
+| **project-manager** | Project lifecycle | Feature tracking, documentation, cross-repo coordination |
+| **repository-manager** | Git/GitHub automation | Submodules, templates, metadata, labels |
+| **python-architect** | Architecture design | Organization-wide patterns, consistency |
+| **cli-developer** | Implementation | Python projects, CLI tools |
+| **technical-writer** | Documentation | Organization docs, knowledge base |
+| **prompt-engineer** | Prompt management | Agent coordination, task execution |
 
-##### [laravel-php-fpm_docker.scaffold](https://github.com/chimera-lab/laravel-php-fpm_docker.scaffold)
+Agents are defined in [.github/agents/](./agents/)
 
-##### [mysql_docker.scaffold](https://github.com/chimera-lab/mysql_docker.scaffold)
+### Prompts
 
-##### [nginx_docker.scaffold](https://github.com/chimera-lab/nginx_docker.scaffold)
+Task-specific prompts for coordination:
 
-##### [php-cli_docker.scaffold](https://github.com/chimera-lab/php-cli_docker.scaffold)
+- **work.prompt.md** - Start new organization work
+- **plan-execution.prompt.md** - Plan multi-repo work
+- **commit.prompt.md** - Super-repository commit conventions
+- **create-template.prompt.md** - Create new template
+- **apply-template.prompt.md** - Apply template to repository
+- **update-template.prompt.md** - Update existing template
+- **validate-template.prompt.md** - Validate repository structure
 
-##### [php-fpm_docker.scaffold](https://github.com/chimera-lab/php-fpm_docker.scaffold)
+Located in [.github/prompts/](./prompts/)
 
-##### [php-admin_docker.scaffold](https://github.com/chimera-lab/php-admin_docker.scaffold)
+---
 
-## [diy.topic](https://github.com/chimera-lab/diy)
+## Knowledge Base
 
-### [network-storage.diy](https://github.com/chimera-lab/home-storage.diy)
+Concise, AI-optimized reference documentation:
 
-### [music-server.diy](https://github.com/chimera-lab/home-storage.diy)
+| File | Purpose | Audience |
+|------|---------|----------|
+| **system.knowledge.md** | Organization architecture | AI agents, developers |
+| **organization.knowledge.md** | Structure and concepts | AI agents, contributors |
+| **templates.knowledge.md** | Template system | AI agents, template managers |
+| **repository.knowledge.md** | Repository standards | AI agents, repository teams |
+| **automation.knowledge.md** | Rules and automation | AI agents, architects |
 
-## [finance.topic](https://github.com/chimera-lab/finance.topic)
+Located in [.github/knowledge/](./knowledge/)
 
-### [monthly-finance](https://github.com/chimera-lab/monthly-finance)
+---
 
-### [yearly-finance](https://github.com/chimera-lab/yearly-finance)
+## Operational Workflows
 
-## [hardware.topic](https://github.com/chimera-lab/hardware.topic)
+### Creating a New Repository
 
-### [hardware-programming.topic](https://github.com/chimera-lab/programming.topic)
+1. **Plan** - Decide type (suffix) and location (topic)
+2. **Select Template** - Choose appropriate base template
+3. **Create** - Use GitHub "Use this template"
+4. **Apply** - Follow [apply-template.prompt.md](./prompts/apply-template.prompt.md)
+5. **Add Submodule** - If in topic, add to parent's submodules
+6. **Document** - Update organization documentation
 
-## [ideas.topic](https://github.com/chimera-lab/ideas.topic)
+Details: [ORGANIZATION_MANAGEMENT.md](./docs/ORGANIZATION_MANAGEMENT.md#adding-repositories)
 
-### [desktop-lab](https://github.com/chimera-lab/desktop-lab)
+### Working Across Repositories
 
-### [desktop-sorter](https://github.com/chimera-lab/desktop-sorter)
+1. **Identify Dependencies** - What repos are affected?
+2. **Create Master Issue** - Central tracking for feature
+3. **Link Issues** - Create sub-issue in each affected repo
+4. **Coordinate Timeline** - Plan release sequence
+5. **Track Progress** - Update master issue regularly
+6. **Release** - Coordinate releases
 
-### [emojijoiner](https://github.com/chimera-lab/emojijoiner)
+Details: [PROJECT_COORDINATION.md](./docs/PROJECT_COORDINATION.md#cross-repository-features)
 
-### [homepage-builder](https://github.com/chimera-lab/homepage-builder)
+### Updating Templates
 
-### [one-site](https://github.com/chimera-lab/one-site)
+1. **Update** - Make changes to template repository
+2. **Version** - Increment version number
+3. **Apply** - Roll out to affected repositories
+4. **Document** - Update knowledge base and docs
+5. **Notify** - Announce changes
 
-### [solar-system](https://github.com/chimera-lab/solar-system)
+Details: [update-template.prompt.md](./prompts/update-template.prompt.md)
 
-### [sdata-drive](https://github.com/chimera-lab/sdata-drive)
+---
 
-### [tasks-lab](https://github.com/chimera-lab/tasks-lab)
+## Rules and Standards
 
-## [network.topic](https://github.com/chimera-lab/network.topic)
+### Naming Convention
 
-### [network-security.topic](https://github.com/chimera-lab/network-security.topic)
+**Format**: `<identifier>.<suffix>`
 
-#### [firewalls.topic](https://github.com/chimera-lab/firewalls.topic)
+**Examples**:
+- `chimera-lab-cli.app` - CLI application
+- `chimera-lab-blog.project` - Blog project
+- `devops.topic` - DevOps knowledge
+- `docker.overview` - Docker learning material
 
-##### [ufw.overview](https://github.com/chimera-lab/ufw)
+Full guide: [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md)
 
-##### [nftables.overview](https://github.com/chimera-lab/nftables.overview)
+### Repository Requirements
 
-##### [iptables.overview](https://github.com/chimera-lab/iptables.overview)
+Every repository must include:
 
-### [iot.topic](https://github.com/chimera-lab/iot.topic)
+- ✅ **README.md** - Project overview
+- ✅ **LICENSE** - MIT or appropriate
+- ✅ **.gitignore** - Version control exclusions
+- ✅ **.github/CONTRIBUTING.md** - How to contribute
+- ✅ **.github/workflows/** - CI/CD pipelines
+- ✅ **.chimera-lab/meta.json** - Repository metadata
 
-### [network-protocols.topic](https://github.com/chimera-lab/network-protocols.topic)
+### Metadata Structure
 
-#### [websockets.overview](https://github.com/chimera-lab/websockets.overview)
+```json
+{
+  "name": "repository-name",
+  "type": "app|project|package|etc",
+  "description": "What this does",
+  "language": "primary-language",
+  "templates_applied": ["repository.template", "app.template"]
+}
+```
 
-## [original.topic](https://github.com/chimera-lab/original.topic)
+Full details: [METADATA_CONFIGURATION.md](./docs/METADATA_CONFIGURATION.md)
 
-### [homepage-builder.project](https://github.com/chimera-lab/homepage-builder.project)
+### Issues and Labels
 
-## [operating-systems.topic](https://github.com/chimera-lab/operating-systems.topic)
+Organization maintains centralized labels: [labels.json](./.github/labels.json)
 
-### [linux.topic](https://github.com/chimera-lab/linux.topic)
+Categories:
+- **type:** - Issue type (bug, feature, docs, etc.)
+- **priority:** - Priority level
+- **scope:** - Affected scope (single-repo, cross-repo, org-wide)
+- **status:** - Current status
+- **effort:** - Effort estimate
+- **area:** - Domain-specific
 
-#### [linux-tools.overview](https://github.com/chimera-lab/linux-tools.overview)
+---
 
-#### [ubuntu.topic](https://github.com/chimera-lab/ubuntu.topic)
+## Collaboration
 
-#### [ubuntu.overview](https://github.com/chimera-lab/ubuntu.overview)
+### For Contributors
 
-##### [ubuntu-installation.overview](https://github.com/chimera-lab/ubuntu-installation.overview)
+1. **Understand Structure** - Read [ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)
+2. **Check Naming Rules** - Follow [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md)
+3. **Review RULES** - Check [RULES.md](./RULES.md) for standards
+4. **Find Your Project** - See [ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)
+5. **Submit PR** - Include clear description and reference issues
 
-### [windows.overview](https://github.com/chimera-lab/windows.overview)
+### For Project Leads
 
-#### [windows-installation.overview](https://github.com/chimera-lab/windows-apps-installation.overview)
+1. **Plan Timeline** - Use [PROJECT_COORDINATION.md](./docs/PROJECT_COORDINATION.md)
+2. **Track Progress** - Create cross-repo issues if needed
+3. **Coordinate Releases** - Plan release timeline
+4. **Communicate** - Use GitHub issues and discussions
+5. **Update Docs** - Keep documentation current
 
-## [partnership.topic](https://github.com/chimera-lab/partnership.topic)
+### For Architects
 
-### [mauserpt.topic](https://github.com/chimera-lab/mauserpt.topic)
+1. **Review Structure** - Ensure consistency
+2. **Plan Templates** - Create type-specific templates
+3. **Approve Changes** - Review architectural decisions
+4. **Guide Growth** - Plan organization scaling
+5. **Set Standards** - Define best practices
 
-#### [mauserpt-ean-scrapper_infra.project](https://github.com/chimera-lab/mauserpt-ean-scrapper_infra.project)
+---
 
-##### [mauserpt-ean-scrapper.project](https://github.com/chimera-lab/mauserpt-ean-scrapper.project)
+## Technology Stack
 
-## [security.topic](https://github.com/chimera-lab/security.topic)
+- **Git/GitHub** - Version control and collaboration
+- **GitHub Actions** - CI/CD pipelines
+- **GitHub Discussions** - Community communication
+- **Markdown** - Documentation format
+- **JSON** - Metadata and configuration
+- **YAML** - Workflow definitions
 
-### [network-security.topic](https://github.com/chimera-lab/network-security)
+### Languages/Frameworks
 
-#### [firewalls.topic](https://github.com/chimera-lab/firewalls.topic)
+- **Python** - CLI tools, scripts, utilities
+- **PHP/Laravel** - Web applications
+- **TypeScript/JavaScript** - Frontend and full-stack
+- **Docker** - Containerization and infrastructure
+- **Ansible** - Infrastructure as code
 
-##### [ufw.topic](https://github.com/chimera-lab/ufw.topic)
+---
 
-##### [nftables.overview](https://github.com/chimera-lab/nftables)
+## Maintenance
 
-##### [iptables.overview](https://github.com/chimera-lab/iptables)
+### Regular Tasks
 
-### [anti-virus](https://github.com/chimera-lab/anti-virus)
+**Weekly**:
+- Review new issues and PRs
+- Update cross-repo progress
+- Check CI/CD status
 
-## [software.topic](https://github.com/chimera-lab/software.topic)
+**Monthly**:
+- Review milestones and releases
+- Update dependencies
+- Analyze metrics
 
-### [software-development.topic](https://github.com/chimera-lab/software-development)
+**Quarterly**:
+- Plan next quarter
+- Review roadmap
+- Architecture review
 
-#### [php.topic](https://github.com/chimera-lab/php-programming)
+### Validation
 
-##### [php-laravel.topic](https://github.com/chimera-lab/php-laravel.overview)
+Regularly validate with [validate-template.prompt.md](./prompts/validate-template.prompt.md):
 
-###### [php-laravel-domains.app](https://github.com/chimera-lab/php-laravel-api)
+```bash
+# Check repository structure
+# Verify metadata consistency
+# Validate documentation
+# Test workflows
+```
 
-###### [php-laravel-api](https://github.com/chimera-lab/php-laravel-api)
+---
 
-###### [php-laravel-catering](https://github.com/chimera-lab/php-laravel-catering)
+## Resources
 
-###### [php-laravel-ecommerce](https://github.com/chimera-lab/php-laravel-ecommerce)
+### Documentation
+- [Complete Organization Structure](./docs/ORGANIZATION_STRUCTURE.md) - All topics and repos
+- [Naming Conventions Guide](./docs/NAMING_CONVENTIONS.md) - Suffix definitions and rules
+- [Organization Management](./docs/ORGANIZATION_MANAGEMENT.md) - Operational procedures
+- [Project Coordination](./docs/PROJECT_COORDINATION.md) - Multi-repo coordination
+- [Metadata Configuration](./docs/METADATA_CONFIGURATION.md) - Metadata system
+- [Organization Rules](./RULES.md) - Rules and standards
 
-###### [php-laravel-gui-multi-theme](https://github.com/chimera-lab/php-laravel-gui-multi-theme)
+### Knowledge Base
+- [System Knowledge](./knowledge/system.knowledge.md) - Architecture overview
+- [Organization Knowledge](./knowledge/organization.knowledge.md) - Concepts
+- [Templates Knowledge](./knowledge/templates.knowledge.md) - Template system
+- [Repository Knowledge](./knowledge/repository.knowledge.md) - Repository standards
+- [Automation Knowledge](./knowledge/automation.knowledge.md) - Rules and automation
 
-###### [php-laravel-hairdresser](https://github.com/chimera-lab/php-laravel-hairdresser)
+### Agents
+- [Organization Manager](./agents/organization-manager.agent.md) - Multi-repo orchestration
+- [Project Manager](./agents/project-manager.agent.md) - Project lifecycle
+- [Repository Manager](./agents/repository-manager.agent.md) - Git automation
+- [Technical Writer](./agents/technical-writer.agent.md) - Documentation
+- [Python Architect](./agents/python-architect.agent.md) - Architecture
+- [CLI Developer](./agents/cli-developer.agent.md) - Development
+- [Prompt Engineer](./agents/prompt-engineer.agent.md) - Prompt management
 
-###### [php-laravel-product](https://github.com/chimera-lab/php-laravel-product)
+### Prompts
+- [Work Prompt](./prompts/work.prompt.md) - Start work
+- [Plan Execution](./prompts/plan-execution.prompt.md) - Plan tasks
+- [Commit Prompt](./prompts/commit.prompt.md) - Git commits
+- [Create Template](./prompts/create-template.prompt.md) - Create template
+- [Apply Template](./prompts/apply-template.prompt.md) - Apply template
+- [Update Template](./prompts/update-template.prompt.md) - Update template
+- [Validate Template](./prompts/validate-template.prompt.md) - Validate structure
 
-###### [php-laravel-restaurant](https://github.com/chimera-lab/php-laravel-restaurant)
+---
 
-#### [mysql.overview](https://github.com/chimera-lab/mysql-overview)
+## Getting Help
 
-## [template.topic](https://github.com/chimera-lab/template-topic)
+### Questions?
 
-### [template-repository](https://github.com/chimera-lab/template-repository)
+- **About organization structure** → See [ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)
+- **About naming repositories** → Check [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md)
+- **About creating repositories** → Review [ORGANIZATION_MANAGEMENT.md](./docs/ORGANIZATION_MANAGEMENT.md)
+- **About multi-repo coordination** → Read [PROJECT_COORDINATION.md](./docs/PROJECT_COORDINATION.md)
+- **About rules** → Consult [RULES.md](./RULES.md)
 
-### [template-overview](https://github.com/chimera-lab/template-overview)
+### Issues and Feedback
 
-### [template-project](https://github.com/chimera-lab/template-project)
+- **Report issue** - Create GitHub issue with clear description
+- **Request feature** - Use "Feature Request" issue template
+- **Suggest improvement** - Start GitHub discussion
 
-### [template-scaffold](https://github.com/chimera-lab/template-scaffold)
+---
 
-### [template-diy](https://github.com/chimera-lab/template-scaffold)
+## License
 
-### [template-topic](https://github.com/chimera-lab/template-topic)
+All repositories in chimera-lab.org are licensed under their respective licenses (typically MIT).  
+See [legal.topic](../legal.topic/) for complete legal documentation.
+
+---
+
+## Contact
+
+- **Email**: contact@chimera-lab.org
+- **Website**: https://chimera-lab.org
+- **Repository**: https://github.com/chimera-lab/chimera-lab.org
+
+---
+
+**Last Updated**: January 2024  
+**Version**: 1.0.0
+
+See [.chimera-lab/meta.json](./.chimera-lab/meta.json) for organization metadata.
