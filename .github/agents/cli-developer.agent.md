@@ -151,40 +151,6 @@ class CustomModel(BaseModel):
     list_field: List[str] = Field(default_factory=list)
 ```
 
-### 5. GitHub API Integration
-
-**Pattern**:
-```python
-import os
-import requests
-from typing import Dict
-
-def get_github_headers() -> Dict[str, str]:
-    """Get GitHub API headers with token."""
-    token = os.getenv("CHIMERA_LAB_CLI_GITHUB_API")
-    if not token:
-        raise ValueError(
-            "CHIMERA_LAB_CLI_GITHUB_API environment variable not set"
-        )
-    return {
-        "Authorization": f"token {token}",
-        "Accept": "application/vnd.github.v3+json"
-    }
-
-def fetch_data(url: str) -> dict:
-    """Fetch data from GitHub API."""
-    response = requests.get(url, headers=get_github_headers())
-    response.raise_for_status()
-    return response.json()
-```
-
-**Best Practices**:
-- Always check for environment variable
-- Use Pydantic to validate responses
-- Handle rate limiting (429 status)
-- Provide clear error messages
-- Cache responses when appropriate (`.chimera-lab/issues.json`)
-
 ### 6. Rich Output Formatting
 
 **Console Messages**:

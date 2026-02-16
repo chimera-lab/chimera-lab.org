@@ -1,4 +1,5 @@
-@startmindmap tst
+@startmindmap Domains
+
 <style>
 mindmapDiagram { 
     node {
@@ -22,8 +23,6 @@ mindmapDiagram {
     }
 }
 </style>
-
-top to bottom direction
 
 + **chimera-lab.com**
 ++ **www**

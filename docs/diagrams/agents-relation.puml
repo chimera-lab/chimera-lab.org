@@ -1,0 +1,85 @@
+@startuml
+title Document Relationships
+
+' Primary and Secondary Color Scheme with High Contrast
+!define AGENT_COLOR #BBDEFB
+!define PROMPT_COLOR #E1BEE7
+!define SKILL_COLOR #FFE0B2
+!define KNOWLEDGE_COLOR #C8E6C9
+!define DOC_COLOR #FFCDD2
+
+!define AGENT_ARROW #1976D2
+!define PROMPT_ARROW #7B1FA2
+!define SKILL_ARROW #F57C00
+!define KNOWLEDGE_ARROW #388E3C
+!define DOC_ARROW #D32F2F
+
+skinparam component {
+  BorderColor #424242
+  FontName Arial
+  FontSize 11
+}
+
+skinparam package {
+  BackgroundColor<<agents>> #BBDEFB
+  BackgroundColor<<prompts>> #E1BEE7
+  BackgroundColor<<skills>> #FFE0B2
+  BackgroundColor<<knowledge>> #C8E6C9
+  BackgroundColor<<docs>> #FFCDD2
+  BorderColor #616161
+  FontStyle bold
+}
+
+package "Agents" <<agents>> {
+  component "cli-developer" as cli_developer AGENT_COLOR
+  component "organization-manager" as organization_manager AGENT_COLOR
+  component "project-manager" as project_manager AGENT_COLOR
+  component "prompt-engineer" as prompt_engineer AGENT_COLOR
+  component "python-architect" as python_architect AGENT_COLOR
+  component "repository-manager" as repository_manager AGENT_COLOR
+  component "technical-writer" as technical_writer AGENT_COLOR
+}
+
+package "Prompts" <<prompts>> {
+  component "apply-template.prompt" as apply_template_prompt PROMPT_COLOR
+  component "close-task.prompt" as close_task_prompt PROMPT_COLOR
+  component "commit.prompt" as commit_prompt PROMPT_COLOR
+  component "create-template.prompt" as create_template_prompt PROMPT_COLOR
+  component "explain-issue.prompt" as explain_issue_prompt PROMPT_COLOR
+  component "fix-context.prompt" as fix_context_prompt PROMPT_COLOR
+  component "fix-docs.prompt" as fix_docs_prompt PROMPT_COLOR
+  component "go.prompt" as go_prompt PROMPT_COLOR
+  component "plan-execution.prompt" as plan_execution_prompt PROMPT_COLOR
+  component "plan-milestone.prompt" as plan_milestone_prompt PROMPT_COLOR
+  component "recover-task.prompt" as recover_task_prompt PROMPT_COLOR
+  component "update-team.prompt" as update_team_prompt PROMPT_COLOR
+  component "update-template.prompt" as update_template_prompt PROMPT_COLOR
+  component "validate-template.prompt" as validate_template_prompt PROMPT_COLOR
+  component "work.prompt" as work_prompt PROMPT_COLOR
+}
+
+package "Documentation" <<docs>> {
+  component "CHANGELOG" as CHANGELOG DOC_COLOR
+  component "CODE_OF_CONDUCT" as CODE_OF_CONDUCT DOC_COLOR
+  component "CONTRIBUTING" as CONTRIBUTING DOC_COLOR
+  component "GOVERNANCE" as GOVERNANCE DOC_COLOR
+  component "README" as README DOC_COLOR
+}
+
+' Relationships
+apply_template_prompt -[PROMPT_ARROW]-> repository_manager
+close_task_prompt -[PROMPT_ARROW]-> repository_manager
+commit_prompt -[PROMPT_ARROW]-> repository_manager
+create_template_prompt -[PROMPT_ARROW]-> prompt_engineer
+explain_issue_prompt -[PROMPT_ARROW]-> project_manager
+fix_context_prompt -[PROMPT_ARROW]-> prompt_engineer
+fix_docs_prompt -[PROMPT_ARROW]-> technical_writer
+plan_execution_prompt -[PROMPT_ARROW]-> project_manager
+plan_milestone_prompt -[PROMPT_ARROW]-> project_manager
+recover_task_prompt -[PROMPT_ARROW]-> project_manager
+update_team_prompt -[PROMPT_ARROW]-> prompt_engineer
+update_template_prompt -[PROMPT_ARROW]-> repository_manager
+validate_template_prompt -[PROMPT_ARROW]-> organization_manager
+work_prompt -[PROMPT_ARROW]-> organization_manager
+
+@enduml

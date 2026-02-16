@@ -1,5 +1,5 @@
 {
-    "common": [
+    "default": [
         {
             "name": "bug",
             "description": "Something isn't working",
@@ -46,7 +46,7 @@
             "color": "#4b0000"
         }
     ],
-    "general": [
+    "app": [
         {
             "name": "logic",
             "description": "Business or application logic",
@@ -88,7 +88,7 @@
             "color": "#ff1493"
         }
     ],
-    "infrastructure": [
+    "infra": [
         {
             "name": "software",
             "description": "General-purpose software project",
@@ -155,7 +155,7 @@
             "color": "#f9d0c4"
         }
     ],
-    "interface": [
+    "ui": [
         {
             "name": "ui",
             "description": "Related to user interface design",
@@ -182,7 +182,7 @@
             "color": "#e99695"
         }
     ],
-    "embedded": [
+    "system": [
         {
             "name": "hardware",
             "description": "Related to physical components or electronics",
@@ -244,83 +244,6 @@
             "name": "review",
             "description": "Content or code needing review or feedback",
             "color": "#a4cc83"
-        }
-    ],
-    "organization": [
-        {
-            "name": "type:template",
-            "description": "Template updates or template-related work",
-            "color": "#c084fc"
-        },
-        {
-            "name": "type:org-rule",
-            "description": "Organization rules or conventions update",
-            "color": "#805ad5"
-        },
-        {
-            "name": "scope:cross-repo",
-            "description": "Affects multiple repositories",
-            "color": "#eb6e1f"
-        },
-        {
-            "name": "scope:org-wide",
-            "description": "Organization-wide change",
-            "color": "#d97706"
-        },
-        {
-            "name": "priority:critical",
-            "description": "Requires immediate attention",
-            "color": "#ff0000"
-        },
-        {
-            "name": "priority:high",
-            "description": "Important, should be addressed soon",
-            "color": "#ff5c5c"
-        },
-        {
-            "name": "priority:medium",
-            "description": "Normal priority work",
-            "color": "#ffa500"
-        },
-        {
-            "name": "priority:low",
-            "description": "Nice to have, can be deferred",
-            "color": "#ffd700"
-        },
-        {
-            "name": "status:backlog",
-            "description": "In backlog, not started",
-            "color": "#cfcfcf"
-        },
-        {
-            "name": "status:in-progress",
-            "description": "Currently being worked on",
-            "color": "#d4c5f9"
-        },
-        {
-            "name": "status:review",
-            "description": "Awaiting review",
-            "color": "#e2e8f0"
-        },
-        {
-            "name": "status:blocked",
-            "description": "Blocked by another issue or dependency",
-            "color": "#ff6b6b"
-        },
-        {
-            "name": "effort:small",
-            "description": "Can be completed in a few hours",
-            "color": "#b6e3b6"
-        },
-        {
-            "name": "effort:medium",
-            "description": "Can be completed in 1-3 days",
-            "color": "#7cb342"
-        },
-        {
-            "name": "effort:large",
-            "description": "Requires significant work (3+ days)",
-            "color": "#558b2f"
         }
     ]
 }

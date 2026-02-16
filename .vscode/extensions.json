@@ -1,0 +1,23 @@
+{
+    "recommendations": [
+        // GitHub
+        "github.vscode-pull-request-github",
+        // AI
+        "github.copilot-chat",
+        // Markdown
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "bierner.markdown-emoji",
+        "bierner.markdown-preview-github-styles",
+        // Configuration files
+        "redhat.vscode-yaml",
+        "tamasfe.even-better-toml",
+        // Code quality and formatting
+        "editorconfig.editorconfig",
+        // Development tools
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode.remote-explorer",
+        "jebbs.plantuml",
+    ]
+}

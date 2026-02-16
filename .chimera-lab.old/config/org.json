@@ -1,0 +1,30 @@
+{
+  "org_name": "chimera-lab",
+  "github_org": "chimera-lab",
+  "slogan": "Experimenting...",
+  "contacts": {
+    "email": {
+      "support": "support@chimera-lab.com",
+      "security": "security@chimera-lab.com",
+      "feedback": "feedback@chimera-lab.com"
+    }
+  },
+  "template_root": "template.topic",
+  "version": 1,
+  "defaults": {
+    "repo_init": {
+      "template": null,
+      "validate": true,
+      "copy_missing": true
+    },
+    "docs_fix": {
+      "template": null,
+      "include_github": false,
+      "overwrite": false
+    },
+    "issues_file": "issues.json",
+    "milestones_file": "milestones.json",
+    "labels_file": "labels.json"
+  },
+  "updated_at": "2025-12-26T21:18:36.344266+00:00"
+}

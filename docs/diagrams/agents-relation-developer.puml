@@ -1,0 +1,103 @@
+@startuml
+title Document Relationships
+
+skinparam linetype ortho
+
+' Primary and Secondary Color Scheme with High Contrast
+!define AGENT_COLOR #BBDEFB
+!define PROMPT_COLOR #E1BEE7
+!define SKILL_COLOR #FFE0B2
+!define KNOWLEDGE_COLOR #C8E6C9
+!define DOC_COLOR #FFCDD2
+
+!define AGENT_ARROW #1976D2
+!define PROMPT_ARROW #7B1FA2
+!define SKILL_ARROW #F57C00
+!define KNOWLEDGE_ARROW #388E3C
+!define DOC_ARROW #D32F2F
+
+skinparam component {
+  BorderColor #424242
+  FontName Arial
+  FontSize 11
+}
+
+skinparam package {
+  BackgroundColor<<agents>> #BBDEFB
+  BackgroundColor<<prompts>> #E1BEE7
+  BackgroundColor<<skills>> #FFE0B2
+  BackgroundColor<<knowledge>> #C8E6C9
+  BackgroundColor<<docs>> #FFCDD2
+  BorderColor #616161
+  FontStyle bold
+}
+
+package "Agents" <<agents>> {
+  component "developer" as developer AGENT_COLOR
+}
+
+package "Prompts" <<prompts>> {
+  component "code.prompt" as code_prompt PROMPT_COLOR
+  component "explain.prompt" as explain_prompt PROMPT_COLOR
+  component "research.prompt" as research_prompt PROMPT_COLOR
+}
+
+package "Skills" <<skills>> {
+  component "code" as code SKILL_COLOR
+  component "explain" as explain SKILL_COLOR
+  component "research" as research SKILL_COLOR
+}
+
+package "Knowledge" <<knowledge>> {
+  component "automation" as automation KNOWLEDGE_COLOR
+  component "cmr" as cmr KNOWLEDGE_COLOR
+  component "deployment" as deployment KNOWLEDGE_COLOR
+  component "operating" as operating KNOWLEDGE_COLOR
+  component "researching" as researching KNOWLEDGE_COLOR
+  component "validating" as validating KNOWLEDGE_COLOR
+}
+
+package "Documentation" <<docs>> {
+  component "ARCHITECTURE" as ARCHITECTURE DOC_COLOR
+  component "CHANGELOG" as CHANGELOG DOC_COLOR
+  component "CONTRIBUTING" as CONTRIBUTING DOC_COLOR
+  component "DEVELOPMENT" as DEVELOPMENT DOC_COLOR
+  component "ORGANIZATION" as ORGANIZATION DOC_COLOR
+  component "README" as README DOC_COLOR
+  component "SECURITY" as SECURITY DOC_COLOR
+  component "STRUCTURE" as STRUCTURE DOC_COLOR
+}
+
+' Relationships
+automation -[KNOWLEDGE_ARROW]-> ARCHITECTURE
+automation -[KNOWLEDGE_ARROW]-> cmr
+automation -[KNOWLEDGE_ARROW]-> operating
+cmr -[KNOWLEDGE_ARROW]-> ORGANIZATION
+cmr -[KNOWLEDGE_ARROW]-> README
+cmr -[KNOWLEDGE_ARROW]-> STRUCTURE
+code -[SKILL_ARROW]-> automation
+code -[SKILL_ARROW]-> deployment
+code -[SKILL_ARROW]-> operating
+code_prompt -[PROMPT_ARROW]-> developer
+deployment -[KNOWLEDGE_ARROW]-> ARCHITECTURE
+deployment -[KNOWLEDGE_ARROW]-> CHANGELOG
+deployment -[KNOWLEDGE_ARROW]-> operating
+deployment -[KNOWLEDGE_ARROW]-> validating
+developer -[AGENT_ARROW]-> code
+developer -[AGENT_ARROW]-> explain
+developer -[AGENT_ARROW]-> research
+explain -[SKILL_ARROW]-> researching
+explain_prompt -[PROMPT_ARROW]-> developer
+operating -[KNOWLEDGE_ARROW]-> CONTRIBUTING
+operating -[KNOWLEDGE_ARROW]-> DEVELOPMENT
+operating -[KNOWLEDGE_ARROW]-> SECURITY
+research -[SKILL_ARROW]-> researching
+research_prompt -[PROMPT_ARROW]-> developer
+researching -[KNOWLEDGE_ARROW]-> ARCHITECTURE
+researching -[KNOWLEDGE_ARROW]-> ORGANIZATION
+researching -[KNOWLEDGE_ARROW]-> README
+researching -[KNOWLEDGE_ARROW]-> STRUCTURE
+validating -[KNOWLEDGE_ARROW]-> ORGANIZATION
+validating -[KNOWLEDGE_ARROW]-> STRUCTURE
+
+@enduml

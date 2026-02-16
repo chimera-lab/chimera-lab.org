@@ -1,0 +1,30 @@
+[
+  {
+    "title": "1 - Ideating",
+    "description": "Generate ideas - Is there a clear problem and a viable solution idea?"
+  },
+  {
+    "title": "2 - Planning",
+    "description": "Define direction % Is there a basic roadmap with tasks and time estimates?"
+  },
+  {
+    "title": "3 - Building",
+    "description": "Create MVP - Are the main features working without critical crashes?"
+  },
+  {
+    "title": "4 - Presenting",
+    "description": "Make it usable - Can someone use or demo the basic interface with guidance?"
+  },
+  {
+    "title": "5 - Sharing",
+    "description": "Show to the world - Is it published with clear info and a way to get feedback?"
+  },
+  {
+    "title": "6 - Polishing",
+    "description": "Refine - Is the code clean, modular, and the infra/configs stable?"
+  },
+  {
+    "title": "7 - Releasing",
+    "description": "Launch as product - Is it ready for public use with support and monetization?"
+  }
+]

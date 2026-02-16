@@ -1,0 +1,32 @@
+# Pre-commit hooks for code quality - customize for your project type
+repos:
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+
+  # Markdown formatting
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 1.0.0
+    hooks:
+      - id: mdformat
+        args: [--wrap=100]
+        additional_dependencies:
+          - mdformat-gfm
+
+  # YAML formatting
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v4.5.1
+    hooks:
+      - id: prettier
+        types: [yaml]

@@ -1,0 +1,37 @@
+@startuml
+title Document Relationships
+
+' Primary and Secondary Color Scheme with High Contrast
+!define AGENT_COLOR #BBDEFB
+!define PROMPT_COLOR #E1BEE7
+!define SKILL_COLOR #FFE0B2
+!define KNOWLEDGE_COLOR #C8E6C9
+!define DOC_COLOR #FFCDD2
+
+!define AGENT_ARROW #1976D2
+!define PROMPT_ARROW #7B1FA2
+!define SKILL_ARROW #F57C00
+!define KNOWLEDGE_ARROW #388E3C
+!define DOC_ARROW #D32F2F
+
+skinparam component {
+  BorderColor #424242
+  FontName Arial
+  FontSize 11
+}
+
+skinparam package {
+  BackgroundColor<<agents>> #BBDEFB
+  BackgroundColor<<prompts>> #E1BEE7
+  BackgroundColor<<skills>> #FFE0B2
+  BackgroundColor<<knowledge>> #C8E6C9
+  BackgroundColor<<docs>> #FFCDD2
+  BorderColor #616161
+  FontStyle bold
+}
+
+package "Agents" <<agents>> {
+  component "cli-developer" as cli_developer AGENT_COLOR
+}
+
+@enduml

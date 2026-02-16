@@ -1,0 +1,88 @@
+@startmindmap Projects
+
+<style>
+mindmapDiagram { 
+    node {
+        BackgroundColor #FF0000
+    }
+    :depth(1) {
+        BackgroundColor #00FF00
+    }
+    :depth(2) {
+        BackgroundColor #0000FF
+        FontColor white
+    }
+    :depth(3) {
+        BackgroundColor #FFFF00
+    }
+    :depth(4) {
+        BackgroundColor #FF00FF
+    }
+    :depth(5) {
+        BackgroundColor #00FFFF
+    }
+}
+</style>
+
+left to right direction
+
++ **chimera-lab.org**
+++ **blog**
++++ **posts**
++++ **guides**
+++ **cli**
++++ **project management**
++++ **docs generation**
++++ **templates**
++++ **issue automation**
+++ **open-source playground**
++++ **experiments**
++++ **learning modules**
+
++ **chimera-lab.com**
+++ **www**
++++ **website core**
++++ **components**
++++ **auth**
++++ **user dashboard**
+++ **chat**
++++ **chatops**
++++ **rocketchat**
++++ **botpress**
++++ **AI modules**
+++ **store**
++++ **product catalog**
++++ **wordpress / woocommerce**
+++++ **plugins**
+++ **app**
++++ **restaurant**
+++++ **menus**
+++++ **queues**
+++++ **reservations**
+++++ **users & roles**
++++ **hairdresser**
+++++ **services**
+++++ **reservations**
+++++ **users & roles**
++++ **catering**
++++ **blog**
++++ **product**
+++ **dev**
++++ **infra**
+++++ **CI/CD pipelines**
+++++ **monitoring**
+++++ **security**
+++++ **local registry**
+++++ **backup & storage**
++++ **templates**
+++++ **laravel apps**
+++++ **scaffold projects**
++++ **docs**
+++++ **internal guides**
+++++ **project templates**
+++++ **knowledge base**
++++ **maintenance**
+++++ **general system maintenance**
+++++ **wordpress / woocommerce assistance for clients**
+
+@endmindmap

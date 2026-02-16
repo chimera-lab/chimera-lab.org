@@ -1,0 +1,94 @@
+@startuml
+title Document Relationships
+
+skinparam linetype ortho
+
+' Primary and Secondary Color Scheme with High Contrast
+!define AGENT_COLOR #BBDEFB
+!define PROMPT_COLOR #E1BEE7
+!define SKILL_COLOR #FFE0B2
+!define KNOWLEDGE_COLOR #C8E6C9
+!define DOC_COLOR #FFCDD2
+
+!define AGENT_ARROW #1976D2
+!define PROMPT_ARROW #7B1FA2
+!define SKILL_ARROW #F57C00
+!define KNOWLEDGE_ARROW #388E3C
+!define DOC_ARROW #D32F2F
+
+skinparam component {
+  BorderColor #424242
+  FontName Arial
+  FontSize 11
+}
+
+skinparam package {
+  BackgroundColor<<agents>> #BBDEFB
+  BackgroundColor<<prompts>> #E1BEE7
+  BackgroundColor<<skills>> #FFE0B2
+  BackgroundColor<<knowledge>> #C8E6C9
+  BackgroundColor<<docs>> #FFCDD2
+  BorderColor #616161
+  FontStyle bold
+}
+
+package "Agents" <<agents>> {
+  component "manager" as manager AGENT_COLOR
+}
+
+package "Prompts" <<prompts>> {
+  component "plan.prompt" as plan_prompt PROMPT_COLOR
+}
+
+package "Skills" <<skills>> {
+  component "explain" as explain SKILL_COLOR
+  component "plan" as plan SKILL_COLOR
+  component "research" as research SKILL_COLOR
+  component "review" as review SKILL_COLOR
+}
+
+package "Knowledge" <<knowledge>> {
+  component "planning" as planning KNOWLEDGE_COLOR
+  component "researching" as researching KNOWLEDGE_COLOR
+  component "reviewing" as reviewing KNOWLEDGE_COLOR
+  component "validating" as validating KNOWLEDGE_COLOR
+}
+
+package "Documentation" <<docs>> {
+  component "ARCHITECTURE" as ARCHITECTURE DOC_COLOR
+  component "CHANGELOG" as CHANGELOG DOC_COLOR
+  component "CODE_OF_CONDUCT" as CODE_OF_CONDUCT DOC_COLOR
+  component "CONTRIBUTING" as CONTRIBUTING DOC_COLOR
+  component "ORGANIZATION" as ORGANIZATION DOC_COLOR
+  component "README" as README DOC_COLOR
+  component "ROADMAP" as ROADMAP DOC_COLOR
+  component "STRUCTURE" as STRUCTURE DOC_COLOR
+}
+
+' Relationships
+explain -[SKILL_ARROW]-> researching
+manager -[AGENT_ARROW]-> explain
+manager -[AGENT_ARROW]-> plan
+manager -[AGENT_ARROW]-> research
+manager -[AGENT_ARROW]-> review
+plan -[SKILL_ARROW]-> planning
+plan_prompt -[PROMPT_ARROW]-> manager
+planning -[KNOWLEDGE_ARROW]-> CHANGELOG
+planning -[KNOWLEDGE_ARROW]-> CONTRIBUTING
+planning -[KNOWLEDGE_ARROW]-> ROADMAP
+research -[SKILL_ARROW]-> researching
+researching -[KNOWLEDGE_ARROW]-> ARCHITECTURE
+researching -[KNOWLEDGE_ARROW]-> ORGANIZATION
+researching -[KNOWLEDGE_ARROW]-> README
+researching -[KNOWLEDGE_ARROW]-> STRUCTURE
+review -[SKILL_ARROW]-> reviewing
+review -[SKILL_ARROW]-> validating
+reviewing -[KNOWLEDGE_ARROW]-> ARCHITECTURE
+reviewing -[KNOWLEDGE_ARROW]-> CODE_OF_CONDUCT
+reviewing -[KNOWLEDGE_ARROW]-> CONTRIBUTING
+reviewing -[KNOWLEDGE_ARROW]-> ORGANIZATION
+reviewing -[KNOWLEDGE_ARROW]-> STRUCTURE
+validating -[KNOWLEDGE_ARROW]-> ORGANIZATION
+validating -[KNOWLEDGE_ARROW]-> STRUCTURE
+
+@enduml
