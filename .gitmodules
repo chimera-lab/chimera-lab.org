@@ -52,3 +52,15 @@
 [submodule ".chimera-lab/.template"]
 	path = .chimera-lab/.template
 	url = git@github.com:chimera-lab/repository.template.git
+[submodule "formal-sciences.topic"]
+	path = formal-sciences.topic
+	url = git@github.com:chimera-lab/formal-sciences.topic.git
+[submodule "computer-science.topic"]
+	path = computer-science.topic
+	url = git@github.com:chimera-lab/computer-science.topic.git
+[submodule "social-sciences.topic"]
+	path = social-sciences.topic
+	url = git@github.com:chimera-lab/social-sciences.topic.git
+[submodule "arts.topic"]
+	path = arts.topic
+	url = git@github.com:chimera-lab/arts.topic.git
