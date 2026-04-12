@@ -3,19 +3,18 @@
 ## :book: Table of Contents
 
 - [:file_folder: Development Environment Setup](./#file_folder-development-environment-setup)
-  - [:book: Table of Contents](./#book-table-of-contents)
   - [:clipboard: Requirements](./#clipboard-requirements)
   - [:inbox_tray: Installation](./#inbox_tray-installation)
     - [:inbox_tray: Clone the repository](./#inbox_tray-clone-the-repository)
     - [:inbox_tray: Create development environment](./#inbox_tray-create-development-environment)
     - [:inbox_tray: Install dependencies](./#inbox_tray-install-dependencies)
     - [:inbox_tray: Install pre-commit hooks (optional but recommended)](./#inbox_tray-install-pre-commit-hooks-optional-but-recommended)
-  - [:keyboard: Usage](./#keyboard-usage)
+  - [:rocket: Usage](./#rocket-usage)
   - [:toolbox: Tools](./#toolbox-tools)
     - [:toolbox: Running Tests](./#toolbox-running-tests)
     - [:toolbox: Code Quality](./#toolbox-code-quality)
     - [:toolbox: Pre-commit Hooks](./#toolbox-pre-commit-hooks)
-  - [:wrench: Configuration](./#wrench-configuration)
+  - [:gear: Configuration](./#gear-configuration)
   - [:control_knobs: Customization](./#control_knobs-customization)
   - [:hammer_and_wrench: Common Problems](./#hammer_and_wrench-common-problems)
     - [:hammer_and_wrench: Dependency errors](./#hammer_and_wrench-dependency-errors)
@@ -55,7 +54,7 @@ make install
 pre-commit install
 ```
 
-## :keyboard: Usage
+## :rocket: Usage
 
 Use Make (recommended) for common development tasks:
 
@@ -106,7 +105,7 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-## :wrench: Configuration
+## :gear: Configuration
 
 If using VS Code, the workspace is pre-configured with:
 

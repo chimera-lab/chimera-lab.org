@@ -7,15 +7,17 @@ description: Patterns for verifying structure, templates, and organization consi
 
 ## :book: Table of Contents
 
+- [name: validating
+description: Patterns for verifying structure, templates, and organization consistency](./#name-validating-description-patterns-for-verifying-structure-templates-and-organization-consistency)
 - [:file_folder: Validating Knowledge](./#file_folder-validating-knowledge)
-  - [:book: Table of Contents](./#book-table-of-contents)
-  - [:telescope: Overview](./#telescope-overview)
-  - [:world_map: Guides](./#world_map-guides)
-    - [:world_map: Structure Validation](./#world_map-structure-validation)
-    - [:world_map: Template Validation](./#world_map-template-validation)
-    - [:world_map: Naming Conventions](./#world_map-naming-conventions)
-    - [:world_map: Semantic Header Vocabulary](./#world_map-semantic-header-vocabulary)
-  - [:books: References](./#books-references)
+- [:telescope: Overview](./#telescope-overview)
+- [:world_map: Guides](./#world_map-guides)
+  - [:world_map: Structure Validation](./#world_map-structure-validation)
+  - [:world_map: Template Validation](./#world_map-template-validation)
+  - [:world_map: Naming Conventions](./#world_map-naming-conventions)
+  - [:world_map: Semantic Header Vocabulary](./#world_map-semantic-header-vocabulary)
+  - [:world_map: Task completion](./#world_map-task-completion)
+- [:books: References](./#books-references)
 
 ## :telescope: Overview
 

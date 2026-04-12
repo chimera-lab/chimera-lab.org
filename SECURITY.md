@@ -3,7 +3,6 @@
 ## :book: Table of Contents
 
 - [:file_folder: Security](./#file_folder-security)
-  - [:book: Table of Contents](./#book-table-of-contents)
   - [:warning: Warnings](./#warning-warnings)
     - [:warning: Don't open an issue](./#warning-dont-open-an-issue)
     - [:warning: Report privately first](./#warning-report-privately-first)

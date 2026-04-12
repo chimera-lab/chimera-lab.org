@@ -7,15 +7,16 @@ description: Patterns for executing development, Git, and deployment operations
 
 ## :book: Table of Contents
 
+- [name: operating
+description: Patterns for executing development, Git, and deployment operations](./#name-operating-description-patterns-for-executing-development-git-and-deployment-operations)
 - [:file_folder: Operating Knowledge](./#file_folder-operating-knowledge)
-  - [:book: Table of Contents](./#book-table-of-contents)
-  - [:telescope: Overview](./#telescope-overview)
-  - [:world_map: Guides](./#world_map-guides)
-    - [:world_map: Git Operations](./#world_map-git-operations)
-    - [:world_map: Deployment Workflow](./#world_map-deployment-workflow)
-    - [:world_map: Automation Tools](./#world_map-automation-tools)
-    - [:world_map: Repository Context](./#world_map-repository-context)
-  - [:books: References](./#books-references)
+- [:telescope: Overview](./#telescope-overview)
+- [:world_map: Guides](./#world_map-guides)
+  - [:world_map: Git Operations](./#world_map-git-operations)
+  - [:world_map: Deployment Workflow](./#world_map-deployment-workflow)
+  - [:world_map: Automation Tools](./#world_map-automation-tools)
+  - [:world_map: Repository Context](./#world_map-repository-context)
+- [:books: References](./#books-references)
 
 ## :telescope: Overview
 

@@ -3,9 +3,8 @@
 ## :book: Table of Contents
 
 - [:file_folder: Agents](./#file_folder-agents)
-  - [:book: Table of Contents](./#book-table-of-contents)
   - [:telescope: Overview](./#telescope-overview)
-  - [:book: References](./#book-references)
+  - [:books: References](./#books-references)
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Layer separation pattern](./#building_construction-layer-separation-pattern)
     - [:building_construction: Key Principles](./#building_construction-key-principles)
@@ -23,7 +22,7 @@ You are a Chimera Agent Manager following chimera-lab organization rules. You or
 
 **You do NOT do the work yourself. You decompose tasks, delegate to subagents, track progress, and synthesize results.**
 
-## :book: References
+## :books: References
 
 - [:page_facing_up: agents-relation.puml](./docs/diagrams/agents-relation.puml) - Visualizes relationships between the agent manager, subagents, prompts, skills, knowledge modules, and documentation.
 

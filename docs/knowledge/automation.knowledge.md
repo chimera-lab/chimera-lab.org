@@ -7,15 +7,16 @@ description: Patterns for automated workflows, CI/CD, and repository automation
 
 ## :book: Table of Contents
 
+- [name: automation
+description: Patterns for automated workflows, CI/CD, and repository automation](./#name-automation-description-patterns-for-automated-workflows-cicd-and-repository-automation)
 - [:file_folder: Automation Knowledge](./#file_folder-automation-knowledge)
-  - [:book: Table of Contents](./#book-table-of-contents)
-  - [:telescope: Overview](./#telescope-overview)
-  - [:world_map: Guides](./#world_map-guides)
-    - [:world_map: GitHub Actions](./#world_map-github-actions)
-    - [:world_map: Issue Automation](./#world_map-issue-automation)
-    - [:world_map: Template Synchronization](./#world_map-template-synchronization)
-    - [:world_map: Documentation Automation](./#world_map-documentation-automation)
-  - [:books: References](./#books-references)
+- [:telescope: Overview](./#telescope-overview)
+- [:world_map: Guides](./#world_map-guides)
+  - [:world_map: GitHub Actions](./#world_map-github-actions)
+  - [:world_map: Issue Automation](./#world_map-issue-automation)
+  - [:world_map: Template Synchronization](./#world_map-template-synchronization)
+  - [:world_map: Documentation Automation](./#world_map-documentation-automation)
+- [:books: References](./#books-references)
 
 ## :telescope: Overview
 

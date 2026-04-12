@@ -3,7 +3,6 @@
 ## :book: Table of Contents
 
 - [:file_folder: Organization](./#file_folder-organization)
-  - [:book: Table of Contents](./#book-table-of-contents)
   - [:telescope: Overview](./#telescope-overview)
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Knowledge & Research](./#building_construction-knowledge-research)

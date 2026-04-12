@@ -3,7 +3,6 @@
 ## :book: Table of Contents
 
 - [:file_folder: Repository Structure](./#file_folder-repository-structure)
-  - [:book: Table of Contents](./#book-table-of-contents)
   - [:telescope: Overview](./#telescope-overview)
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Root Level](./#building_construction-root-level)

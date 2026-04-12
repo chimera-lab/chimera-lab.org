@@ -1,8 +1,8 @@
 # Changelog
 
-## Table of content
+## :book: Table of Contents
 
-- [Table of content](#table-of-content)
-- [:telescope: Overview](#telescope-overview)
+- [Changelog](./#changelog)
+  - [:telescope: Overview](./#telescope-overview)
 
 ## :telescope: Overview

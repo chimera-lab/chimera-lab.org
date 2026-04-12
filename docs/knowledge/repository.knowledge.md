@@ -7,15 +7,16 @@ description: Patterns for repository structure, organization, and template manag
 
 ## :book: Table of Contents
 
+- [name: repository
+description: Patterns for repository structure, organization, and template management](./#name-repository-description-patterns-for-repository-structure-organization-and-template-management)
 - [:file_folder: Repository Knowledge](./#file_folder-repository-knowledge)
-  - [:book: Table of Contents](./#book-table-of-contents)
-  - [:telescope: Overview](./#telescope-overview)
-  - [:world_map: Guides](./#world_map-guides)
-    - [:world_map: Repository Structure](./#world_map-repository-structure)
-    - [:world_map: Naming Conventions](./#world_map-naming-conventions)
-    - [:world_map: Template Hierarchy](./#world_map-template-hierarchy)
-    - [:world_map: Metadata Management](./#world_map-metadata-management)
-  - [:books: References](./#books-references)
+- [:telescope: Overview](./#telescope-overview)
+- [:world_map: Guides](./#world_map-guides)
+  - [:world_map: Repository Structure](./#world_map-repository-structure)
+  - [:world_map: Naming Conventions](./#world_map-naming-conventions)
+  - [:world_map: Template Hierarchy](./#world_map-template-hierarchy)
+  - [:world_map: Metadata Management](./#world_map-metadata-management)
+- [:books: References](./#books-references)
 
 ## :telescope: Overview
 

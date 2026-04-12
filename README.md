@@ -2,15 +2,15 @@
 
 # {Organization Name}
 
-## Table of content
+## :book: Table of Contents
 
-- [Table of content](#table-of-content)
-- [:telescope: Overview](#telescope-overview)
-- [:loudspeaker: Introduction](#loudspeaker-introduction)
-- [:building_construction: Structure](#buildingconstruction-structure)
-- [:file_cabinet: Submodule](#filecabinet-submodule)
-- [:busts_in_silhouette: Contributing](#bustsinsilhouette-contributing)
-- [:scroll: License](#scroll-license)
+- [{Organization Name}](./#organization-name)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:loudspeaker: Introduction](./#loudspeaker-introduction)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:file_cabinet: Submodule](./#file_cabinet-submodule)
+  - [:handshake: Contributing](./#handshake-contributing)
+  - [:balance_scale: License](./#balance_scale-license)
 
 ## :telescope: Overview
 
@@ -20,6 +20,6 @@
 
 ## :file_cabinet: Submodule
 
-## :busts_in_silhouette: Contributing
+## :handshake: Contributing
 
-## :scroll: License
+## :balance_scale: License

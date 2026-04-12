@@ -1,20 +1,35 @@
 # Contributing
 
-## Table of content
+## :book: Table of Contents
 
-- [Table of content](#table-of-content)
-- [:telescope: Overview](#telescope-overview)
-- [:clipboard: Requirements](#clipboard-requirements)
-- [:wrench: Configuration](#wrench-configuration)
-- [:keyboard: Usage](#keyboard-usage)
+- [Contributing](./#contributing)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:clipboard: Requirements](./#clipboard-requirements)
+  - [:gear: Configuration](./#gear-configuration)
+  - [:rocket: Usage](./#rocket-usage)
+  - [Code of Conduct](./#code-of-conduct)
+  - [How Can I Contribute?](./#how-can-i-contribute)
+    - [Reporting Bugs](./#reporting-bugs)
+    - [Suggesting Enhancements](./#suggesting-enhancements)
+    - [Contributing Code](./#contributing-code)
+  - [Development Process](./#development-process)
+    - [Setting Up Development Environment](./#setting-up-development-environment)
+    - [Making Changes](./#making-changes)
+    - [Testing](./#testing)
+  - [Pull Request Process](./#pull-request-process)
+    - [PR Checklist](./#pr-checklist)
+  - [Style Guidelines](./#style-guidelines)
+    - [Git Commit Messages](./#git-commit-messages)
+    - [Code Style](./#code-style)
+  - [Questions?](./#questions)
 
 ## :telescope: Overview
 
 ## :clipboard: Requirements
 
-## :wrench: Configuration
+## :gear: Configuration
 
-## :keyboard: Usage
+## :rocket: Usage
 
 
 ## :book: Table of Contents
@@ -124,7 +139,7 @@ Before submitting a pull request:
 - Reference issues and PRs when applicable
 
 Examples:
-```
+```text
 feat: add user authentication
 fix: resolve memory leak in parser
 docs: update installation instructions

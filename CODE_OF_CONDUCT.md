@@ -1,8 +1,8 @@
 # Code of Conduct
 
-## Table of content
+## :book: Table of Contents
 
-- [Table of content](#table-of-content)
-- [:telescope: Overview](#telescope-overview)
+- [Code of Conduct](./#code-of-conduct)
+  - [:telescope: Overview](./#telescope-overview)
 
 ## :telescope: Overview
