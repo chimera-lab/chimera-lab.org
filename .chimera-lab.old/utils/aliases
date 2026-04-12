@@ -1,7 +1,0 @@
-SCRIPT_PATH=/home/lab/Desktop/chimera-lab.org/.chimera-lab/utils/
-
-SCRIPTS=($(cd ${SCRIPT_PATH} && echo *.sh))
-
-for SCRIPT in "${SCRIPTS[@]}"; do
-    alias ${SCRIPT%*.sh}="${SCRIPT_PATH}${SCRIPT}"
-done
