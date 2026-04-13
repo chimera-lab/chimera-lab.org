@@ -1,7 +1,7 @@
 {
   "repo": {
+    "template": "org.template",
     "name": "chimera-lab.org",
-    "template": "repository.template",
     "type": "",
     "issues": {
       "org": [],
@@ -16,6 +16,7 @@
       "repo": []
     }
   },
+  "remote_template": "git@github.com:chimera-lab/org.template.git",
   "org": {
     "name": "chimera-lab"
   },
@@ -27,6 +28,5 @@
     "template_files": {},
     "submodules": {}
   },
-  "template": null,
-  "remote_template": "https://github.com/chimera-lab/repository.template"
+  "template": null
 }
