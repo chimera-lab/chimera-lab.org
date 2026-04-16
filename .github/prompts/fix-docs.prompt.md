@@ -12,7 +12,7 @@ This prompt validates and improves documentation files in `.github/docs/` to ens
 ## Documentation Philosophy
 
 **Docs vs Knowledge**:
-- **Knowledge** (`.github/knowledge/`): AI-optimized, concise (< 200 lines), quick reference for CLI commands, modules, patterns
+- **Knowledge** (`docs/knowledge/`): AI-optimized, concise (< 200 lines), quick reference for CLI commands, modules, patterns
 - **Docs** (`.github/docs/`): Human-friendly, detailed but focused, practical examples for CLI development
 
 **Key Principle**: Docs provide depth for CLI architecture and development workflows, not exhaustive command catalogs. Reference knowledge for quick command lookup.
@@ -63,7 +63,7 @@ This prompt validates and improves documentation files in `.github/docs/` to ens
 
 1. **Discover all files**:
    - List all files in `.github/docs/`
-   - List all files in `.github/knowledge/`
+   - List all files in `docs/knowledge/`
    - Note file types and purposes
 
 2. **Read and catalog**:
@@ -97,7 +97,7 @@ For each file in `.github/docs/`:
 **Validation by type**:
 
 #### Core Documentation
-- ✅ Has cross-reference to knowledge file at top (e.g., "Quick reference: `.github/knowledge/commands.knowledge.md`")
+- ✅ Has cross-reference to knowledge file at top (e.g., "Quick reference: `docs/knowledge/commands.knowledge.md`")
 - ✅ Focuses on CLI architecture, patterns, and workflows
 - ✅ Examples show Typer commands, Pydantic models, Walker usage
 - ✅ Explains Python/CLI concepts thoroughly
@@ -138,7 +138,7 @@ For each documentation file:
    - Examples are properly formatted
 
 2. **Cross-Reference Check**:
-   - Has quick reference to knowledge at top: `> 💡 Quick Reference: see [file.knowledge.md](../knowledge/file.knowledge.md)`
+   - Has quick reference to knowledge at top: `> 💡 Quick Reference: see [file.knowledge.md](../../docs/knowledge/file.knowledge.md)`
    - References to other docs are valid
    - References to project files are accurate
    - No broken links
@@ -149,7 +149,7 @@ For each documentation file:
      - Provides context and rationale
      - Shows practical examples
      - Describes workflows step-by-step
-   
+
    - **Excessive Detail** (❌):
      - Lists all tokens (summarize instead: "See tokens.knowledge.md for complete list")
      - Lists all components (summarize: "See catalog.knowledge.md")
@@ -170,7 +170,7 @@ For each doc file, verify:
 
 1. **Has Cross-Reference**: Top of file links to relevant knowledge
    ```markdown
-   > 💡 **Quick Reference**: For AI-optimized reference, see [system.knowledge.md](../knowledge/system.knowledge.md)
+   > 💡 **Quick Reference**: For AI-optimized reference, see [system.knowledge.md](../../docs/knowledge/system.knowledge.md)
    ```
 
 2. **Complements Knowledge**: Doc provides depth knowledge doesn't

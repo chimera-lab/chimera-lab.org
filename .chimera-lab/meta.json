@@ -3,10 +3,7 @@
     "template": "org.template",
     "name": "chimera-lab.org",
     "type": "",
-    "issues": {
-      "org": [],
-      "repo": []
-    },
+    "issues": {},
     "labels": {
       "org": [],
       "repo": []

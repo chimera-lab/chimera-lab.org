@@ -46,14 +46,14 @@ Most updates (new workflows, improved docs, new templates) are non-breaking:
    ```bash
    cd <template-name>.template
    git checkout -b update/<description>
-   
+
    # Make changes to template files
    # Examples:
    # - .github/workflows/: add new or improve existing
    # - README.md: clarify instructions, add examples
    # - .gitignore: update for new language versions
    # - Documentation files: improve clarity
-   
+
    git add .
    git commit -m "feat(<template>): <description of change>"
    git push origin update/<description>
@@ -85,7 +85,7 @@ For updates that require repository changes (restructuring, workflow changes):
    ## Breaking Changes (v2.0)
    - Workflows moved to .github/workflows-v2/
    - config.yml format changed
-   
+
    ## Migration Guide
    1. Update workflow references
    2. Update configuration files
@@ -119,7 +119,7 @@ For some updates, existing repositories need synchronization:
    # Find repositories using template
    cd /path/to/organization
    find . -name ".github" -type d | grep -v ".git" | cut -d/ -f1,2
-   
+
    # Check template version in .chimera-lab/meta.json
    grep -r "templates_applied" */.chimera-lab/meta.json
    ```
@@ -134,12 +134,12 @@ For some updates, existing repositories need synchronization:
    # For each affected repository:
    cd <repository>
    git checkout -b template-update
-   
+
    # Copy specific updated files
    cp /path/to/template/.github/workflows/* .github/workflows/
    cp /path/to/template/.gitignore .gitignore
    # Don't overwrite heavily customized files
-   
+
    # Test locally
    # Commit and create PR
    git add .
@@ -169,7 +169,7 @@ Template versioning helps track updates:
    # In template README.md
    ## Template Version
    This template is version 1.1.0
-   
+
    # In .chimera-lab/meta.json
    {
      "version": "1.1.0",
@@ -344,7 +344,7 @@ Template update is successful when:
 
 ## References
 
-- [templates.knowledge.md](../knowledge/templates.knowledge.md) - Template structure
+- [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md) - Template structure
 - [ORGANIZATION_MANAGEMENT.md](../docs/ORGANIZATION_MANAGEMENT.md) - Organization operations
-- [repository.knowledge.md](../knowledge/repository.knowledge.md) - Repository metadata
+- [repository.knowledge.md](../../docs/knowledge/repository.knowledge.md) - Repository metadata
 - Individual repository `.chimera-lab/meta.json` - Template version tracking

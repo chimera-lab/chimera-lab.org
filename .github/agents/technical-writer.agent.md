@@ -26,7 +26,7 @@ Produce high-quality documentation that:
 
 ## Knowledge Base
 
-**AI Knowledge** (`.github/knowledge/`):
+**AI Knowledge** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure, repository types, conventions
 - `repository.knowledge.md` - Repository management patterns
 - `templates.knowledge.md` - Template hierarchy and management

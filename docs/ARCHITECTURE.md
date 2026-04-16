@@ -10,12 +10,16 @@
 
 ## :telescope: Overview
 
-This document describes the technical architecture and design decisions for this repository.
+<!-- llm<Architecture.Overview> -->
 
 ## :building_construction: Structure
 
+<!-- llm<Architecture.Structure> -->
+
 ## :triangular_ruler: Technologies
+
+<!-- llm<Architecture.Technologies> -->
 
 ## :books: References
 
-- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../README.md](../README.md)

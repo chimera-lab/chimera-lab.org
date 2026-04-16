@@ -1,0 +1,42 @@
+name: Documentation Update
+description: Fix, clarify, or extend documentation
+labels:
+  - type:documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### :page_facing_up: Docs Gap Summary
+        Tell us what is unclear or missing so we can address it quickly.
+  - type: input
+    id: location
+    attributes:
+      label: Page / Section
+      description: File path, heading, or URL where the issue exists
+      placeholder: docs/guide.md > :world_map: Guide
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Text
+      description: Quote or summarize the existing content
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Proposed Change
+      description: Provide the revised copy, code sample, or diagram description
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why This Helps
+      description: Explain the confusion resolved or audience served
+  - type: textarea
+    id: assets
+    attributes:
+      label: Assets & References
+      description: Link to related issues, tutorials, screenshots, or specs

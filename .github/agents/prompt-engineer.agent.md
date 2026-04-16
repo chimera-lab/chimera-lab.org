@@ -27,7 +27,7 @@ Create and manage high-quality prompts and agents following chimera-lab-cli conv
 - ✅ References to knowledge
 - ✅ Workflow descriptions
 
-**Knowledge** (`.github/knowledge/*.knowledge.md`):
+**Knowledge** (`docs/knowledge/*.knowledge.md`):
 - ❌ NO large code examples
 - ❌ NO comprehensive examples
 - ✅ AI-optimized, concise guidance
@@ -78,11 +78,11 @@ description: Clear description
 **Sections**: Role, Main Goal, Limitations, Operational Instructions
 
 **Chimera Lab CLI References**:
-- CLI architecture: See `.github/knowledge/system.knowledge.md`
-- Command structure: See `.github/knowledge/commands.knowledge.md`
-- Organization structure: See `.github/knowledge/organization.knowledge.md`
-- Repository management: See `.github/knowledge/repository.knowledge.md`
-- Automation features: See `.github/knowledge/automation.knowledge.md`
+- CLI architecture: See `docs/knowledge/system.knowledge.md`
+- Command structure: See `docs/knowledge/commands.knowledge.md`
+- Organization structure: See `docs/knowledge/organization.knowledge.md`
+- Repository management: See `docs/knowledge/repository.knowledge.md`
+- Automation features: See `docs/knowledge/automation.knowledge.md`
 - Python modules: `src/cmrlab/` (app.py, repo.py, docs.py, graph.py, etc.)
 - Type system: `src/cmrlab/types/` (Pydantic models)
 - Detailed architecture: `.github/docs/ARCHITECTURE.md`
@@ -125,5 +125,5 @@ Before finalizing any agent or prompt file:
 Update agents, prompts and knowledge when:
 - Project structure changes
 - New patterns emerge
-- `.github/knowledge/` updates
+- `docs/knowledge/` updates
 - Team architecture changes

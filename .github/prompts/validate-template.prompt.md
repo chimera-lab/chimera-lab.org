@@ -445,6 +445,6 @@ Validation is successful when:
 ## References
 
 - [NAMING_CONVENTIONS.md](../docs/NAMING_CONVENTIONS.md) - Repository suffixes
-- [templates.knowledge.md](../knowledge/templates.knowledge.md) - Template details
-- [repository.knowledge.md](../knowledge/repository.knowledge.md) - Repository metadata
+- [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md) - Template details
+- [repository.knowledge.md](../../docs/knowledge/repository.knowledge.md) - Repository metadata
 - [ORGANIZATION_MANAGEMENT.md](../docs/ORGANIZATION_MANAGEMENT.md) - Repository operations

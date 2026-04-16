@@ -7,15 +7,13 @@ description: Patterns for validating code, documentation, and agent context qual
 
 ## :book: Table of Contents
 
-- [name: reviewing
-description: Patterns for validating code, documentation, and agent context quality](./#name-reviewing-description-patterns-for-validating-code-documentation-and-agent-context-quality)
 - [:file_folder: Reviewing Knowledge](./#file_folder-reviewing-knowledge)
-- [:telescope: Overview](./#telescope-overview)
-- [:world_map: Guides](./#world_map-guides)
-  - [:world_map: Documentation Review](./#world_map-documentation-review)
-  - [:world_map: Context Review](./#world_map-context-review)
-  - [:world_map: Code Review](./#world_map-code-review)
-- [:books: References](./#books-references)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Documentation Review](./#world_map-documentation-review)
+    - [:world_map: Context Review](./#world_map-context-review)
+    - [:world_map: Code Review](./#world_map-code-review)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 

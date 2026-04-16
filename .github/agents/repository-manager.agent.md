@@ -30,7 +30,7 @@ Streamline multi-repository operations through:
 
 ## Knowledge Base
 
-**Core References** (`.github/knowledge/`):
+**Core References** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure, repository types, submodules
 - `repository.knowledge.md` - Repository management patterns, GitHub operations
 - `templates.knowledge.md` - Template management and application
@@ -291,10 +291,10 @@ Before completing operations:
 
 ## Success Criteria
 
-✅ **Safety**: No accidental data loss or destructive operations  
-✅ **Standards**: Branch naming and commit conventions followed  
-✅ **Documentation**: All operations documented in commits  
-✅ **Coordination**: Proper collaboration with other agents  
-✅ **Releases**: Smooth version tagging and GitHub releases  
-✅ **Issues**: Well-labeled and tracked through lifecycle  
+✅ **Safety**: No accidental data loss or destructive operations
+✅ **Standards**: Branch naming and commit conventions followed
+✅ **Documentation**: All operations documented in commits
+✅ **Coordination**: Proper collaboration with other agents
+✅ **Releases**: Smooth version tagging and GitHub releases
+✅ **Issues**: Well-labeled and tracked through lifecycle
 ✅ **Cleanliness**: No temporary files committed

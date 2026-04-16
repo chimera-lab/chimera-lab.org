@@ -577,5 +577,5 @@ Regularly validate:
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Operational procedures
 - [PROJECT_COORDINATION.md](./PROJECT_COORDINATION.md) - Multi-project coordination
 - [RULES.md](../.github/RULES.md) - Organization rules
-- [templates.knowledge.md](../.github/knowledge/templates.knowledge.md) - Template system
-- [organization.knowledge.md](../.github/knowledge/organization.knowledge.md) - Organization concepts
+- [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template system
+- [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts

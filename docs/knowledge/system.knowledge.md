@@ -1,10 +1,32 @@
 # System Knowledge
 
-Organization architecture, structure, configuration, and core concepts for chimera-lab.org multi-repository system.
+## :book: Table of Contents
 
-## Organization Structure
+- [System Knowledge](./#system-knowledge)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:telescope: Overview](./#telescope-overview)
+    - [Super-Repository Pattern](./#super-repository-pattern)
+    - [Topic-Based Organization](./#topic-based-organization)
+    - [Repository Types](./#repository-types)
+    - [Template System](./#template-system)
+    - [Metadata System](./#metadata-system)
+  - [:wrench: Configuration](./#wrench-configuration)
+    - [Organization Level (`.chimera-lab/`)](./#organization-level-chimera-lab)
+    - [Repository Level (`.chimera-lab/meta.json`)](./#repository-level-chimera-labmetajson)
+  - [:jigsaw: Components](./#jigsaw-components)
+  - [:toolbox: Tools](./#toolbox-tools)
+    - [chimera-lab-cli](./#chimera-lab-cli)
+    - [Utility Scripts (`.chimera-lab/utils/`)](./#utility-scripts-chimera-labutils)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:books: References](./#books-references)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:keyboard: Usage](./#keyboard-usage)
 
-```
+## :building_construction: Structure
+
+```text
 chimera-lab.org/                    # Organization root (super-repository)
 ├── .chimera-lab/                   # Organization metadata
 │   ├── config/                     # Configuration files
@@ -48,7 +70,7 @@ chimera-lab.org/                    # Organization root (super-repository)
 └── reports/                        # Generated reports
 ```
 
-## Core Concepts
+## :telescope: Overview
 
 ### Super-Repository Pattern
 chimera-lab.org uses Git super-repository with submodules:
@@ -87,7 +109,7 @@ Centralized configuration and metadata:
 - Repository level: `.chimera-lab/meta.json` (repo metadata)
 - Submodule tracking: `.gitmodules` (submodule references)
 
-## Configuration Files
+## :wrench: Configuration
 
 ### Organization Level (`.chimera-lab/`)
 
@@ -125,7 +147,7 @@ Centralized configuration and metadata:
 }
 ```
 
-## Agent System
+## :jigsaw: Components
 
 Organization uses AI agents for coordination:
 - **organization-manager** - Oversees structure, templates, consistency
@@ -141,7 +163,7 @@ Agents reference:
 - `docs/` - Human documentation (comprehensive)
 - `prompts/` - Task-specific workflows
 
-## Management Tools
+## :toolbox: Tools
 
 ### chimera-lab-cli
 CLI tool for organization management (located in `original.topic/chimera-lab-cli.app/`):
@@ -152,7 +174,7 @@ CLI tool for organization management (located in `original.topic/chimera-lab-cli
 - Graph generation
 - Rule enforcement
 
-See `original.topic/chimera-lab-cli.app/.github/knowledge/` for CLI-specific docs.
+See `original.topic/chimera-lab-cli.app/docs/knowledge/` for CLI-specific docs.
 
 ### Utility Scripts (`.chimera-lab/utils/`)
 - `git_update_submodules.sh` - Update all submodules
@@ -163,7 +185,7 @@ See `original.topic/chimera-lab-cli.app/.github/knowledge/` for CLI-specific doc
 - `github_create_milestones.sh` - Bulk milestone creation
 - `github_create_issues_milestones.sh` - Bulk issue creation
 
-## Submodule Workflow
+## :world_map: Guides
 
 Each repository is a Git submodule:
 
@@ -191,7 +213,7 @@ git commit -m "Update submodule reference"
 git push
 ```
 
-## Documentation Structure
+## :building_construction: Structure
 
 **Organization-Level** (`.github/`):
 - `README.md` - Organization overview
@@ -206,7 +228,7 @@ git push
 - Follows template conventions
 - Maintains consistency with organization standards
 
-## Best Practices
+## :world_map: Guides
 
 1. **Consistent Naming**: Always use suffix conventions
 2. **Metadata Maintenance**: Keep `.chimera-lab/` files updated
@@ -217,7 +239,7 @@ git push
 7. **Agent Coordination**: Use agents for complex operations
 8. **Rule Validation**: Regular `cmr rules check` if CLI available
 
-## Repository Suffixes Reference
+## :books: References
 
 | Suffix | Purpose | Example |
 |--------|---------|---------|
@@ -230,7 +252,7 @@ git push
 | `.overview` | Study material/overview | `docker.overview` |
 | `.diy` | DIY/hardware project | `network-storage.diy` |
 
-## Graph Generation
+## :world_map: Guides
 
 Visualize organization structure:
 - Repository relationships
@@ -240,7 +262,7 @@ Visualize organization structure:
 
 Stored in `.chimera-lab/repositories/*.graphml`
 
-## Rules and Validation
+## :keyboard: Usage
 
 Organization-wide rules enforced through:
 - Naming conventions

@@ -25,7 +25,7 @@ Implement robust CLI features that:
 
 ## Knowledge Base
 
-**Core References** (`.github/knowledge/`):
+**Core References** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure and repository types
 - `repository.knowledge.md` - Repository management patterns
 - `templates.knowledge.md` - Template structure and application
@@ -78,7 +78,7 @@ def command_name(
 ):
     """
     Command description for --help text.
-    
+
     Detailed explanation if needed.
     """
     try:
@@ -145,7 +145,7 @@ from typing import List, Optional
 class CustomModel(BaseModel):
     """Model description."""
     model_config = ConfigDict(extra='ignore')
-    
+
     field: str
     optional_field: Optional[str] = None
     list_field: List[str] = Field(default_factory=list)
@@ -326,11 +326,11 @@ def filter_by_suffix(
 
 ## Success Criteria
 
-✅ **Implementation**: Feature works as specified  
-✅ **Standards**: Follows CLI_GUIDELINES patterns  
-✅ **Types**: Complete type hints and Pydantic validation  
-✅ **Output**: Rich formatted, clear and professional  
-✅ **Errors**: Graceful handling with actionable messages  
-✅ **Testing**: Manually tested all scenarios  
-✅ **Integration**: Works with existing commands/modules  
+✅ **Implementation**: Feature works as specified
+✅ **Standards**: Follows CLI_GUIDELINES patterns
+✅ **Types**: Complete type hints and Pydantic validation
+✅ **Output**: Rich formatted, clear and professional
+✅ **Errors**: Graceful handling with actionable messages
+✅ **Testing**: Manually tested all scenarios
+✅ **Integration**: Works with existing commands/modules
 ✅ **Documentation**: Help text and docstrings complete

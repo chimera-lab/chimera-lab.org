@@ -1,0 +1,79 @@
+name: Bug Report
+description: Report a regression, crash, or unexpected behavior
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### :loudspeaker: Summary
+        Help us understand the impact by describing the failure at a high level.
+  - type: input
+    id: scope
+    attributes:
+      label: Affected Area
+      description: Component, command, or workflow where the bug appears
+      placeholder: repo init, deploy workflow, cli login, etc.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: Estimate urgency to triage
+      options:
+        - blocker
+        - critical
+        - major
+        - minor
+        - cosmetic
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Give a deterministic checklist so we can reproduce
+      placeholder: |
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      description: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result
+      description: What actually happened?
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment & Versions
+      description: List OS, runtime/tool versions, feature flags, auth context
+      placeholder: |
+        - OS:
+        - Shell:
+        - Template version:
+        - Tooling (docker, node, php, etc.):
+        - Auth / tenancy details:
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs & Diagnostics
+      description: Paste relevant logs, stack traces, screenshots, or attach files
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigation / Workaround
+      description: Mention any temporary workaround, rollback, or scope of impact

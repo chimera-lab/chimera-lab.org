@@ -23,7 +23,7 @@ This prompt validates and improves agents, prompts and knowledge files to ensure
 - Uses lowercase-with-hyphens format (e.g., `prompt-engineer.agent.md`)
 
 **Reference Requirements**:
-- References only knowledge files (`.github/knowledge/`)
+- References only knowledge files (`docs/knowledge/`)
 - No direct references to other agents, prompts, or project files
 - All shared information must be abstracted to knowledge
 
@@ -40,7 +40,7 @@ This prompt validates and improves agents, prompts and knowledge files to ensure
 - Uses lowercase-with-hyphens format (e.g., `integrate-component.prompt.md`)
 
 **Reference Requirements**:
-- References only knowledge files (`.github/knowledge/`)
+- References only knowledge files (`docs/knowledge/`)
 - No direct references to other prompts, agents, or project files
 - All shared information must be abstracted to knowledge
 
@@ -76,7 +76,7 @@ This prompt validates and improves agents, prompts and knowledge files to ensure
 1. **Discover all relevant files**:
    - List all files in `.github/agents/`
    - List all files in `.github/prompts/`
-   - List all files in `.github/knowledge/`
+   - List all files in `docs/knowledge/`
    - Note any missing directories
 
 2. **Read and catalog content**:
@@ -103,7 +103,7 @@ This prompt validates and improves agents, prompts and knowledge files to ensure
 
 ### Step 1: Naming Validation
 
-For each file in `.github/agents/`, `.github/prompts/`, and `.github/knowledge/`:
+For each file in `.github/agents/`, `.github/prompts/`, and `docs/knowledge/`:
 
 1. **Check file extension**:
    - Agents must end with `.agent.md`
@@ -142,8 +142,8 @@ For each file:
 1. **Identify all references** to other files (relative paths, file names)
 
 2. **Validate reference targets**:
-   - Agents: Should only reference `.github/knowledge/` files
-   - Prompts: Should only reference `.github/knowledge/` files
+   - Agents: Should only reference `docs/knowledge/` files
+   - Prompts: Should only reference `docs/knowledge/` files
    - Knowledge: Should not reference any other files
 
 3. **Identify shared information**:
@@ -259,7 +259,7 @@ For each validated file:
 **Use `manage_todo_list` tool to create complete task breakdown:**
 ```markdown
 1. Information Gathering - Discover and read all files
-2. Information Gathering - Map relationships between files  
+2. Information Gathering - Map relationships between files
 3. Information Gathering - Identify patterns and duplication
 4. Naming Validation - Check all file names and extensions
 5. Content Validation - Check frontmatter and structure

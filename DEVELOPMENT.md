@@ -9,12 +9,12 @@
     - [:inbox_tray: Create development environment](./#inbox_tray-create-development-environment)
     - [:inbox_tray: Install dependencies](./#inbox_tray-install-dependencies)
     - [:inbox_tray: Install pre-commit hooks (optional but recommended)](./#inbox_tray-install-pre-commit-hooks-optional-but-recommended)
-  - [:rocket: Usage](./#rocket-usage)
+  - [:keyboard: Usage](./#keyboard-usage)
   - [:toolbox: Tools](./#toolbox-tools)
     - [:toolbox: Running Tests](./#toolbox-running-tests)
     - [:toolbox: Code Quality](./#toolbox-code-quality)
     - [:toolbox: Pre-commit Hooks](./#toolbox-pre-commit-hooks)
-  - [:gear: Configuration](./#gear-configuration)
+  - [:wrench: Configuration](./#wrench-configuration)
   - [:control_knobs: Customization](./#control_knobs-customization)
   - [:hammer_and_wrench: Common Problems](./#hammer_and_wrench-common-problems)
     - [:hammer_and_wrench: Dependency errors](./#hammer_and_wrench-dependency-errors)
@@ -32,13 +32,18 @@
 ### :inbox_tray: Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone --recursive https://github.com/chimera-lab/chimera-lab.git
+cd chimera-lab
 ```
 
 ### :inbox_tray: Create development environment
 
 ```bash
+# Install the CMR CLI globally
+npm i -g @chimera-lab/cli
+
+# Verify installation
+cmr --help
 ```
 
 ### :inbox_tray: Install dependencies
@@ -54,7 +59,7 @@ make install
 pre-commit install
 ```
 
-## :rocket: Usage
+## :keyboard: Usage
 
 Use Make (recommended) for common development tasks:
 
@@ -86,11 +91,17 @@ make setup
 ### :toolbox: Running Tests
 
 ```bash
+make test
 ```
 
 ### :toolbox: Code Quality
 
 ```bash
+# Validate documentation across all submodules
+cmr docs check
+
+# Fix auto-fixable issues (TOC, header emoji)
+cmr docs fix -r toc -r header-emoji
 ```
 
 ### :toolbox: Pre-commit Hooks
@@ -105,7 +116,7 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-## :gear: Configuration
+## :wrench: Configuration
 
 If using VS Code, the workspace is pre-configured with:
 
@@ -116,8 +127,7 @@ If using VS Code, the workspace is pre-configured with:
 
 ## :control_knobs: Customization
 
-```bash
-```
+Repository-specific settings are stored in `.chimera-lab/settings.json`. Template variables, validation rules, and custom headers can be configured per-repository.
 
 ## :hammer_and_wrench: Common Problems
 

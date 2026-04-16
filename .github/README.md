@@ -8,7 +8,7 @@ Multi-repository organization for knowledge, tools, and projects across multiple
 
 - **Topic-based hierarchy** - Knowledge organized by domain
 - **Standardized structure** - Templates for consistency
-- **Super-repository pattern** - Git submodules for coordinated management  
+- **Super-repository pattern** - Git submodules for coordinated management
 - **Metadata-driven governance** - Centralized configuration
 - **AI agent system** - Automation for coordination and management
 
@@ -37,7 +37,7 @@ Maintain organizational structure while enabling:
 
 - **Getting Started**: Review [NAMING_CONVENTIONS.md](./docs/NAMING_CONVENTIONS.md) to understand repository types
 - **Creating Repositories**: See [ORGANIZATION_MANAGEMENT.md](./docs/ORGANIZATION_MANAGEMENT.md#adding-repositories)
-- **Using Templates**: Check [templates.knowledge.md](./knowledge/templates.knowledge.md)
+- **Using Templates**: Check [templates.knowledge.md](../docs/knowledge/templates.knowledge.md)
 - **Understanding Structure**: Read [ORGANIZATION_STRUCTURE.md](./docs/ORGANIZATION_STRUCTURE.md)
 
 ### For Project Managers
@@ -138,7 +138,7 @@ Concise, AI-optimized reference documentation:
 | **repository.knowledge.md** | Repository standards | AI agents, repository teams |
 | **automation.knowledge.md** | Rules and automation | AI agents, architects |
 
-Located in [.github/knowledge/](./knowledge/)
+Located in [docs/knowledge/](../docs/knowledge/)
 
 ---
 
@@ -321,11 +321,11 @@ Regularly validate with [validate-template.prompt.md](./prompts/validate-templat
 - [Organization Rules](./RULES.md) - Rules and standards
 
 ### Knowledge Base
-- [System Knowledge](./knowledge/system.knowledge.md) - Architecture overview
-- [Organization Knowledge](./knowledge/organization.knowledge.md) - Concepts
-- [Templates Knowledge](./knowledge/templates.knowledge.md) - Template system
-- [Repository Knowledge](./knowledge/repository.knowledge.md) - Repository standards
-- [Automation Knowledge](./knowledge/automation.knowledge.md) - Rules and automation
+- [System Knowledge](../docs/knowledge/system.knowledge.md) - Architecture overview
+- [Organization Knowledge](../docs/knowledge/organization.knowledge.md) - Concepts
+- [Templates Knowledge](../docs/knowledge/templates.knowledge.md) - Template system
+- [Repository Knowledge](../docs/knowledge/repository.knowledge.md) - Repository standards
+- [Automation Knowledge](../docs/knowledge/automation.knowledge.md) - Rules and automation
 
 ### Agents
 - [Organization Manager](./agents/organization-manager.agent.md) - Multi-repo orchestration
@@ -367,7 +367,7 @@ Regularly validate with [validate-template.prompt.md](./prompts/validate-templat
 
 ## License
 
-All repositories in chimera-lab.org are licensed under their respective licenses (typically MIT).  
+All repositories in chimera-lab.org are licensed under their respective licenses (typically MIT).
 See [legal.topic](../legal.topic/) for complete legal documentation.
 
 ---
@@ -380,7 +380,7 @@ See [legal.topic](../legal.topic/) for complete legal documentation.
 
 ---
 
-**Last Updated**: January 2024  
+**Last Updated**: January 2024
 **Version**: 1.0.0
 
 See [.chimera-lab/meta.json](./.chimera-lab/meta.json) for organization metadata.

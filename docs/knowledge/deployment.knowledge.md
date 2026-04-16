@@ -1,22 +1,20 @@
 ---
 name: deployment
-description: Patterns for releasing, versioning, and deploying chimera-lab projects
+description: Patterns for releasing, versioning, and deploying {{org.name}} projects
 ---
 
 # :file_folder: Deployment Knowledge
 
 ## :book: Table of Contents
 
-- [name: deployment
-description: Patterns for releasing, versioning, and deploying chimera-lab projects](./#name-deployment-description-patterns-for-releasing-versioning-and-deploying-chimera-lab-projects)
 - [:file_folder: Deployment Knowledge](./#file_folder-deployment-knowledge)
-- [:telescope: Overview](./#telescope-overview)
-- [:world_map: Guides](./#world_map-guides)
-  - [:world_map: Semantic Versioning](./#world_map-semantic-versioning)
-  - [:world_map: Release Process](./#world_map-release-process)
-  - [:world_map: Environment Management](./#world_map-environment-management)
-  - [:world_map: Deployment Verification](./#world_map-deployment-verification)
-- [:books: References](./#books-references)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Semantic Versioning](./#world_map-semantic-versioning)
+    - [:world_map: Release Process](./#world_map-release-process)
+    - [:world_map: Environment Management](./#world_map-environment-management)
+    - [:world_map: Deployment Verification](./#world_map-deployment-verification)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 

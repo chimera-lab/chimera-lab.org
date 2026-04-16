@@ -104,7 +104,7 @@ Every repository MUST use one of these suffixes:
 - No special characters except hyphens
 - No spaces in names
 
-**Valid**: `chimera-lab-cli.app`, `docker.overview`, `devops.topic`  
+**Valid**: `chimera-lab-cli.app`, `docker.overview`, `devops.topic`
 **Invalid**: `ChimeraLabCLI.app`, `docker_overview`, `devops topic`
 
 ## Repository Structure
@@ -183,7 +183,7 @@ Every README.md MUST:
 
 **Version Semantics**:
 - `a` (major) - Changes require manual revision
-- `b` (minor) - Changes can be automatically resolved  
+- `b` (minor) - Changes can be automatically resolved
 - `c` (patch) - Changes can be safely ignored
 
 ### Document Headers
@@ -257,7 +257,7 @@ Projects follow 7-stage milestone system:
 
 ### Issues
 
-**Organization-level issues** tracked in organization root  
+**Organization-level issues** tracked in organization root
 **Project-specific issues** tracked in respective repositories
 
 **Issue Requirements**:
@@ -366,7 +366,7 @@ repository.template (base)
 └── org.template
 ```
 
-Full list: See `template.topic/` or `.github/knowledge/templates.knowledge.md`
+Full list: See `template.topic/` or `docs/knowledge/templates.knowledge.md`
 
 ### Template Application
 
@@ -453,8 +453,8 @@ Exceptions require organization-level approval and documentation.
 - [ORGANIZATION_STRUCTURE.md](/.github/docs/ORGANIZATION_STRUCTURE.md) - Repository conventions
 - [ORGANIZATION_MANAGEMENT.md](/.github/docs/ORGANIZATION_MANAGEMENT.md) - Management workflows
 - [NAMING_CONVENTIONS.md](/.github/docs/NAMING_CONVENTIONS.md) - Detailed naming guide
-- [templates.knowledge.md](/.github/knowledge/templates.knowledge.md) - Template management
-- [organization.knowledge.md](/.github/knowledge/organization.knowledge.md) - Organization concepts
+- [templates.knowledge.md](/docs/knowledge/templates.knowledge.md) - Template management
+- [organization.knowledge.md](/docs/knowledge/organization.knowledge.md) - Organization concepts
 
 - External link names shoud be prefixed with `:globe_with_meridians:` :globe_with_meridians:.
   - Example: `:globe_with_meridians: [Wikipedia](https://www.wikipedia.org/)` [:globe_with_meridians: Wikipedia](https://www.wikipedia.org/)

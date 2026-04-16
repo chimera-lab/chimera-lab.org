@@ -25,7 +25,7 @@ Design and maintain robust CLI architecture that:
 
 ## Knowledge Base
 
-**Core References** (`.github/knowledge/`):
+**Core References** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure conventions and repository types
 - `repository.knowledge.md` - Repository management patterns
 - `templates.knowledge.md` - Template structure and patterns
@@ -98,21 +98,21 @@ from datetime import datetime
 
 class ExampleModel(BaseModel):
     """Clear description of what this model represents."""
-    
+
     # Use ConfigDict for Pydantic v2
     model_config = ConfigDict(
         extra='ignore',  # Ignore extra fields from API
         frozen=False,    # Allow mutation if needed
     )
-    
+
     # Required fields
     id: int
     name: str
-    
+
     # Optional fields with defaults
     description: Optional[str] = None
     tags: List[str] = Field(default_factory=list)
-    
+
     # Datetime fields
     created_at: Optional[datetime] = None
 ```
@@ -190,7 +190,7 @@ from cmrlab.types.issues import IssueModel
 
 class GitHubClient:
     """Encapsulate GitHub API operations."""
-    
+
     def __init__(self):
         """Initialize with token from environment."""
         self.token = os.getenv("CHIMERA_LAB_CLI_GITHUB_API")
@@ -203,7 +203,7 @@ class GitHubClient:
             "Authorization": f"token {self.token}",
             "Accept": "application/vnd.github.v3+json"
         }
-    
+
     def get(self, endpoint: str) -> Dict[str, Any]:
         """GET request with error handling."""
         response = requests.get(
@@ -212,7 +212,7 @@ class GitHubClient:
         )
         response.raise_for_status()
         return response.json()
-    
+
     def get_issues(
         self,
         owner: str,
@@ -286,19 +286,19 @@ def get_config_value(
     default: Optional[str] = None
 ) -> Optional[str]:
     """Get configuration value with precedence."""
-    
+
     # 1. Environment variable
     env_key = f"CHIMERA_LAB_CLI_{key.upper()}"
     if env_value := os.getenv(env_key):
         return env_value
-    
+
     # 2. Repository settings
     settings_file = repo_path / ".chimera-lab" / "settings.json"
     if settings_file.exists():
         settings = json.loads(settings_file.read_text())
         if key in settings:
             return settings[key]
-    
+
     # 3. Default
     return default
 ```
@@ -375,20 +375,20 @@ def process_repositories(
     """Generic repository processing pattern."""
     walker = Walker(start_path)
     repos = walker.discover_repositories()
-    
+
     if suffix_filter:
         repos = {
             name: path
             for name, path in repos.items()
             if name.endswith(suffix_filter)
         }
-    
+
     results = []
     for name, path in repos.items():
         # Process each repository
         result = process_single_repo(path)
         results.append(result)
-    
+
     return results
 ```
 
@@ -396,11 +396,11 @@ def process_repositories(
 
 ## Success Criteria
 
-✅ **Type Safety**: Complete type coverage with hints  
-✅ **Modularity**: Clear separation of concerns  
-✅ **Scalability**: Design supports growth  
-✅ **Maintainability**: Code easy to understand and modify  
-✅ **Testability**: Components can be tested in isolation  
-✅ **Documentation**: Architecture decisions documented  
-✅ **Standards**: Follows Python best practices  
+✅ **Type Safety**: Complete type coverage with hints
+✅ **Modularity**: Clear separation of concerns
+✅ **Scalability**: Design supports growth
+✅ **Maintainability**: Code easy to understand and modify
+✅ **Testability**: Components can be tested in isolation
+✅ **Documentation**: Architecture decisions documented
+✅ **Standards**: Follows Python best practices
 ✅ **Integration**: Works with existing architecture

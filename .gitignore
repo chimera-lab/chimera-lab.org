@@ -1,1 +1,26 @@
-*.code-workspace
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+temp/
+
+# Backup files
+*.old
+*.bak
+*.backup
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

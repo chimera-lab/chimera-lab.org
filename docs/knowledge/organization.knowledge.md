@@ -1,8 +1,35 @@
 # Organization Knowledge
 
-Structure, conventions, and management of chimera-lab organizations.
+## :book: Table of Contents
 
-## Organization Concept
+- [Organization Knowledge](./#organization-knowledge)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:jigsaw: Components](./#jigsaw-components)
+    - [`.topic` - Knowledge Topics](./#topic-knowledge-topics)
+    - [`.project` - Dedicated Projects](./#project-dedicated-projects)
+    - [`.app` - Applications](./#app-applications)
+    - [`.package` - Packages/Libraries](./#package-packageslibraries)
+    - [`.scaffold` - Scaffolds](./#scaffold-scaffolds)
+    - [`.template` - Templates](./#template-templates)
+  - [:page_facing_up: Files](./#page_facing_up-files)
+    - [`settings.json` (Organization Level)](./#settingsjson-organization-level)
+    - [`meta.json` (Organization)](./#metajson-organization)
+    - [`meta.json` (Repository)](./#metajson-repository)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:keyboard: Usage](./#keyboard-usage)
+    - [List Organizations](./#list-organizations)
+    - [Navigate to Organization](./#navigate-to-organization)
+    - [List Topics](./#list-topics)
+    - [List Projects](./#list-projects)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:keyboard: Usage](./#keyboard-usage)
+  - [:mag: Terminology](./#mag-terminology)
+  - [:world_map: Guides](./#world_map-guides)
+
+## :telescope: Overview
 
 A **Chimera Lab Organization** is a super-repository containing:
 - Multiple projects as Git submodules
@@ -10,9 +37,9 @@ A **Chimera Lab Organization** is a super-repository containing:
 - Centralized documentation and rules
 - Topic-based knowledge organization
 
-## Directory Structure
+## :building_construction: Structure
 
-```
+```text
 chimera-lab.org/                    # Organization root
 ├── .chimera-lab/                   # Organization metadata
 │   ├── settings.json               # Default labels, milestones
@@ -35,7 +62,7 @@ chimera-lab.org/                    # Organization root
 └── reports/                        # Generated reports
 ```
 
-## Repository Types
+## :jigsaw: Components
 
 ### `.topic` - Knowledge Topics
 Organizational unit for related knowledge/repositories.
@@ -75,7 +102,7 @@ GitHub repository templates.
 - **Example**: `laravel_app.template`, `repository.template`
 
 **Template Hierarchy**:
-```
+```text
 repository.template (base)
 ├── topic.template
 ├── overview.template
@@ -88,9 +115,7 @@ repository.template (base)
 └── org.template
 ```
 
-Full list in [ORGANIZATION_RULES.md](/.github/docs/ORGANIZATION_RULES.md#list-of-templates)
-
-## Metadata Files
+## :page_facing_up: Files
 
 ### `settings.json` (Organization Level)
 ```json
@@ -124,7 +149,7 @@ Full list in [ORGANIZATION_RULES.md](/.github/docs/ORGANIZATION_RULES.md#list-of
 }
 ```
 
-## Hierarchical Levels
+## :building_construction: Structure
 
 Organization → Topic → Sub-Topic → Repository
 
@@ -133,7 +158,7 @@ Organization → Topic → Sub-Topic → Repository
 **Level 2**: Sub-topics or projects within topics
 **Level 3+**: Deeper nesting
 
-## Commands for Organizations
+## :keyboard: Usage
 
 ### List Organizations
 ```bash
@@ -155,20 +180,20 @@ cmr org topic
 cmr org projects
 ```
 
-## Submodule Management
+## :world_map: Guides
 
 - Each repository is a Git submodule
 - Super-repository tracks submodule commits
 - Use `cmr submodules update` for recursive updates
 
-## Template Inheritance
+## :building_construction: Structure
 
 Repositories inherit from templates:
 1. Repository created from GitHub template
 2. Template metadata stored in `.chimera-lab/meta.json`
 3. `cmr templates update` applies template updates
 
-## Graph Generation
+## :world_map: Guides
 
 Analyze organization structure:
 ```bash
@@ -177,19 +202,19 @@ cmr graph network               # Project relationships
 cmr graph templates             # Template usage
 ```
 
-## Rules and Validation
+## :keyboard: Usage
 
 - Organization-wide rules in `.chimera-lab/rules.json`
 - Enforced via `cmr rules check`
 - Auto-fix with `cmr rules fix`
 
-## Terms and Glossary
+## :mag: Terminology
 
 - Organization-level terminology
 - Linked across repositories
 - Managed via `cmr terms` commands
 
-## Best Practices
+## :world_map: Guides
 
 1. **Consistent Naming**: Use suffix conventions (`.topic`, `.project`, etc.)
 2. **Shallow Nesting**: Limit to 3-4 levels for maintainability

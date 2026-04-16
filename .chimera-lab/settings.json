@@ -24,8 +24,332 @@
     ],
     "docs_default_pattern": "**/*.md"
   },
-  "version": "1.0.0",
+  "version": 1,
   "updated_at": "2026-02-16T22:44:58.974599+00:00",
   "repo_name": "chimera-lab.org",
-  "github_repo": "chimera-lab/chimera-lab"
+  "github_repo": "chimera-lab/chimera-lab",
+  "template": "template.topic",
+  "labels": {
+    "default": [
+      {
+        "name": "bug",
+        "color": "d73a4a",
+        "description": "Something isn't working"
+      },
+      {
+        "name": "documentation",
+        "color": "0366d6",
+        "description": "Improvements or additions to documentation"
+      },
+      {
+        "name": "duplicate",
+        "color": "7e7e7e",
+        "description": "This issue or pull request already exists"
+      },
+      {
+        "name": "enhancement",
+        "color": "22863a",
+        "description": "New feature or request"
+      },
+      {
+        "name": "good first issue",
+        "color": "7057ff",
+        "description": "Good for newcomers"
+      },
+      {
+        "name": "help wanted",
+        "color": "ff7f50",
+        "description": "Extra attention is needed"
+      },
+      {
+        "name": "invalid",
+        "color": "e4e669",
+        "description": "This doesn't seem right"
+      },
+      {
+        "name": "question",
+        "color": "ff69b4",
+        "description": "Further information is requested"
+      },
+      {
+        "name": "wontfix",
+        "color": "4b0000",
+        "description": "This will not be worked on"
+      }
+    ],
+    "app": [
+      {
+        "name": "logic",
+        "color": "af52fd",
+        "description": "Business or application logic"
+      },
+      {
+        "name": "performance",
+        "color": "fbca04",
+        "description": "Performance related"
+      },
+      {
+        "name": "testing",
+        "color": "a4cc83",
+        "description": "Tests and quality assurance"
+      },
+      {
+        "name": "security",
+        "color": "b31d28",
+        "description": "Security concerns"
+      },
+      {
+        "name": "logging",
+        "color": "5319e7",
+        "description": "Handling, storing, or visualizing logs"
+      },
+      {
+        "name": "configuration",
+        "color": "f6f8fa",
+        "description": "Managing system configurations"
+      },
+      {
+        "name": "authentication",
+        "color": "8a2be2",
+        "description": "Verifying user or system identity"
+      },
+      {
+        "name": "authorization",
+        "color": "ff1493",
+        "description": "Controlling access permissions"
+      }
+    ],
+    "infra": [
+      {
+        "name": "software",
+        "color": "00bfff",
+        "description": "General-purpose software project"
+      },
+      {
+        "name": "infrastructure",
+        "color": "1d76db",
+        "description": "System infrastructure provisioning or configuration"
+      },
+      {
+        "name": "containerization",
+        "color": "d93f0b",
+        "description": "Use of containers to package and deploy software"
+      },
+      {
+        "name": "orchestration",
+        "color": "e36209",
+        "description": "Managing container lifecycle and deployments"
+      },
+      {
+        "name": "automation",
+        "color": "006b75",
+        "description": "Automating infrastructure"
+      },
+      {
+        "name": "load-balancing",
+        "color": "c1440e",
+        "description": "Distributing traffic across systems"
+      },
+      {
+        "name": "monitoring",
+        "color": "7e7e7e",
+        "description": "Observing system performance and health"
+      },
+      {
+        "name": "cicd",
+        "color": "0052cc",
+        "description": "Continuous integration and deployment pipelines"
+      },
+      {
+        "name": "observability",
+        "color": "ff7f50",
+        "description": "Visibility into system operations and metrics"
+      },
+      {
+        "name": "storage",
+        "color": "22863a",
+        "description": "Projects using databases or storage solutions"
+      },
+      {
+        "name": "frontend",
+        "color": "0e8a16",
+        "description": "Client-side applications, UI, or user interaction"
+      },
+      {
+        "name": "backend",
+        "color": "6f42c1",
+        "description": "Server-side services or infrastructure"
+      },
+      {
+        "name": "microservice",
+        "color": "f9d0c4",
+        "description": "Microservice architecture components"
+      }
+    ],
+    "ui": [
+      {
+        "name": "ui",
+        "color": "e11d21",
+        "description": "Related to user interface design"
+      },
+      {
+        "name": "ux",
+        "color": "ffa07a",
+        "description": "Related to user experience and usability"
+      },
+      {
+        "name": "desktop",
+        "color": "0366d6",
+        "description": "Web-based applications with user-facing interfaces"
+      },
+      {
+        "name": "mobile",
+        "color": "f66a0a",
+        "description": "Projects targeting iOS or Android platforms"
+      },
+      {
+        "name": "cli",
+        "color": "e99695",
+        "description": "Command-line interface applications"
+      }
+    ],
+    "system": [
+      {
+        "name": "hardware",
+        "color": "9370db",
+        "description": "Related to physical components or electronics"
+      },
+      {
+        "name": "firmware",
+        "color": "20b2aa",
+        "description": "Embedded software running on hardware devices"
+      },
+      {
+        "name": "operating-system",
+        "color": "40e0d0",
+        "description": "OS-level projects or dependencies"
+      }
+    ],
+    "study": [
+      {
+        "name": "terminology",
+        "color": "4f9f04",
+        "description": "Related to glossary, terms, definitions"
+      },
+      {
+        "name": "configuration",
+        "color": "aacb0c",
+        "description": "Setup, environment, or files configuration"
+      },
+      {
+        "name": "guides",
+        "color": "9bb611",
+        "description": "Step-by-step tutorials or instructions"
+      },
+      {
+        "name": "chapters",
+        "color": "c1440e",
+        "description": "Content divided by chapters or sections"
+      },
+      {
+        "name": "problems",
+        "color": "af52fd",
+        "description": "Known issues or troubleshooting notes"
+      },
+      {
+        "name": "appendix",
+        "color": "f39abe",
+        "description": "Supplemental notes, references, or credits"
+      },
+      {
+        "name": "exercise",
+        "color": "758981",
+        "description": "Practice tasks or exercises"
+      },
+      {
+        "name": "example",
+        "color": "9cbea5",
+        "description": "Code or content examples"
+      },
+      {
+        "name": "review",
+        "color": "a4cc83",
+        "description": "Content or code needing review or feedback"
+      }
+    ]
+  },
+  "milestones": {
+    "default": [
+      {
+        "title": "1 - Ideating",
+        "description": "Generate ideas - Is there a clear problem and a viable solution idea?"
+      },
+      {
+        "title": "2 - Planning",
+        "description": "Define direction - Is there a basic roadmap with tasks and time estimates?"
+      },
+      {
+        "title": "3 - Building",
+        "description": "Create MVP - Are the main features working without critical crashes?"
+      },
+      {
+        "title": "4 - Presenting",
+        "description": "Make it usable - Can someone use or demo the basic interface with guidance?"
+      },
+      {
+        "title": "5 - Sharing",
+        "description": "Show to the world - Is it published with clear info and a way to get feedback?"
+      },
+      {
+        "title": "6 - Polishing",
+        "description": "Refine - Is the code clean, modular, and the infra/configs stable?"
+      },
+      {
+        "title": "7 - Releasing",
+        "description": "Launch as product - Is it ready for public use with support and monetization?"
+      }
+    ]
+  },
+  "llm": {
+    "headerPrompts": {
+      "Overview": "write a concise overview of this repository describing its purpose, goals, and what it provides",
+      "Requirements": "list the prerequisites and requirements needed to use or contribute to this repository",
+      "Installation": "describe how to install and set up this repository for development or usage",
+      "Usage": "describe the primary usage patterns, commands, and workflows for this repository",
+      "Technologies": "list and describe the key technologies, frameworks, and tools used in this repository",
+      "Software": "list the software dependencies and version compatibility requirements",
+      "Material": "list the materials and resources needed for this project",
+      "Terminology": "define the key terms, concepts, and definitions relevant to this repository",
+      "Sources": "list the source materials, references, and citations used in this repository",
+      "Tools": "list the tools and utilities needed or provided by this repository",
+      "Configuration": "describe the configuration options and settings available in this repository",
+      "Customization": "describe how to customize and extend this repository for specific needs",
+      "Structure": "describe the directory structure and file organization of this repository",
+      "Components": "describe the main components, modules, and their responsibilities in this repository",
+      "Guides": "describe the available guides, tutorials, and step-by-step instructions",
+      "Introduction": "write an introduction to this repository explaining its context and purpose",
+      "Notes": "list additional notes, remarks, and important observations about this repository",
+      "Warnings": "list important warnings, cautions, and known limitations",
+      "Common Problems": "list common problems, known issues, and their solutions",
+      "Credits": "list contributors, acknowledgments, and credits for this repository",
+      "Contributing": "describe the contribution guidelines, coding standards, and process for contributing",
+      "Files": "list and describe the key files and their purposes in this repository",
+      "Appendix": "provide supplementary material, references, and additional context",
+      "See Also": "list related repositories, documentation, and cross-references",
+      "To-Do List": "list planned tasks, upcoming features, and milestones",
+      "Skills": "describe the skills and capabilities provided by this repository",
+      "Step": "describe this step in the guide or process",
+      "Chapter": "describe this chapter and its main content",
+      "Architecture.Overview": "write a high-level overview of the technical architecture and design decisions for this repository",
+      "Architecture.Structure": "describe the architectural structure, modules, and component relationships of this repository",
+      "Architecture.Technologies": "list and describe the key technologies, frameworks, and tools used in this repository",
+      "Organization.Overview": "describe the organizational structure, naming conventions, and management practices for this repository within the organization",
+      "Structure.Overview": "describe the file structure and directory organization of this repository",
+      "Roadmap.Overview": "outline the planned features, improvements, and milestones for this repository",
+      "Development.Installation": "describe how to create the development environment for this project based on its type and technologies",
+      "Development.Tests": "describe how to run the test suite for this project based on its type and technologies",
+      "Development.CodeQuality": "describe the code quality tools and linting commands available for this project",
+      "Development.Customization": "describe the customization options available for this project"
+    }
+  }
 }

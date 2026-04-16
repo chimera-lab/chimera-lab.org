@@ -1,16 +1,72 @@
 # Commands Knowledge
 
-Comprehensive reference for all chimera-lab-cli commands and their usage patterns.
+## :book: Table of Contents
 
-## Command Structure
+- [Commands Knowledge](./#commands-knowledge)
+  - [:building_construction: Structure](./#building_construction-structure)
+  - [:jigsaw: Components](./#jigsaw-components)
+    - [`cwd` - Current Working Directory](./#cwd-current-working-directory)
+      - [`cmr cwd org [PATH]`](./#cmr-cwd-org-path)
+      - [`cmr cwd repo [PATH]`](./#cmr-cwd-repo-path)
+    - [`repo` - Repository Management](./#repo-repository-management)
+      - [`cmr repo issues`](./#cmr-repo-issues)
+      - [`cmr repo milestones`](./#cmr-repo-milestones)
+      - [`cmr repo labels [TYPES...]`](./#cmr-repo-labels-types)
+    - [`submodules` - Git Submodule Management](./#submodules-git-submodule-management)
+      - [`cmr submodules update`](./#cmr-submodules-update)
+    - [`cd` - Directory Navigation](./#cd-directory-navigation)
+      - [`cmr cd [REPOSITORY]`](./#cmr-cd-repository)
+    - [`docs` - Documentation Management](./#docs-documentation-management)
+      - [`cmr docs check [PATH]`](./#cmr-docs-check-path)
+      - [`cmr docs fix`](./#cmr-docs-fix)
+    - [`templates` - Template Management](./#templates-template-management)
+      - [`cmr templates update`](./#cmr-templates-update)
+    - [`rules` - Rule Enforcement](./#rules-rule-enforcement)
+      - [`cmr rules check`](./#cmr-rules-check)
+      - [`cmr rules fix`](./#cmr-rules-fix)
+    - [`graph` - Visualization and Analytics](./#graph-visualization-and-analytics)
+      - [`cmr graph level`](./#cmr-graph-level)
+      - [`cmr graph all`](./#cmr-graph-all)
+      - [`cmr graph network`](./#cmr-graph-network)
+      - [`cmr graph templates`](./#cmr-graph-templates)
+      - [`cmr graph commits`](./#cmr-graph-commits)
+      - [`cmr graph tree`](./#cmr-graph-tree)
+      - [`cmr graph terms`](./#cmr-graph-terms)
+    - [`tree` - Tree View](./#tree-tree-view)
+      - [`cmr tree`](./#cmr-tree)
+    - [`terms` - Terminology Management](./#terms-terminology-management)
+      - [`cmr terms search [TERM]`](./#cmr-terms-search-term)
+      - [`cmr terms list`](./#cmr-terms-list)
+      - [`cmr terms link [TERM]`](./#cmr-terms-link-term)
+    - [`workspace` - Workspace Management](./#workspace-workspace-management)
+      - [`cmr workspace create [NAME]`](./#cmr-workspace-create-name)
+      - [`cmr workspace delete [NAME]`](./#cmr-workspace-delete-name)
+      - [`cmr workspace checkout [NAME]`](./#cmr-workspace-checkout-name)
+    - [`project` - Project Management](./#project-project-management)
+      - [`cmr project issues`](./#cmr-project-issues)
+      - [`cmr project docs`](./#cmr-project-docs)
+      - [`cmr project plan`](./#cmr-project-plan)
+    - [`org` - Organization Management](./#org-organization-management)
+      - [`cmr org list`](./#cmr-org-list)
+      - [`cmr org topic`](./#cmr-org-topic)
+      - [`cmr org terms`](./#cmr-org-terms)
+      - [`cmr org guides`](./#cmr-org-guides)
+      - [`cmr org projects`](./#cmr-org-projects)
+  - [:world_map: Guides](./#world_map-guides)
+    - [JSON Configuration Files](./#json-configuration-files)
+    - [Path Resolution](./#path-resolution)
+    - [GitHub Integration](./#github-integration)
+    - [Output Styling](./#output-styling)
 
-```
+## :building_construction: Structure
+
+```text
 cmr [GROUP] [COMMAND] [OPTIONS] [ARGUMENTS]
 ```
 
 All command groups support `--help` for detailed information.
 
-## Command Groups
+## :jigsaw: Components
 
 ### `cwd` - Current Working Directory
 
@@ -245,7 +301,7 @@ Manages organization guides.
 #### `cmr org projects`
 Manages organization projects.
 
-## Common Patterns
+## :world_map: Guides
 
 ### JSON Configuration Files
 All JSON configs use Pydantic validation:

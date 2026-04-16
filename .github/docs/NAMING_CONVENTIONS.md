@@ -436,7 +436,7 @@ Level 2: <subcategory>.topic (sub-topics)
 Level 3: <name>.<suffix> (repositories)
 ```
 
-**Example**: 
+**Example**:
 ```
 chimera-lab.org/
 ├── devops.topic/
@@ -557,5 +557,5 @@ chimera-lab-cli.APP          ❌ Uppercase suffix
 
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Organization workflows
 - [RULES.md](../.github/RULES.md) - Organization rules
-- [organization.knowledge.md](../.github/knowledge/organization.knowledge.md) - Organization concepts
-- [repository.knowledge.md](../.github/knowledge/repository.knowledge.md) - Repository details
+- [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts
+- [repository.knowledge.md](../docs/knowledge/repository.knowledge.md) - Repository details

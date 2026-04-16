@@ -23,7 +23,7 @@ First, scan the repository structure to identify all existing resources:
 - Extract agent target and description from frontmatter
 - Expected prompts: work, plan-milestone, fix-docs, update-team, commit, explain-issue, close-task, recover-task, go, fix-context
 
-**Knowledge** (`.github/knowledge/`):
+**Knowledge** (`docs/knowledge/`):
 - List all `.md` files
 - Document their purpose based on filename and content
 - Expected: system.knowledge.md, commands.knowledge.md, organization.knowledge.md, repository.knowledge.md, automation.knowledge.md
@@ -47,7 +47,7 @@ For each agent file in `.github/agents/`:
 
 ### 4. Read Each Knowledge File
 
-For each knowledge file in `.github/knowledge/`:
+For each knowledge file in `docs/knowledge/`:
 - Create database entry in PlantUML: `database KnowName as "filename" COLOR_KNOWLEDGE`
 
 ### 5. Update PlantUML File
@@ -66,7 +66,7 @@ Update `.github/copilot-team-components.plantuml` with:
 Ensure:
 - All agents in `.github/agents/` are represented (6 agents for CLI)
 - All prompts in `.github/prompts/` are represented (10 prompts)
-- All knowledge files in `.github/knowledge/` are represented (5 knowledge files)
+- All knowledge files in `docs/knowledge/` are represented (5 knowledge files)
 - Relationships match actual frontmatter references
 - PlantUML syntax is valid
 - Layout uses `left to right direction`

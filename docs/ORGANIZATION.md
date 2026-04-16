@@ -15,7 +15,7 @@
 
 ## :telescope: Overview
 
-This document describes the organization structure and repository naming conventions.
+<!-- llm<Organization.Overview> -->
 
 ## :building_construction: Structure
 
@@ -24,11 +24,11 @@ repository-name.suffix/
 ├── .chimera-lab/           # Repository metadata
 │   ├── meta.json           # Description, tags, template
 │   └── settings.json       # Configuration
-├── .github/                # GitHub workflows and docs
+├── .github/                # GitHub workflows
 │   ├── agents/             # AI agent definitions
-│   ├── knowledge/          # Knowledge base
-│   ├── docs/               # Detailed documentation
 │   └── prompts/            # Prompt templates
+├── docs/                   # Documentation and knowledge
+│   └── knowledge/          # Knowledge base
 ├── README.md               # Main documentation
 ├── CHANGELOG.md            # Version history
 ├── CONTRIBUTING.md         # Contribution guidelines
@@ -92,7 +92,7 @@ repository.template (base)
     "template": "app.template"
   },
   "remote_template": {
-    "repo": "chimera-lab/app.template",
+    "repo": "{{org.name}}/app.template",
     "branch": "main"
   }
 }
@@ -102,10 +102,10 @@ repository.template (base)
 
 ### :toolbox: `cmr`
 
-The CMR CLI (`cmr`) automates chimera-lab repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
+The CMR CLI (`cmr`) automates {{org.name}} repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
 
 ## :books: References
 
 - [:page_facing_up: STRUCTURE.md](STRUCTURE.md)
-- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../README.md](../README.md)
 - [:page_facing_up: knowledge/cmr.knowledge.md](knowledge/cmr.knowledge.md)

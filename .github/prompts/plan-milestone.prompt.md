@@ -18,7 +18,7 @@ Plan a development milestone for chimera-lab-cli Python CLI tool with MVP defini
 
 ### 1. Define MVP Scope
 
-Review `.github/knowledge/commands.knowledge.md` and organization requirements.
+Review `docs/knowledge/commands.knowledge.md` and organization requirements.
 
 **Output**:
 ```markdown
@@ -100,7 +100,7 @@ Break L/XL issues into M/S sub-tasks:
 ### Added
 - New features
 
-### Changed  
+### Changed
 - Updates (note breaking changes)
 
 ### Fixed
@@ -168,6 +168,6 @@ Plan milestone:
 
 ## Related Knowledge
 
-- `.github/knowledge/system.knowledge.md` - CLI architecture and modules
-- `.github/knowledge/commands.knowledge.md` - Command reference
-- `.github/knowledge/automation.knowledge.md` - Rules and templates
+- `docs/knowledge/system.knowledge.md` - CLI architecture and modules
+- `docs/knowledge/commands.knowledge.md` - Command reference
+- `docs/knowledge/automation.knowledge.md` - Rules and templates

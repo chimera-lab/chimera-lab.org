@@ -348,5 +348,5 @@ When updating metadata, verify:
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Operational procedures
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Label naming conventions
 - [RULES.md](../.github/RULES.md) - Organization rules
-- [templates.knowledge.md](../.github/knowledge/templates.knowledge.md) - Template system
-- [repository.knowledge.md](../.github/knowledge/repository.knowledge.md) - Repository standards
+- [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template system
+- [repository.knowledge.md](../docs/knowledge/repository.knowledge.md) - Repository standards

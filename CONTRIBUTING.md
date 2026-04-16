@@ -1,161 +1,40 @@
-# Contributing
+# :file_folder: Contributing
+
+This guide explains how to prepare your environment, configure {{repository.name}}, and contribute changes consistently.
 
 ## :book: Table of Contents
 
-- [Contributing](./#contributing)
+- [:file_folder: Contributing](./#file_folder-contributing)
   - [:telescope: Overview](./#telescope-overview)
   - [:clipboard: Requirements](./#clipboard-requirements)
-  - [:gear: Configuration](./#gear-configuration)
-  - [:rocket: Usage](./#rocket-usage)
-  - [Code of Conduct](./#code-of-conduct)
-  - [How Can I Contribute?](./#how-can-i-contribute)
-    - [Reporting Bugs](./#reporting-bugs)
-    - [Suggesting Enhancements](./#suggesting-enhancements)
-    - [Contributing Code](./#contributing-code)
-  - [Development Process](./#development-process)
-    - [Setting Up Development Environment](./#setting-up-development-environment)
-    - [Making Changes](./#making-changes)
-    - [Testing](./#testing)
-  - [Pull Request Process](./#pull-request-process)
-    - [PR Checklist](./#pr-checklist)
-  - [Style Guidelines](./#style-guidelines)
-    - [Git Commit Messages](./#git-commit-messages)
-    - [Code Style](./#code-style)
-  - [Questions?](./#questions)
+  - [:wrench: Configuration](./#wrench-configuration)
+  - [:memo: To-Do List](./#memo-to-do-list)
 
 ## :telescope: Overview
 
+We keep contributions simple: satisfy prerequisites, configure the project, then follow the short step list below for changes and reviews.
+
 ## :clipboard: Requirements
 
-## :gear: Configuration
+- Git installed and able to authenticate with the {{org.name}} repository.
+- Development environment that matches project language/runtime.
+- Access to required secrets or environment variables when applicable.
 
-## :rocket: Usage
+## :wrench: Configuration
 
+1. Clone {{repository.name}} and install dependencies per the project README.
+2. Set any required environment variables or secret files locally (do not commit secrets).
+3. Run lint and test commands once to ensure the base setup passes.
 
-## :book: Table of Contents
+## :memo: To-Do List
 
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Development Process](#development-process)
-- [Pull Request Process](#pull-request-process)
-- [Style Guidelines](#style-guidelines)
-
-## Code of Conduct
-
-This project adheres to the Chimera Lab Code of Conduct. By participating, you are expected to uphold this code. Please review our community standards before contributing.
-
-## How Can I Contribute?
-
-### Reporting Bugs
-
-Before creating bug reports, please check existing issues to avoid duplicates. When creating a bug report, include:
-
-- Clear title and description
-- Steps to reproduce the behavior
-- Expected behavior vs actual behavior
-- Environment details (OS, version, etc.)
-- Screenshots if applicable
-
-### Suggesting Enhancements
-
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion, include:
-
-- Clear title and description
-- Use case explaining why this enhancement would be useful
-- Possible implementation if you have ideas
-
-### Contributing Code
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Commit your changes (`git commit -m 'Add amazing feature'`)
-5. Push to the branch (`git push origin feature/amazing-feature`)
-6. Open a Pull Request
-
-## Development Process
-
-### Setting Up Development Environment
-
-```bash
-
-## Clone your fork
-
-git clone https://github.com/your-username/repository-name.git
-cd repository-name
-
-## Add upstream remote
-
-git remote add upstream https://github.com/chimera-lab/repository-name.git
-
-## Create feature branch
-
-git checkout -b feature/your-feature-name
-```
-
-### Making Changes
-
-- Write clear, concise commit messages
-- Follow the existing code style
-- Add tests for new features
-- Update documentation as needed
-- Keep commits atomic and focused
-
-### Testing
-
-Before submitting a pull request:
-
-- Test your changes thoroughly
-- Ensure all existing tests pass
-- Add new tests for new functionality
-- Run linters and formatters
-
-## Pull Request Process
-
-1. **Update Documentation**: Ensure README.md and other docs reflect your changes
-2. **Follow Template**: Use the PR template when creating your pull request
-3. **Link Issues**: Reference related issues in your PR description
-4. **Request Review**: Request review from maintainers
-5. **Address Feedback**: Respond to review comments and make requested changes
-6. **Squash Commits**: Consider squashing commits before merge if requested
-
-### PR Checklist
-
-- [ ] Code follows style guidelines
-- [ ] Self-review completed
-- [ ] Comments added for complex code
-- [ ] Documentation updated
-- [ ] Tests added/updated
-- [ ] All tests pass
-- [ ] No merge conflicts
-
-## Style Guidelines
-
-### Git Commit Messages
-
-- Use present tense ("Add feature" not "Added feature")
-- Use imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Limit first line to 72 characters
-- Reference issues and PRs when applicable
-
-Examples:
-```text
-feat: add user authentication
-fix: resolve memory leak in parser
-docs: update installation instructions
-test: add unit tests for validator
-```
-
-### Code Style
-
-- Follow language-specific conventions
-- Use meaningful variable and function names
-- Keep functions small and focused
-- Add comments for complex logic
-- Maintain consistent formatting
-
-## Questions?
-
-Feel free to open an issue with the `question` label if you need help or clarification.
-
-Thank you for contributing to Chimera Lab! 🎉
+01. Open or confirm a tracked issue describing the problem/feature and expected outcome.
+02. Create a branch from `main` with a clear name (e.g., `feat/short-description` or `fix/issue-123`).
+03. Plan scope and acceptance checks; align on interfaces or data contracts before coding.
+04. Implement the change with tests covering new or adjusted behavior.
+05. Run formatters, linters, and the full test suite locally; resolve failures.
+06. Update documentation and any relevant examples or configs; add changelog entry if required.
+07. Commit using conventional commit format (e.g., `feat: add user login`, `fix(gui): resolve crash on startup`); reference the issue in the body (e.g., `Refs #123`).
+08. Push the branch and open a pull request linking the issue (e.g., `Closes #123`) with a brief summary and test notes.
+09. Respond to review feedback promptly; adjust code, tests, or docs as requested.
+10. Maintain a clean history (rebasing if needed); merge per project policy after approvals and passing checks.

@@ -8,13 +8,14 @@
     - [:building_construction: Root Level](./#building_construction-root-level)
     - [:building_construction: `.chimera-lab/` Directory](./#building_construction-chimera-lab-directory)
     - [:building_construction: `.github/` Directory](./#building_construction-github-directory)
+    - [:building_construction: `docs/` Directory](./#building_construction-docs-directory)
     - [:building_construction: Documentation Hierarchy](./#building_construction-documentation-hierarchy)
     - [:building_construction: Configuration Hierarchy](./#building_construction-configuration-hierarchy)
   - [:books: References](./#books-references)
 
 ## :telescope: Overview
 
-This document describes the detailed structure and organization of repository files and directories.
+<!-- llm<Structure.Overview> -->
 
 ## :building_construction: Structure
 
@@ -53,36 +54,44 @@ Configuration and metadata:
 
 ### :building_construction: `.github/` Directory
 
-GitHub workflows and documentation:
+GitHub workflows and automation:
 
 ```text
 .github/
 ├── agents/                 # AI agent definitions
 │   ├── *.agent.md          # Agent files
 │   └── README.md           # Agents overview
-├── knowledge/              # Knowledge base documents
-│   ├── *.knowledge.md      # Knowledge files
-│   └── README.md           # Knowledge overview
-├── docs/                   # Detailed documentation
-│   ├── ARCHITECTURE.md     # Technical architecture
-│   ├── DEVELOPMENT.md      # Development workflow
-│   ├── ORGANIZATION.md     # Organization structure
-│   └── STRUCTURE.md        # This file
 ├── prompts/                # Prompt templates
 │   └── *.prompt.md         # Prompt files
 └── workflows/              # GitHub Actions (if applicable)
     └── *.yml               # Workflow definitions
 ```
 
+### :building_construction: `docs/` Directory
+
+Documentation and knowledge base:
+
+```text
+docs/
+├── ARCHITECTURE.md         # Technical architecture
+├── ORGANIZATION.md         # Organization structure
+├── ROADMAP.md              # Project roadmap
+├── STRUCTURE.md            # Repository structure (this file)
+├── diagrams/               # Diagrams and visual assets
+└── knowledge/              # Knowledge base
+    └── *.knowledge.md      # Knowledge files
+```
+
 ### :building_construction: Documentation Hierarchy
 
 ```text
 README.md (entry point)
-├── .github/knowledge/*.knowledge.md (concepts)
-└── .github/docs/*.md (detailed guides)
+├── docs/knowledge/*.knowledge.md (concepts)
+└── docs/*.md (detailed guides)
     ├── ARCHITECTURE.md
-    ├── DEVELOPMENT.md
-    └── ORGANIZATION.md
+    ├── ORGANIZATION.md
+    ├── ROADMAP.md
+    └── STRUCTURE.md
 ```
 
 ### :building_construction: Configuration Hierarchy
@@ -96,4 +105,4 @@ README.md (entry point)
 ## :books: References
 
 - [:page_facing_up: ORGANIZATION.md](ORGANIZATION.md)
-- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../README.md](../README.md)

@@ -1,0 +1,52 @@
+name: Security Report
+description: Confidentially report a vulnerability or security concern
+labels:
+  - type:security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### :warning: Responsible Disclosure
+        Please **do not** share sensitive details publicly. Follow the guidance below and reference [SECURITY.md](../SECURITY.md).
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Reporter Checklist
+      options:
+        - label: I have read and will follow the instructions in SECURITY.md
+          required: true
+        - label: I am not including sensitive secrets, credentials, or production data in this issue
+          required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the vulnerability or security concern
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe potential impact, affected components, and exploitability
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps / Proof of Concept
+      description: Provide detailed steps to reproduce, commands, or PoC code snippets
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Proposed Mitigation
+      description: Share fixes, compensating controls, or temporary mitigations if known
+  - type: input
+    id: contact
+    attributes:
+      label: Secure Contact Method
+      description: Provide an email or handle so the security team can follow up privately
+    validations:
+      required: true

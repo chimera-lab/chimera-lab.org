@@ -7,15 +7,13 @@ description: Patterns for discovering, gathering, and synthesizing project conte
 
 ## :book: Table of Contents
 
-- [name: researching
-description: Patterns for discovering, gathering, and synthesizing project context](./#name-researching-description-patterns-for-discovering-gathering-and-synthesizing-project-context)
 - [:file_folder: Researching Knowledge](./#file_folder-researching-knowledge)
-- [:telescope: Overview](./#telescope-overview)
-- [:world_map: Guides](./#world_map-guides)
-  - [:world_map: Context Discovery](./#world_map-context-discovery)
-  - [:world_map: Issue Analysis](./#world_map-issue-analysis)
-  - [:world_map: Codebase Exploration](./#world_map-codebase-exploration)
-- [:books: References](./#books-references)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Context Discovery](./#world_map-context-discovery)
+    - [:world_map: Issue Analysis](./#world_map-issue-analysis)
+    - [:world_map: Codebase Exploration](./#world_map-codebase-exploration)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 

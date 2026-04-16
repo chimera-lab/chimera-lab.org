@@ -11,7 +11,7 @@
 
 ## :telescope: Overview
 
-This document outlines the planned features, improvements, and milestones for this repository.
+<!-- llm<Roadmap.Overview> -->
 
 ## :memo: To-Do List
 
@@ -26,9 +26,9 @@ Initial stable release
 
 ## :books: References
 
-- [:page_facing_up: ../../CHANGELOG.md](../../CHANGELOG.md)
-- [:page_facing_up: ../../CONTRIBUTING.md](../../CONTRIBUTING.md)
-- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../CHANGELOG.md](../CHANGELOG.md)
+- [:page_facing_up: ../CONTRIBUTING.md](../CONTRIBUTING.md)
+- [:page_facing_up: ../README.md](../README.md)
 
 ## :notebook: Notes
 

@@ -131,7 +131,7 @@ Transform organizational tasks into well-structured, executable task lists with 
     {
       "id": 3,
       "title": "#44: Update graph documentation - @technical-writer",
-      "description": "**Issue**: #44 - Document graph templates feature\n**Module**: .github/knowledge/commands.knowledge.md\n**Goal**: Add documentation for new graph templates command\n\n**Implementation Details**:\n- Update commands.knowledge.md with graph templates syntax\n- Add examples of template usage to docs/CLI_GUIDELINES.md\n- Create .chimera-lab/templates/example.graphml reference\n- Document template file format requirements\n\n**Dependencies**: Task #2 (command implementation)\n**Files**: .github/knowledge/commands.knowledge.md, .github/docs/CLI_GUIDELINES.md",
+      "description": "**Issue**: #44 - Document graph templates feature\n**Module**: docs/knowledge/commands.knowledge.md\n**Goal**: Add documentation for new graph templates command\n\n**Implementation Details**:\n- Update commands.knowledge.md with graph templates syntax\n- Add examples of template usage to docs/CLI_GUIDELINES.md\n- Create .chimera-lab/templates/example.graphml reference\n- Document template file format requirements\n\n**Dependencies**: Task #2 (command implementation)\n**Files**: docs/knowledge/commands.knowledge.md, .github/docs/CLI_GUIDELINES.md",
       "status": "not-started"
     }
   ]
@@ -146,7 +146,7 @@ Transform organizational tasks into well-structured, executable task lists with 
 
 **Execution Order**:
 1. Task #1: #43 - Add RepositoryGraph type model (@python-architect)
-2. Task #2: #42 - Implement graph templates command (@cli-developer)  
+2. Task #2: #42 - Implement graph templates command (@cli-developer)
 3. Task #3: #44 - Update graph documentation (@technical-writer)
 
 **Agent Distribution**:

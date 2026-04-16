@@ -1,0 +1,48 @@
+name: Feature Request
+description: Propose a new capability or enhancement
+labels:
+  - type:feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### :loudspeaker: Vision
+        Describe the user problem and why solving it matters.
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Primary Use Case
+      description: Share the workflow, persona, or job-to-be-done this unlocks
+      placeholder: As a <role>, I want <need> so that <benefit>
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: Outline UX/API shape, commands, or configuration you expect
+      placeholder: Describe UI flow, CLI flags, config keys, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact & Success Metrics
+      description: How will we measure success? Which teams/users benefit most?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Approaches
+      description: Document workarounds or competing proposals considered
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies & Considerations
+      description: List migrations, docs, infra changes, or rollout plan details
+  - type: textarea
+    id: attachments
+    attributes:
+      label: References & Assets
+      description: Link mockups, specs, related issues, or research docs

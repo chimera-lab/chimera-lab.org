@@ -14,7 +14,7 @@ Before applying the template, gather this information:
 1. **Template Selection**: Which template applies to this repository?
    - Check repository suffix: `.app`, `.project`, `.topic`, `.package`, etc.
    - Reference: [NAMING_CONVENTIONS.md](../docs/NAMING_CONVENTIONS.md)
-   - Confirm in [templates.knowledge.md](../knowledge/templates.knowledge.md)
+   - Confirm in [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md)
 
 2. **Repository Details**:
    - Full repository name
@@ -43,7 +43,7 @@ For new repositories created with template:
    # Clone the new repository
    git clone https://github.com/chimera-lab/<repository-name>
    cd <repository-name>
-   
+
    # Configure as submodule (if in topic)
    cd /path/to/topic
    git submodule add https://github.com/chimera-lab/<repository-name> <relative-path>
@@ -67,12 +67,12 @@ For new repositories created with template:
    - [Your Project Name] → actual name
    - [Your Project Description] → actual description
    - [Your Project Link] → actual repository link
-   
+
    # Update .github/ files:
    - CONTRIBUTING.md - adjust contribution guidelines if needed
    - CODE_OF_CONDUCT.md - keep or customize
    - Issue/PR templates - review for relevance
-   
+
    # Update workflows:
    - test.yml - adjust for language/framework
    - lint.yml - configure linters for project
@@ -82,7 +82,7 @@ For new repositories created with template:
 3. **Add Metadata** (`.chimera-lab/` directory):
    ```bash
    mkdir -p .chimera-lab
-   
+
    # Create meta.json
    cat > .chimera-lab/meta.json << 'EOF'
    {
@@ -93,7 +93,7 @@ For new repositories created with template:
      "templates_applied": ["<parent-template>"]
    }
    EOF
-   
+
    # Create issues.json (if project)
    cat > .chimera-lab/issues.json << 'EOF'
    {
@@ -135,12 +135,12 @@ Only for repositories that existed before template creation.
    cp template/.gitignore .gitignore
    cp template/LICENSE LICENSE
    cp template/SECURITY.md SECURITY.md
-   
+
    # Review and keep existing files:
    - Don't overwrite existing README unless corrupted
    - Merge workflows with existing CI/CD
    - Keep language-specific configs (package.json, etc.)
-   
+
    # Create metadata:
    mkdir -p .chimera-lab
    cp template/.chimera-lab/* .chimera-lab/
@@ -151,7 +151,7 @@ Only for repositories that existed before template creation.
    # Verify structure
    ls -la .github/
    git status
-   
+
    # Test workflows (push to branch)
    git add .
    git commit -m "chore: apply template to existing repository"
@@ -197,7 +197,7 @@ After template applied, complete these tasks:
    # If in topic (add as submodule if not already)
    cd /path/to/topic
    git submodule add https://github.com/chimera-lab/<repo> <repo-name>
-   
+
    # Update topic's .chimera-lab/meta.json
    # Update organization knowledge base if new repository type
    ```
@@ -296,7 +296,7 @@ Template application is successful when:
 
 ## References
 
-- [templates.knowledge.md](../knowledge/templates.knowledge.md) - Template hierarchy
+- [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md) - Template hierarchy
 - [NAMING_CONVENTIONS.md](../docs/NAMING_CONVENTIONS.md) - Repository suffixes
 - [ORGANIZATION_MANAGEMENT.md](../docs/ORGANIZATION_MANAGEMENT.md) - Submodule workflow
-- [repository.knowledge.md](../knowledge/repository.knowledge.md) - Repository metadata
+- [repository.knowledge.md](../../docs/knowledge/repository.knowledge.md) - Repository metadata

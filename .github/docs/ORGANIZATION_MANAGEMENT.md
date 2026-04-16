@@ -4,15 +4,7 @@ Comprehensive guide for managing chimera-lab.org super-repository, including sup
 
 ## Table of Contents
 
-- [Super-Repository Concept](#super-repository-concept)
-- [Directory Structure](#directory-structure)
-- [Submodule Workflow](#submodule-workflow)
-- [Topic Management](#topic-management)
-- [Repository Management](#repository-management)
-- [Template Operations](#template-operations)
-- [Metadata Management](#metadata-management)
-- [Maintenance Tasks](#maintenance-tasks)
-- [Troubleshooting](#troubleshooting)
+<!-- toc -->
 
 ## Super-Repository Concept
 
@@ -492,5 +484,5 @@ git push
 - [ORGANIZATION_STRUCTURE.md](./ORGANIZATION_STRUCTURE.md) - Repository conventions
 - [RULES.md](../.github/RULES.md) - Organization rules
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Naming guide
-- [templates.knowledge.md](../.github/knowledge/templates.knowledge.md) - Template reference
-- [organization.knowledge.md](../.github/knowledge/organization.knowledge.md) - Organization concepts
+- [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template reference
+- [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts

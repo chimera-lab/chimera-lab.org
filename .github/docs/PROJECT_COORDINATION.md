@@ -55,24 +55,24 @@ Features that span multiple repositories require coordination:
 
    ```markdown
    # Feature: OAuth Support Across Applications
-   
+
    ## Overview
    Support OAuth 2.0 authentication across all user-facing applications.
-   
+
    ## Affected Repositories
    - chimera-lab-chat.project - chat authentication
    - chimera-lab-blog.project - blog authentication
    - chimera-lab-store.project - store authentication
-   
+
    ## Shared Components
    - New package: chimera-lab-auth.package (dependency)
-   
+
    ## Timeline
    - Phase 1: Create auth package (Week 1-2)
    - Phase 2: Integrate into chat (Week 3)
    - Phase 3: Integrate into blog (Week 4)
    - Phase 4: Integrate into store (Week 5)
-   
+
    ## Tracking
    - [ ] Auth package created (#123)
    - [ ] Chat integration (#124)
@@ -88,19 +88,19 @@ Features that span multiple repositories require coordination:
    ```markdown
    # Implement OAuth Support
    (Chat Application)
-   
+
    Related to: [Master Issue #100]
    Blocking: Deployment of chat v2.0
-   
+
    ## Requirements
    - Integrate chimera-lab-auth.package
    - Update login flow
    - Migrate existing sessions
    - Update UI for OAuth providers
-   
+
    ## Dependencies
    - chimera-lab-auth.package v1.0+ (Issue #123)
-   
+
    ## Acceptance Criteria
    - [ ] OAuth login functional
    - [ ] Session migration complete
@@ -422,22 +422,22 @@ Migrations affect multiple repositories simultaneously:
 
    ```markdown
    # Proposal: Migrate to Node.js 18
-   
+
    ## Motivation
    - Node.js 16 reaches EOL in September 2023
    - Node.js 18 has significant performance improvements
    - Security updates only available in 18+
-   
+
    ## Affected Repositories
    - chimera-lab-blog.project
    - chimera-lab-chat.project
    - chimera-lab-website.project
-   
+
    ## Timeline
    - Feb: Internal migration in dev environment
    - Mar: Staggered production migration
    - Apr 1: All repos running Node.js 18
-   
+
    ## Risks
    - Dependency incompatibilities
    - Performance regression
@@ -644,11 +644,11 @@ For dependent projects:
 
    ```markdown
    # Migration Guide: [Library] v2.0
-   
+
    ## Breaking Changes
    - AuthService constructor changed
    - Response format updated
-   
+
    ## Migration Steps
    ### Before (v1.x)
    ```php
@@ -742,6 +742,6 @@ Track coordination effectiveness:
 
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Organization operations
 - [RULES.md](../.github/RULES.md) - Organization rules and conventions
-- [templates.knowledge.md](../.github/knowledge/templates.knowledge.md) - Template management
-- [repository.knowledge.md](../.github/knowledge/repository.knowledge.md) - Repository standards
+- [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template management
+- [repository.knowledge.md](../docs/knowledge/repository.knowledge.md) - Repository standards
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Repository naming guide

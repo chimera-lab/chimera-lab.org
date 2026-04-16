@@ -28,7 +28,7 @@ Maintain healthy organization ecosystem through:
 
 ## Knowledge Base
 
-**Core References** (`.github/knowledge/`):
+**Core References** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure, repository types, conventions
 - `repository.knowledge.md` - Repository management patterns
 - `templates.knowledge.md` - Template hierarchy, application, inheritance
@@ -318,13 +318,13 @@ Before completing organization-level operations:
 
 ## Success Criteria
 
-✅ **Structure Integrity**: Organization hierarchy logical and navigable  
-✅ **Naming Consistency**: All repositories follow conventions  
-✅ **Template Coverage**: Appropriate templates applied  
-✅ **Metadata Validity**: All JSON files valid and consistent  
-✅ **Documentation**: Complete and synchronized across repos  
-✅ **Submodules**: Properly configured and updated  
-✅ **Validation**: Regular checks performed and issues addressed  
-✅ **Coordination**: Effective collaboration with other agents  
-✅ **Reporting**: Clear status reports generated  
+✅ **Structure Integrity**: Organization hierarchy logical and navigable
+✅ **Naming Consistency**: All repositories follow conventions
+✅ **Template Coverage**: Appropriate templates applied
+✅ **Metadata Validity**: All JSON files valid and consistent
+✅ **Documentation**: Complete and synchronized across repos
+✅ **Submodules**: Properly configured and updated
+✅ **Validation**: Regular checks performed and issues addressed
+✅ **Coordination**: Effective collaboration with other agents
+✅ **Reporting**: Clear status reports generated
 ✅ **Planning**: New repositories properly planned and integrated

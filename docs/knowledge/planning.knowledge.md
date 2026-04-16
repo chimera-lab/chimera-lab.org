@@ -7,15 +7,13 @@ description: Patterns for structuring work, milestones, and execution order
 
 ## :book: Table of Contents
 
-- [name: planning
-description: Patterns for structuring work, milestones, and execution order](./#name-planning-description-patterns-for-structuring-work-milestones-and-execution-order)
 - [:file_folder: Planning Knowledge](./#file_folder-planning-knowledge)
-- [:telescope: Overview](./#telescope-overview)
-- [:world_map: Guides](./#world_map-guides)
-  - [:world_map: Task Decomposition](./#world_map-task-decomposition)
-  - [:world_map: Execution Order](./#world_map-execution-order)
-  - [:world_map: Milestone Planning](./#world_map-milestone-planning)
-- [:books: References](./#books-references)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Task Decomposition](./#world_map-task-decomposition)
+    - [:world_map: Execution Order](./#world_map-execution-order)
+    - [:world_map: Milestone Planning](./#world_map-milestone-planning)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 

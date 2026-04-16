@@ -1,0 +1,61 @@
+name: Maintenance Task
+description: Track refactors, chores, upgrades, or dependency work
+labels:
+  - type:maintenance
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### :hammer_and_wrench: Maintenance Overview
+        Use this when no user-facing behavior changes but work is required to keep the project healthy.
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: Task Type
+      description: Select the closest category
+      options:
+        - refactor
+        - dependency update
+        - infrastructure/config
+        - chore / cleanup
+        - security hardening
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & Motivation
+      description: Summarize what must change and why now
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Implementation Plan
+      description: Outline steps, affected modules, and validation strategy
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risks & Impact
+      description: Mention possible regressions, service interruptions, or coupling concerns
+    validations:
+      required: true
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Rollback Strategy
+      description: Explain how to revert or mitigate if something goes wrong
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing & Verification
+      description: Note automated tests, manual checks, or smoke-test suites
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies / Sequencing
+      description: List blocked-on items, related issues, or follow-up tasks

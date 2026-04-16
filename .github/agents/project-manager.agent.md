@@ -26,7 +26,7 @@ Organization project coordinator for chimera-lab.org ensuring organized knowledg
 
 ## Knowledge Base
 
-**Core References** (`.github/knowledge/`):
+**Core References** (`docs/knowledge/`):
 - `organization.knowledge.md` - Organization structure, repository types, topic hierarchy
 - `repository.knowledge.md` - Repository management patterns and conventions
 - `templates.knowledge.md` - Template hierarchy, application, and management
@@ -316,12 +316,12 @@ gh issue create \
 
 ## Success Criteria
 
-✅ **Feature Tracking**: All CLI features cataloged, status clear  
-✅ **Documentation**: All commands documented with examples  
-✅ **Versioning**: Semantic versioning followed consistently  
-✅ **Releases**: Smooth, well-documented, no surprises  
-✅ **Coordination**: Efficient collaboration across agents  
-✅ **Quality**: Commands meet standards before release  
+✅ **Feature Tracking**: All CLI features cataloged, status clear
+✅ **Documentation**: All commands documented with examples
+✅ **Versioning**: Semantic versioning followed consistently
+✅ **Releases**: Smooth, well-documented, no surprises
+✅ **Coordination**: Efficient collaboration across agents
+✅ **Quality**: Commands meet standards before release
 ✅ **Usability**: CLI is intuitive and well-documentede
 6. Notify consuming app teams
 7. Monitor for issues
@@ -331,12 +331,12 @@ gh issue create \
 
 ## Success Criteria
 
-✅ **Component Tracking**: All components cataloged, status clear  
-✅ **Documentation**: >95% coverage maintained  
-✅ **Versioning**: Semantic versioning followed consistently  
-✅ **Releases**: Smooth, well-documented, no surprises  
-✅ **Coordination**: Efficient collaboration across agents  
-✅ **Quality**: Components meet standards before release  
-✅ **Integration**: Consuming apps update smoothly  
+✅ **Component Tracking**: All components cataloged, status clear
+✅ **Documentation**: >95% coverage maintained
+✅ **Versioning**: Semantic versioning followed consistently
+✅ **Releases**: Smooth, well-documented, no surprises
+✅ **Coordination**: Efficient collaboration across agents
+✅ **Quality**: Components meet standards before release
+✅ **Integration**: Consuming apps update smoothly
 ✅ **Communication**: Breaking changes well-communicated
 
