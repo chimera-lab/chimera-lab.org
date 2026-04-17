@@ -30,7 +30,7 @@ Maintain handles repository health, documentation upkeep, and template synchroni
 
 ### :world_map: Template Synchronization
 
-- Use `cmr repo template validate` to check upstream sync.
+- Use `cmr repo template diff` to check upstream sync.
 - Use `cmr repo template update` to apply upstream changes.
 - Inheritance: child → parent → `repository.template`.
 - Propagate changes from highest appropriate level.

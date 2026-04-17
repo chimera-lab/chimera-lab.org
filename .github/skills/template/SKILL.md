@@ -26,7 +26,7 @@ Design and maintain documentation structure skeletons using semantic headers. Ma
 
 - Templates inherit from parent: child → parent → `repository.template`.
 - Modify at the highest appropriate level to avoid duplication.
-- Use `cmr repo template validate` to check synchronization.
+- Use `cmr repo template diff` to check synchronization.
 - Use `cmr repo template update` to apply upstream changes.
 - Propagate changes: `cp` from parent to child templates.
 

@@ -31,7 +31,7 @@ Validating ensures that repository structure, templates, and naming conventions 
 
 ### :world_map: Template Validation
 
-- Use `cmr repo template validate` to check template synchronization.
+- Use `cmr repo template diff` to check template synchronization.
 - Use `cmr repo template update` to apply upstream template changes.
 - Inheritance chain: child template inherits from parent up to `repository.template`.
 - Modify at the highest level that needs the change to avoid duplication.

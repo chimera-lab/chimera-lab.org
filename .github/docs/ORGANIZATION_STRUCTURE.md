@@ -576,6 +576,6 @@ Regularly validate:
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Complete naming guide
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Operational procedures
 - [PROJECT_COORDINATION.md](./PROJECT_COORDINATION.md) - Multi-project coordination
-- [RULES.md](../.github/RULES.md) - Organization rules
+- [GITHUB_RULES.md](../../docs/GITHUB_RULES.md) - Organization rules
 - [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template system
 - [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts

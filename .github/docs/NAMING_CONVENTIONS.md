@@ -556,6 +556,6 @@ chimera-lab-cli.APP          ❌ Uppercase suffix
 ## References
 
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Organization workflows
-- [RULES.md](../.github/RULES.md) - Organization rules
+- [GITHUB_RULES.md](../../docs/GITHUB_RULES.md) - Organization rules
 - [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts
 - [repository.knowledge.md](../docs/knowledge/repository.knowledge.md) - Repository details

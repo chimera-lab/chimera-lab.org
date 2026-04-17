@@ -741,7 +741,7 @@ Track coordination effectiveness:
 ## References
 
 - [ORGANIZATION_MANAGEMENT.md](./ORGANIZATION_MANAGEMENT.md) - Organization operations
-- [RULES.md](../.github/RULES.md) - Organization rules and conventions
+- [GITHUB_RULES.md](../../docs/GITHUB_RULES.md) - Organization rules and conventions
 - [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template management
 - [repository.knowledge.md](../docs/knowledge/repository.knowledge.md) - Repository standards
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Repository naming guide

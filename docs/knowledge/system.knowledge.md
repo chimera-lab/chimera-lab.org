@@ -271,4 +271,4 @@ Organization-wide rules enforced through:
 - Template compliance
 - Submodule integrity
 
-Documented in `.github/RULES.md`
+Documented in `docs/GITHUB_RULES.md`

@@ -482,7 +482,7 @@ git push
 ## References
 
 - [ORGANIZATION_STRUCTURE.md](./ORGANIZATION_STRUCTURE.md) - Repository conventions
-- [RULES.md](../.github/RULES.md) - Organization rules
+- [GITHUB_RULES.md](../../docs/GITHUB_RULES.md) - Organization rules
 - [NAMING_CONVENTIONS.md](./NAMING_CONVENTIONS.md) - Naming guide
 - [templates.knowledge.md](../docs/knowledge/templates.knowledge.md) - Template reference
 - [organization.knowledge.md](../docs/knowledge/organization.knowledge.md) - Organization concepts

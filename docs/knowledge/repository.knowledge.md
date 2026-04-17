@@ -43,7 +43,7 @@ Repository knowledge defines the structure, naming conventions, template hierarc
 
 - `repository.template` is the base template for all {{org.name}} repositories.
 - Child templates inherit and extend parent templates.
-- Use `cmr repo template validate` to check synchronization.
+- Use `cmr repo template diff` to check synchronization.
 - Use `cmr repo template update` to apply upstream changes.
 - Modify at the highest level that needs the change to avoid duplication across children.
 

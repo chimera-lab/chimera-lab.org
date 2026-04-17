@@ -25,7 +25,7 @@ Manage handles repository operations, template inheritance, and CMR CLI workflow
 ### :world_map: Template Management
 
 - Template inheritance: child → parent → `repository.template`.
-- Use `cmr repo template validate` to check synchronization.
+- Use `cmr repo template diff` to check synchronization.
 - Use `cmr repo template update` to apply upstream changes.
 - Modify at the highest appropriate level to avoid duplication.
 

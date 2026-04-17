@@ -40,7 +40,7 @@ Automation knowledge covers CI/CD pipelines, GitHub Actions workflows, automated
 
 ### :world_map: Template Synchronization
 
-- Use `cmr repo template validate` to detect template drift.
+- Use `cmr repo template diff` to detect template drift.
 - Use `cmr repo template update` to pull changes from parent templates.
 - Automated checks ensure child repositories stay synchronized with upstream templates.
 - Template inheritance flows from `repository.template` to specialized templates to project repositories.
