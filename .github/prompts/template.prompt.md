@@ -1,6 +1,7 @@
 ---
 agent: 'chimera'
 description: 'Structure and manage documentation templates and header hierarchies.'
+model: ['Claude Sonnet 4.5 (copilot)', 'GPT-5.4 (copilot)']
 ---
 
 # :file_folder: Template
