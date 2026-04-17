@@ -17,7 +17,13 @@ description: 'Repository maintenance, health checks, and template synchronizatio
 - Validate documentation with `cmr docs validate`.
 - Check template synchronization with `cmr repo template validate`.
 - Apply fixes with `cmr docs fix` where applicable.
-- Update templates with `cmr repo template update` when needed.
+
+**Template Operations Decision Tree**:
+- **Check sync status**: `cmr repo template validate` (safe, read-only)
+- **Copy docs safely**: `cmr repo template reset` (non-destructive)
+- **Full sync with deletes**: `cmr repo template update --dry-run` (always preview first)
+
+Configure delete safety in `.chimera-lab/settings.json` under `template_update` section.
 
 ### :world_map: Output
 

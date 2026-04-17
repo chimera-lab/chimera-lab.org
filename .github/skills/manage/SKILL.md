@@ -29,6 +29,16 @@ Manage handles repository operations, template inheritance, and CMR CLI workflow
 - Use `cmr repo template update` to apply upstream changes.
 - Modify at the highest appropriate level to avoid duplication.
 
+**Template Synchronization Operations**:
+
+- **`cmr repo template validate`**: Read-only status check (safe, no side effects)
+- **`cmr repo template reset`**: Safe documentation copy (adds/overwrites, never deletes)
+- **`cmr repo template update`**: Full sync (add/modify/delete) - always `--dry-run` first
+
+**Before updating templates**: Always run `--dry-run` to preview changes. Configure delete safety via `settings.json.template_update`.
+
+See [CMR_REPO_TEMPLATE_OPERATIONS.md](../../../docs/CMR_REPO_TEMPLATE_OPERATIONS.md) for full operational guide with decision tree and examples.
+
 ### :world_map: CMR CLI Usage
 
 - `cmr docs list` to enumerate documentation by category.
