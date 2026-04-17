@@ -38,7 +38,7 @@ description: CMR CLI tool knowledge and usage patterns
         - [:building_construction: cmr repo labels](./#building_construction-cmr-repo-labels)
         - [:building_construction: cmr repo template](./#building_construction-cmr-repo-template)
         - [:building_construction: cmr repo template list](./#building_construction-cmr-repo-template-list)
-        - [:building_construction: cmr repo template diff](./#building_construction-cmr-repo-template-validate)
+        - [:building_construction: cmr repo template validate](./#building_construction-cmr-repo-template-validate)
         - [:building_construction: cmr repo template update](./#building_construction-cmr-repo-template-update)
         - [:building_construction: cmr repo template reset](./#building_construction-cmr-repo-template-reset)
       - [:building_construction: cmr submodules](./#building_construction-cmr-submodules)
@@ -179,7 +179,7 @@ Manage prompt templates: `list`, `show`, `install`, `update`.
 
 - Show template files for the current repository (local and remote info).
 
-##### :building_construction: cmr repo template diff
+##### :building_construction: cmr repo template validate
 
 - Check synchronization between repository files and template sources.
 

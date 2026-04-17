@@ -8,7 +8,7 @@
 
 ## :telescope: Overview
 
-Audit executed with SSH socket auth at /tmp/ssh-chimera.sock and CMR command `cmr repo template diff --summary`.
+Audit executed with SSH socket auth at /tmp/ssh-chimera.sock and CMR command `cmr repo template validate` (note: --summary flag is planned for future release).
 
 ## :building_construction: Structure
 
