@@ -247,10 +247,8 @@ cmr repo labels list
 
 - If GitHub operations fail, run `cmr config github status` and authenticate with `gh auth login`.
 - Ensure you are inside a repository with `.chimera-lab/` metadata for repo-scoped commands.
-- Use `--help` on any command to inspect arguments and flags.
 
 ## :books: References
 
-- [:page_facing_up: ../../README.md](../../README.md)
-- [:page_facing_up: ../STRUCTURE.md](../STRUCTURE.md)
-- [:page_facing_up: ../ORGANIZATION.md](../ORGANIZATION.md)
+- [:page_facing_up: ../CMR_REPO_TEMPLATE_OPERATIONS.md](../CMR_REPO_TEMPLATE_OPERATIONS.md) - Comprehensive guide to repo template operations
+- [:page_facing_up: cmr_template_operations.knowledge.md](cmr_template_operations.knowledge.md) - Quick reference for template operations
