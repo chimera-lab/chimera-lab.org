@@ -1,6 +1,7 @@
 {
   "repo": {
     "template": "org.template",
+    "templateHash": "6d0e917a80273542748259e91b4aa6f9f038771c",
     "name": "chimera-lab.org",
     "type": "",
     "issues": {},

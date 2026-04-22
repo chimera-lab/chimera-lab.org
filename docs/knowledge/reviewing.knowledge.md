@@ -17,13 +17,13 @@ description: Patterns for validating code, documentation, and agent context qual
 
 ## :telescope: Overview
 
-Reviewing ensures quality, consistency, and correctness across code, documentation, and AI context files. Use `cmr docs validate` for automated checks. Verify strict layer separation.
+Reviewing ensures quality, consistency, and correctness across code, documentation, and AI context files. Use `cmr docs check` for automated checks. Verify strict layer separation.
 
 ## :world_map: Guides
 
 ### :world_map: Documentation Review
 
-- Run `cmr docs validate` to check structure and links.
+- Run `cmr docs check` to check structure and links.
 - Run `cmr docs fix` to auto-repair formatting issues.
 - Verify headers follow approved semantic emoji conventions.
 - Check that references between files are valid and not circular.

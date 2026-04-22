@@ -13,45 +13,7 @@ description: CMR CLI tool knowledge and usage patterns
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Command Groups](./#building_construction-command-groups)
     - [:building_construction: Commands & Subcommands](./#building_construction-commands-subcommands)
-      - [:building_construction: cmr config](./#building_construction-cmr-config)
-        - [:building_construction: cmr config org](./#building_construction-cmr-config-org)
-        - [:building_construction: cmr config repo](./#building_construction-cmr-config-repo)
-        - [:building_construction: cmr config github status](./#building_construction-cmr-config-github-status)
-      - [:building_construction: cmr docs](./#building_construction-cmr-docs)
-        - [:building_construction: cmr docs list](./#building_construction-cmr-docs-list)
-        - [:building_construction: cmr docs validate](./#building_construction-cmr-docs-validate)
-        - [:building_construction: cmr docs fix](./#building_construction-cmr-docs-fix)
-        - [:building_construction: cmr docs agents](./#building_construction-cmr-docs-agents)
-        - [:building_construction: cmr docs knowledge](./#building_construction-cmr-docs-knowledge)
-        - [:building_construction: cmr docs prompts](./#building_construction-cmr-docs-prompts)
-      - [:building_construction: cmr ls](./#building_construction-cmr-ls)
-      - [:building_construction: cmr org](./#building_construction-cmr-org)
-        - [:building_construction: cmr org list](./#building_construction-cmr-org-list)
-        - [:building_construction: cmr org topic](./#building_construction-cmr-org-topic)
-        - [:building_construction: cmr org tree](./#building_construction-cmr-org-tree)
-      - [:building_construction: cmr repo](./#building_construction-cmr-repo)
-        - [:building_construction: cmr repo init](./#building_construction-cmr-repo-init)
-        - [:building_construction: cmr repo deinit](./#building_construction-cmr-repo-deinit)
-        - [:building_construction: cmr repo status](./#building_construction-cmr-repo-status)
-        - [:building_construction: cmr repo issues](./#building_construction-cmr-repo-issues)
-        - [:building_construction: cmr repo milestones](./#building_construction-cmr-repo-milestones)
-        - [:building_construction: cmr repo labels](./#building_construction-cmr-repo-labels)
-        - [:building_construction: cmr repo template](./#building_construction-cmr-repo-template)
-        - [:building_construction: cmr repo template list](./#building_construction-cmr-repo-template-list)
-        - [:building_construction: cmr repo template validate](./#building_construction-cmr-repo-template-validate)
-        - [:building_construction: cmr repo template update](./#building_construction-cmr-repo-template-update)
-        - [:building_construction: cmr repo template reset](./#building_construction-cmr-repo-template-reset)
-      - [:building_construction: cmr submodules](./#building_construction-cmr-submodules)
-      - [:building_construction: cmr utils](./#building_construction-cmr-utils)
-        - [:building_construction: cmr utils cache](./#building_construction-cmr-utils-cache)
-        - [:building_construction: cmr utils graph template](./#building_construction-cmr-utils-graph-template)
-      - [:building_construction: cmr wd](./#building_construction-cmr-wd)
-        - [:building_construction: cmr wd org](./#building_construction-cmr-wd-org)
-        - [:building_construction: cmr wd repo](./#building_construction-cmr-wd-repo)
   - [:world_map: Guides](./#world_map-guides)
-    - [:compass: Step: Discover repositories](./#compass-step-discover-repositories)
-    - [:compass: Step: Manage documentation](./#compass-step-manage-documentation)
-    - [:compass: Step: GitHub resources](./#compass-step-github-resources)
   - [:hammer_and_wrench: Common Problems](./#hammer_and_wrench-common-problems)
   - [:books: References](./#books-references)
 
@@ -61,16 +23,9 @@ The CMR CLI (`cmr`) automates {{org.name}} repositories managing documentation v
 
 ## :triangular_ruler: Technologies
 
-- Requires Python 3.8+ and an editable install from the CLI source.
+- Requires Python 3.8+ and an editable install from the CLI source (`pip install -e .`).
 - After installation run `cmr --help` to verify entry points.
 - Optional GitHub auth: prefer `gh auth login`; fallback token via `CHIMERA_LAB_CLI_GITHUB_API`.
-
-```bash
-source chimera-lab-cli.app/.venv/bin/activate
-pip install -e .
-cmr --help
-cmr config github status
-```
 
 ## :building_construction: Structure
 
@@ -87,157 +42,51 @@ cmr config github status
 
 ### :building_construction: Commands & Subcommands
 
-#### :building_construction: cmr config
-
-##### :building_construction: cmr config org
-
-- Manage organization configuration files and settings.
-
-##### :building_construction: cmr config repo
-
-- Manage repository-level configuration and metadata.
-
-##### :building_construction: cmr config github status
-
-- Show GitHub backend selection and authentication status.
-
-#### :building_construction: cmr docs
-
-##### :building_construction: cmr docs list
-
-List documentation files by category with filtering options.
-
-##### :building_construction: cmr docs validate
-
-Validate documentation with flexible category selection and single-file support.
-
-##### :building_construction: cmr docs fix
-
-Auto-fix documentation issues.
-
-##### :building_construction: cmr docs agents
-
-Manage AI agents: `list`, `show`, `install`, `update`, `validate`.
-
-##### :building_construction: cmr docs knowledge
-
-Manage knowledge base: `list`, `show`, `install`, `update`.
-
-##### :building_construction: cmr docs prompts
-
-Manage prompt templates: `list`, `show`, `install`, `update`.
-
-#### :building_construction: cmr ls
-
-- List files grouped by documentation status.
-
-#### :building_construction: cmr org
-
-##### :building_construction: cmr org list
-
-- List organization repositories (table, JSON, tree, graphml).
-
-##### :building_construction: cmr org topic
-
-- Show topic repositories with hierarchy.
-
-##### :building_construction: cmr org tree
-
-- Display repository hierarchy tree.
-
-#### :building_construction: cmr repo
-
-##### :building_construction: cmr repo init
-
-- Initialize {{org.name}} structure in an existing repository.
-
-##### :building_construction: cmr repo deinit
-
-- Remove {{org.name}} structure (use `--keep-metadata` to retain settings).
-
-##### :building_construction: cmr repo status
-
-- Show repository status and {{org.name}} configuration.
-
-##### :building_construction: cmr repo issues
-
-- Manage GitHub issues via the selected backend (list/create/etc.).
-
-##### :building_construction: cmr repo milestones
-
-- List or create milestones for planning.
-
-##### :building_construction: cmr repo labels
-
-- List or manage labels defined for the repository.
-
-##### :building_construction: cmr repo template
-
-- Access template operations for the current repository.
-
-##### :building_construction: cmr repo template list
-
-- Show template files for the current repository (local and remote info).
-
-##### :building_construction: cmr repo template validate
-
-- Check synchronization between repository files and template sources.
-
-##### :building_construction: cmr repo template update
-
-- Apply template updates, including variables and submodule handling.
-
-##### :building_construction: cmr repo template reset
-
-- Reset documentation from the template (use `--overwrite` to replace files).
-
-#### :building_construction: cmr submodules
-
-- Manage git submodules tracked by {{org.name}}.
-
-#### :building_construction: cmr utils
-
-##### :building_construction: cmr utils cache
-
-- Cache maintenance: `stats`, `invalidate`, `clear`.
-
-##### :building_construction: cmr utils graph template
-
-- Show template usage statistics across repositories.
-
-#### :building_construction: cmr wd
-
-- Print working directory context.
-
-##### :building_construction: cmr wd org
-
-- Show organization path configured for the workspace.
-
-##### :building_construction: cmr wd repo
-
-- Show repository path for the current working directory.
+| Command | Description |
+|---|---|
+| `cmr config org` | Manage organization configuration |
+| `cmr config repo` | Manage repository configuration |
+| `cmr config github status` | Show GitHub auth status |
+| `cmr docs list` | List docs by category with filtering |
+| `cmr docs check` | Validate documentation |
+| `cmr docs fix` | Auto-fix documentation issues |
+| `cmr docs agents` | Manage AI agents: list, show, install, update, validate |
+| `cmr docs knowledge` | Manage knowledge base: list, show, install, update |
+| `cmr docs prompts` | Manage prompt templates: list, show, install, update |
+| `cmr ls` | List files by documentation status |
+| `cmr org list` | List org repos (table, JSON, tree, graphml) |
+| `cmr org topic` | Show topic repos with hierarchy |
+| `cmr org tree` | Display repo hierarchy tree |
+| `cmr repo init` | Initialize org structure in existing repo |
+| `cmr repo deinit` | Remove org structure |
+| `cmr repo status` | Show repo status and org config |
+| `cmr repo issues` | Manage GitHub issues |
+| `cmr repo milestones` | List or create milestones |
+| `cmr repo labels` | List or manage labels |
+| `cmr repo template list` | Show template files (local and remote) |
+| `cmr repo template diff` | Check template synchronization |
+| `cmr repo template update` | Apply template updates |
+| `cmr repo template reset` | Reset docs from template |
+| `cmr submodules` | Manage git submodules |
+| `cmr utils cache` | Cache maintenance: stats, invalidate, clear |
+| `cmr utils graph template` | Template usage statistics |
+| `cmr wd org` | Show organization path |
+| `cmr wd repo` | Show repo path for current directory |
 
 ## :world_map: Guides
 
-### :compass: Step: Discover repositories
-
 ```bash
-cmr org list # Table view
-cmr org tree # Tree hierarchy
-```
+# Discover repositories
+cmr org list          # Table view
+cmr org tree          # Tree hierarchy
 
-### :compass: Step: Manage documentation
-
-```bash
+# Manage documentation
 cmr docs list -c agents     # List agents
-cmr docs validate           # Validate all
-cmr docs validate README.md # Validate file
+cmr docs check              # Validate all
+cmr docs check README.md    # Validate file
 cmr docs fix --dry-run      # Preview fixes
-```
 
-### :compass: Step: GitHub resources
-
-```bash
+# GitHub resources
 cmr repo issues list
 cmr repo milestones list
 cmr repo labels list
@@ -247,8 +96,10 @@ cmr repo labels list
 
 - If GitHub operations fail, run `cmr config github status` and authenticate with `gh auth login`.
 - Ensure you are inside a repository with `.chimera-lab/` metadata for repo-scoped commands.
+- Use `--help` on any command to inspect arguments and flags.
 
 ## :books: References
 
-- [:page_facing_up: ../CMR_REPO_TEMPLATE_OPERATIONS.md](../CMR_REPO_TEMPLATE_OPERATIONS.md) - Comprehensive guide to repo template operations
-- [:page_facing_up: cmr_template_operations.knowledge.md](cmr_template_operations.knowledge.md) - Quick reference for template operations
+- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../STRUCTURE.md](../STRUCTURE.md)
+- [:page_facing_up: ../ORGANIZATION.md](../ORGANIZATION.md)

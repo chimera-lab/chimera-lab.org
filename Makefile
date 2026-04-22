@@ -1,6 +1,6 @@
 # Makefile for project automation - customize for your project type
 
-.PHONY: help install test lint format check clean build docs setup
+.PHONY: help install test lint format check clean build docs setup cmr-check cmr-template-diff cmr-template-update cmr-render cmr-pipeline
 
 # Default target
 help:
@@ -14,6 +14,11 @@ help:
 	@echo "  build       Build project"
 	@echo "  docs        Generate documentation"
 	@echo "  setup       Setup development environment"
+	@echo "  cmr-check   Validate docs and tag directives"
+	@echo "  cmr-template-diff   Show template/repository differences"
+	@echo "  cmr-template-update Apply template updates"
+	@echo "  cmr-render  Refresh CMR tags and TOC"
+	@echo "  cmr-pipeline Run full CMR pipeline"
 
 # Installation - customize for your project type
 install:
@@ -55,3 +60,20 @@ build: clean
 docs:
 	@echo "Generate documentation"
 	# Add documentation generation commands
+
+# CMR pipeline automation
+cmr-check:
+	cmr docs check
+	cmr docs check --tags
+
+cmr-template-diff:
+	cmr repo template diff
+
+cmr-template-update:
+	cmr repo template update
+
+cmr-render:
+	cmr docs fix --tags
+	cmr docs fix -r toc
+
+cmr-pipeline: cmr-check cmr-template-diff cmr-template-update cmr-render cmr-check

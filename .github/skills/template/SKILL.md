@@ -25,43 +25,14 @@ Design and maintain documentation structure skeletons using semantic headers. Ma
 ### :world_map: Template Inheritance
 
 - Templates inherit from parent: child → parent → `repository.template`.
-
-### :world_map: Template Synchronization Operations
-
-**Decision Tree for Operation Selection**:
-
-1. **Need to CHECK sync status?** → Use `cmr repo template validate`
-	- Read-only, shows what differs from template
-	- Safe to run anytime, no side effects
-	- Output: missing files, modified files, synchronized files
-
-2. **Need to COPY docs SAFELY (no deletes)?** → Use `cmr repo template reset`
-	- Safe, non-destructive write
-	- Adds/overwrites files only, never deletes
-	- Good for initial documentation structure
-
-3. **Need FULL SYNC (add/modify/delete)?** → Use `cmr repo template update`
-	- High-risk write operation
-	- Can delete files per `settings.json` configuration
-	- **Always run `--dry-run` first to preview**
-	- Configure delete policy: `template_update.never_delete`, `template_update.always_delete`
-
-**Example Workflow**:
-```bash
-# 1. Check what's different
-cmr repo template validate
-
-# 2. Preview changes before applying
-cmr repo template update --dry-run
-
-# 3. Apply if safe
-cmr repo template update
-```
-
-See [CMR_REPO_TEMPLATE_OPERATIONS.md](../../../docs/CMR_REPO_TEMPLATE_OPERATIONS.md) for comprehensive guide.
+- Modify at the highest appropriate level to avoid duplication.
+- Use `cmr repo template diff` to check synchronization.
+- Use `cmr repo template update` to apply upstream changes.
+- Propagate changes: `cp` from parent to child templates.
 
 ### :world_map: Validation
 
+- Run `cmr docs validate` to check all documentation.
 - Check that all files follow naming conventions.
 
 ### :world_map: Output

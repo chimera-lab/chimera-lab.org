@@ -13,7 +13,7 @@ Before applying the template, gather this information:
 
 1. **Template Selection**: Which template applies to this repository?
    - Check repository suffix: `.app`, `.project`, `.topic`, `.package`, etc.
-   - Reference: [NAMING_CONVENTIONS.md](../docs/NAMING_CONVENTIONS.md)
+   - Reference: [ORGANIZATION.md](../../docs/ORGANIZATION.md)
    - Confirm in [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md)
 
 2. **Repository Details**:
@@ -203,9 +203,9 @@ After template applied, complete these tasks:
    ```
 
 5. **Documentation**:
-   - [ ] Update `.github/docs/ORGANIZATION_STRUCTURE.md` with new repo
+   - [ ] Update `docs/STRUCTURE.md` with new repo
    - [ ] If new template type, update `templates.knowledge.md`
-   - [ ] If new repository type, update `NAMING_CONVENTIONS.md`
+   - [ ] If new repository type, update `docs/ORGANIZATION.md`
    - [ ] Create GitHub issue for template tracking (if bulk operation)
 
 ## Template Reference
@@ -297,6 +297,6 @@ Template application is successful when:
 ## References
 
 - [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md) - Template hierarchy
-- [NAMING_CONVENTIONS.md](../docs/NAMING_CONVENTIONS.md) - Repository suffixes
-- [ORGANIZATION_MANAGEMENT.md](../docs/ORGANIZATION_MANAGEMENT.md) - Submodule workflow
+- [ORGANIZATION.md](../../docs/ORGANIZATION.md) - Repository suffixes and naming conventions
+- [ORGANIZATION.md](../../docs/ORGANIZATION.md) - Submodule workflow
 - [repository.knowledge.md](../../docs/knowledge/repository.knowledge.md) - Repository metadata

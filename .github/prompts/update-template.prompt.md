@@ -206,7 +206,7 @@ Document all template updates:
    - Note significant changes
    - Update example repositories if version-specific
 
-3. **Update ORGANIZATION_MANAGEMENT.md**:
+3. **Update ORGANIZATION.md**:
    - If new template management procedure needed
    - If breaking changes require special handling
 
@@ -345,6 +345,6 @@ Template update is successful when:
 ## References
 
 - [templates.knowledge.md](../../docs/knowledge/templates.knowledge.md) - Template structure
-- [ORGANIZATION_MANAGEMENT.md](../docs/ORGANIZATION_MANAGEMENT.md) - Organization operations
+- [ORGANIZATION.md](../../docs/ORGANIZATION.md) - Organization operations
 - [repository.knowledge.md](../../docs/knowledge/repository.knowledge.md) - Repository metadata
 - Individual repository `.chimera-lab/meta.json` - Template version tracking

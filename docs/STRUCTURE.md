@@ -54,7 +54,7 @@ Configuration and metadata:
 
 ### :building_construction: `.github/` Directory
 
-GitHub workflows and automation:
+GitHub workflows and automation. `.github/` is reserved for GitHub automation and workflow artifacts only — keep narrative guides and standards in `docs/` instead.
 
 ```text
 .github/

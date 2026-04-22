@@ -7,33 +7,22 @@
   - [:building_construction: Structure](./#building_construction-structure)
   - [:wrench: Configuration](./#wrench-configuration)
   - [:keyboard: Usage](./#keyboard-usage)
-    - [Via GitHub Web Interface](./#via-github-web-interface)
-    - [Via GitHub CLI](./#via-github-cli)
-    - [Via chimera-lab-cli](./#via-chimera-lab-cli)
+    - [:keyboard: Via GitHub Web Interface](./#keyboard-via-github-web-interface)
+    - [:keyboard: Via GitHub CLI](./#keyboard-via-github-cli)
+    - [:keyboard: Via chimera-lab-cli](./#keyboard-via-chimera-lab-cli)
   - [:page_facing_up: Files](./#page_facing_up-files)
-    - [In Template Repository](./#in-template-repository)
-    - [In Child Repository](./#in-child-repository)
+    - [:page_facing_up: In Template Repository](./#page_facing_up-in-template-repository)
+    - [:page_facing_up: In Child Repository](./#page_facing_up-in-child-repository)
   - [:books: References](./#books-references)
-  - [:memo: To-Do List](./#memo-to-do-list)
-    - [Workflow](./#workflow)
-    - [Using Utility Scripts](./#using-utility-scripts)
-    - [Via chimera-lab-cli](./#via-chimera-lab-cli)
   - [:jigsaw: Components](./#jigsaw-components)
-    - [`repository.template` - Base Template](./#repositorytemplate-base-template)
-    - [`topic.template` - Knowledge Topics](./#topictemplate-knowledge-topics)
-    - [`overview.template` - Study Material](./#overviewtemplate-study-material)
-    - [`project.template` - Dedicated Projects](./#projecttemplate-dedicated-projects)
-    - [`app.template` - Applications](./#apptemplate-applications)
-    - [`package.template` - Libraries](./#packagetemplate-libraries)
-    - [`scaffold.template` - Boilerplates](./#scaffoldtemplate-boilerplates)
-    - [`org.template` - Organizations](./#orgtemplate-organizations)
   - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Template Selection](./#world_map-template-selection)
+    - [:world_map: Validation](./#world_map-validation)
+    - [:world_map: Best Practices](./#world_map-best-practices)
   - [:control_knobs: Customization](./#control_knobs-customization)
-    - [Allowed Customizations](./#allowed-customizations)
-    - [Discouraged Changes](./#discouraged-changes)
-  - [:world_map: Guides](./#world_map-guides)
+    - [:control_knobs: Allowed Customizations](./#control_knobs-allowed-customizations)
+    - [:control_knobs: Discouraged Changes](./#control_knobs-discouraged-changes)
   - [:link: See Also](./#link-see-also)
-  - [:world_map: Guides](./#world_map-guides)
 
 ## :telescope: Overview
 
@@ -79,27 +68,21 @@ template-name.template/
 
 ## :keyboard: Usage
 
-### Via GitHub Web Interface
+### :keyboard: Via GitHub Web Interface
 1. Navigate to template repository on GitHub
 2. Click "Use this template"
 3. Create new repository from template
 4. Clone and add as submodule to organization
 
-### Via GitHub CLI
-```bash
-gh repo create org/new-repo --template org/template-name.template --public
-cd path/to/organization
-git submodule add https://github.com/org/new-repo.git location/new-repo.suffix
-```
+### :keyboard: Via GitHub CLI
+Create with `gh repo create org/new-repo --template org/template-name.template --public`, then add as submodule.
 
-### Via chimera-lab-cli
-```bash
-cmr repo create --name new-repo --template app.template --topic devops.topic
-```
+### :keyboard: Via chimera-lab-cli
+Use `cmr repo create --name new-repo --template app.template --topic devops.topic`.
 
 ## :page_facing_up: Files
 
-### In Template Repository
+### :page_facing_up: In Template Repository
 Templates have `is_template: true` in `.chimera-lab/meta.json`:
 
 ```json
@@ -112,7 +95,7 @@ Templates have `is_template: true` in `.chimera-lab/meta.json`:
 }
 ```
 
-### In Child Repository
+### :page_facing_up: In Child Repository
 Child repos reference their template:
 
 ```json
@@ -132,80 +115,22 @@ Templates inherit from parent templates:
 - Specialized templates extend base (add CI/CD, language-specific configs)
 - Child repos can further customize without breaking template link
 
-## :memo: To-Do List
-
-### Workflow
-1. Update template repository
-2. Identify affected child repositories
-3. Coordinate update schedule (via Project Manager)
-4. Apply updates to each child (via Repository Manager)
-5. Test and validate changes
-6. Document update in changelog
-
-### Using Utility Scripts
-```bash
-# Single repository
-.chimera-lab/utils/rebuild-repo-with-template.sh <repo-name>
-
-# Multiple repositories
-.chimera-lab/utils/bulk-rebuild-repo-with-template.sh
-```
-
-### Via chimera-lab-cli
-```bash
-# List repos using template
-cmr template repos --name app.template
-
-# Update specific repo
-cmr template update --repo my-app.app
-
-# Update all repos using template
-cmr template update --template app.template --all
-```
-
 ## :jigsaw: Components
 
-### `repository.template` - Base Template
-- Foundation for all other templates
-- Provides: README.md, LICENSE, .gitignore, CONTRIBUTING.md
-- All templates inherit from this
-
-### `topic.template` - Knowledge Topics
-- Structure for organizing related repositories
-- Includes: Topic README, navigation structure
-- Example: `devops.topic`, `security.topic`
-
-### `overview.template` - Study Material
-- Documentation and learning resources
-- Includes: Chapter structure, examples directory
-- Example: `docker.overview`, `kubernetes.overview`
-
-### `project.template` - Dedicated Projects
-- Full-featured projects with own lifecycle
-- Includes: CI/CD pipelines, issue templates, release workflow
-- Example: `chimera-lab-blog.project`
-
-### `app.template` - Applications
-- End-user facing applications
-- Includes: Build scripts, deployment configs, user docs
-- Example: `chimera-lab-cli.app`
-
-### `package.template` - Libraries
-- Reusable code packages
-- Includes: Package manifest, documentation, testing setup
-- Example: `chimera-lab-laravel.package`
-
-### `scaffold.template` - Boilerplates
-- Code generation templates
-- Includes: Generator scripts, template files
-- Example: `wordpress-plugin-abstraction.scaffold`
-
-### `org.template` - Organizations
-- Super-repository structure
-- Includes: `.chimera-lab/` setup, submodule conventions
-- Example: Applied to organization root
+| Template | Purpose | Includes |
+|----------|---------|----------|
+| `repository.template` | Base for all templates | README, LICENSE, .gitignore, CONTRIBUTING.md |
+| `topic.template` | Organize related repos | Topic README, navigation structure |
+| `overview.template` | Study/learning material | Chapter structure, examples directory |
+| `project.template` | Full project lifecycle | CI/CD, issue templates, release workflow |
+| `app.template` | End-user applications | Build scripts, deployment configs, user docs |
+| `package.template` | Reusable libraries | Package manifest, docs, testing setup |
+| `scaffold.template` | Boilerplate generators | Generator scripts, template files |
+| `org.template` | Super-repository | `.chimera-lab/` setup, submodule conventions |
 
 ## :world_map: Guides
+
+### :world_map: Template Selection
 
 | Repository Type | Use Template | When |
 |----------------|--------------|------|
@@ -218,35 +143,35 @@ cmr template update --template app.template --all
 | DIY project | `diy.template` | Hardware, home automation |
 | Organization | `org.template` | New super-repository |
 
+### :world_map: Validation
+
+Validate with `cmr template validate --repo my-app.app` (if CLI available) or manually check that `.github/.template/` submodule exists, `meta.json` has the correct `template` field, and core template files are present.
+
+### :world_map: Best Practices
+
+1. **Always Use Templates**: Don't create repos from scratch
+2. **Maintain Submodule**: Keep `.github/.template/` updated
+3. **Document Customizations**: Note deviations from template
+4. **Test Updates**: Validate template updates before bulk apply
+5. **Coordinate Changes**: Use Project Manager for breaking changes
+6. **Version Templates**: Tag template versions for tracking
+7. **Minimize Divergence**: Keep close to template structure
+8. **Update Regularly**: Sync with template updates quarterly
+
 ## :control_knobs: Customization
 
-### Allowed Customizations
+### :control_knobs: Allowed Customizations
 - Add project-specific files
 - Extend CI/CD workflows
 - Add custom issue templates
 - Enhance documentation
 - Add language/framework-specific configs
 
-### Discouraged Changes
+### :control_knobs: Discouraged Changes
 - Removing template-provided files
 - Breaking template directory structure
 - Modifying core template patterns
 - Removing template submodule reference
-
-## :world_map: Guides
-
-Check if repository follows template structure:
-```bash
-# Via CLI (if available)
-cmr template validate --repo my-app.app
-
-# Manual check
-- [ ] `.github/.template/` submodule present
-- [ ] `meta.json` has correct template field
-- [ ] Core template files present
-- [ ] README follows template structure
-- [ ] LICENSE file present
-```
 
 ## :link: See Also
 
@@ -259,14 +184,3 @@ Each template should document:
 - Update procedures
 
 See individual template READMEs in `template.topic/`
-
-## :world_map: Guides
-
-1. **Always Use Templates**: Don't create repos from scratch
-2. **Maintain Submodule**: Keep `.github/.template/` updated
-3. **Document Customizations**: Note deviations from template
-4. **Test Updates**: Validate template updates before bulk apply
-5. **Coordinate Changes**: Use Project Manager for breaking changes
-6. **Version Templates**: Tag template versions for tracking
-7. **Minimize Divergence**: Keep close to template structure
-8. **Update Regularly**: Sync with template updates quarterly

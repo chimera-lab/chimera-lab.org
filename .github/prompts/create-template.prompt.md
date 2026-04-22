@@ -1,5 +1,5 @@
 ---
-agent: prompt-engineer
+agent: organization-manager
 description: Guide for creating new GitHub repository templates
 ---
 
@@ -78,12 +78,12 @@ Document the template creation:
    - List use cases and example projects
    - Document inheritance chain
 
-2. **Update NAMING_CONVENTIONS.md**:
+2. **Update ORGANIZATION.md**:
    - Add template to template suffix section
    - Include naming example
    - Document when to use this template
 
-3. **Update ORGANIZATION_STRUCTURE.md**:
+3. **Update STRUCTURE.md**:
    - Reference new template
    - Show example of repository created from template
 

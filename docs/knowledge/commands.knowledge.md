@@ -5,58 +5,35 @@
 - [Commands Knowledge](./#commands-knowledge)
   - [:building_construction: Structure](./#building_construction-structure)
   - [:jigsaw: Components](./#jigsaw-components)
-    - [`cwd` - Current Working Directory](./#cwd-current-working-directory)
-      - [`cmr cwd org [PATH]`](./#cmr-cwd-org-path)
-      - [`cmr cwd repo [PATH]`](./#cmr-cwd-repo-path)
-    - [`repo` - Repository Management](./#repo-repository-management)
-      - [`cmr repo issues`](./#cmr-repo-issues)
-      - [`cmr repo milestones`](./#cmr-repo-milestones)
-      - [`cmr repo labels [TYPES...]`](./#cmr-repo-labels-types)
-    - [`submodules` - Git Submodule Management](./#submodules-git-submodule-management)
-      - [`cmr submodules update`](./#cmr-submodules-update)
-    - [`cd` - Directory Navigation](./#cd-directory-navigation)
-      - [`cmr cd [REPOSITORY]`](./#cmr-cd-repository)
-    - [`docs` - Documentation Management](./#docs-documentation-management)
-      - [`cmr docs check [PATH]`](./#cmr-docs-check-path)
-      - [`cmr docs fix`](./#cmr-docs-fix)
-    - [`templates` - Template Management](./#templates-template-management)
-      - [`cmr templates update`](./#cmr-templates-update)
-    - [`rules` - Rule Enforcement](./#rules-rule-enforcement)
-      - [`cmr rules check`](./#cmr-rules-check)
-      - [`cmr rules fix`](./#cmr-rules-fix)
-    - [`graph` - Visualization and Analytics](./#graph-visualization-and-analytics)
-      - [`cmr graph level`](./#cmr-graph-level)
-      - [`cmr graph all`](./#cmr-graph-all)
-      - [`cmr graph network`](./#cmr-graph-network)
-      - [`cmr graph templates`](./#cmr-graph-templates)
-      - [`cmr graph commits`](./#cmr-graph-commits)
-      - [`cmr graph tree`](./#cmr-graph-tree)
-      - [`cmr graph terms`](./#cmr-graph-terms)
-    - [`tree` - Tree View](./#tree-tree-view)
-      - [`cmr tree`](./#cmr-tree)
-    - [`terms` - Terminology Management](./#terms-terminology-management)
-      - [`cmr terms search [TERM]`](./#cmr-terms-search-term)
-      - [`cmr terms list`](./#cmr-terms-list)
-      - [`cmr terms link [TERM]`](./#cmr-terms-link-term)
-    - [`workspace` - Workspace Management](./#workspace-workspace-management)
-      - [`cmr workspace create [NAME]`](./#cmr-workspace-create-name)
-      - [`cmr workspace delete [NAME]`](./#cmr-workspace-delete-name)
-      - [`cmr workspace checkout [NAME]`](./#cmr-workspace-checkout-name)
-    - [`project` - Project Management](./#project-project-management)
-      - [`cmr project issues`](./#cmr-project-issues)
-      - [`cmr project docs`](./#cmr-project-docs)
-      - [`cmr project plan`](./#cmr-project-plan)
-    - [`org` - Organization Management](./#org-organization-management)
-      - [`cmr org list`](./#cmr-org-list)
-      - [`cmr org topic`](./#cmr-org-topic)
-      - [`cmr org terms`](./#cmr-org-terms)
-      - [`cmr org guides`](./#cmr-org-guides)
-      - [`cmr org projects`](./#cmr-org-projects)
+    - [:jigsaw: `cwd` - Current Working Directory](./#jigsaw-cwd-current-working-directory)
+    - [:jigsaw: `repo` - Repository Management](./#jigsaw-repo-repository-management)
+      - [:jigsaw: `cmr repo issues`](./#jigsaw-cmr-repo-issues)
+      - [:jigsaw: `cmr repo milestones`](./#jigsaw-cmr-repo-milestones)
+      - [:jigsaw: `cmr repo labels [TYPES...]`](./#jigsaw-cmr-repo-labels-types)
+    - [:jigsaw: `submodules` - Git Submodule Management](./#jigsaw-submodules-git-submodule-management)
+      - [:jigsaw: `cmr submodules update`](./#jigsaw-cmr-submodules-update)
+    - [:jigsaw: `cd` - Directory Navigation](./#jigsaw-cd-directory-navigation)
+      - [:jigsaw: `cmr cd [REPOSITORY]`](./#jigsaw-cmr-cd-repository)
+    - [:jigsaw: `docs` - Documentation Management](./#jigsaw-docs-documentation-management)
+      - [:jigsaw: `cmr docs check [PATH]`](./#jigsaw-cmr-docs-check-path)
+      - [:jigsaw: `cmr docs fix`](./#jigsaw-cmr-docs-fix)
+    - [:jigsaw: `templates` - Template Management](./#jigsaw-templates-template-management)
+      - [:jigsaw: `cmr templates update`](./#jigsaw-cmr-templates-update)
+    - [:jigsaw: `rules` - Rule Enforcement](./#jigsaw-rules-rule-enforcement)
+      - [:jigsaw: `cmr rules check`](./#jigsaw-cmr-rules-check)
+      - [:jigsaw: `cmr rules fix`](./#jigsaw-cmr-rules-fix)
+    - [:jigsaw: `graph` - Visualization and Analytics](./#jigsaw-graph-visualization-and-analytics)
+    - [:jigsaw: `tree` - Tree View](./#jigsaw-tree-tree-view)
+      - [:jigsaw: `cmr tree`](./#jigsaw-cmr-tree)
+    - [:jigsaw: `terms` - Terminology Management](./#jigsaw-terms-terminology-management)
+    - [:jigsaw: `workspace` - Workspace Management](./#jigsaw-workspace-workspace-management)
+    - [:jigsaw: `project` - Project Management](./#jigsaw-project-project-management)
+    - [:jigsaw: `org` - Organization Management](./#jigsaw-org-organization-management)
   - [:world_map: Guides](./#world_map-guides)
-    - [JSON Configuration Files](./#json-configuration-files)
-    - [Path Resolution](./#path-resolution)
-    - [GitHub Integration](./#github-integration)
-    - [Output Styling](./#output-styling)
+    - [:world_map: JSON Configuration Files](./#world_map-json-configuration-files)
+    - [:world_map: Path Resolution](./#world_map-path-resolution)
+    - [:world_map: GitHub Integration](./#world_map-github-integration)
+    - [:world_map: Output Styling](./#world_map-output-styling)
 
 ## :building_construction: Structure
 
@@ -68,242 +45,133 @@ All command groups support `--help` for detailed information.
 
 ## :jigsaw: Components
 
-### `cwd` - Current Working Directory
+### :jigsaw: `cwd` - Current Working Directory
 
-Display organization and repository paths.
+| Command | Description |
+|---------|-------------|
+| `cmr cwd org [PATH]` | Shows org root; walks up for `.chimera-lab/` (falls back to `CHIMERA_LAB_CLI_ORG_PATH`) |
+| `cmr cwd repo [PATH]` | Shows repo root; identifies repository within organization |
 
-#### `cmr cwd org [PATH]`
-Shows organization root path.
-- Walks up directory tree looking for `.chimera-lab/` marker
-- Falls back to `CHIMERA_LAB_CLI_ORG_PATH` environment variable
-
-#### `cmr cwd repo [PATH]`
-Shows repository root path.
-- Identifies repository within organization structure
-
-### `repo` - Repository Management
+### :jigsaw: `repo` - Repository Management
 
 Manage repository issues, milestones, and labels.
 
-#### `cmr repo issues`
+#### :jigsaw: `cmr repo issues`
 Creates/syncs issues from `./.chimera-lab/issues.json`
 - Requires: `IssueCollection` JSON format
 - Fields: `title`, `id`, `milestone`, `estimate_hours`, `is_created`
 
-#### `cmr repo milestones`
+#### :jigsaw: `cmr repo milestones`
 Creates/syncs milestones from JSON template.
 - Sources: `${REPO_PATH}/.chimera-lab/milestones.json` or org-level
 
-#### `cmr repo labels [TYPES...]`
+#### :jigsaw: `cmr repo labels [TYPES...]`
 Creates/syncs labels from JSON template.
 - Accepts multiple label types as arguments
 
-### `submodules` - Git Submodule Management
+### :jigsaw: `submodules` - Git Submodule Management
 
-#### `cmr submodules update`
+#### :jigsaw: `cmr submodules update`
 Updates all submodules recursively.
 - Includes reverse updates for nested super-repositories
 
-### `cd` - Directory Navigation
+### :jigsaw: `cd` - Directory Navigation
 
-#### `cmr cd [REPOSITORY]`
+#### :jigsaw: `cmr cd [REPOSITORY]`
 Changes to specified repository directory.
 - Searches organization recursively
 - Repository need not be in current directory
 
-### `docs` - Documentation Management
+### :jigsaw: `docs` - Documentation Management
 
 Validate and maintain documentation quality across repositories.
 
-#### `cmr docs check [PATH]`
+#### :jigsaw: `cmr docs check [PATH]`
 Validates documentation quality and template compliance.
 
 **Options**:
 - `--strict` - Fail on warnings (exit code 1)
 - `--check-external` - Validate external links (HTTP/HTTPS)
 
-**Validation Rules**:
+**Validates**: README existence & template version, template compliance, header emoji format, link prefix rules (`:globe_with_meridians:`, `:open_file_folder:`, `:file_folder:`, `:mag:`), docstring coverage, metadata structure, and topic template submodules.
 
-1. **README Validation**
-   - README.md must exist in repository root
-   - Must contain template version comment: `<!--(version=X.Y.Z)-->`
-   - Minimum content length (50 characters)
+**Output**: Rich table with severity, type, file, line, message. Exit code 1 on errors (or warnings with `--strict`).
 
-2. **Template Compliance**
-   - Compare against `.github/.template` files
-   - All template files must exist in repository
-   - All template headers must be present
-   - Warn if content unchanged from template
-
-3. **Header Format**
-   - Headers must start with approved emoji prefixes:
-     - `:loudspeaker:` Introduction
-     - `:inbox_tray:` Installation
-     - `:keyboard:` Usage
-     - `:wrench:` Configuration
-     - `:chains:` Dependencies
-     - `:paperclip:` Appendix
-     - `:book:` Documentation
-     - `:hammer_and_wrench:` Development
-     - `:busts_in_silhouette:` Contributing
-
-4. **Link Prefix Rules**
-   - External links: `:globe_with_meridians:` prefix
-     - Example: `[:globe_with_meridians: Python Docs](https://docs.python.org)`
-   - Chimera-lab repos: `:open_file_folder:` prefix
-     - Example: `[:open_file_folder: chimera-lab/cli](https://github.com/chimera-lab/chimera-lab-cli)`
-   - Other repos: `:file_folder:` prefix
-     - Example: `[:file_folder: python/cpython](https://github.com/python/cpython)`
-   - Term references: `:mag:` prefix
-     - Example: `[:mag: Repository](https://github.com/chimera-lab/template.topic#repository)`
-   - Internal anchors: Use header emoji
-     - Example: `[:paperclip: Appendix](#paperclip-appendix)`
-
-5. **Docstring Validation**
-   - All public functions/classes must have docstrings
-   - Private functions (starting with `_`) are skipped
-   - Excludes: `.venv/`, `__pycache__/`, `src/`, `.git/`, `egg-info/`
-
-6. **Metadata Validation**
-   - `.chimera-lab/meta.json` should exist
-   - Required fields: `repo`, `org`
-   - Valid JSON structure
-
-7. **Topic Template Submodules** (for `topic.template` repos)
-   - Must have `## submodules` section
-   - Each submodule must have corresponding header
-   - Section should include intro from submodule README
-
-**Output**:
-- Rich formatted table with severity, type, file, line, message
-- Relative paths from execution directory
-- Summary: total errors and warnings
-- Exit code 1 if errors found, or warnings with `--strict`
-
-**Examples**:
-```bash
-# Check current directory
-cmr docs check
-
-# Check specific repository
-cmr docs check /path/to/repo
-
-# Strict mode (fail on warnings)
-cmr docs check --strict
-
-# Include external link validation
-cmr docs check --check-external
-```
-
-#### `cmr docs fix`
+#### :jigsaw: `cmr docs fix`
 Automatically fixes documentation issues.
 
-### `templates` - Template Management
+### :jigsaw: `templates` - Template Management
 
-#### `cmr templates update`
+#### :jigsaw: `cmr templates update`
 Updates repository to latest template version.
 - Applies template inheritance and migrations
 
-### `rules` - Rule Enforcement
+### :jigsaw: `rules` - Rule Enforcement
 
-#### `cmr rules check`
+#### :jigsaw: `cmr rules check`
 Validates repository against organization rules.
 
-#### `cmr rules fix`
+#### :jigsaw: `cmr rules fix`
 Applies automatic fixes for rule compliance.
 
-### `graph` - Visualization and Analytics
+### :jigsaw: `graph` - Visualization and Analytics
 
 Generate GraphML and visualizations.
 
-#### `cmr graph level`
-Shows hierarchical level of repository/project.
+| Subcommand | Description |
+|---|---|
+| `cmr graph level` | Hierarchical level of repository/project |
+| `cmr graph all` | Complete graph: projects, repositories, templates |
+| `cmr graph network` | Network graph of project/template connections |
+| `cmr graph templates` | Template-repository relationships |
+| `cmr graph commits` | Commit history visualization |
+| `cmr graph tree` | Hierarchical tree of projects |
+| `cmr graph terms` | Term relationships between projects |
 
-#### `cmr graph all`
-Complete graph of projects, repositories, templates.
+**Output Formats**: `--output json|table|text|graphml`
 
-#### `cmr graph network`
-Network graph of project/template connections.
+### :jigsaw: `tree` - Tree View
 
-#### `cmr graph templates`
-Template-repository relationships.
-
-#### `cmr graph commits`
-Commit history visualization.
-
-#### `cmr graph tree`
-Hierarchical tree of projects.
-
-#### `cmr graph terms`
-Term relationships between projects.
-
-**Output Formats**:
-- `--output json` → JSON data
-- `--output table` → Rich table
-- `--output text` → Plain text
-- `--output graphml` → GraphML XML
-
-### `tree` - Tree View
-
-#### `cmr tree`
+#### :jigsaw: `cmr tree`
 Displays repository/organization tree structure.
 
-### `terms` - Terminology Management
+### :jigsaw: `terms` - Terminology Management
 
-#### `cmr terms search [TERM]`
-Searches for specific term.
+| Command | Description |
+|---------|-------------|
+| `cmr terms search [TERM]` | Searches for specific term |
+| `cmr terms list` | Lists all defined terms |
+| `cmr terms link [TERM]` | Returns term documentation link |
 
-#### `cmr terms list`
-Lists all defined terms.
+### :jigsaw: `workspace` - Workspace Management
 
-#### `cmr terms link [TERM]`
-Returns term documentation link.
+| Command | Description |
+|---------|-------------|
+| `cmr workspace create [NAME]` | Creates new workspace; sets up paths, environment, VSCode |
+| `cmr workspace delete [NAME]` | Removes existing workspace |
+| `cmr workspace checkout [NAME]` | Activates workspace; adjusts paths, environment, app tabs |
 
-### `workspace` - Workspace Management
+### :jigsaw: `project` - Project Management
 
-#### `cmr workspace create [NAME]`
-Creates new workspace configuration.
-- Paths, environment variables, VSCode setup
+| Command | Description |
+|---------|-------------|
+| `cmr project issues` | Creates/syncs project-specific issues |
+| `cmr project docs` | Validates/fixes project documentation |
+| `cmr project plan` | Generates project planning based on milestones, templates, rules |
 
-#### `cmr workspace delete [NAME]`
-Removes existing workspace.
+### :jigsaw: `org` - Organization Management
 
-#### `cmr workspace checkout [NAME]`
-Activates workspace.
-- Adjusts paths, environment, application/browser tabs
-
-### `project` - Project Management
-
-#### `cmr project issues`
-Creates/syncs project-specific issues.
-
-#### `cmr project docs`
-Validates/fixes project documentation.
-
-#### `cmr project plan`
-Generates project planning.
-- Based on milestones, templates, rules
-
-### `org` - Organization Management
-
-#### `cmr org list`
-Lists all organizations under `CHIMERA_LAB_CLI_ORG_PATH`.
-
-#### `cmr org topic`
-Manages organization topics.
-
-#### `cmr org terms`
-Manages organization terms.
-
-#### `cmr org guides`
-Manages organization guides.
-
-#### `cmr org projects`
-Manages organization projects.
+| Command | Description |
+|---------|-------------|
+| `cmr org list` | Lists all organizations under `CHIMERA_LAB_CLI_ORG_PATH` |
+| `cmr org topic` | Manages organization topics |
+| `cmr org terms` | Manages organization terms |
+| `cmr org guides` | Manages organization guides |
+| `cmr org projects` | Manages organization projects |
 
 ## :world_map: Guides
 
-### JSON Configuration Files
+### :world_map: JSON Configuration Files
 All JSON configs use Pydantic validation:
 ```json
 {
@@ -313,16 +181,16 @@ All JSON configs use Pydantic validation:
 }
 ```
 
-### Path Resolution
+### :world_map: Path Resolution
 1. Check current directory upward for `.chimera-lab/`
 2. Fall back to `CHIMERA_LAB_CLI_ORG_PATH`
 3. Use Walker class for recursive searches
 
-### GitHub Integration
+### :world_map: GitHub Integration
 - Requires `gh` CLI installed and authenticated
 - API token via `CHIMERA_LAB_CLI_GITHUB_API`
 
-### Output Styling
+### :world_map: Output Styling
 - Uses Rich library for formatting
 - Colors: `[red]`, `[green]`, `[yellow]`
 - Tables, trees, progress bars supported

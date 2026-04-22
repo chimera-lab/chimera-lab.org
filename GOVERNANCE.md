@@ -1,14 +1,14 @@
-# :building_construction: Structure
+## :building_construction: Structure
 
 ## :book: Table of Contents
 
 - [:building_construction: Structure](./#building_construction-structure)
-  - [:building_construction: Structure](./#building_construction-structure)
-    - [:building_construction: Roles](./#building_construction-roles)
-    - [:building_construction: Decision Making](./#building_construction-decision-making)
-    - [:building_construction: Policies](./#building_construction-policies)
-  - [:clipboard: Requirements](./#clipboard-requirements)
-    - [:building_construction: Membership](./#building_construction-membership)
+- [:building_construction: Structure](./#building_construction-structure)
+  - [:building_construction: Roles](./#building_construction-roles)
+  - [:building_construction: Decision Making](./#building_construction-decision-making)
+  - [:building_construction: Policies](./#building_construction-policies)
+- [:clipboard: Requirements](./#clipboard-requirements)
+  - [:clipboard: Membership](./#clipboard-membership)
 
 ## :building_construction: Structure
 
@@ -44,7 +44,7 @@ chimera-lab is a single-maintainer open-source organization. The maintainer hold
 - Documentation must pass validation via `cmr docs check`.
 - New repositories are added as submodules in the super-repository.
 
-### :building_construction: Membership
+### :clipboard: Membership
 
 chimera-lab is open to all contributors. There are no formal membership requirements to participate.
 

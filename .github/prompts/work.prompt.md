@@ -1,4 +1,5 @@
 ---
+agent: developer
 description: 'Execute general development and engineering tasks.'
 ---
 

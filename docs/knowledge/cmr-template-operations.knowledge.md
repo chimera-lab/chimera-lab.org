@@ -1,8 +1,16 @@
 # cmr repo template operations
 
-Quick reference for CMR template synchronization operations.
+## :book: Table of Contents
 
-## operations at a glance
+- [cmr repo template operations](./#cmr-repo-template-operations)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:world_map: Guides](./#world_map-guides)
+  - [:warning: Warnings](./#warning-warnings)
+  - [:keyboard: Usage](./#keyboard-usage)
+  - [:wrench: configuration](./#wrench-configuration)
+  - [:link: see also](./#link-see-also)
+
+## :telescope: Overview
 
 | Operation | Type | Risk | Purpose |
 |-----------|------|------|---------|
@@ -12,7 +20,7 @@ Quick reference for CMR template synchronization operations.
 | `install` | write | 🟢 low | Assign template to repo |
 | `list` | read-only | ⚫ none | Browse template files |
 
-## decision tree
+## :world_map: Guides
 
 **Check status?** → `cmr repo template validate` (safe, read-only)
 
@@ -20,9 +28,12 @@ Quick reference for CMR template synchronization operations.
 
 **Full sync?** → `cmr repo template update` (high risk, requires delete policy)
 
-**See delete policy** → [CMR_REPO_TEMPLATE_OPERATIONS.md](./CMR_REPO_TEMPLATE_OPERATIONS.md#triangular_ruler-delete-safety-policy)
+**Delete policy priority** (highest → lowest):
+1. **Absolute**: `.gitmodules`, `.git/`, `.gitconfig` — never deleted
+2. **Config** (`settings.json`): `never_delete`, `always_delete`, `interactive_delete` patterns
+3. **CLI flags**: `--delete-path` (force delete) / `--no-delete-path` (protect)
 
-## delete safety
+## :warning: Warnings
 
 `update` operation protects:
 - `.gitmodules`, `.git/`, `.gitconfig` (always safe)
@@ -31,7 +42,7 @@ Quick reference for CMR template synchronization operations.
 
 Always run `--dry-run` before destructive operations.
 
-## examples
+## :keyboard: Usage
 
 ```bash
 # Check what changed
@@ -47,7 +58,7 @@ cmr repo template update --dry-run
 cmr repo template update --interactive-delete
 ```
 
-## configuration
+## :wrench: configuration
 
 Set delete policy in `.chimera-lab/settings.json`:
 
@@ -61,8 +72,7 @@ Set delete policy in `.chimera-lab/settings.json`:
 }
 ```
 
-## see also
+## :link: see also
 
-- [Detailed Operations Guide](./CMR_REPO_TEMPLATE_OPERATIONS.md)
 - [CMR Knowledge Base](./cmr.knowledge.md#building_construction-cmr-repo-template)
 - [Validating Guide](./validating.knowledge.md)

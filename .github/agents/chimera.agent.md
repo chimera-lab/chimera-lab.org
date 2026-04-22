@@ -53,7 +53,7 @@ The CMR CLI (`cmr`) automates {{org.name}} repositories managing documentation v
 - Always make a plan using `manage_todo_list`.
 - Create ONLY structural skeletons - table of contents and empty headers. NO content writing.
 - Changes should respect template inheritance hierarchy.
-- Run `cmr docs validate` to ensure compliance.
+- Run `cmr docs check` to ensure compliance.
 
 ## :memo: To-Do List
 
@@ -62,7 +62,7 @@ The CMR CLI (`cmr`) automates {{org.name}} repositories managing documentation v
 - Assess template differences and variations.
 - Plan changes using `manage_todo_list`.
 - Apply inheritance strategy (modify at highest appropriate level).
-- Validate with `cmr docs validate`.
+- Validate with `cmr docs check`.
 
 ## :notebook: Notes
 

@@ -25,13 +25,13 @@ Validating ensures that repository structure, templates, and naming conventions 
 
 ### :world_map: Structure Validation
 
-- Run `cmr docs validate` to check all documentation categories.
+- Run `cmr docs check` to check all documentation categories.
 - Ensure `.github/` contains agents, prompts, skills, and workflows directories.
 - Check that knowledge files live in `docs/knowledge/`.
 
 ### :world_map: Template Validation
 
-- Use `cmr repo template validate` to check template synchronization.
+- Use `cmr repo template diff` to check template synchronization.
 - Use `cmr repo template update` to apply upstream template changes.
 - Inheritance chain: child template inherits from parent up to `repository.template`.
 - Modify at the highest level that needs the change to avoid duplication.
@@ -56,7 +56,7 @@ cmr docs headers list-typed
 
 **Header validation:**
 
-- Run `cmr docs validate` to check emoji and header consistency.
+- Run `cmr docs check` to check emoji and header consistency.
 - Run `cmr docs fix` to auto-correct formatting issues.
 - Headers must follow approved vocabulary (see list above).
 - All headers must be properly nested and referenced in table of contents.
@@ -67,7 +67,7 @@ cmr docs headers list-typed
 - Understand changes: Review modifications to validation logic
 - Understand requirements: Identify acceptance criteria and constraints
 - Evaluate: Assess implementation against requirements and patterns
-- Verify completion: Confirm all structure checks pass via `cmr docs validate`
+- Verify completion: Confirm all structure checks pass via `cmr docs check`
 - Validate naming: Match naming conventions to defined patterns
 
 ## :books: References

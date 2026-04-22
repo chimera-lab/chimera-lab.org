@@ -16,17 +16,17 @@ First, scan the repository structure to identify all existing resources:
 **Agents** (`.github/agents/`):
 - List all `.agent.md` files
 - Extract name and description from frontmatter
-- Expected agents: prompt-engineer, project-manager, cli-developer, python-architect, technical-writer, repository-manager
+- Count actual files at runtime: `ls .github/agents/*.agent.md | wc -l` — use this count as the expected value
 
 **Prompts** (`.github/prompts/`):
 - List all `.prompt.md` files
 - Extract agent target and description from frontmatter
-- Expected prompts: work, plan-milestone, fix-docs, update-team, commit, explain-issue, close-task, recover-task, go, fix-context
+- Count actual files at runtime: `ls .github/prompts/*.prompt.md | wc -l` — use this count as the expected value
 
 **Knowledge** (`docs/knowledge/`):
 - List all `.md` files
 - Document their purpose based on filename and content
-- Expected: system.knowledge.md, commands.knowledge.md, organization.knowledge.md, repository.knowledge.md, automation.knowledge.md
+- Count actual files at runtime: `ls docs/knowledge/*.md | wc -l` — use this count as the expected value
 
 ### 2. Read Each Prompt
 
@@ -64,23 +64,21 @@ Update `.github/copilot-team-components.plantuml` with:
 ### 6. Validation
 
 Ensure:
-- All agents in `.github/agents/` are represented (6 agents for CLI)
-- All prompts in `.github/prompts/` are represented (10 prompts)
-- All knowledge files in `docs/knowledge/` are represented (5 knowledge files)
+- All agents in `.github/agents/` are represented (count actual files at runtime: `ls .github/agents/*.agent.md | wc -l`)
+- All prompts in `.github/prompts/` are represented (count actual files at runtime: `ls .github/prompts/*.prompt.md | wc -l`)
+- All knowledge files in `docs/knowledge/` are represented (count actual files at runtime: `ls docs/knowledge/*.md | wc -l`)
 - Relationships match actual frontmatter references
-- PlantUML syntax is valid
+- PlantUML syntax is valid; if diagram generation fails, report the error and the invalid syntax block without retrying indefinitely
 - Layout uses `left to right direction`
 - Proper color coding is maintained
-- CLI-specific architecture is clear (Typer, Pydantic, Walker references)
 
 ## Expected Output
 
 The updated `.github/copilot-team-components.plantuml` should:
-- Accurately reflect chimera-lab-cli Python CLI architecture
-- Show all 6 CLI-focused agents with their roles
+- Accurately reflect chimera-lab.org organization architecture
+- Show all 12 agents with their roles
 - Show all prompts targeting their respective agents
-- Show 5 knowledge files (system, commands, organization, repository, automation)
-- Include proper notes describing each agent's CLI-specific responsibility
+- Show all 14 knowledge files
+- Include proper notes describing each agent's responsibility
 - Maintain visual consistency with existing color scheme
 - Be valid PlantUML syntax that renders correctly
-- Highlight Python/CLI focus (not design system/components)

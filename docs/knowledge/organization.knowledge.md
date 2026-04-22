@@ -1,3 +1,8 @@
+---
+name: organization
+description: Chimera Lab organization structure, repository types, topic hierarchy, and metadata conventions
+---
+
 # Organization Knowledge
 
 ## :book: Table of Contents
@@ -5,29 +10,27 @@
 - [Organization Knowledge](./#organization-knowledge)
   - [:telescope: Overview](./#telescope-overview)
   - [:building_construction: Structure](./#building_construction-structure)
+    - [:building_construction: Hierarchy](./#building_construction-hierarchy)
+    - [:building_construction: Template Inheritance](./#building_construction-template-inheritance)
   - [:jigsaw: Components](./#jigsaw-components)
-    - [`.topic` - Knowledge Topics](./#topic-knowledge-topics)
-    - [`.project` - Dedicated Projects](./#project-dedicated-projects)
-    - [`.app` - Applications](./#app-applications)
-    - [`.package` - Packages/Libraries](./#package-packageslibraries)
-    - [`.scaffold` - Scaffolds](./#scaffold-scaffolds)
-    - [`.template` - Templates](./#template-templates)
+    - [:jigsaw: `.topic` - Knowledge Topics](./#jigsaw-topic-knowledge-topics)
+    - [:jigsaw: `.project` - Dedicated Projects](./#jigsaw-project-dedicated-projects)
+    - [:jigsaw: `.app` - Applications](./#jigsaw-app-applications)
+    - [:jigsaw: `.package` - Packages/Libraries](./#jigsaw-package-packageslibraries)
+    - [:jigsaw: `.scaffold` - Scaffolds](./#jigsaw-scaffold-scaffolds)
+    - [:jigsaw: `.template` - Templates](./#jigsaw-template-templates)
   - [:page_facing_up: Files](./#page_facing_up-files)
-    - [`settings.json` (Organization Level)](./#settingsjson-organization-level)
-    - [`meta.json` (Organization)](./#metajson-organization)
-    - [`meta.json` (Repository)](./#metajson-repository)
-  - [:building_construction: Structure](./#building_construction-structure)
   - [:keyboard: Usage](./#keyboard-usage)
-    - [List Organizations](./#list-organizations)
-    - [Navigate to Organization](./#navigate-to-organization)
-    - [List Topics](./#list-topics)
-    - [List Projects](./#list-projects)
+    - [:keyboard: List Organizations](./#keyboard-list-organizations)
+    - [:keyboard: Navigate to Organization](./#keyboard-navigate-to-organization)
+    - [:keyboard: List Topics](./#keyboard-list-topics)
+    - [:keyboard: List Projects](./#keyboard-list-projects)
+    - [:keyboard: Rules](./#keyboard-rules)
   - [:world_map: Guides](./#world_map-guides)
-  - [:building_construction: Structure](./#building_construction-structure)
-  - [:world_map: Guides](./#world_map-guides)
-  - [:keyboard: Usage](./#keyboard-usage)
+    - [:world_map: Submodule Management](./#world_map-submodule-management)
+    - [:world_map: Graph Analysis](./#world_map-graph-analysis)
+    - [:world_map: Best Practices](./#world_map-best-practices)
   - [:mag: Terminology](./#mag-terminology)
-  - [:world_map: Guides](./#world_map-guides)
 
 ## :telescope: Overview
 
@@ -62,94 +65,7 @@ chimera-lab.org/                    # Organization root
 └── reports/                        # Generated reports
 ```
 
-## :jigsaw: Components
-
-### `.topic` - Knowledge Topics
-Organizational unit for related knowledge/repositories.
-- Can contain sub-topics
-- Groups related concepts
-- **Example**: `devops.topic`, `security.topic`
-
-### `.project` - Dedicated Projects
-Complete project with dedicated repository.
-- Full application or service
-- Independent lifecycle
-- **Example**: `chimera-lab-blog.project`, `chimera-lab-chat.project`
-
-### `.app` - Applications
-Standalone application or tool.
-- End-user facing
-- Executable/deployable
-- **Example**: `chimera-lab-cli.app`, `organizer.app`
-
-### `.package` - Packages/Libraries
-Reusable code packages.
-- Importable libraries
-- Shared across projects
-- **Example**: `chimera-lab-laravel.package`
-
-### `.scaffold` - Scaffolds
-Boilerplate code generators.
-- Project starters
-- Code generation templates
-- **Example**: `wordpress-plugin-abstraction.scaffold`
-
-### `.template` - Templates
-GitHub repository templates.
-- Reusable repository structures
-- Applied via GitHub template mechanism
-- Stored as submodule in `.github/.template` of child repos
-- **Example**: `laravel_app.template`, `repository.template`
-
-**Template Hierarchy**:
-```text
-repository.template (base)
-├── topic.template
-├── overview.template
-├── diy.template
-├── app.template
-│   └── laravel_app.template
-├── project.template
-├── scaffold.template
-│   └── docker_scaffold.template
-└── org.template
-```
-
-## :page_facing_up: Files
-
-### `settings.json` (Organization Level)
-```json
-{
-  "planned": [...],
-  "ignored": [...],
-  "default_labels": [...],
-  "default_milestones": [...]
-}
-```
-
-### `meta.json` (Organization)
-```json
-{
-  "organization": "chimera-lab",
-  "description": "...",
-  "projects": [...],
-  "templates": [...],
-  "docs": {...}
-}
-```
-
-### `meta.json` (Repository)
-```json
-{
-  "name": "repository-name",
-  "template": "template.name",
-  "parent": "parent-topic",
-  "level": 2,
-  "is_template": false
-}
-```
-
-## :building_construction: Structure
+### :building_construction: Hierarchy
 
 Organization → Topic → Sub-Topic → Repository
 
@@ -158,42 +74,97 @@ Organization → Topic → Sub-Topic → Repository
 **Level 2**: Sub-topics or projects within topics
 **Level 3+**: Deeper nesting
 
-## :keyboard: Usage
-
-### List Organizations
-```bash
-cmr org list
-```
-
-### Navigate to Organization
-```bash
-cmr cwd org
-```
-
-### List Topics
-```bash
-cmr org topic
-```
-
-### List Projects
-```bash
-cmr org projects
-```
-
-## :world_map: Guides
-
-- Each repository is a Git submodule
-- Super-repository tracks submodule commits
-- Use `cmr submodules update` for recursive updates
-
-## :building_construction: Structure
+### :building_construction: Template Inheritance
 
 Repositories inherit from templates:
 1. Repository created from GitHub template
 2. Template metadata stored in `.chimera-lab/meta.json`
 3. `cmr templates update` applies template updates
 
+## :jigsaw: Components
+
+### :jigsaw: `.topic` - Knowledge Topics
+Organizational unit for related knowledge/repositories.
+- Can contain sub-topics
+- Groups related concepts
+- **Example**: `devops.topic`, `security.topic`
+
+### :jigsaw: `.project` - Dedicated Projects
+Complete project with dedicated repository.
+- Full application or service
+- Independent lifecycle
+- **Example**: `chimera-lab-blog.project`, `chimera-lab-chat.project`
+
+### :jigsaw: `.app` - Applications
+Standalone application or tool.
+- End-user facing
+- Executable/deployable
+- **Example**: `chimera-lab-cli.app`, `organizer.app`
+
+### :jigsaw: `.package` - Packages/Libraries
+Reusable code packages.
+- Importable libraries
+- Shared across projects
+- **Example**: `chimera-lab-laravel.package`
+
+### :jigsaw: `.scaffold` - Scaffolds
+Boilerplate code generators.
+- Project starters
+- Code generation templates
+- **Example**: `wordpress-plugin-abstraction.scaffold`
+
+### :jigsaw: `.template` - Templates
+GitHub repository templates.
+- Reusable repository structures
+- Applied via GitHub template mechanism
+- Stored as submodule in `.github/.template` of child repos
+- **Example**: `laravel_app.template`, `repository.template`
+
+## :page_facing_up: Files
+
+| File | Scope | Key Fields |
+|---|---|---|
+| `settings.json` | Organization | `planned`, `ignored`, `default_labels`, `default_milestones` |
+| `meta.json` | Organization | `organization`, `description`, `projects`, `templates`, `docs` |
+| `meta.json` | Repository | `name`, `template`, `parent`, `level`, `is_template` |
+
+## :keyboard: Usage
+
+### :keyboard: List Organizations
+```bash
+cmr org list
+```
+
+### :keyboard: Navigate to Organization
+```bash
+cmr cwd org
+```
+
+### :keyboard: List Topics
+```bash
+cmr org topic
+```
+
+### :keyboard: List Projects
+```bash
+cmr org projects
+```
+
+### :keyboard: Rules
+
+- Organization-wide rules in `.chimera-lab/rules.json`
+- Enforced via `cmr rules check`
+- Auto-fix with `cmr rules fix`
+
 ## :world_map: Guides
+
+### :world_map: Submodule Management
+
+- Each repository is a Git submodule
+- Super-repository tracks submodule commits
+- Use `cmr submodules update` for recursive updates
+
+### :world_map: Graph Analysis
 
 Analyze organization structure:
 ```bash
@@ -202,19 +173,7 @@ cmr graph network               # Project relationships
 cmr graph templates             # Template usage
 ```
 
-## :keyboard: Usage
-
-- Organization-wide rules in `.chimera-lab/rules.json`
-- Enforced via `cmr rules check`
-- Auto-fix with `cmr rules fix`
-
-## :mag: Terminology
-
-- Organization-level terminology
-- Linked across repositories
-- Managed via `cmr terms` commands
-
-## :world_map: Guides
+### :world_map: Best Practices
 
 1. **Consistent Naming**: Use suffix conventions (`.topic`, `.project`, etc.)
 2. **Shallow Nesting**: Limit to 3-4 levels for maintainability
@@ -222,3 +181,9 @@ cmr graph templates             # Template usage
 4. **Documentation**: Maintain README.md in each repository
 5. **Templates**: Use templates for consistency across similar projects
 6. **Submodules**: Regular `cmr submodules update` to stay in sync
+
+## :mag: Terminology
+
+- Organization-level terminology
+- Linked across repositories
+- Managed via `cmr terms` commands
