@@ -34,7 +34,7 @@ We commit to a safe, inclusive, and professional environment. These guidelines a
 
 - Report incidents with factual details (what, when, where, links, participants) and any evidence.
 - Respect confidentiality, only share with designated maintainers or contacts.
-- Primary contact for conduct concerns: [:link: {{org.contacts.email.security}}](mailto:{{org.contacts.email.security}}). Use this channel for private escalation.
+- Primary contact for conduct concerns: [:link: <!-- var<org.contacts.email.security;applied> -->security@chimera-lab.com
 
 ## :toolbox: Tools
 
