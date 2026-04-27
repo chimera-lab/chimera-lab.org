@@ -34,24 +34,24 @@ The layout follows chimera-lab’s suffix-based repository conventions and templ
 
 <!-- <cmr cmd="org.topic" applied> -->
 
-| Name | Level | Path |
-| --- | --- | --- |
-| arts | 0 | arts.topic |
-| art | 1 | arts.topic/art.topic |
-| contributions | 0 | contributions.topic |
-| formal-sciences | 0 | formal-sciences.topic |
-| computer-science | 1 | formal-sciences.topic/computer-science.topic |
-| humanities | 0 | humanities.topic |
-| ideas | 0 | ideas.topic |
-| natural-sciences | 0 | natural-sciences.topic |
-| original | 0 | original.topic |
-| partnership | 0 | partnership.topic |
-| personal | 0 | personal.topic |
-| projects | 0 | projects.topic |
-| social-sciences | 0 | social-sciences.topic |
-| finance | 1 | social-sciences.topic/finance.topic |
-| legal | 1 | social-sciences.topic/legal.topic |
-| template | 0 | template.topic |
+| Name             | Level | Path                                         |
+| ---------------- | ----- | -------------------------------------------- |
+| arts             | 0     | arts.topic                                   |
+| art              | 1     | arts.topic/art.topic                         |
+| contributions    | 0     | contributions.topic                          |
+| formal-sciences  | 0     | formal-sciences.topic                        |
+| computer-science | 1     | formal-sciences.topic/computer-science.topic |
+| humanities       | 0     | humanities.topic                             |
+| ideas            | 0     | ideas.topic                                  |
+| natural-sciences | 0     | natural-sciences.topic                       |
+| original         | 0     | original.topic                               |
+| partnership      | 0     | partnership.topic                            |
+| personal         | 0     | personal.topic                               |
+| projects         | 0     | projects.topic                               |
+| social-sciences  | 0     | social-sciences.topic                        |
+| finance          | 1     | social-sciences.topic/finance.topic          |
+| legal            | 1     | social-sciences.topic/legal.topic            |
+| template         | 0     | template.topic                               |
 
 <!-- </cmr> -->
 
@@ -59,23 +59,23 @@ The layout follows chimera-lab’s suffix-based repository conventions and templ
 
 <!-- <cmr cmd="project.list" applied> -->
 
-| Name | Description | Tags |
-| --- | --- | --- |
-| organizer |  |  |
-| chimera-lab-archives |  |  |
-| chimera-lab-chat |  |  |
-| chimera-lab-cli-website |  |  |
-| chimera-lab-cli |  |  |
-| chimera-lab-compliance |  |  |
-| chimera-lab-docker-stack |  |  |
-| chimera-lab-enterprise |  |  |
-| chimera-lab-erp | Template for dedicated development projects |  |
-| chimera-lab-infra |  |  |
-| chimera-lab-organization |  |  |
-| chimera-lab-templates |  |  |
-| chimera-lab-website |  |  |
-| chimera-lab-workspace |  |  |
-| chimera-lab |  |  |
+| Name                     | Description                                 | Tags |
+| ------------------------ | ------------------------------------------- | ---- |
+| organizer                |                                             |      |
+| chimera-lab-archives     |                                             |      |
+| chimera-lab-chat         |                                             |      |
+| chimera-lab-cli-website  |                                             |      |
+| chimera-lab-cli          |                                             |      |
+| chimera-lab-compliance   |                                             |      |
+| chimera-lab-docker-stack |                                             |      |
+| chimera-lab-enterprise   |                                             |      |
+| chimera-lab-erp          | Template for dedicated development projects |      |
+| chimera-lab-infra        |                                             |      |
+| chimera-lab-organization |                                             |      |
+| chimera-lab-templates    |                                             |      |
+| chimera-lab-website      |                                             |      |
+| chimera-lab-workspace    |                                             |      |
+| chimera-lab              |                                             |      |
 
 <!-- </cmr> -->
 
@@ -83,10 +83,10 @@ The layout follows chimera-lab’s suffix-based repository conventions and templ
 
 <!-- <cmr cmd="org.list[suffix=.app]" applied> -->
 
-| Name | Suffix | Level | Path |
-| --- | --- | --- | --- |
-| chimera-lab-cli.app | .app | 1 | original.topic/chimera-lab-cli.app |
-| php-to-plantuml_vscode.app | .app | 1 | original.topic/php-to-plantuml_vscode.app |
+| Name                        | Suffix | Level | Path                                       |
+| --------------------------- | ------ | ----- | ------------------------------------------ |
+| chimera-lab-cli.app         | .app   | 1     | original.topic/chimera-lab-cli.app         |
+| php-to-plantuml\_vscode.app | .app   | 1     | original.topic/php-to-plantuml\_vscode.app |
 
 <!-- </cmr> -->
 
@@ -182,17 +182,17 @@ cmr docs fix -r toc -r header-emoji
 
 <!-- <cmr cmd="org.types" applied> -->
 
-| Suffix | Purpose |
-| --- | --- |
-| `.topic` | Knowledge organization |
-| `.project` | Dedicated projects |
-| `.app` | Applications and tools |
-| `.package` | Libraries and packages |
-| `.scaffold` | Boilerplates and generators |
-| `.template` | Repository templates |
-| `.overview` | Learning material and guides |
-| `.diy` | DIY and hardware projects |
-| `.org` | Organization-level repository |
+| Suffix      | Purpose                       |
+| ----------- | ----------------------------- |
+| `.topic`    | Knowledge organization        |
+| `.project`  | Dedicated projects            |
+| `.app`      | Applications and tools        |
+| `.package`  | Libraries and packages        |
+| `.scaffold` | Boilerplates and generators   |
+| `.template` | Repository templates          |
+| `.overview` | Learning material and guides  |
+| `.diy`      | DIY and hardware projects     |
+| `.org`      | Organization-level repository |
 
 <!-- </cmr> -->
 
@@ -222,7 +222,7 @@ repository.template (base)
 
 <!-- <cmr cmd="org.popular[count=8]" applied> -->
 
-_No repositories found._
+*No repositories found.*
 
 <!-- </cmr> -->
 
@@ -230,7 +230,7 @@ _No repositories found._
 
 <!-- <cmr cmd="org.pinned" applied> -->
 
-_No pinned repositories found. Set GITHUB_TOKEN to fetch pinned repos._
+*No pinned repositories found. Set GITHUB\_TOKEN to fetch pinned repos.*
 
 <!-- </cmr> -->
 
@@ -238,7 +238,7 @@ _No pinned repositories found. Set GITHUB_TOKEN to fetch pinned repos._
 
 <!-- <cmr cmd="org.recent[count=8]" applied> -->
 
-_No recent activity found._
+*No recent activity found.*
 
 <!-- </cmr> -->
 
