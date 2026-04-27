@@ -351,5 +351,8 @@
       "Development.CodeQuality": "describe the code quality tools and linting commands available for this project",
       "Development.Customization": "describe the customization options available for this project"
     }
+  },
+  "metadata": {
+    "org.contacts.email.security": "security@chimera-lab.com"
   }
 }
