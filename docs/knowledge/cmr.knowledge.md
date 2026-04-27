@@ -19,7 +19,7 @@ description: CMR CLI tool knowledge and usage patterns
 
 ## :telescope: Overview
 
-The CMR CLI (`cmr`) automates {{org.name}} repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
+The CMR CLI (`cmr`) automates chimera-lab.org repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
 
 ## :triangular_ruler: Technologies
 

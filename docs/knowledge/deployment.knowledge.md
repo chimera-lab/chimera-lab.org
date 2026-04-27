@@ -1,6 +1,6 @@
 ---
 name: deployment
-description: Patterns for releasing, versioning, and deploying {{org.name}} projects
+description: Patterns for releasing, versioning, and deploying chimera-lab.org projects
 ---
 
 # :file_folder: Deployment Knowledge
