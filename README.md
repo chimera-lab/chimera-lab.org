@@ -13,6 +13,9 @@
   - [:bar_chart: Statistics](./#bar_chart-statistics)
   - [:label: Repository Types](./#label-repository-types)
   - [:building_construction: Template Hierarchy](./#building_construction-template-hierarchy)
+  - [:star: Popular Repositories](./#star-popular-repositories)
+  - [:pushpin: Pinned](./#pushpin-pinned)
+  - [:zap: Recently Updated](./#zap-recently-updated)
   - [:books: References](./#books-references)
   - [:scroll: License](./#scroll-license)
 
@@ -212,6 +215,30 @@ repository.template (base)
 
 <!-- </cmr> -->
 
+## :star: Popular Repositories
+
+<!-- <cmr cmd="org.popular[count=8]" applied> -->
+
+_No repositories found._
+
+<!-- </cmr> -->
+
+## :pushpin: Pinned
+
+<!-- <cmr cmd="org.pinned" applied> -->
+
+_No pinned repositories found. Set GITHUB_TOKEN to fetch pinned repos._
+
+<!-- </cmr> -->
+
+## :zap: Recently Updated
+
+<!-- <cmr cmd="org.recent[count=8]" applied> -->
+
+_No recent activity found._
+
+<!-- </cmr> -->
+
 ## :books: References
 
 - [:page_facing_up: CODE\_OF\_CONDUCT.md](CODE_OF_CONDUCT.md)
@@ -223,10 +250,3 @@ repository.template (base)
 ## :scroll: License
 
 - Licensed under the terms specified in [:link: LICENSE](LICENSE). Review before distributing or reusing this template.
-
-<!-- <cmr cmd="repo.tags[name=org.template]" applied> -->
-
-- template
-- org
-
-<!-- </cmr> -->
