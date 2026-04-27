@@ -57,7 +57,7 @@ Directives are HTML comments written in **template-level** files. `cmr docs rend
 ```text
 Template file (source)
   │
-  ├─ 1. Template variables   {{org.name}}, {{repo.type}}, {{var.author}}
+  ├─ 1. Template variables   <!-- var<org.name> -->, <!-- var<repo.type> -->, <!-- var<var.author> -->
   ├─ 2. i18n directives      <!-- i18n<locale.file.key> -->
   ├─ 3. Fragment directives  <!-- fragment<source#anchor> -->
   ├─ 4. LLM directives       <!-- llm<prompt> -->
@@ -70,13 +70,13 @@ Template file (source)
 
 Each pass can be toggled: `--no-fragments`, `--no-i18n`, `--no-llm`, `--no-cmr`. Unresolved directives remain as-is unless `--fail-on-unresolved` is set.
 
-### `{{key}}` — Template variables
+### `<!-- var<key> -->` — Template variables
 
 | Variable | Source |
 |---|---|
-| `{{org.name}}` | Organization directory name |
-| `{{repo.name}}` | `meta.json → repo.name` or directory basename |
-| `{{repo.type}}` | `meta.json → repo.type` |
+| `<!-- var<org.name> -->` | Organization directory name |
+| `<!-- var<repo.name> -->` | `meta.json → repo.name` or directory basename |
+| `<!-- var<repo.type> -->` | `meta.json → repo.type` |
 | `{{var.<key>}}` | `settings.json → metadata.<key>` |
 
 ### `<!-- toc -->` — Table of contents
