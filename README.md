@@ -4,18 +4,19 @@
 
 - [:file_folder: chimera-lab.org](./#file_folder-chimera-laborg)
   - [:telescope: Overview](./#telescope-overview)
+    - [:telescope: Knowledge Domains](./#telescope-knowledge-domains)
+    - [:telescope: Projects](./#telescope-projects)
+    - [:toolbox: Tools](./#toolbox-tools)
   - [:clipboard: Requirements](./#clipboard-requirements)
   - [:inbox_tray: Installation](./#inbox_tray-installation)
   - [:keyboard: Usage](./#keyboard-usage)
-  - [:earth_africa: Knowledge Domains](./#earth_africa-knowledge-domains)
-  - [:briefcase: Projects](./#briefcase-projects)
-  - [:toolbox: Tools](./#toolbox-tools)
-  - [:bar_chart: Statistics](./#bar_chart-statistics)
-  - [:label: Repository Types](./#label-repository-types)
-  - [:building_construction: Template Hierarchy](./#building_construction-template-hierarchy)
-  - [:star: Popular Repositories](./#star-popular-repositories)
-  - [:pushpin: Pinned](./#pushpin-pinned)
-  - [:zap: Recently Updated](./#zap-recently-updated)
+  - [:building_construction: Structure](./#building_construction-structure)
+    - [:building_construction: Statistics](./#building_construction-statistics)
+    - [:building_construction: Repository Types](./#building_construction-repository-types)
+    - [:building_construction: Template Hierarchy](./#building_construction-template-hierarchy)
+    - [:building_construction: Popular Repositories](./#building_construction-popular-repositories)
+    - [:building_construction: Pinned](./#building_construction-pinned)
+    - [:building_construction: Recently Updated](./#building_construction-recently-updated)
   - [:books: References](./#books-references)
   - [:scroll: License](./#scroll-license)
 
@@ -28,6 +29,66 @@ This repository is the organization-level super-repository for chimera-lab.org, 
 The layout follows chimera-lab’s suffix-based repository conventions and template system so repositories remain consistent, easier to navigate, and simpler to maintain. Topic directories such as `arts.topic`, `humanities.topic`, `natural-sciences.topic`, and `projects.topic` organize related work, while the CMR CLI supports documentation validation, template synchronization, and repository management workflows.
 
 <!-- </llm> -->
+
+### :telescope: Knowledge Domains
+
+<!-- <cmr cmd="org.topic" applied> -->
+
+| Name | Level | Path |
+| --- | --- | --- |
+| arts | 0 | arts.topic |
+| art | 1 | arts.topic/art.topic |
+| contributions | 0 | contributions.topic |
+| formal-sciences | 0 | formal-sciences.topic |
+| computer-science | 1 | formal-sciences.topic/computer-science.topic |
+| humanities | 0 | humanities.topic |
+| ideas | 0 | ideas.topic |
+| natural-sciences | 0 | natural-sciences.topic |
+| original | 0 | original.topic |
+| partnership | 0 | partnership.topic |
+| personal | 0 | personal.topic |
+| projects | 0 | projects.topic |
+| social-sciences | 0 | social-sciences.topic |
+| finance | 1 | social-sciences.topic/finance.topic |
+| legal | 1 | social-sciences.topic/legal.topic |
+| template | 0 | template.topic |
+
+<!-- </cmr> -->
+
+### :telescope: Projects
+
+<!-- <cmr cmd="project.list" applied> -->
+
+| Name | Description | Tags |
+| --- | --- | --- |
+| organizer |  |  |
+| chimera-lab-archives |  |  |
+| chimera-lab-chat |  |  |
+| chimera-lab-cli-website |  |  |
+| chimera-lab-cli |  |  |
+| chimera-lab-compliance |  |  |
+| chimera-lab-docker-stack |  |  |
+| chimera-lab-enterprise |  |  |
+| chimera-lab-erp | Template for dedicated development projects |  |
+| chimera-lab-infra |  |  |
+| chimera-lab-organization |  |  |
+| chimera-lab-templates |  |  |
+| chimera-lab-website |  |  |
+| chimera-lab-workspace |  |  |
+| chimera-lab |  |  |
+
+<!-- </cmr> -->
+
+### :toolbox: Tools
+
+<!-- <cmr cmd="org.list[suffix=.app]" applied> -->
+
+| Name | Suffix | Level | Path |
+| --- | --- | --- | --- |
+| chimera-lab-cli.app | .app | 1 | original.topic/chimera-lab-cli.app |
+| php-to-plantuml_vscode.app | .app | 1 | original.topic/php-to-plantuml_vscode.app |
+
+<!-- </cmr> -->
 
 ## :clipboard: Requirements
 
@@ -99,67 +160,9 @@ cmr docs fix -r toc -r header-emoji
 
 <!-- </llm> -->
 
-## :earth_africa: Knowledge Domains
+## :building_construction: Structure
 
-<!-- <cmr cmd="org.topic" applied> -->
-
-| Name | Level | Path |
-| --- | --- | --- |
-| arts | 0 | arts.topic |
-| art | 1 | arts.topic/art.topic |
-| contributions | 0 | contributions.topic |
-| formal-sciences | 0 | formal-sciences.topic |
-| computer-science | 1 | formal-sciences.topic/computer-science.topic |
-| humanities | 0 | humanities.topic |
-| ideas | 0 | ideas.topic |
-| natural-sciences | 0 | natural-sciences.topic |
-| original | 0 | original.topic |
-| partnership | 0 | partnership.topic |
-| personal | 0 | personal.topic |
-| projects | 0 | projects.topic |
-| social-sciences | 0 | social-sciences.topic |
-| finance | 1 | social-sciences.topic/finance.topic |
-| legal | 1 | social-sciences.topic/legal.topic |
-| template | 0 | template.topic |
-
-<!-- </cmr> -->
-
-## :briefcase: Projects
-
-<!-- <cmr cmd="project.list" applied> -->
-
-| Name | Description | Tags |
-| --- | --- | --- |
-| organizer |  |  |
-| chimera-lab-archives |  |  |
-| chimera-lab-chat |  |  |
-| chimera-lab-cli-website |  |  |
-| chimera-lab-cli |  |  |
-| chimera-lab-compliance |  |  |
-| chimera-lab-docker-stack |  |  |
-| chimera-lab-enterprise |  |  |
-| chimera-lab-erp | Template for dedicated development projects |  |
-| chimera-lab-infra |  |  |
-| chimera-lab-organization |  |  |
-| chimera-lab-templates |  |  |
-| chimera-lab-website |  |  |
-| chimera-lab-workspace |  |  |
-| chimera-lab |  |  |
-
-<!-- </cmr> -->
-
-## :toolbox: Tools
-
-<!-- <cmr cmd="org.list[suffix=.app]" applied> -->
-
-| Name | Suffix | Level | Path |
-| --- | --- | --- | --- |
-| chimera-lab-cli.app | .app | 1 | original.topic/chimera-lab-cli.app |
-| php-to-plantuml_vscode.app | .app | 1 | original.topic/php-to-plantuml_vscode.app |
-
-<!-- </cmr> -->
-
-## :bar_chart: Statistics
+### :building_construction: Statistics
 
 <!-- <cmr cmd="org.stats" applied> -->
 
@@ -175,7 +178,7 @@ cmr docs fix -r toc -r header-emoji
 
 <!-- </cmr> -->
 
-## :label: Repository Types
+### :building_construction: Repository Types
 
 <!-- <cmr cmd="org.types" applied> -->
 
@@ -193,7 +196,7 @@ cmr docs fix -r toc -r header-emoji
 
 <!-- </cmr> -->
 
-## :building_construction: Template Hierarchy
+### :building_construction: Template Hierarchy
 
 <!-- <cmr cmd="org.inheritance" applied> -->
 
@@ -215,7 +218,7 @@ repository.template (base)
 
 <!-- </cmr> -->
 
-## :star: Popular Repositories
+### :building_construction: Popular Repositories
 
 <!-- <cmr cmd="org.popular[count=8]" applied> -->
 
@@ -223,7 +226,7 @@ _No repositories found._
 
 <!-- </cmr> -->
 
-## :pushpin: Pinned
+### :building_construction: Pinned
 
 <!-- <cmr cmd="org.pinned" applied> -->
 
@@ -231,7 +234,7 @@ _No pinned repositories found. Set GITHUB_TOKEN to fetch pinned repos._
 
 <!-- </cmr> -->
 
-## :zap: Recently Updated
+### :building_construction: Recently Updated
 
 <!-- <cmr cmd="org.recent[count=8]" applied> -->
 
