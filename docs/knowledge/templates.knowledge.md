@@ -27,6 +27,7 @@
 ## :telescope: Overview
 
 GitHub repository templates provide reusable structure for new repositories. In chimera-lab.org:
+
 - Templates stored in `template.topic/`
 - Applied via GitHub template mechanism
 - Maintained as submodule in `.github/.template/` of child repos
@@ -69,20 +70,24 @@ template-name.template/
 ## :keyboard: Usage
 
 ### :keyboard: Via GitHub Web Interface
+
 1. Navigate to template repository on GitHub
 2. Click "Use this template"
 3. Create new repository from template
 4. Clone and add as submodule to organization
 
 ### :keyboard: Via GitHub CLI
+
 Create with `gh repo create org/new-repo --template org/template-name.template --public`, then add as submodule.
 
 ### :keyboard: Via chimera-lab-cli
+
 Use `cmr repo create --name new-repo --template app.template --topic devops.topic`.
 
 ## :page_facing_up: Files
 
 ### :page_facing_up: In Template Repository
+
 Templates have `is_template: true` in `.chimera-lab/meta.json`:
 
 ```json
@@ -96,6 +101,7 @@ Templates have `is_template: true` in `.chimera-lab/meta.json`:
 ```
 
 ### :page_facing_up: In Child Repository
+
 Child repos reference their template:
 
 ```json
@@ -111,37 +117,38 @@ Child repos reference their template:
 ## :books: References
 
 Templates inherit from parent templates:
+
 - `repository.template` provides base structure (README, LICENSE, .gitignore)
 - Specialized templates extend base (add CI/CD, language-specific configs)
 - Child repos can further customize without breaking template link
 
 ## :jigsaw: Components
 
-| Template | Purpose | Includes |
-|----------|---------|----------|
-| `repository.template` | Base for all templates | README, LICENSE, .gitignore, CONTRIBUTING.md |
-| `topic.template` | Organize related repos | Topic README, navigation structure |
-| `overview.template` | Study/learning material | Chapter structure, examples directory |
-| `project.template` | Full project lifecycle | CI/CD, issue templates, release workflow |
-| `app.template` | End-user applications | Build scripts, deployment configs, user docs |
-| `package.template` | Reusable libraries | Package manifest, docs, testing setup |
-| `scaffold.template` | Boilerplate generators | Generator scripts, template files |
-| `org.template` | Super-repository | `.chimera-lab/` setup, submodule conventions |
+| Template              | Purpose                 | Includes                                     |
+| --------------------- | ----------------------- | -------------------------------------------- |
+| `repository.template` | Base for all templates  | README, LICENSE, .gitignore, CONTRIBUTING.md |
+| `topic.template`      | Organize related repos  | Topic README, navigation structure           |
+| `overview.template`   | Study/learning material | Chapter structure, examples directory        |
+| `project.template`    | Full project lifecycle  | CI/CD, issue templates, release workflow     |
+| `app.template`        | End-user applications   | Build scripts, deployment configs, user docs |
+| `package.template`    | Reusable libraries      | Package manifest, docs, testing setup        |
+| `scaffold.template`   | Boilerplate generators  | Generator scripts, template files            |
+| `org.template`        | Super-repository        | `.chimera-lab/` setup, submodule conventions |
 
 ## :world_map: Guides
 
 ### :world_map: Template Selection
 
-| Repository Type | Use Template | When |
-|----------------|--------------|------|
-| Knowledge topic | `topic.template` | Organizing related repos/concepts |
-| Study material | `overview.template` | Documentation, tutorials, guides |
-| Full application | `app.template` | End-user software |
-| Library/package | `package.template` | Reusable code |
-| Project | `project.template` | Dedicated development project |
-| Code generator | `scaffold.template` | Boilerplate generation |
-| DIY project | `diy.template` | Hardware, home automation |
-| Organization | `org.template` | New super-repository |
+| Repository Type  | Use Template        | When                              |
+| ---------------- | ------------------- | --------------------------------- |
+| Knowledge topic  | `topic.template`    | Organizing related repos/concepts |
+| Study material   | `overview.template` | Documentation, tutorials, guides  |
+| Full application | `app.template`      | End-user software                 |
+| Library/package  | `package.template`  | Reusable code                     |
+| Project          | `project.template`  | Dedicated development project     |
+| Code generator   | `scaffold.template` | Boilerplate generation            |
+| DIY project      | `diy.template`      | Hardware, home automation         |
+| Organization     | `org.template`      | New super-repository              |
 
 ### :world_map: Validation
 
@@ -161,6 +168,7 @@ Validate with `cmr template validate --repo my-app.app` (if CLI available) or ma
 ## :control_knobs: Customization
 
 ### :control_knobs: Allowed Customizations
+
 - Add project-specific files
 - Extend CI/CD workflows
 - Add custom issue templates
@@ -168,6 +176,7 @@ Validate with `cmr template validate --repo my-app.app` (if CLI available) or ma
 - Add language/framework-specific configs
 
 ### :control_knobs: Discouraged Changes
+
 - Removing template-provided files
 - Breaking template directory structure
 - Modifying core template patterns
@@ -176,6 +185,7 @@ Validate with `cmr template validate --repo my-app.app` (if CLI available) or ma
 ## :link: See Also
 
 Each template should document:
+
 - Purpose and use cases
 - Directory structure
 - Required files

@@ -69,20 +69,26 @@ chimera-lab.org/                    # Organization root (super-repository)
 ## :telescope: Overview
 
 ### :telescope: Super-Repository Pattern
+
 chimera-lab.org uses Git super-repository with submodules:
+
 - Organization root tracks all sub-repositories
 - Each topic/project is a Git submodule
 - Centralized metadata and configuration
 - Independent development in each submodule
 
 ### :telescope: Topic-Based Organization
+
 Knowledge and projects organized by topics:
+
 - Topics can contain sub-topics recursively
 - Topics group related repositories
 - Clear hierarchy (Level 0: org → Level 1: topic → Level 2+: nested)
 
 ### :telescope: Repository Types
+
 Different suffixes for different purposes:
+
 - `.topic` - Knowledge topics
 - `.project` - Dedicated projects
 - `.app` - Applications
@@ -93,14 +99,18 @@ Different suffixes for different purposes:
 - `.diy` - DIY/hardware projects
 
 ### :telescope: Template System
+
 Reusable repository structures:
+
 - Templates stored in `template.topic/`
 - Applied via GitHub template mechanism
 - Stored as submodule in `.github/.template/` of child repos
 - Hierarchy: `repository.template` (base) → specialized templates
 
 ### :telescope: Metadata System
+
 Centralized configuration and metadata:
+
 - Organization level: `.chimera-lab/` (labels, milestones, settings)
 - Repository level: `.chimera-lab/meta.json` (repo metadata)
 - Submodule tracking: `.gitmodules` (submodule references)
@@ -110,14 +120,17 @@ Centralized configuration and metadata:
 ### :wrench: Organization Level (`.chimera-lab/`)
 
 **`config/labels.json`** - Default labels by category
+
 - Categories: common, general, infrastructure, interface, embedded, study
 - Applied to all repositories unless overridden
 
 **`config/milestones.json`** - Default milestone stages
+
 - 7-stage system: Ideating → Planning → Building → Presenting → Sharing → Polishing → Releasing
 - Used when repository doesn't have custom milestones
 
 **`config/repo.json`** - Repository planning
+
 ```json
 {
   "planned": ["future-project.project"],
@@ -142,6 +155,7 @@ Centralized configuration and metadata:
 ## :jigsaw: Components
 
 Organization uses AI agents for coordination:
+
 - **organization-manager** - Oversees structure, templates, consistency
 - **project-manager** - Coordinates projects and documentation
 - **repository-manager** - Git/GitHub operations automation
@@ -151,6 +165,7 @@ Organization uses AI agents for coordination:
 - **prompt-engineer** - Agent and prompt management
 
 Agents reference:
+
 - `knowledge/` - AI-optimized reference (concise)
 - `docs/` - Human documentation (comprehensive)
 - `prompts/` - Task-specific workflows
@@ -158,7 +173,9 @@ Agents reference:
 ## :toolbox: Tools
 
 ### :toolbox: chimera-lab-cli
+
 CLI tool for organization management (located in `original.topic/chimera-lab-cli.app/`):
+
 - Repository discovery and navigation
 - Issue/milestone/label management
 - Template application
@@ -169,6 +186,7 @@ CLI tool for organization management (located in `original.topic/chimera-lab-cli
 See `original.topic/chimera-lab-cli.app/docs/knowledge/` for CLI-specific docs.
 
 ### :toolbox: Utility Scripts (`.chimera-lab/utils/`)
+
 - `git_update_submodules.sh` - Update all submodules
 - `git_commit_submodules.sh` - Commit all submodule changes
 - `rebuild-repo-with-template.sh` - Apply template updates
@@ -183,13 +201,13 @@ Clone with `git clone --recursive <org-url>`. Update: `git submodule update --re
 
 ## :books: References
 
-| Suffix | Purpose | Example |
-|--------|---------|---------|
-| `.topic` | Knowledge/study topic | `devops.topic` |
-| `.project` | Dedicated project | `chimera-lab-blog.project` |
-| `.app` | Application | `chimera-lab-cli.app` |
-| `.package` | Library/package | `chimera-lab-laravel.package` |
-| `.scaffold` | Boilerplate generator | `wordpress-plugin-abstraction.scaffold` |
-| `.template` | GitHub template | `laravel_app.template` |
-| `.overview` | Study material/overview | `docker.overview` |
-| `.diy` | DIY/hardware project | `network-storage.diy` |
+| Suffix      | Purpose                 | Example                                 |
+| ----------- | ----------------------- | --------------------------------------- |
+| `.topic`    | Knowledge/study topic   | `devops.topic`                          |
+| `.project`  | Dedicated project       | `chimera-lab-blog.project`              |
+| `.app`      | Application             | `chimera-lab-cli.app`                   |
+| `.package`  | Library/package         | `chimera-lab-laravel.package`           |
+| `.scaffold` | Boilerplate generator   | `wordpress-plugin-abstraction.scaffold` |
+| `.template` | GitHub template         | `laravel_app.template`                  |
+| `.overview` | Study material/overview | `docker.overview`                       |
+| `.diy`      | DIY/hardware project    | `network-storage.diy`                   |

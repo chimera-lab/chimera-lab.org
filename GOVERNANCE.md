@@ -1,14 +1,14 @@
-## :building_construction: Structure
+# :scroll: Governance
 
 ## :book: Table of Contents
 
-- [:building_construction: Structure](./#building_construction-structure)
-- [:building_construction: Structure](./#building_construction-structure)
-  - [:building_construction: Roles](./#building_construction-roles)
-  - [:building_construction: Decision Making](./#building_construction-decision-making)
-  - [:building_construction: Policies](./#building_construction-policies)
-- [:clipboard: Requirements](./#clipboard-requirements)
-  - [:clipboard: Membership](./#clipboard-membership)
+- [:scroll: Governance](./#scroll-governance)
+  - [:building_construction: Structure](./#building_construction-structure)
+    - [:building_construction: Roles](./#building_construction-roles)
+    - [:building_construction: Decision Making](./#building_construction-decision-making)
+    - [:building_construction: Policies](./#building_construction-policies)
+  - [:clipboard: Requirements](./#clipboard-requirements)
+    - [:clipboard: Membership](./#clipboard-membership)
 
 ## :building_construction: Structure
 
@@ -16,11 +16,11 @@ chimera-lab is a single-maintainer open-source organization. The maintainer hold
 
 ### :building_construction: Roles
 
-| Role | Description |
-| --- | --- |
+| Role             | Description                                                                                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | **Project Lead** | Single maintainer. Sets direction, reviews PRs, manages releases, and makes final decisions on architecture, templates, and the CMR CLI. |
-| **Contributor** | Anyone who submits pull requests, reports issues, or suggests features. All contributions are reviewed by the project lead. |
-| **Collaborator** | Contributors invited to maintain specific repositories after demonstrating sustained, quality contributions. |
+| **Contributor**  | Anyone who submits pull requests, reports issues, or suggests features. All contributions are reviewed by the project lead.              |
+| **Collaborator** | Contributors invited to maintain specific repositories after demonstrating sustained, quality contributions.                             |
 
 ### :building_construction: Decision Making
 
@@ -40,7 +40,7 @@ chimera-lab is a single-maintainer open-source organization. The maintainer hold
 ## :clipboard: Requirements
 
 - Repositories must follow the organization naming conventions (semantic suffixes like `.topic`, `.project`, `.template`, `.app`, `.package`, `.scaffold`).
-- All repositories must use the template system and include required files (README.md, LICENSE, CONTRIBUTING.md, CODE_OF_CONDUCT.md, CHANGELOG.md).
+- All repositories must use the template system and include required files (README.md, LICENSE, CONTRIBUTING.md, CODE\_OF\_CONDUCT.md, CHANGELOG.md).
 - Documentation must pass validation via `cmr docs check`.
 - New repositories are added as submodules in the super-repository.
 

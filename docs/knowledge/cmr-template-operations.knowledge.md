@@ -12,13 +12,13 @@
 
 ## :telescope: Overview
 
-| Operation | Type | Risk | Purpose |
-|-----------|------|------|---------|
-| `validate` | read-only | ⚫ none | Check sync status |
-| `reset` | write | 🟢 low | Copy docs safely (no delete) |
-| `update` | write | 🔴 high | Full sync (add/modify/delete) |
-| `install` | write | 🟢 low | Assign template to repo |
-| `list` | read-only | ⚫ none | Browse template files |
+| Operation  | Type      | Risk    | Purpose                       |
+| ---------- | --------- | ------- | ----------------------------- |
+| `validate` | read-only | ⚫ none  | Check sync status             |
+| `reset`    | write     | 🟢 low  | Copy docs safely (no delete)  |
+| `update`   | write     | 🔴 high | Full sync (add/modify/delete) |
+| `install`  | write     | 🟢 low  | Assign template to repo       |
+| `list`     | read-only | ⚫ none  | Browse template files         |
 
 ## :world_map: Guides
 
@@ -29,6 +29,7 @@
 **Full sync?** → `cmr repo template update` (high risk, requires delete policy)
 
 **Delete policy priority** (highest → lowest):
+
 1. **Absolute**: `.gitmodules`, `.git/`, `.gitconfig` — never deleted
 2. **Config** (`settings.json`): `never_delete`, `always_delete`, `interactive_delete` patterns
 3. **CLI flags**: `--delete-path` (force delete) / `--no-delete-path` (protect)
@@ -36,6 +37,7 @@
 ## :warning: Warnings
 
 `update` operation protects:
+
 - `.gitmodules`, `.git/`, `.gitconfig` (always safe)
 - Patterns in `settings.json.template_update.never_delete`
 - Patterns in `settings.json.template_update.always_delete`

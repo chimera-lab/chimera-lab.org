@@ -35,6 +35,7 @@ description: Chimera Lab organization structure, repository types, topic hierarc
 ## :telescope: Overview
 
 A **Chimera Lab Organization** is a super-repository containing:
+
 - Multiple projects as Git submodules
 - Shared templates and configurations
 - Centralized documentation and rules
@@ -77,6 +78,7 @@ Organization → Topic → Sub-Topic → Repository
 ### :building_construction: Template Inheritance
 
 Repositories inherit from templates:
+
 1. Repository created from GitHub template
 2. Template metadata stored in `.chimera-lab/meta.json`
 3. `cmr templates update` applies template updates
@@ -84,37 +86,49 @@ Repositories inherit from templates:
 ## :jigsaw: Components
 
 ### :jigsaw: `.topic` - Knowledge Topics
+
 Organizational unit for related knowledge/repositories.
+
 - Can contain sub-topics
 - Groups related concepts
 - **Example**: `devops.topic`, `security.topic`
 
 ### :jigsaw: `.project` - Dedicated Projects
+
 Complete project with dedicated repository.
+
 - Full application or service
 - Independent lifecycle
 - **Example**: `chimera-lab-blog.project`, `chimera-lab-chat.project`
 
 ### :jigsaw: `.app` - Applications
+
 Standalone application or tool.
+
 - End-user facing
 - Executable/deployable
 - **Example**: `chimera-lab-cli.app`, `organizer.app`
 
 ### :jigsaw: `.package` - Packages/Libraries
+
 Reusable code packages.
+
 - Importable libraries
 - Shared across projects
 - **Example**: `chimera-lab-laravel.package`
 
 ### :jigsaw: `.scaffold` - Scaffolds
+
 Boilerplate code generators.
+
 - Project starters
 - Code generation templates
 - **Example**: `wordpress-plugin-abstraction.scaffold`
 
 ### :jigsaw: `.template` - Templates
+
 GitHub repository templates.
+
 - Reusable repository structures
 - Applied via GitHub template mechanism
 - Stored as submodule in `.github/.template` of child repos
@@ -131,21 +145,25 @@ GitHub repository templates.
 ## :keyboard: Usage
 
 ### :keyboard: List Organizations
+
 ```bash
 cmr org list
 ```
 
 ### :keyboard: Navigate to Organization
+
 ```bash
 cmr cwd org
 ```
 
 ### :keyboard: List Topics
+
 ```bash
 cmr org topic
 ```
 
 ### :keyboard: List Projects
+
 ```bash
 cmr org projects
 ```
@@ -167,6 +185,7 @@ cmr org projects
 ### :world_map: Graph Analysis
 
 Analyze organization structure:
+
 ```bash
 cmr graph all --output graphml  # Complete organization graph
 cmr graph network               # Project relationships

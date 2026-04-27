@@ -6,6 +6,15 @@
   - [:telescope: Overview](./#telescope-overview)
   - [:building_construction: Structure](./#building_construction-structure)
   - [:world_map: Guides](./#world_map-guides)
+    - [:world_map: Workstream 1: Publish Existing Repositories](./#world_map-workstream-1-publish-existing-repositories)
+      - [:world_map: Phase 0: npm Publish Pipeline](./#world_map-phase-0-npm-publish-pipeline)
+      - [:world_map: Phase 1: Template Repository Publication](./#world_map-phase-1-template-repository-publication)
+      - [:world_map: Phase 2: Content Repository Publication](./#world_map-phase-2-content-repository-publication)
+      - [:world_map: Phase 1: App Scaffold](./#world_map-phase-1-app-scaffold)
+      - [:world_map: Phase 2: Content Discovery and Processing](./#world_map-phase-2-content-discovery-and-processing)
+      - [:world_map: Phase 3: Web Layer](./#world_map-phase-3-web-layer)
+      - [:world_map: Phase 4: Integration](./#world_map-phase-4-integration)
+      - [:world_map: Phase 5: Polish](./#world_map-phase-5-polish)
   - [:memo: To-Do List](./#memo-to-do-list)
     - [:memo: Publication Readiness](./#memo-publication-readiness)
     - [:memo: Content App Delivery](./#memo-content-app-delivery)
@@ -24,6 +33,7 @@ The dependency is structural, not optional. The content application should not b
 **Organization Goal**: turn the current private working set into a public publishing pipeline, then use that pipeline to power a content site generator that renders organization knowledge directly from the filesystem and git history.
 
 **Non-Negotiable Decisions**:
+
 - `chimera-lab-content.app` is a separate repository.
 - The app is a Node.js service that imports `@chimera-lab/core`, `@chimera-lab/services`, and `@chimera-lab/documents` from the GitHub npm registry.
 - Published content is double-gated: repository `meta.json` must set `public: true`, and each published Markdown document must set frontmatter `public: true`.
@@ -34,13 +44,14 @@ The dependency is structural, not optional. The content application should not b
 
 ## :world_map: Guides
 
-**Workstream 1: Publish Existing Repositories**
+### :world_map: Workstream 1: Publish Existing Repositories
 
 This workstream makes the current reusable assets public and consumable. It must complete before the content application can be positioned as a public product.
 
 **Target Outcome**: public packages can be installed from GitHub Packages, public templates can be browsed and cloned, and public `.topic` repositories can be scanned by the content application.
 
 **Scope**:
+
 - CLI monorepo packages to publish:
   - `@chimera-lab/core` for AST, types, and frontmatter parsing
   - `@chimera-lab/services` for settings, git, organization discovery, and resolvers
@@ -54,7 +65,7 @@ This workstream makes the current reusable assets public and consumable. It must
 - Content repositories to make public:
   - all `.topic` repositories with content worth publishing, after audit and explicit metadata opt-in
 
-**Phase 0: npm Publish Pipeline**
+#### :world_map: Phase 0: npm Publish Pipeline
 
 The first milestone is package publication from the CLI monorepo.
 
@@ -65,7 +76,7 @@ The first milestone is package publication from the CLI monorepo.
 - Verify install flow from a clean Node.js environment using GitHub Packages authentication.
 - Document tag and release conventions so package publication is deterministic.
 
-**Phase 1: Template Repository Publication**
+#### :world_map: Phase 1: Template Repository Publication
 
 The template repositories are already on GitHub and need visibility changes plus a final readiness pass.
 
@@ -75,7 +86,7 @@ The template repositories are already on GitHub and need visibility changes plus
 - Switch repository visibility to public.
 - Verify template consumers can discover them without relying on private dependencies.
 
-**Phase 2: Content Repository Publication**
+#### :world_map: Phase 2: Content Repository Publication
 
 Public content should only include repositories that are ready to be indexed and shown externally.
 
@@ -87,6 +98,7 @@ Public content should only include repositories that are ready to be indexed and
 - Leave non-ready repositories private until they meet the same gate.
 
 **Operational Gates for Workstream 1**:
+
 - GitHub Packages installs succeed for the published `@chimera-lab/*` packages.
 - Public templates are visible and self-descriptive.
 - Public `.topic` repositories have `meta.json` with `public: true`.
@@ -101,10 +113,11 @@ This workstream creates a dedicated Node.js application that reuses the organiza
 **Primary Goal**: render publishable content from public chimera-lab repositories with no database, using repository metadata, frontmatter, and git history as the source of truth.
 
 **Core Reuse Requirement**:
+
 - Reuse 100% of the existing CLI package capabilities that already solve frontmatter parsing, AST handling, meta.json loading, organization discovery, directive resolution, and git operations.
 - Do not fork or duplicate those concerns inside the new application unless a package boundary change is required in the CLI monorepo.
 
-**Phase 1: App Scaffold**
+#### :world_map: Phase 1: App Scaffold
 
 Build the new repository as a minimal service with clean package consumption boundaries.
 
@@ -115,7 +128,7 @@ Build the new repository as a minimal service with clean package consumption bou
 - Establish environment configuration for organization root paths, repository discovery, package registry auth, and cache settings.
 - Define clear module boundaries for discovery, transformation, rendering, and delivery.
 
-**Phase 2: Content Discovery and Processing**
+#### :world_map: Phase 2: Content Discovery and Processing
 
 This phase turns repository files into normalized publishable content records.
 
@@ -144,12 +157,13 @@ excerpt: "..."
 ```
 
 **Inference Rules**:
+
 - `title` falls back to the first H1.
 - `slug` falls back to the filename.
 - `date`, `updated`, and `author` fall back to git history.
 - Repositories or documents missing the `public: true` gate are excluded from output.
 
-**Phase 3: Web Layer**
+#### :world_map: Phase 3: Web Layer
 
 This phase exposes normalized content through routes and templates.
 
@@ -161,7 +175,7 @@ This phase exposes normalized content through routes and templates.
 - Generate navigation from repository hierarchy, topic structure, and document metadata.
 - Keep rendering deterministic so static caching and downstream integration stay simple.
 
-**Phase 4: Integration**
+#### :world_map: Phase 4: Integration
 
 This phase determines how the content app fits into the broader organization website stack.
 
@@ -171,7 +185,7 @@ This phase determines how the content app fits into the broader organization web
 - Implement filesystem and render caching to avoid repeated full scans on every request.
 - Define deployment inputs, environment variables, and container runtime expectations.
 
-**Phase 5: Polish**
+#### :world_map: Phase 5: Polish
 
 This phase turns the internal renderer into a publishable public-facing application.
 
@@ -183,6 +197,7 @@ This phase turns the internal renderer into a publishable public-facing applicat
 - Close remaining presentation gaps before public launch.
 
 **Operational Gates for Workstream 2**:
+
 - The app installs published `@chimera-lab/*` packages without local path dependencies.
 - Public repositories and documents are filtered correctly through the double gate.
 - Git metadata inference works when frontmatter omits date fields.
