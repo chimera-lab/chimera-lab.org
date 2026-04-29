@@ -352,7 +352,7 @@
       "Development.Customization": "describe the customization options available for this project"
     }
   },
-  "metadata": {
+  "vars": {
     "org.contacts.email.security": "security@chimera-lab.com"
   }
 }
