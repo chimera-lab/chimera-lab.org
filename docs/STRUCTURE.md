@@ -15,11 +15,9 @@
 
 ## :telescope: Overview
 
-<!-- <llm prompt="Structure.Overview" applied> -->
+<!-- <llm prompt="Structure.Overview"> -->
 
-This repository uses a layered layout that separates governance, automation, documentation, and topic collections. Root-level files provide the main entry point and shared project policies, `.chimera-lab/` stores repository metadata and template configuration, `.github/` contains agent, prompt, and workflow automation assets, and `docs/` holds extended documentation, diagrams, and knowledge files.
-
-At the top level, the repository also groups organization content into subject-based `.topic` directories such as `arts.topic`, `humanities.topic`, `natural-sciences.topic`, and `projects.topic`, which are managed as submodules. This structure keeps the repository predictable, supports organization-wide consistency, and makes it easier to navigate shared standards, reference material, and related topic areas
+`directive: <llm prompt="Structure.Overview">`
 
 <!-- </llm> -->
 

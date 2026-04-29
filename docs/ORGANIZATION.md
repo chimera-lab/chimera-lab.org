@@ -15,11 +15,9 @@
 
 ## :telescope: Overview
 
-<!-- <llm prompt="Organization.Overview" applied> -->
+<!-- <llm prompt="Organization.Overview"> -->
 
-chimera-lab.org is the organization-level super-repository for chimera-lab, acting as the central index for shared governance, documentation, and topic-based collections managed as Git submodules. Topic directories such as `arts.topic`, `humanities.topic`, `natural-sciences.topic`, and `projects.topic` group repositories by domain, while the organization’s semantic suffix conventions keep repositories categorized consistently by purpose.
-
-This repository also serves as the common documentation and structure baseline for the organization. Root policy files define governance and contribution expectations, `docs/` holds deeper guidance on organization and structure, and the CMR CLI supports validation, template synchronization, and ongoing repository management workflows
+`directive: <llm prompt="Organization.Overview">`
 
 <!-- </llm> -->
 
