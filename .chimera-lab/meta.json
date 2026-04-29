@@ -1,9 +1,19 @@
 {
+  "description": "Organization-level super-repository for chimera-lab — home to topic collections, project templates, governance documents, and shared automation assets.",
+  "tags": [
+    "organization",
+    "chimera-lab",
+    "templates",
+    "topics",
+    "documentation"
+  ],
+  "createdAt": "2026-04-28T14:43:46.654Z",
+  "updatedAt": "2026-04-28T14:43:48.365Z",
   "repo": {
     "template": "org.template",
     "templateHash": "6d0e917a80273542748259e91b4aa6f9f038771c",
     "name": "chimera-lab.org",
-    "type": "",
+    "type": "org",
     "issues": {},
     "labels": {
       "org": [],
