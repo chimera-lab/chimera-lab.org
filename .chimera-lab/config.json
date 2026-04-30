@@ -10,7 +10,7 @@
       "name": "brand",
       "provider": "shields.io",
       "label": "{org.name}",
-      "message": "org",
+      "message": "{org.slogan}",
       "color": "6e40c9",
       "style": "flat-square",
       "href": "https://github.com/{org.name}"
