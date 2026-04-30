@@ -1,33 +1,5 @@
 {
-  "patterns": {
-    "doc_patterns": [
-      "*.md",
-      "docs/*.md",
-      "CHANGELOG.md",
-      "README.md",
-      "LICENSE",
-      "CODE_OF_CONDUCT.md",
-      "CONTRIBUTING.md",
-      "SECURITY.md"
-    ],
-    "github_patterns": [
-      ".github/**/*"
-    ],
-    "agent_patterns": [
-      "**/*.agent.md"
-    ],
-    "prompt_patterns": [
-      "**/*.prompt.md"
-    ],
-    "knowledge_patterns": [
-      "**/*.knowledge.md"
-    ],
-    "docs_default_pattern": "**/*.md"
-  },
   "version": 1,
-  "updated_at": "2026-02-16T22:44:58.974599+00:00",
-  "repo_name": "chimera-lab.org",
-  "github_repo": "chimera-lab/chimera-lab",
   "template": "template.topic",
   "labels": {
     "default": [
@@ -352,7 +324,10 @@
       "Development.Customization": "describe the customization options available for this project"
     }
   },
-  "vars": {
-    "org.contacts.email.security": "security@chimera-lab.com"
-  }
+  "vars": [
+    {
+      "key": "org.contacts.email.security",
+      "value": "security@chimera-lab.com"
+    }
+  ]
 }
