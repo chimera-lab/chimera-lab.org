@@ -1,6 +1,53 @@
 {
   "version": 1,
   "template": "template.topic",
+  "org": {
+    "name": "chimera-lab",
+    "slogan": "build · share · evolve"
+  },
+  "badges": [
+    {
+      "name": "brand",
+      "provider": "shields.io",
+      "label": "{org.name}",
+      "message": "org",
+      "color": "6e40c9",
+      "style": "flat-square",
+      "href": "https://github.com/{org.name}"
+    },
+    {
+      "name": "license",
+      "provider": "shields.io",
+      "src": "https://img.shields.io/github/license/{repo.owner}/{repo.name}",
+      "href": "LICENSE",
+      "alt": "License",
+      "style": "flat-square"
+    },
+    {
+      "name": "last-commit",
+      "provider": "shields.io",
+      "src": "https://img.shields.io/github/last-commit/{repo.owner}/{repo.name}",
+      "href": "https://github.com/{repo.owner}/{repo.name}/commits",
+      "alt": "Last commit",
+      "style": "flat-square"
+    },
+    {
+      "name": "issues",
+      "provider": "shields.io",
+      "src": "https://img.shields.io/github/issues/{repo.owner}/{repo.name}",
+      "href": "https://github.com/{repo.owner}/{repo.name}/issues",
+      "alt": "Issues",
+      "style": "flat-square"
+    },
+    {
+      "name": "stars",
+      "provider": "shields.io",
+      "src": "https://img.shields.io/github/stars/{repo.owner}/{repo.name}",
+      "href": "https://github.com/{repo.owner}/{repo.name}/stargazers",
+      "alt": "Stars",
+      "style": "flat-square"
+    }
+  ],
   "labels": {
     "default": [
       {
