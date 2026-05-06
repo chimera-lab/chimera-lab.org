@@ -34,6 +34,7 @@
     - [:world_map: Path Resolution](./#world_map-path-resolution)
     - [:world_map: GitHub Integration](./#world_map-github-integration)
     - [:world_map: Output Styling](./#world_map-output-styling)
+  - [:books: References](./#books-references)
 
 ## :building_construction: Structure
 
@@ -217,3 +218,8 @@ All JSON configs use Pydantic validation:
 - Uses Rich library for formatting
 - Colors: `[red]`, `[green]`, `[yellow]`
 - Tables, trees, progress bars supported
+
+## :books: References
+
+- [:page_facing_up: cmr.knowledge.md](cmr.knowledge.md)
+- [:page_facing_up: ../ARCHITECTURE.md](../ARCHITECTURE.md)

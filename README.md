@@ -10,7 +10,6 @@
   - [:clipboard: Requirements](./#clipboard-requirements)
   - [:inbox_tray: Installation](./#inbox_tray-installation)
   - [:keyboard: Usage](./#keyboard-usage)
-    - [:keyboard: Inventory](./#keyboard-inventory)
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Statistics](./#building_construction-statistics)
     - [:building_construction: Repository Types](./#building_construction-repository-types)

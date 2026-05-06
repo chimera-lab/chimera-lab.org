@@ -50,118 +50,120 @@ cmr submodule foreach -j 16 --recursive <cmd>
 
 ## CMR Formatting Directives
 
-Directives are HTML comments written in **template-level** files. `cmr docs render` resolves them in strict order, producing the **repo-level** (instance) document. Do not invent new directive syntaxes.
+Directives are **paired HTML comments** written in template-level files. `cmr docs render` resolves them in strict phase order, producing the repo-level (instance) document. Do not invent new directive syntaxes. Do not use the old `<!-- llm<prompt> -->` style — it is deprecated.
+
+### Directive preference order
+
+Use directives in this order — do **not** default to `<llm>` for everything:
+
+1. `<var>` — org/repo metadata (name, description, url, type)
+2. `<badges>` — status badges
+3. `<cmr:...>` — structured dynamic data (repo lists, tables, stats)
+4. `<fragment>` — reusing content blocks from other docs
+5. `<llm prompt="Namespace.Section">` — **last resort**: only for prose where no structured source exists. Use qualified names (e.g., `Overview`, `Architecture.Components`). Never for structured data.
 
 ### Rendering pipeline (template → repo)
 
 ```text
 Template file (source)
   │
-  ├─ 1. Template variables   <!-- var<org.name> -->, <!-- var<repo.type> -->, <!-- var<var.author> -->
-  ├─ 2. i18n directives      <!-- i18n<locale.file.key> -->
-  ├─ 3. Fragment directives  <!-- fragment<source#anchor> -->
-  ├─ 4. LLM directives       <!-- llm<prompt> -->
-  ├─ 5. CMR directives       <!-- cmr:<group.command[key=value,...]> -->
-  │
-  └─ Rendered output (repo-level file)
+  ├─ 1. layout + badges    <!-- <badges name="brand"> --><!-- </badges> -->
+  ├─ 2. vars               <!-- <var key="org.name"> --><!-- </var> -->
+  ├─ 3. i18n               <!-- <i18n key="en.global.intro"> --><!-- </i18n> -->
+  ├─ 4. fragment           <!-- <fragment src="./docs/api.md#Overview"> --><!-- </fragment> -->
+  ├─ 5. cmr                <!-- <cmr:org.list> --><!-- </cmr> -->
+  ├─ 6. llm                <!-- <llm prompt="Overview"> --><!-- </llm> -->
+  └─ 7. toc                <!-- toc -->
+       │
+       └─ Rendered output (repo-level file, directives have applied attribute)
 ```
 
 **Template = structure + unresolved directives. Repo = rendered output with content injected.**
 
-Each pass can be toggled: `--no-fragments`, `--no-i18n`, `--no-llm`, `--no-cmr`. Unresolved directives remain as-is unless `--fail-on-unresolved` is set.
+Selective rendering: `cmr docs render --apply --skip llm,toc` skips specified phases.
 
-### `<!-- var<key> -->` — Template variables
+### Canonical directive syntax
 
-| Variable | Source |
-|---|---|
-| `<!-- var<org.name> -->` | Organization directory name |
-| `<!-- var<repo.name> -->` | `meta.json → repo.name` or directory basename |
-| `<!-- var<repo.type> -->` | `meta.json → repo.type` |
-| `{{var.<key>}}` | `settings.json → metadata.<key>` |
+#### `<var>` — Template variables
 
-### `<!-- toc -->` — Table of contents
+```markdown
+<!-- <var key="org.name"> --><!-- </var> -->               ← pending
+<!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->  ← applied
+```
+
+| Key | Source |
+|-----|--------|
+| `org.name` | Organization directory name |
+| `repo.name` | `meta.json → repo.name` or directory basename |
+| `repo.type` | `meta.json → repo.type` |
+| `repo.description` | `meta.json → repo.description` |
+
+#### `<badges>` — Status badges
+
+```markdown
+<!-- <badges name="brand"> --><!-- </badges> -->
+<!-- <badges name="license,last-commit,issues,stars" layout="inline"> --><!-- </badges> -->
+```
+
+#### `<toc>` — Table of contents
+
+```markdown
+<!-- toc -->
+```
 
 Auto-generated from heading structure. Run `cmr docs fix` to regenerate after manual edits.
 
-### `<!-- i18n<locale.file.key> -->` — Internationalization
-
-Injects locale-specific content from `docs/lang/{locale}/{file}.json`. Dot notation navigates nested keys.
+#### `<i18n>` — Internationalization
 
 ```markdown
-<!-- i18n<en.global.intro> -->
-<!-- i18n<pt.commands.docs.description> -->
+<!-- <i18n key="en.global.intro"> --><!-- </i18n> -->
 ```
 
-### `<!-- fragment<source#anchor> -->` — Content composition
+#### `<fragment>` — Content composition
 
 Inlines external markdown sections. Primary mechanism for composing docs from shared sources.
 
-| Provider | Syntax example |
-|---|---|
-| Local | `<!-- fragment<./docs/api.md#Concepts> -->` |
-| Submodule | `<!-- fragment<submodule@arts.topic/README.md#Overview> -->` |
-| GitHub | `<!-- fragment<github@owner/repo/blob/main/path.md#Section> -->` |
+```markdown
+<!-- <fragment src="./docs/api.md#Overview"> --><!-- </fragment> -->
+```
 
-Selection modes:
+#### `<llm>` — AI content generation
 
 ```markdown
-<!-- fragment<file.section@./README.md#Overview> -->  <!-- header + body (default) -->
-<!-- fragment<file.content@./README.md#Overview> -->  <!-- body only -->
-<!-- fragment<file.header@./README.md#Overview> -->   <!-- header line only -->
+<!-- <llm prompt="Overview"> -->
+directive: <llm prompt="Overview">
+<!-- </llm> -->
 ```
 
-### `<!-- llm<prompt> -->` — AI content generation
+- Template files: always leave as unresolved (no `applied` attribute).
+- Rendered repo files: `applied` attribute is added automatically by the renderer.
+- Use qualified prompt names matching typed header categories (e.g., `Overview`, `Architecture.Components`, `Installation`).
+
+#### `<cmr:...>` — CLI output embedding
+
+Embeds live `cmr` command output. Do not hand-write content this directive can generate.
 
 ```markdown
-<!-- llm<write overview paragraph> -->            ← pending (template)
-<!-- llm<write overview paragraph;applied> -->    ← applied (rendered output)
+<!-- <cmr:org.list> --><!-- </cmr> -->
+<!-- <cmr:org.list[suffix=app]> --><!-- </cmr> -->
+<!-- <cmr:org.stats> --><!-- </cmr> -->
+<!-- <cmr:project.list> --><!-- </cmr> -->
+<!-- <cmr:project.tree> --><!-- </cmr> -->
 ```
-
-- Template/source files: always leave as unresolved `<!-- llm<prompt> -->`.
-- Rendered repo files: `;applied` is added automatically.
-- Re-generate: `cmr docs render file.md -o file.md --llm-overwrite`
-- If the prompt matches a typed header name (e.g., `Overview`), the CLI resolves the prompt from `settings.json → llm.headerPrompts`.
-
-### `<!-- llm<tags:name> -->` — Submodule tags
-
-Generates standardized topic tags for a submodule. State: `missing` → `pending` → `applied`.
-
-```bash
-# report tag state per submodule
-cmr docs check --tags
-# create/apply tag directives
-cmr docs fix --tags
-# regenerate existing tags
-cmr docs fix --tags --overwrite
-```
-
-### `<!-- cmr:<group.command[key=value,...]> -->` — CLI output embedding
-
-Embeds live `cmr` command output in a document (5th pass). Do not hand-write content this can generate.
-
-| Directive | Output |
-|---|---|
-| `<!-- cmr:<org.list> -->` | Table of all repositories |
-| `<!-- cmr:<org.list[suffix=app]> -->` | Filtered by suffix |
-| `<!-- cmr:<org.topic> -->` | Topic repositories table |
-| `<!-- cmr:<org.stats> -->` | Organization statistics |
-| `<!-- cmr:<project.list> -->` | All projects with description and tags |
-| `<!-- cmr:<project.tree> -->` | Nested project hierarchy |
 
 ### Directive usage rules
 
 1. Do not invent new directive syntaxes.
-2. Template/source files must have unresolved directives — `;applied` only appears in rendered output.
-3. Use LLM directives for narrative content; CMR directives only for generated inventories/lists.
+2. Template/source files must have unresolved directives — `applied` attribute only appears in rendered output.
+3. Use `<llm>` for narrative prose only; use `<cmr:...>` for inventories, tables, and lists.
 4. Keep existing directive lines unless invalid; fix invalid syntax instead of removing.
 5. If a section is template-driven, preserve directive placeholders and refactor surrounding content around them.
 
 Validate directives:
 
 ```bash
-cmr docs check --tags
-cmr docs render <file> --fail-on-unresolved
-cmr docs check <file>
+cmr docs check <file>     # validate after each manual change
+cmr docs fix --dry-run    # preview TOC and header fixes
 ```
 
 ---
@@ -246,9 +248,8 @@ Each item maps to the numbered Step in this section. Follow in order.
 6.  [ ] Refactor: for each extra file, apply C→B→A→D to reach template compliance → Step 3
 7.  [ ] Fix: manual restructuring for remaining cmr docs check errors       → Step 4
 8.  [ ] Fix: context files (agents, prompts, knowledge)                    → Step 5
-9.  [ ] Validate: cmr docs check --tags                                    → Step 6
-10. [ ] Validate: cmr docs check (MUST be 0 errors, 0 warnings)            → Step 6
-11. [ ] Validate: submodules                                               → Step 6
+9.  [ ] Validate: cmr docs check (MUST be 0 errors, 0 warnings)            → Step 6
+10. [ ] Validate: submodules                                               → Step 6
 ```
 
 **Steps below expand each TODO item in detail.**
@@ -373,8 +374,6 @@ For each agent, prompt, and knowledge file found in Step 1:
 ```bash
 # update TOC after manual changes
 cmr docs fix
-# validate tag directives/submodule tagging state
-cmr docs check --tags
 # MUST be 0 errors, 0 warnings
 cmr docs check
 ```
@@ -383,12 +382,6 @@ Submodules:
 
 ```bash
 cmr submodule foreach -j 16 --recursive --continue-on-error "cmr docs fix && cmr docs check"
-```
-
-Batch directive validation:
-
-```bash
-cmr submodule foreach -j 16 --recursive --continue-on-error "cmr docs check --tags"
 ```
 
 ---

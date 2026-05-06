@@ -1,10 +1,24 @@
 {
   "version": 1,
-  "template": "template.topic",
   "org": {
     "name": "chimera-lab",
     "slogan": "build · share · evolve"
   },
+  "template": "template.topic",
+  "vars": [
+    {
+      "key": "org.contacts.email.security",
+      "value": "security@chimera-lab.com"
+    },
+    {
+      "key": "org.author.name",
+      "value": "L.A.B"
+    },
+    {
+      "key": "org.author.email",
+      "value": "info@chimera-lab.com"
+    }
+  ],
   "badges": [
     {
       "name": "brand",
@@ -18,34 +32,34 @@
     {
       "name": "license",
       "provider": "shields.io",
+      "style": "flat-square",
       "src": "https://img.shields.io/github/license/{repo.owner}/{repo.name}",
       "href": "LICENSE",
-      "alt": "License",
-      "style": "flat-square"
+      "alt": "License"
     },
     {
       "name": "last-commit",
       "provider": "shields.io",
+      "style": "flat-square",
       "src": "https://img.shields.io/github/last-commit/{repo.owner}/{repo.name}",
       "href": "https://github.com/{repo.owner}/{repo.name}/commits",
-      "alt": "Last commit",
-      "style": "flat-square"
+      "alt": "Last commit"
     },
     {
       "name": "issues",
       "provider": "shields.io",
+      "style": "flat-square",
       "src": "https://img.shields.io/github/issues/{repo.owner}/{repo.name}",
       "href": "https://github.com/{repo.owner}/{repo.name}/issues",
-      "alt": "Issues",
-      "style": "flat-square"
+      "alt": "Issues"
     },
     {
       "name": "stars",
       "provider": "shields.io",
+      "style": "flat-square",
       "src": "https://img.shields.io/github/stars/{repo.owner}/{repo.name}",
       "href": "https://github.com/{repo.owner}/{repo.name}/stargazers",
-      "alt": "Stars",
-      "style": "flat-square"
+      "alt": "Stars"
     }
   ],
   "labels": {
@@ -370,11 +384,5 @@
       "Development.CodeQuality": "describe the code quality tools and linting commands available for this project",
       "Development.Customization": "describe the customization options available for this project"
     }
-  },
-  "vars": [
-    {
-      "key": "org.contacts.email.security",
-      "value": "security@chimera-lab.com"
-    }
-  ]
+  }
 }

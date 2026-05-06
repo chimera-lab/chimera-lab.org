@@ -201,13 +201,9 @@ Clone with `git clone --recursive <org-url>`. Update: `git submodule update --re
 
 ## :books: References
 
-| Suffix      | Purpose                 | Example                                 |
-| ----------- | ----------------------- | --------------------------------------- |
-| `.topic`    | Knowledge/study topic   | `devops.topic`                          |
-| `.project`  | Dedicated project       | `chimera-lab-blog.project`              |
-| `.app`      | Application             | `chimera-lab-cli.app`                   |
-| `.package`  | Library/package         | `chimera-lab-laravel.package`           |
-| `.scaffold` | Boilerplate generator   | `wordpress-plugin-abstraction.scaffold` |
-| `.template` | GitHub template         | `laravel_app.template`                  |
-| `.overview` | Study material/overview | `docker.overview`                       |
-| `.diy`      | DIY/hardware project    | `network-storage.diy`                   |
+- [:page_facing_up: ../../README.md](../../README.md)
+- [:page_facing_up: ../ARCHITECTURE.md](../ARCHITECTURE.md)
+- [:page_facing_up: ../ORGANIZATION.md](../ORGANIZATION.md)
+- [:page_facing_up: ../STRUCTURE.md](../STRUCTURE.md)
+- [:page_facing_up: organization.knowledge.md](organization.knowledge.md)
+- [:page_facing_up: templates.knowledge.md](templates.knowledge.md)

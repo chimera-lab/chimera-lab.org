@@ -31,6 +31,7 @@ description: Chimera Lab organization structure, repository types, topic hierarc
     - [:world_map: Graph Analysis](./#world_map-graph-analysis)
     - [:world_map: Best Practices](./#world_map-best-practices)
   - [:mag: Terminology](./#mag-terminology)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 
@@ -206,3 +207,10 @@ cmr graph templates             # Template usage
 - Organization-level terminology
 - Linked across repositories
 - Managed via `cmr terms` commands
+
+## :books: References
+
+- [:page_facing_up: ../ORGANIZATION.md](../ORGANIZATION.md)
+- [:page_facing_up: ../STRUCTURE.md](../STRUCTURE.md)
+- [:page_facing_up: system.knowledge.md](system.knowledge.md)
+- [:page_facing_up: templates.knowledge.md](templates.knowledge.md)

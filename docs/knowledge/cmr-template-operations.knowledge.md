@@ -8,7 +8,7 @@
   - [:warning: Warnings](./#warning-warnings)
   - [:keyboard: Usage](./#keyboard-usage)
   - [:wrench: configuration](./#wrench-configuration)
-  - [:link: see also](./#link-see-also)
+  - [:books: References](./#books-references)
 
 ## :telescope: Overview
 
@@ -74,7 +74,7 @@ Set delete policy in `.chimera-lab/settings.json`:
 }
 ```
 
-## :link: see also
+## :books: References
 
-- [CMR Knowledge Base](./cmr.knowledge.md#building_construction-cmr-repo-template)
-- [Validating Guide](./validating.knowledge.md)
+- [:page_facing_up: cmr.knowledge.md](cmr.knowledge.md)
+- [:page_facing_up: validating.knowledge.md](validating.knowledge.md)

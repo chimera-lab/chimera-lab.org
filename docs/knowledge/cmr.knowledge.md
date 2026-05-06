@@ -13,10 +13,10 @@ description: CMR CLI tool knowledge and usage patterns
   - [:building_construction: Structure](./#building_construction-structure)
     - [:building_construction: Command Groups](./#building_construction-command-groups)
     - [:building_construction: Commands & Subcommands](./#building_construction-commands-subcommands)
-  - [:label: Directives](./#label-directives)
-    - [:label: Flat Directives](./#label-flat-directives)
-    - [:label: Layout Directives](./#label-layout-directives)
-    - [:label: Directive Lifecycle](./#label-directive-lifecycle)
+  - [:jigsaw: Components](./#jigsaw-components)
+    - [:jigsaw: Flat Directives](./#jigsaw-flat-directives)
+    - [:jigsaw: Layout Directives](./#jigsaw-layout-directives)
+    - [:jigsaw: Directive Lifecycle](./#jigsaw-directive-lifecycle)
   - [:world_map: Guides](./#world_map-guides)
   - [:hammer_and_wrench: Common Problems](./#hammer_and_wrench-common-problems)
   - [:books: References](./#books-references)
@@ -124,7 +124,7 @@ The CMR CLI (`cmr`) automates chimera-lab.org repositories managing documentatio
 | `cmr wd repo` | Show repo path for current directory |
 | `cmr cd <query>` | Fuzzy-navigate to a repository |
 
-## :label: Directives
+## :jigsaw: Components
 
 Directives are HTML-comment markers embedded in markdown files. `cmr docs render` resolves them; `cmr docs check` validates pending ones. All directives are paired: an opening tag and a closing tag. A directive is **pending** when the body between the tags is empty; **applied** when the `applied` attribute is present in the opening tag.
 
@@ -133,7 +133,7 @@ Pending:  <!-- <type attr="value"> --><!-- </type> -->
 Applied:  <!-- <type attr="value" applied> -->body<!-- </type> -->
 ```
 
-### :label: Flat Directives
+### :jigsaw: Flat Directives
 
 Flat directives are single-level (non-nesting). They are resolved in order during `cmr docs render`.
 
@@ -170,7 +170,7 @@ Flat directives are single-level (non-nesting). They are resolved in order durin
 
 **`i18n` ref** format is `locale.file.key`. Resolves to `docs/lang/{locale}/{file}.json → key`.
 
-### :label: Layout Directives
+### :jigsaw: Layout Directives
 
 Layout directives are block-level and support nesting. They render dynamic lists or tables from JSON data produced by nested `<cmr>` subcommands that must use `output=json`.
 
@@ -194,7 +194,7 @@ Both wrap `<data name="X">` children that declare named variables in scope for b
 
 **Binding syntax**: `variable.*.field` iterates all items; `variable.0.field` accesses by index. Helper: `items.* | count()` returns the array length.
 
-### :label: Directive Lifecycle
+### :jigsaw: Directive Lifecycle
 
 1. **Pending** — no `applied` attribute, body is empty.
 2. `cmr docs render` resolves each pending directive and writes the output. **Dry-run is the default** — use `--apply` to write files.

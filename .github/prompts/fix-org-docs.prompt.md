@@ -24,40 +24,51 @@ cmr submodule foreach <cmd>     # run command in each submodule (excludes .templ
 cmr submodule foreach --recursive <cmd>  # include nested submodules
 ```
 
-## CLI Formatting Tags (Directives)
+## CMR Directives
 
-When editing docs, preserve and use CLI directives with the official syntax only.
+All directives use **paired HTML comment syntax**. Never use the old `<!-- llm<prompt> -->` style — it is deprecated. The canonical syntax is:
 
-### Directive types
+```markdown
+<!-- <directive attr="value"> -->
+...content or placeholder...
+<!-- </directive> -->
+```
 
-- TOC directive: `<!-- toc -->`
-- LLM directive: `<!-- llm<prompt> -->`
-- LLM applied marker: `<!-- llm<prompt;applied> -->`
-- Tag directive: `<!-- llm<tags:name> -->`
-- i18n directive: `<!-- i18n<locale.file.key> -->`
-- Fragment directive: `<!-- fragment<source#anchor> -->`
-- CMR directive: `<!-- cmr:<group.command[key=value,...]> -->`
+### Directive types and canonical syntax
 
-### Usage rules for the model
+| Directive | Pending (template) | Applied (rendered repo) |
+|-----------|-------------------|------------------------|
+| `var` | `<!-- <var key="org.name"> --><!-- </var> -->` | `<!-- <var key="org.name" applied> -->chimera-lab.org<!-- </var> -->` |
+| `llm` | `<!-- <llm prompt="Overview"> -->`<br>`directive: <llm prompt="Overview">`<br>`<!-- </llm> -->` | Content fills the block; `applied` attribute added |
+| `toc` | `<!-- toc -->` | Auto-generated list |
+| `badges` | `<!-- <badges name="brand"> -->`<br>`<!-- </badges> -->` | Rendered badge markdown |
+| `cmr` | `<!-- <cmr:org.list> --><!-- </cmr> -->` | Live `cmr` command output |
+| `fragment` | `<!-- <fragment src="./docs/api.md#Overview"> --><!-- </fragment> -->` | Inlined section content |
+| `i18n` | `<!-- <i18n key="en.global.intro"> --><!-- </i18n> -->` | Locale-specific string |
+
+### Directive preference order
+
+Use directives in this order — do **not** default to `<llm>` for everything:
+
+1. `<var>` — for org/repo metadata (name, description, url, type)
+2. `<badges>` — for status badges
+3. `<cmr:...>` — for structured dynamic data (repo lists, tables, stats)
+4. `<fragment>` — for reusing content from other docs
+5. `<llm prompt="Namespace.Section">` — **last resort**: only for prose where no structured source exists. Use qualified names (e.g., `Overview`, `Architecture.Components`). Never for structured data.
+
+### Usage rules
 
 1. Do not invent new directive syntaxes.
-2. Prefer unresolved directives in source/template docs; `;applied` should appear only after render output.
-3. Use LLM directives for narrative content and CMR directives only for generated inventories/lists.
-4. Keep existing directive lines unless they are invalid; fix invalid syntax instead of removing directives.
+2. Template/source files must have unresolved directives — `applied` attribute only appears in rendered output.
+3. Use `<llm>` for narrative prose only; use `<cmr:...>` for inventories, tables, and lists.
+4. Keep existing directive lines unless invalid; fix invalid syntax instead of removing.
 5. If a section is template-driven, preserve directive placeholders and refactor surrounding content around them.
 
 ### Validate directives during fixes
 
 ```bash
-cmr docs check --tags
-cmr docs render <file> --fail-on-unresolved
-cmr docs check <file>
-```
-
-For batch verification:
-
-```bash
-cmr submodule foreach --recursive --continue-on-error "cmr docs check --tags"
+cmr docs fix --dry-run    # preview TOC and header fixes
+cmr docs check <file>     # validate after each manual change
 ```
 
 ## Rules
@@ -130,7 +141,6 @@ For files with custom H2 headers not in the typed registry (`cmr docs headers li
 
 ```bash
 cmr docs fix              # update TOC after manual changes
-cmr docs check --tags     # validate tag directives/submodule tagging state
 cmr docs check            # MUST be 0 errors, 0 warnings
 ```
 
@@ -143,7 +153,6 @@ cmr docs check            # record initial state
 cmr repo template diff --list-new-files   # identify extra docs to merge/refactor
 cmr docs fix --dry-run    # preview
 cmr docs fix              # apply if safe
-cmr docs check --tags     # directive/tag validation
 cmr docs check            # TEST
 # manual fixes for remaining issues...
 cmr docs check            # TEST after EACH file
