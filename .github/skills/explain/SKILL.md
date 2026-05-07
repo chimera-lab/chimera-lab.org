@@ -7,7 +7,7 @@ description: Analyze issues, code, or concepts and provide clear explanations
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

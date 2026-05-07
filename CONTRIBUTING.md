@@ -1,14 +1,14 @@
-## :busts_in_silhouette: Contributing
+# :busts_in_silhouette: Contributing
 
-This guide explains how to prepare your environment, configure chimera-lab.org, and contribute changes consistently.
+This guide explains how to prepare your environment, configure <!-- <var key="repo.name"> --><!-- </var> -->, and contribute changes consistently.
 
 ## :book: Table of Contents
 
 - [:busts_in_silhouette: Contributing](./#busts_in_silhouette-contributing)
-- [:telescope: Overview](./#telescope-overview)
-- [:clipboard: Requirements](./#clipboard-requirements)
-- [:wrench: Configuration](./#wrench-configuration)
-- [:memo: To-Do List](./#memo-to-do-list)
+  - [:telescope: Overview](./#telescope-overview)
+  - [:clipboard: Requirements](./#clipboard-requirements)
+  - [:wrench: Configuration](./#wrench-configuration)
+  - [:memo: To-Do List](./#memo-to-do-list)
 
 ## :telescope: Overview
 
@@ -16,17 +16,13 @@ We keep contributions simple: satisfy prerequisites, configure the project, then
 
 ## :clipboard: Requirements
 
-- Git installed and able to authenticate with the chimera-lab.org repository.
+- Git installed and able to authenticate with the <!-- <var key="org.name"> --><!-- </var> --> repository.
 - Development environment that matches project language/runtime.
 - Access to required secrets or environment variables when applicable.
-- Keep GitHub-related files in `.github/` only; keep human-facing documentation in `docs/` only.
-- Keep knowledge files in `docs/knowledge/`.
-- Use typed headers with emoji prefixes in documentation.
-- Run `cmr docs check` after documentation refactors; validate before merge.
 
 ## :wrench: Configuration
 
-1. Clone chimera-lab.org and install dependencies per the project README.
+1. Clone <!-- <var key="repo.name"> --><!-- </var> --> and install dependencies per the project README.
 2. Set any required environment variables or secret files locally (do not commit secrets).
 3. Run lint and test commands once to ensure the base setup passes.
 

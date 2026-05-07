@@ -18,7 +18,7 @@ description: Patterns for repository structure, organization, and template manag
 
 ## :telescope: Overview
 
-Repository knowledge defines the structure, naming conventions, template hierarchy, and metadata management for chimera-lab.org repositories. All repositories follow standardized patterns with suffix-based typing and template inheritance.
+Repository knowledge defines the structure, naming conventions, template hierarchy, and metadata management for <!-- <var key="org.name"> --><!-- </var> --> repositories. All repositories follow standardized patterns with suffix-based typing and template inheritance.
 
 ## :world_map: Guides
 
@@ -41,7 +41,7 @@ Repository knowledge defines the structure, naming conventions, template hierarc
 
 ### :world_map: Template Hierarchy
 
-- `repository.template` is the base template for all chimera-lab.org repositories.
+- `repository.template` is the base template for all <!-- <var key="org.name"> --><!-- </var> --> repositories.
 - Child templates inherit and extend parent templates.
 - Use `cmr repo template diff` to check synchronization.
 - Use `cmr repo template update` to apply upstream changes.

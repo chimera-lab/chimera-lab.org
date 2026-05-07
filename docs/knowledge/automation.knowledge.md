@@ -47,7 +47,7 @@ Automation knowledge covers CI/CD pipelines, GitHub Actions workflows, automated
 
 ### :world_map: Documentation Automation
 
-- Use `cmr docs check` in CI to enforce documentation standards.
+- Use `cmr docs validate` in CI to enforce documentation standards.
 - Use `cmr docs fix` to auto-repair fixable issues.
 - Generate relationship diagrams with `cmr utils graph agents relation`.
 - Automate Table of Contents updates based on header structure.

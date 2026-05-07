@@ -7,7 +7,7 @@ description: 'Discover and gather project context, issues, and codebase informat
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :world_map: Guides
 

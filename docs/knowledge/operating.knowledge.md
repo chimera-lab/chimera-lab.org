@@ -40,7 +40,7 @@ Operating covers the execution of development tasks, Git workflows, deployments,
 ### :world_map: Automation Tools
 
 - `cmr` automates documentation validation, issues, milestones, labels, and templates.
-- `cmr docs check` validates structure; `cmr docs fix` auto-repairs.
+- `cmr docs validate` checks structure; `cmr docs fix` auto-repairs.
 - `cmr repo issues list`, `cmr repo milestones list` for project tracking.
 - `cmr utils graph agents relation` generates relationship diagrams.
 

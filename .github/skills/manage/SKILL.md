@@ -7,7 +7,7 @@ description: Repository, template, and CMR CLI operations management
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

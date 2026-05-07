@@ -5,12 +5,9 @@
 - [:file_folder: Repository Structure](./#file_folder-repository-structure)
   - [:telescope: Overview](./#telescope-overview)
   - [:building_construction: Structure](./#building_construction-structure)
-    - [:building_construction: Root Level](./#building_construction-root-level)
-    - [:building_construction: `.chimera-lab/` Directory](./#building_construction-chimera-lab-directory)
-    - [:building_construction: `.github/` Directory](./#building_construction-github-directory)
-    - [:building_construction: `docs/` Directory](./#building_construction-docs-directory)
-    - [:building_construction: Documentation Hierarchy](./#building_construction-documentation-hierarchy)
-    - [:building_construction: Configuration Hierarchy](./#building_construction-configuration-hierarchy)
+    - [:building_construction: Layer Separation Rules](./#building_construction-layer-separation-rules)
+      - [:building_construction: Semantic Header Vocabulary](./#building_construction-semantic-header-vocabulary)
+      - [:building_construction: GitHub Automation Structure](./#building_construction-github-automation-structure)
   - [:books: References](./#books-references)
 
 ## :telescope: Overview
@@ -23,90 +20,40 @@
 
 ## :building_construction: Structure
 
-### :building_construction: Root Level
+<!-- <llm prompt="Structure.Structure"> -->
 
-```text
-repository/
-├── .chimera-lab/           # Repository metadata and configuration
-├── .github/                # GitHub-specific files
-├── docs/                   # Additional documentation (project-specific)
-├── src/                    # Source code (if applicable)
-├── tests/                  # Test files (if applicable)
-├── README.md               # Main documentation
-├── CHANGELOG.md            # Version history
-├── CONTRIBUTING.md         # Contribution guidelines
-├── CODE_OF_CONDUCT.md      # Community guidelines
-├── SECURITY.md             # Security policy
-└── LICENSE                 # License terms
-```
+`directive: <llm prompt="Structure.Structure">`
 
-### :building_construction: `.chimera-lab/` Directory
+<!-- </llm> -->
 
-Configuration and metadata:
+### :building_construction: Layer Separation Rules
 
-```text
-.chimera-lab/
-├── meta.json               # Repository metadata
-│   ├── description         # Short description
-│   ├── tags                # Category tags
-│   ├── template            # Template name
-│   └── remote_template     # Template repository info
-└── settings.json           # Configuration
-    ├── custom_variables    # Template variables
-    └── validation_rules    # Documentation rules
-```
+<!-- <llm prompt="Structure.LayerSeparation"> -->
 
-### :building_construction: `.github/` Directory
+`directive: <llm prompt="Structure.LayerSeparation">`
 
-GitHub workflows and automation. `.github/` is reserved for GitHub automation and workflow artifacts only — keep narrative guides and standards in `docs/` instead.
+<!-- </llm> -->
 
-```text
-.github/
-├── agents/                 # AI agent definitions
-│   ├── *.agent.md          # Agent files
-│   └── README.md           # Agents overview
-├── prompts/                # Prompt templates
-│   └── *.prompt.md         # Prompt files
-└── workflows/              # GitHub Actions (if applicable)
-    └── *.yml               # Workflow definitions
-```
+#### :building_construction: Semantic Header Vocabulary
 
-### :building_construction: `docs/` Directory
+<!-- <llm prompt="Structure.SemanticHeaders"> -->
 
-Documentation and knowledge base:
+`directive: <llm prompt="Structure.SemanticHeaders">`
 
-```text
-docs/
-├── ARCHITECTURE.md         # Technical architecture
-├── ORGANIZATION.md         # Organization structure
-├── ROADMAP.md              # Project roadmap
-├── STRUCTURE.md            # Repository structure (this file)
-├── diagrams/               # Diagrams and visual assets
-└── knowledge/              # Knowledge base
-    └── *.knowledge.md      # Knowledge files
-```
+<!-- </llm> -->
 
-### :building_construction: Documentation Hierarchy
+#### :building_construction: GitHub Automation Structure
 
-```text
-README.md (entry point)
-├── docs/knowledge/*.knowledge.md (concepts)
-└── docs/*.md (detailed guides)
-    ├── ARCHITECTURE.md
-    ├── ORGANIZATION.md
-    ├── ROADMAP.md
-    └── STRUCTURE.md
-```
+<!-- <llm prompt="Structure.GitHubAutomation"> -->
 
-### :building_construction: Configuration Hierarchy
+`directive: <llm prompt="Structure.GitHubAutomation">`
 
-```text
-.chimera-lab/meta.json (metadata)
-└── .chimera-lab/settings.json (configuration)
-    └── custom_variables (template overrides)
-```
+<!-- </llm> -->
 
 ## :books: References
 
-- [:page_facing_up: ORGANIZATION.md](ORGANIZATION.md)
-- [:page_facing_up: ../README.md](../README.md)
+<!-- <llm prompt="Structure.References"> -->
+
+`directive: <llm prompt="Structure.References">`
+
+<!-- </llm> -->

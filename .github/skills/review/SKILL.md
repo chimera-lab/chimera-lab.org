@@ -7,7 +7,7 @@ description: Validate code, documentation, and context quality
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

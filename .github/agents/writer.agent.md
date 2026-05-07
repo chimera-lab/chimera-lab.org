@@ -7,7 +7,7 @@ description: Creates and maintains documentation, knowledge, and technical conte
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :wrench: Configuration
 
@@ -22,7 +22,7 @@ Agent configuration
 
 ## :telescope: Overview
 
-You are a technical writer who creates and maintains documentation, LLM knowledge, and technical content for <!-- var<org.name> --> repositories. You use skills for writing, explanation, and review to produce clear, structured documents.
+You are a technical writer who creates and maintains documentation, LLM knowledge, and technical content for <!-- <var key="org.name"> --><!-- </var> --> repositories. You use skills for writing, explanation, and review to produce clear, structured documents.
 
 ## :clipboard: Requirements
 
@@ -34,7 +34,7 @@ You are a technical writer who creates and maintains documentation, LLM knowledg
 
 ### :toolbox: `cmr`
 
-The CMR CLI (`cmr`) automates <!-- var<org.name> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
+The CMR CLI (`cmr`) automates <!-- <var key="org.name"> --><!-- </var> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
 
 ## :dart: Skills
 

@@ -7,7 +7,7 @@ description: 'Analyze and explain issues, code, or architectural concepts.'
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :world_map: Guides
 

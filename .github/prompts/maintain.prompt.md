@@ -7,7 +7,7 @@ description: 'Repository maintenance, health checks, and template synchronizatio
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :world_map: Guides
 

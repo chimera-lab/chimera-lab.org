@@ -1,5 +1,5 @@
 @startuml
-title Document Relationships
+title Agents Relation
 
 skinparam linetype ortho
 
@@ -33,134 +33,135 @@ skinparam package {
 }
 
 package "Agents" <<agents>> {
-  component "chimera" as chimera AGENT_COLOR
-  component "developer" as developer AGENT_COLOR
-  component "maintainer" as maintainer AGENT_COLOR
-  component "manager" as manager AGENT_COLOR
-  component "writer" as writer AGENT_COLOR
+  component "chimera" as agent_chimera AGENT_COLOR
+  component "developer" as agent_developer AGENT_COLOR
+  component "maintainer" as agent_maintainer AGENT_COLOR
+  component "manager" as agent_manager AGENT_COLOR
+  component "writer" as agent_writer AGENT_COLOR
 }
 
 package "Prompts" <<prompts>> {
-  component "code.prompt" as code_prompt PROMPT_COLOR
-  component "explain.prompt" as explain_prompt PROMPT_COLOR
-  component "maintain.prompt" as maintain_prompt PROMPT_COLOR
-  component "plan.prompt" as plan_prompt PROMPT_COLOR
-  component "research.prompt" as research_prompt PROMPT_COLOR
-  component "review.prompt" as review_prompt PROMPT_COLOR
-  component "template.prompt" as template_prompt PROMPT_COLOR
-  component "work.prompt" as work_prompt PROMPT_COLOR
-  component "write.prompt" as write_prompt PROMPT_COLOR
+  component "code" as prompt_code PROMPT_COLOR
+  component "explain" as prompt_explain PROMPT_COLOR
+  component "maintain" as prompt_maintain PROMPT_COLOR
+  component "plan" as prompt_plan PROMPT_COLOR
+  component "research" as prompt_research PROMPT_COLOR
+  component "review" as prompt_review PROMPT_COLOR
+  component "template" as prompt_template PROMPT_COLOR
+  component "work" as prompt_work PROMPT_COLOR
+  component "write" as prompt_write PROMPT_COLOR
 }
 
 package "Skills" <<skills>> {
-  component "automate" as automate SKILL_COLOR
-  component "code" as code SKILL_COLOR
-  component "explain" as explain SKILL_COLOR
-  component "maintain" as maintain SKILL_COLOR
-  component "manage" as manage SKILL_COLOR
-  component "plan" as plan SKILL_COLOR
-  component "research" as research SKILL_COLOR
-  component "review" as review SKILL_COLOR
-  component "template" as template SKILL_COLOR
-  component "write" as write SKILL_COLOR
+  component "automate" as skill_automate SKILL_COLOR
+  component "code" as skill_code SKILL_COLOR
+  component "explain" as skill_explain SKILL_COLOR
+  component "maintain" as skill_maintain SKILL_COLOR
+  component "manage" as skill_manage SKILL_COLOR
+  component "plan" as skill_plan SKILL_COLOR
+  component "research" as skill_research SKILL_COLOR
+  component "review" as skill_review SKILL_COLOR
+  component "template" as skill_template SKILL_COLOR
+  component "write" as skill_write SKILL_COLOR
 }
 
 package "Knowledge" <<knowledge>> {
-  component "automation" as automation KNOWLEDGE_COLOR
-  component "cmr" as cmr KNOWLEDGE_COLOR
-  component "deployment" as deployment KNOWLEDGE_COLOR
-  component "operating" as operating KNOWLEDGE_COLOR
-  component "planning" as planning KNOWLEDGE_COLOR
-  component "repository" as repository KNOWLEDGE_COLOR
-  component "researching" as researching KNOWLEDGE_COLOR
-  component "reviewing" as reviewing KNOWLEDGE_COLOR
-  component "validating" as validating KNOWLEDGE_COLOR
+  component "automation" as knowledge_automation KNOWLEDGE_COLOR
+  component "cmr" as knowledge_cmr KNOWLEDGE_COLOR
+  component "deployment" as knowledge_deployment KNOWLEDGE_COLOR
+  component "operating" as knowledge_operating KNOWLEDGE_COLOR
+  component "planning" as knowledge_planning KNOWLEDGE_COLOR
+  component "repository" as knowledge_repository KNOWLEDGE_COLOR
+  component "researching" as knowledge_researching KNOWLEDGE_COLOR
+  component "reviewing" as knowledge_reviewing KNOWLEDGE_COLOR
+  component "validating" as knowledge_validating KNOWLEDGE_COLOR
 }
 
 package "Documentation" <<docs>> {
-  component "AGENTS" as AGENTS DOC_COLOR
-  component "ARCHITECTURE" as ARCHITECTURE DOC_COLOR
-  component "CHANGELOG" as CHANGELOG DOC_COLOR
-  component "CODE_OF_CONDUCT" as CODE_OF_CONDUCT DOC_COLOR
-  component "CONTRIBUTING" as CONTRIBUTING DOC_COLOR
-  component "DEVELOPMENT" as DEVELOPMENT DOC_COLOR
-  component "ORGANIZATION" as ORGANIZATION DOC_COLOR
-  component "README" as README DOC_COLOR
-  component "ROADMAP" as ROADMAP DOC_COLOR
-  component "SECURITY" as SECURITY DOC_COLOR
-  component "STRUCTURE" as STRUCTURE DOC_COLOR
+  component "AGENTS" as doc_AGENTS DOC_COLOR
+  component "ARCHITECTURE" as doc_ARCHITECTURE DOC_COLOR
+  component "CHANGELOG" as doc_CHANGELOG DOC_COLOR
+  component "CODE_OF_CONDUCT" as doc_CODE_OF_CONDUCT DOC_COLOR
+  component "CONTRIBUTING" as doc_CONTRIBUTING DOC_COLOR
+  component "DEVELOPMENT" as doc_DEVELOPMENT DOC_COLOR
+  component "ORGANIZATION" as doc_ORGANIZATION DOC_COLOR
+  component "README" as doc_README DOC_COLOR
+  component "ROADMAP" as doc_ROADMAP DOC_COLOR
+  component "SECURITY" as doc_SECURITY DOC_COLOR
+  component "STRUCTURE" as doc_STRUCTURE DOC_COLOR
+  component "TEMPLATE" as doc_TEMPLATE DOC_COLOR
 }
 
 ' Relationships
-automate -[SKILL_ARROW]-> automation
-automate -[SKILL_ARROW]-> deployment
-automation -[KNOWLEDGE_ARROW]-> ARCHITECTURE
-automation -[KNOWLEDGE_ARROW]-> cmr
-automation -[KNOWLEDGE_ARROW]-> operating
-chimera -[AGENT_ARROW]-> review
-chimera -[AGENT_ARROW]-> template
-chimera -[AGENT_ARROW]-> write
-cmr -[KNOWLEDGE_ARROW]-> ORGANIZATION
-cmr -[KNOWLEDGE_ARROW]-> README
-cmr -[KNOWLEDGE_ARROW]-> STRUCTURE
-code -[SKILL_ARROW]-> automation
-code -[SKILL_ARROW]-> deployment
-code -[SKILL_ARROW]-> operating
-code_prompt -[PROMPT_ARROW]-> developer
-deployment -[KNOWLEDGE_ARROW]-> ARCHITECTURE
-deployment -[KNOWLEDGE_ARROW]-> CHANGELOG
-deployment -[KNOWLEDGE_ARROW]-> operating
-deployment -[KNOWLEDGE_ARROW]-> validating
-developer -[AGENT_ARROW]-> code
-developer -[AGENT_ARROW]-> explain
-developer -[AGENT_ARROW]-> research
-explain -[SKILL_ARROW]-> researching
-explain_prompt -[PROMPT_ARROW]-> developer
-maintain -[SKILL_ARROW]-> cmr
-maintain -[SKILL_ARROW]-> repository
-maintain_prompt -[PROMPT_ARROW]-> maintainer
-maintainer -[AGENT_ARROW]-> maintain
-maintainer -[AGENT_ARROW]-> review
-manage -[SKILL_ARROW]-> cmr
-manage -[SKILL_ARROW]-> repository
-manager -[AGENT_ARROW]-> explain
-manager -[AGENT_ARROW]-> plan
-manager -[AGENT_ARROW]-> research
-manager -[AGENT_ARROW]-> review
-operating -[KNOWLEDGE_ARROW]-> CONTRIBUTING
-operating -[KNOWLEDGE_ARROW]-> DEVELOPMENT
-operating -[KNOWLEDGE_ARROW]-> SECURITY
-plan -[SKILL_ARROW]-> planning
-plan_prompt -[PROMPT_ARROW]-> manager
-planning -[KNOWLEDGE_ARROW]-> CHANGELOG
-planning -[KNOWLEDGE_ARROW]-> CONTRIBUTING
-planning -[KNOWLEDGE_ARROW]-> ROADMAP
-repository -[KNOWLEDGE_ARROW]-> ARCHITECTURE
-repository -[KNOWLEDGE_ARROW]-> ORGANIZATION
-repository -[KNOWLEDGE_ARROW]-> STRUCTURE
-research -[SKILL_ARROW]-> researching
-research_prompt -[PROMPT_ARROW]-> developer
-researching -[KNOWLEDGE_ARROW]-> ARCHITECTURE
-researching -[KNOWLEDGE_ARROW]-> ORGANIZATION
-researching -[KNOWLEDGE_ARROW]-> README
-researching -[KNOWLEDGE_ARROW]-> STRUCTURE
-review -[SKILL_ARROW]-> reviewing
-review -[SKILL_ARROW]-> validating
-review_prompt -[PROMPT_ARROW]-> maintainer
-reviewing -[KNOWLEDGE_ARROW]-> ARCHITECTURE
-reviewing -[KNOWLEDGE_ARROW]-> CODE_OF_CONDUCT
-reviewing -[KNOWLEDGE_ARROW]-> CONTRIBUTING
-reviewing -[KNOWLEDGE_ARROW]-> ORGANIZATION
-reviewing -[KNOWLEDGE_ARROW]-> STRUCTURE
-template -[SKILL_ARROW]-> validating
-template_prompt -[PROMPT_ARROW]-> chimera
-validating -[KNOWLEDGE_ARROW]-> ORGANIZATION
-validating -[KNOWLEDGE_ARROW]-> STRUCTURE
-write -[SKILL_ARROW]-> cmr
-write -[SKILL_ARROW]-> reviewing
-write_prompt -[PROMPT_ARROW]-> writer
-writer -[AGENT_ARROW]-> explain
-writer -[AGENT_ARROW]-> review
-writer -[AGENT_ARROW]-> write
+agent_chimera -[AGENT_ARROW]-> skill_review
+agent_chimera -[AGENT_ARROW]-> skill_template
+agent_chimera -[AGENT_ARROW]-> skill_write
+agent_developer -[AGENT_ARROW]-> skill_code
+agent_developer -[AGENT_ARROW]-> skill_explain
+agent_developer -[AGENT_ARROW]-> skill_research
+agent_maintainer -[AGENT_ARROW]-> skill_maintain
+agent_maintainer -[AGENT_ARROW]-> skill_review
+agent_manager -[AGENT_ARROW]-> skill_explain
+agent_manager -[AGENT_ARROW]-> skill_plan
+agent_manager -[AGENT_ARROW]-> skill_research
+agent_manager -[AGENT_ARROW]-> skill_review
+agent_writer -[AGENT_ARROW]-> skill_explain
+agent_writer -[AGENT_ARROW]-> skill_review
+agent_writer -[AGENT_ARROW]-> skill_write
+knowledge_automation -[KNOWLEDGE_ARROW]-> doc_ARCHITECTURE
+knowledge_automation -[KNOWLEDGE_ARROW]-> knowledge_cmr
+knowledge_automation -[KNOWLEDGE_ARROW]-> knowledge_operating
+knowledge_cmr -[KNOWLEDGE_ARROW]-> doc_ORGANIZATION
+knowledge_cmr -[KNOWLEDGE_ARROW]-> doc_README
+knowledge_cmr -[KNOWLEDGE_ARROW]-> doc_STRUCTURE
+knowledge_deployment -[KNOWLEDGE_ARROW]-> doc_ARCHITECTURE
+knowledge_deployment -[KNOWLEDGE_ARROW]-> doc_CHANGELOG
+knowledge_deployment -[KNOWLEDGE_ARROW]-> knowledge_operating
+knowledge_deployment -[KNOWLEDGE_ARROW]-> knowledge_validating
+knowledge_operating -[KNOWLEDGE_ARROW]-> doc_CONTRIBUTING
+knowledge_operating -[KNOWLEDGE_ARROW]-> doc_DEVELOPMENT
+knowledge_operating -[KNOWLEDGE_ARROW]-> doc_SECURITY
+knowledge_planning -[KNOWLEDGE_ARROW]-> doc_CHANGELOG
+knowledge_planning -[KNOWLEDGE_ARROW]-> doc_CONTRIBUTING
+knowledge_planning -[KNOWLEDGE_ARROW]-> doc_ROADMAP
+knowledge_repository -[KNOWLEDGE_ARROW]-> doc_ARCHITECTURE
+knowledge_repository -[KNOWLEDGE_ARROW]-> doc_ORGANIZATION
+knowledge_repository -[KNOWLEDGE_ARROW]-> doc_STRUCTURE
+knowledge_researching -[KNOWLEDGE_ARROW]-> doc_ARCHITECTURE
+knowledge_researching -[KNOWLEDGE_ARROW]-> doc_ORGANIZATION
+knowledge_researching -[KNOWLEDGE_ARROW]-> doc_README
+knowledge_researching -[KNOWLEDGE_ARROW]-> doc_STRUCTURE
+knowledge_reviewing -[KNOWLEDGE_ARROW]-> doc_ARCHITECTURE
+knowledge_reviewing -[KNOWLEDGE_ARROW]-> doc_CODE_OF_CONDUCT
+knowledge_reviewing -[KNOWLEDGE_ARROW]-> doc_CONTRIBUTING
+knowledge_reviewing -[KNOWLEDGE_ARROW]-> doc_ORGANIZATION
+knowledge_reviewing -[KNOWLEDGE_ARROW]-> doc_STRUCTURE
+knowledge_validating -[KNOWLEDGE_ARROW]-> doc_ORGANIZATION
+knowledge_validating -[KNOWLEDGE_ARROW]-> doc_STRUCTURE
+prompt_code -[PROMPT_ARROW]-> agent_developer
+prompt_explain -[PROMPT_ARROW]-> agent_developer
+prompt_maintain -[PROMPT_ARROW]-> agent_maintainer
+prompt_plan -[PROMPT_ARROW]-> agent_manager
+prompt_research -[PROMPT_ARROW]-> agent_developer
+prompt_review -[PROMPT_ARROW]-> agent_maintainer
+prompt_template -[PROMPT_ARROW]-> agent_chimera
+prompt_write -[PROMPT_ARROW]-> agent_writer
+skill_automate -[SKILL_ARROW]-> knowledge_automation
+skill_automate -[SKILL_ARROW]-> knowledge_deployment
+skill_code -[SKILL_ARROW]-> knowledge_automation
+skill_code -[SKILL_ARROW]-> knowledge_deployment
+skill_code -[SKILL_ARROW]-> knowledge_operating
+skill_explain -[SKILL_ARROW]-> knowledge_researching
+skill_maintain -[SKILL_ARROW]-> knowledge_cmr
+skill_maintain -[SKILL_ARROW]-> knowledge_repository
+skill_manage -[SKILL_ARROW]-> knowledge_cmr
+skill_manage -[SKILL_ARROW]-> knowledge_repository
+skill_plan -[SKILL_ARROW]-> knowledge_planning
+skill_research -[SKILL_ARROW]-> knowledge_researching
+skill_review -[SKILL_ARROW]-> knowledge_reviewing
+skill_review -[SKILL_ARROW]-> knowledge_validating
+skill_template -[SKILL_ARROW]-> knowledge_validating
+skill_write -[SKILL_ARROW]-> knowledge_cmr
+skill_write -[SKILL_ARROW]-> knowledge_reviewing
 
 @enduml

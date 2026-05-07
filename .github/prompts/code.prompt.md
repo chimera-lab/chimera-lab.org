@@ -7,7 +7,7 @@ description: 'Execute development tasks such as coding, committing, and verifyin
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :world_map: Guides
 
@@ -17,13 +17,12 @@ description: 'Execute development tasks such as coding, committing, and verifyin
 - Plan with `manage_todo_list`.
 - Implement changes following project conventions.
 - Run tests and linters.
-- Commit, push, and verify.
 
 ### :world_map: Output
 
-- Commit hash and message.
-- Push confirmation.
-- Issue status (if applicable).
+- Results of executed task.
+- Confirmation of task completion.
+- Relevant changes or updates.
 
 ## :dart: Skills
 

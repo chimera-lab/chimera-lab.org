@@ -7,7 +7,7 @@ description: Discover and gather project context, issues, and codebase informati
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

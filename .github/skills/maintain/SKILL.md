@@ -7,7 +7,7 @@ description: Repository maintenance, health checks, and CMR CLI operations
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

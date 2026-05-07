@@ -7,7 +7,7 @@ description: Create structured execution plans from issues and milestones
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

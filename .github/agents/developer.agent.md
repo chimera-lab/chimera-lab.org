@@ -7,7 +7,7 @@ description: Executes development tasks using skills for coding, researching, pl
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :wrench: Configuration
 

@@ -13,132 +13,134 @@
   - [:toolbox: Tools](./#toolbox-tools)
     - [:toolbox: Running Tests](./#toolbox-running-tests)
     - [:toolbox: Code Quality](./#toolbox-code-quality)
+    - [:toolbox: CMR Pipeline](./#toolbox-cmr-pipeline)
     - [:toolbox: Pre-commit Hooks](./#toolbox-pre-commit-hooks)
   - [:wrench: Configuration](./#wrench-configuration)
   - [:control_knobs: Customization](./#control_knobs-customization)
   - [:hammer_and_wrench: Common Problems](./#hammer_and_wrench-common-problems)
-    - [:hammer_and_wrench: Dependency errors](./#hammer_and_wrench-dependency-errors)
-    - [:hammer_and_wrench: Pre-commit failures](./#hammer_and_wrench-pre-commit-failures)
-    - [:hammer_and_wrench: Test failures](./#hammer_and_wrench-test-failures)
 
 ## :clipboard: Requirements
 
-- Git installed
-- Your project's runtime environment (Node.js, Python, Go, etc.)
-- VS Code (recommended) or your preferred editor
+<!-- <llm prompt="Development.Requirements"> -->
+
+`directive: <llm prompt="Development.Requirements">`
+
+<!-- </llm> -->
 
 ## :inbox_tray: Installation
 
 ### :inbox_tray: Clone the repository
 
+<!-- <code lang="bash"> -->
+
+<!-- <data name="REPO_REMOTE"> -->
+
+<!-- <var key="repo.remote"> --><!-- </var> -->
+
+<!-- </data name="REPO_REMOTE"> -->
+
+<!-- <data name="REPO_NAME"> -->
+
+<!-- <var key="repo.name"> --><!-- </var> -->
+
+<!-- </data name="REPO_NAME"> -->
+
 ```bash
-git clone --recursive https://github.com/chimera-lab/chimera-lab.git
-cd chimera-lab
+REPO_REMOTE=git@github.com:chimera-lab/repository.template.git
+REPO_NAME=repository.template
+
+git clone $REPO_REMOTE
+cd $REPO_NAME
 ```
+
+<!-- </code> -->
 
 ### :inbox_tray: Create development environment
 
-```bash
-# Install the CMR CLI globally
-npm i -g @chimera-lab/cli
+<!-- <llm prompt="Development.Installation"> -->
 
-# Verify installation
-cmr --help
-```
+`directive: <llm prompt="Development.Installation">`
+
+<!-- </llm> -->
 
 ### :inbox_tray: Install dependencies
 
-```bash
-# Use the appropriate command for your project type
-make install
-```
+<!-- <llm prompt="Development.InstallDependencies"> -->
+
+`directive: <llm prompt="Development.InstallDependencies">`
+
+<!-- </llm> -->
 
 ### :inbox_tray: Install pre-commit hooks (optional but recommended)
 
-```bash
-pre-commit install
-```
+<!-- <llm prompt="Development.PreCommitHooks"> -->
+
+`directive: <llm prompt="Development.PreCommitHooks">`
+
+<!-- </llm> -->
 
 ## :keyboard: Usage
 
-Use Make (recommended) for common development tasks:
+<!-- <llm prompt="Development.Usage"> -->
 
-```bash
-# Install dependencies
-make install
+`directive: <llm prompt="Development.Usage">`
 
-# Run tests
-make test
-
-# Run linting
-make lint
-
-# Format code
-make format
-
-# Run all checks
-make check
-
-# Clean build artifacts
-make clean
-
-# Set up development environment
-make setup
-```
+<!-- </llm> -->
 
 ## :toolbox: Tools
 
 ### :toolbox: Running Tests
 
-```bash
-make test
-```
+<!-- <llm prompt="Development.Tests"> -->
+
+`directive: <llm prompt="Development.Tests">`
+
+<!-- </llm> -->
 
 ### :toolbox: Code Quality
 
-```bash
-# Validate documentation across all submodules
-cmr docs check
+<!-- <llm prompt="Development.CodeQuality"> -->
 
-# Fix auto-fixable issues (TOC, header emoji)
-cmr docs fix -r toc -r header-emoji
-```
+`directive: <llm prompt="Development.CodeQuality">`
+
+<!-- </llm> -->
+
+### :toolbox: CMR Pipeline
+
+<!-- <llm prompt="Development.CmrPipeline"> -->
+
+`directive: <llm prompt="Development.CmrPipeline">`
+
+<!-- </llm> -->
 
 ### :toolbox: Pre-commit Hooks
 
-Pre-commit hooks automatically run checks before commits:
+<!-- <llm prompt="Development.PreCommitTools"> -->
 
-```bash
-# Install hooks
-pre-commit install
+`directive: <llm prompt="Development.PreCommitTools">`
 
-# Run manually
-pre-commit run --all-files
-```
+<!-- </llm> -->
 
 ## :wrench: Configuration
 
-If using VS Code, the workspace is pre-configured with:
+<!-- <llm prompt="Development.Configuration"> -->
 
-- **Recommended extensions** (will prompt to install)
-- **Editor settings** (formatting, linting)
-- **Debug configurations** for your project type
-- **Task definitions** for common operations
+`directive: <llm prompt="Development.Configuration">`
+
+<!-- </llm> -->
 
 ## :control_knobs: Customization
 
-Repository-specific settings are stored in `.chimera-lab/settings.json`. Template variables, validation rules, and custom headers can be configured per-repository.
+<!-- <llm prompt="Development.Customization"> -->
+
+`directive: <llm prompt="Development.Customization">`
+
+<!-- </llm> -->
 
 ## :hammer_and_wrench: Common Problems
 
-### :hammer_and_wrench: Dependency errors
+<!-- <llm prompt="Development.CommonProblems"> -->
 
-Ensure you've installed all required dependencies
+`directive: <llm prompt="Development.CommonProblems">`
 
-### :hammer_and_wrench: Pre-commit failures
-
-Run `pre-commit run --all-files` to fix
-
-### :hammer_and_wrench: Test failures
-
-Check that all dependencies are correctly installed
+<!-- </llm> -->

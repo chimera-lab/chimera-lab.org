@@ -7,7 +7,7 @@ description: Execute development tasks, commit changes, and verify completion
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

@@ -7,7 +7,7 @@ description: CI/CD workflows, deployment patterns, and automation management
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

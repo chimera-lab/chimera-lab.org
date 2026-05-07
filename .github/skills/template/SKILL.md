@@ -7,7 +7,7 @@ description: Structure and manage documentation templates and header hierarchies
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :telescope: Overview
 

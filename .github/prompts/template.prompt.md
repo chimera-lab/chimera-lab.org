@@ -7,7 +7,7 @@ description: 'Structure and manage documentation templates and header hierarchie
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :world_map: Guides
 

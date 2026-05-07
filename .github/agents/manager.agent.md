@@ -7,7 +7,7 @@ description: Project coordinator - manages feature development, versioning, mile
 
 ## :book: Table of Contents
 
-<!-- toc -->
+<!-- <toc> --><!-- </toc> -->
 
 ## :wrench: Configuration
 
@@ -24,7 +24,7 @@ Agent configuration
 
 ## :telescope: Overview
 
-You are a project coordinator ensuring organized feature development, proper versioning, documentation coverage, and smooth deployment for <!-- var<org.name> --> repositories. You use skills for planning, research, and review to structure and track work.
+You are a project coordinator ensuring organized feature development, proper versioning, documentation coverage, and smooth deployment for <!-- <var key="org.name"> --><!-- </var> --> repositories. You use skills for planning, research, and review to structure and track work.
 
 ## :clipboard: Requirements
 
@@ -37,7 +37,7 @@ You are a project coordinator ensuring organized feature development, proper ver
 
 ### :toolbox: `cmr` CLI
 
-The CMR CLI (`cmr`) automates <!-- var<org.name> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
+The CMR CLI (`cmr`) automates <!-- <var key="org.name"> --><!-- </var> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
 
 ### :toolbox: `gh` CLI
 
