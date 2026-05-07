@@ -55,6 +55,8 @@
 
 <!-- <cmr cmd="org.pinned" applied> --><!-- </cmr> -->
 
+#### :telescope: Popular
+
 <!-- <cmr cmd="org.popular[count=5]" applied> -->
 
 | Repository                                                                | Stars | Language | Description |
@@ -62,6 +64,8 @@
 | [repository.template](https://github.com/chimera-lab/repository.template) | ⭐ 0   | Makefile |             |
 
 <!-- </cmr> -->
+
+#### :telescope: Recently Updated
 
 <!-- <cmr cmd="org.recent[count=8]" applied> -->
 
