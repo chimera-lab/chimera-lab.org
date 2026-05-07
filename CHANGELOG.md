@@ -4,7 +4,7 @@
 
 - [:file_folder: Changelog](./#file_folder-changelog)
   - [:notebook: Notes](./#notebook-notes)
-    - [:notebook: v0.0.1 – <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->](./#notebook-v001-var-keyorgname-var)
+    - [:notebook: v0.0.1 – <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->](./#notebook-v001-var-keyorgname-applied-chimera-lab-var)
 
 ## :notebook: Notes
 
