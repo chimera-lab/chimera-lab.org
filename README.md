@@ -1,57 +1,174 @@
-# :file_folder: <!-- <var key="repo.name"> --><!-- </var> -->
+# :file_folder: <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->
 
-<!-- <badges name="brand"> -->
+<!-- <badges name="brand" applied> -->
 
-`directive: <badges name="brand">`
-
-<!-- </badges> -->
-
-<!-- <badges name="license,last-commit,issues,stars" layout="inline"> -->
-
-`directive: <badges name="license,last-commit,issues,stars" layout="inline">`
+[![chimera-lab Experimenting...](https://img.shields.io/badge/chimera--lab-Experimenting...-6e40c9?style=flat-square)](https://github.com/chimera-lab)
 
 <!-- </badges> -->
 
 ## :book: Table of Contents
 
-- [:file_folder: <!-- <var key="repo.name"> --><!-- </var> -->](./#file_folder-var-keyreponame-var)
+- [:file_folder: <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->](./#file_folder-var-keyorgname-var)
   - [:telescope: Overview](./#telescope-overview)
-  - [:clipboard: Requirements](./#clipboard-requirements)
-  - [:inbox_tray: Installation](./#inbox_tray-installation)
-  - [:keyboard: Usage](./#keyboard-usage)
+  - [:building_construction: Structure](./#building_construction-structure)
+    - [:card_file_box: Submodules](./#card_file_box-submodules)
+    - [:building_construction: Repository Types](./#building_construction-repository-types)
+    - [:building_construction: Template Inheritance](./#building_construction-template-inheritance)
+  - [:toolbox: Tools](./#toolbox-tools)
+  - [:jigsaw: Components](./#jigsaw-components)
   - [:books: References](./#books-references)
 
 ## :telescope: Overview
 
-<!-- <llm prompt="Overview"> -->
+> <!-- <var key="org.slogan" applied> -->Experimenting...<!-- </var> -->
 
-`directive: <llm prompt="Overview">`
+<!-- <cmr cmd="org.stats" applied> -->
 
-<!-- </llm> -->
+**Totals**
 
-## :clipboard: Requirements
+| Metric | Count |
+| --- | --- |
+| Repositories | 48 |
+| Templates | 13 |
 
-<!-- <llm prompt="Requirements"> -->
+**By type**
 
-`directive: <llm prompt="Requirements">`
+| Suffix | Count |
+| --- | --- |
+| `.project` | 15 |
+| `.template` | 13 |
+| `.topic` | 13 |
+| `.package` | 5 |
+| `.app` | 2 |
 
-<!-- </llm> -->
+**By level**
 
-## :inbox_tray: Installation
+| Level | Count |
+| --- | --- |
+| 0 | 8 |
+| 1 | 40 |
 
-<!-- <llm prompt="Installation"> -->
+<!-- </cmr> -->
 
-`directive: <llm prompt="Installation">`
+<!-- <cmr cmd="org.pinned" applied> --><!-- </cmr> -->
 
-<!-- </llm> -->
+<!-- <cmr cmd="org.popular[count=5]" applied> -->
 
-## :keyboard: Usage
+| Repository | Stars | Language | Description |
+| --- | --- | --- | --- |
+| [repository.template](https://github.com/chimera-lab/repository.template) | ⭐ 0 | Makefile |  |
 
-<!-- <llm prompt="Usage"> -->
+<!-- </cmr> -->
 
-`directive: <llm prompt="Usage">`
+<!-- <cmr cmd="org.recent[count=8]" applied> -->
 
-<!-- </llm> -->
+| Repository | Language | Last Push | Description |
+| --- | --- | --- | --- |
+| [repository.template](https://github.com/chimera-lab/repository.template) | Makefile | 2026-05-07 |  |
+
+<!-- </cmr> -->
+
+<!-- <cmr cmd="org.releases[count=5]" applied> -->
+
+_No recent releases found._
+
+<!-- </cmr> -->
+
+## :building_construction: Structure
+
+### :card_file_box: Submodules
+
+<!-- <card header="topics.*.name" link="topics.*.url" layout="header|link" applied> -->
+<!-- <data name="topics"> -->
+<!-- <cmr cmd="org.topic[output=json]" applied> --><!-- </cmr> -->
+<!-- </data> -->
+
+_No items._
+
+<!-- </card> -->
+
+### :building_construction: Repository Types
+
+<!-- <cmr cmd="org.types" applied> -->
+
+<details><summary>Repository type reference</summary>
+
+| Suffix | Purpose |
+| --- | --- |
+| `.topic` | Knowledge organization |
+| `.project` | Dedicated projects |
+| `.app` | Applications and tools |
+| `.package` | Libraries and packages |
+| `.scaffold` | Boilerplates and generators |
+| `.template` | Repository templates |
+| `.overview` | Learning material and guides |
+| `.diy` | DIY and hardware projects |
+| `.org` | Organization-level repository |
+
+</details>
+
+<!-- </cmr> -->
+
+### :building_construction: Template Inheritance
+
+<!-- <cmr cmd="org.inheritance" applied> -->
+
+```mermaid
+graph TD
+  app_template[app.template]
+  diy_template[diy.template]
+  docker_scaffold_template[docker_scaffold.template]
+  laravel_app_template[laravel_app.template]
+  laravel_docker_scaffold_template[laravel_docker_scaffold.template]
+  org_template[org.template]
+  overview_template[overview.template]
+  package_template[package.template]
+  project_template[project.template]
+  repository_template[repository.template]
+  scaffold_template[scaffold.template]
+  topic_template[topic.template]
+  typescript_app_template[typescript_app.template]
+  repository_template --> app_template
+  repository_template --> diy_template
+  scaffold_template --> docker_scaffold_template
+  app_template --> laravel_app_template
+  scaffold_template --> laravel_docker_scaffold_template
+  repository_template --> org_template
+  repository_template --> overview_template
+  repository_template --> package_template
+  repository_template --> project_template
+  repository_template --> scaffold_template
+  repository_template --> topic_template
+  app_template --> typescript_app_template
+```
+
+<!-- </cmr> -->
+
+## :toolbox: Tools
+
+<!-- <cmr cmd="org.tools" applied> -->
+
+| Tool | Type | Description | Tags |
+| --- | --- | --- | --- |
+| **chimera-lab-cli** | app | TypeScript CLI (cmr) for managing organizations, repositories, docs and templates | `app` `cli` `typescript` `tooling` |
+| **chimera-lab-laravel** | package | Laravel design-system package with web components and reactive CSS token architecture | `package` `laravel` `php` `design-system` |
+| **chimera-lab-vscode_typescript** | package | Template for reusable packages and libraries |  |
+| **chimera-lab-web_blade** | package | Template for reusable packages and libraries |  |
+| **php-to-plantuml_vscode** | app | VS Code extension generating PlantUML class diagrams from PHP code namespaces | `app` `vscode` `php` `plantuml` |
+| **wordpress-plugin-abstraction** | package | PHP abstraction layer for building WordPress plugins with shared infrastructure | `package` `wordpress` `php` `plugin` |
+
+<!-- </cmr> -->
+
+## :jigsaw: Components
+
+<!-- <card header="projects.*.name" link="projects.*.url" context="projects.*.description" layout="header|link,context" applied> -->
+<!-- <data name="projects"> -->
+<!-- <cmr cmd="project.list[output=json]" applied> --><!-- </cmr> -->
+<!-- </data> -->
+
+_No items._
+
+<!-- </card> -->
 
 ## :books: References
 

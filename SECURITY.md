@@ -28,5 +28,5 @@
 
 ## :books: References
 
-- Primary <!--<link link="org.contacts.email.security" type="mailto" text=":link: Security Contact"> --><!-- </link> -->.
+- Primary <!--<link link="org.contacts.email.security" type="mailto" text=":link: Security Contact" applied> -->[:link: Security Contact](mailto:security@chimera-lab.com)<!-- </link> -->.
 - Review [:page_facing_up: CODE\_OF\_CONDUCT.md](CODE_OF_CONDUCT.md) for expected behavior when communicating about security issues.

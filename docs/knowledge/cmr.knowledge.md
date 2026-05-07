@@ -57,7 +57,7 @@ description: CMR CLI tool knowledge and usage patterns
 
 ## :telescope: Overview
 
-The CMR CLI (`cmr`) automates <!-- <var key="org.name"> --><!-- </var> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
+The CMR CLI (`cmr`) automates <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> --> repositories managing documentation validation, milestones, issues, labels, and git operations for submodules and templates. It unifies discovery, GitHub resources, and template workflows.
 
 ## :triangular_ruler: Technologies
 
@@ -149,15 +149,15 @@ Manage prompt templates: `list`, `show`, `install`, `update`.
 
 ##### :building_construction: cmr repo init
 
-- Initialize <!-- <var key="org.name"> --><!-- </var> --> structure in an existing repository.
+- Initialize <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> --> structure in an existing repository.
 
 ##### :building_construction: cmr repo deinit
 
-- Remove <!-- <var key="org.name"> --><!-- </var> --> structure (use `--keep-metadata` to retain settings).
+- Remove <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> --> structure (use `--keep-metadata` to retain settings).
 
 ##### :building_construction: cmr repo status
 
-- Show repository status and <!-- <var key="org.name"> --><!-- </var> --> configuration.
+- Show repository status and <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> --> configuration.
 
 ##### :building_construction: cmr repo issues
 
@@ -193,7 +193,7 @@ Manage prompt templates: `list`, `show`, `install`, `update`.
 
 #### :building_construction: cmr submodules
 
-- Manage git submodules tracked by <!-- <var key="org.name"> --><!-- </var> -->.
+- Manage git submodules tracked by <!-- <var key="org.name" applied> -->chimera-lab<!-- </var> -->.
 
 #### :building_construction: cmr utils
 
