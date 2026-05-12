@@ -1,4 +1,27 @@
+[submodule "contributions.topic"]
+	path = contributions.topic
+	url = git@github.com:chimera-lab/contributions.topic.git
+[submodule "ideas.topic"]
+	path = ideas.topic
+	url = git@github.com:chimera-lab/ideas.topic.git
+[submodule "template.topic"]
+	path = template.topic
+	url = git@github.com:chimera-lab/template.topic.git
+[submodule "partnership.topic"]
+	path = partnership.topic
+	url = git@github.com:chimera-lab/partnership.topic.git
+[submodule "personal.topic"]
+	path = personal.topic
+	url = git@github.com:chimera-lab/personal.topic.git
+[submodule "original.topic"]
+	path = original.topic
+	url = git@github.com:chimera-lab/original.topic.git
+[submodule "projects.topic"]
+	path = projects.topic
+	url = git@github.com:chimera-lab/projects.topic.git
 [submodule ".chimera-lab/.template"]
 	path = .chimera-lab/.template
 	url = git@github.com:chimera-lab/repository.template.git
-	branch = main
+[submodule "knowledge.topic"]
+	path = knowledge.topic
+	url = git@github.com:chimera-lab/knowledge.topic.git
