@@ -1,2 +1,0 @@
-#!/bin/sh
-cmr docs check --strict
