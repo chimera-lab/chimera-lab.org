@@ -1,6 +1,6 @@
 ---
 name: organization
-description: Chimera Lab organization structure, repository types, topic hierarchy, and metadata conventions
+description: Patterns for managing chimera-lab organization structure and repositories
 ---
 
 # Organization Knowledge
@@ -71,10 +71,8 @@ chimera-lab.org/                    # Organization root
 
 Organization → Topic → Sub-Topic → Repository
 
-**Level 0**: Organization root
-**Level 1**: Top-level topics (`projects.topic`, `original.topic`)
-**Level 2**: Sub-topics or projects within topics
-**Level 3+**: Deeper nesting
+**Level 0**: Organization root **Level 1**: Top-level topics (`projects.topic`, `original.topic`)
+**Level 2**: Sub-topics or projects within topics **Level 3+**: Deeper nesting
 
 ### :building_construction: Template Inheritance
 
@@ -137,11 +135,11 @@ GitHub repository templates.
 
 ## :page_facing_up: Files
 
-| File | Scope | Key Fields |
-|---|---|---|
-| `settings.json` | Organization | `planned`, `ignored`, `default_labels`, `default_milestones` |
-| `meta.json` | Organization | `organization`, `description`, `projects`, `templates`, `docs` |
-| `meta.json` | Repository | `name`, `template`, `parent`, `level`, `is_template` |
+| File            | Scope        | Key Fields                                                     |
+| --------------- | ------------ | -------------------------------------------------------------- |
+| `settings.json` | Organization | `planned`, `ignored`, `default_labels`, `default_milestones`   |
+| `meta.json`     | Organization | `organization`, `description`, `projects`, `templates`, `docs` |
+| `meta.json`     | Repository   | `name`, `template`, `parent`, `level`, `is_template`           |
 
 ## :keyboard: Usage
 
