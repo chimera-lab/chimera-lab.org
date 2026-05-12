@@ -13,6 +13,8 @@
     - [:telescope: Totals](./#telescope-totals)
       - [:telescope: By type](./#telescope-by-type)
       - [:telescope: By level](./#telescope-by-level)
+      - [:telescope: Popular](./#telescope-popular)
+      - [:telescope: Recently Updated](./#telescope-recently-updated)
   - [:building_construction: Structure](./#building_construction-structure)
     - [:card_file_box: Submodules](./#card_file_box-submodules)
     - [:building_construction: Repository Types](./#building_construction-repository-types)
