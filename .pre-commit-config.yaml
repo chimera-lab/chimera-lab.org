@@ -7,3 +7,4 @@ repos:
         language: system
         types: [markdown]
         pass_filenames: false
+        stages: [push]
