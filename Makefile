@@ -74,7 +74,9 @@ check: lint test
 # Development setup
 setup:
 	@echo "Setup development environment"
-	pre-commit install
+	@cp .github/hooks/pre-push .git/hooks/pre-push
+	@chmod +x .git/hooks/pre-push
+	@echo "Installed pre-push hook"
 
 # Build and release - customize for your project type
 clean:
