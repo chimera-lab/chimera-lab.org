@@ -14,7 +14,9 @@
     "templateHash": "6722201cf1b704762d1e55d6f3c44bfd57f13546",
     "name": "chimera-lab.org",
     "type": "org",
-    "issues": {},
+    "issues": {
+      "synced": []
+    },
     "labels": {
       "org": [],
       "repo": []
