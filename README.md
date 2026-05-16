@@ -85,7 +85,9 @@ standards scale without friction.
 
 <!-- <cmr cmd="org.releases[count=5]" applied> -->
 
-*No recent releases found.*
+| Repository                                                                                    | Release | Published  |
+| --------------------------------------------------------------------------------------------- | ------- | ---------- |
+| [chimera-lab-cli.app](https://github.com/chimera-lab/chimera-lab-cli.app/releases/tag/v0.0.3) | v0.0.3  | 2026-05-15 |
 
 <!-- </cmr> -->
 
@@ -129,8 +131,10 @@ standards scale without friction.
 
 | Repository                                                                | Stars |
 | ------------------------------------------------------------------------- | ----- |
-| [template.topic](https://github.com/chimera-lab/template.topic)           | ⭐ 0   |
+| [chimera-lab.org](https://github.com/chimera-lab/chimera-lab.org)         | ⭐ 1   |
+| [chimera-lab-cli.app](https://github.com/chimera-lab/chimera-lab-cli.app) | ⭐ 1   |
 | [repository.template](https://github.com/chimera-lab/repository.template) | ⭐ 0   |
+| [template.topic](https://github.com/chimera-lab/template.topic)           | ⭐ 0   |
 
 <!-- </cmr> -->
 
@@ -140,8 +144,10 @@ standards scale without friction.
 
 | Repository                                                                | Last Push  |
 | ------------------------------------------------------------------------- | ---------- |
-| [template.topic](https://github.com/chimera-lab/template.topic)           | 2026-05-07 |
-| [repository.template](https://github.com/chimera-lab/repository.template) | 2026-05-07 |
+| [chimera-lab.org](https://github.com/chimera-lab/chimera-lab.org)         | 2026-05-16 |
+| [repository.template](https://github.com/chimera-lab/repository.template) | 2026-05-16 |
+| [template.topic](https://github.com/chimera-lab/template.topic)           | 2026-05-16 |
+| [chimera-lab-cli.app](https://github.com/chimera-lab/chimera-lab-cli.app) | 2026-05-15 |
 
 <!-- </cmr> -->
 
@@ -181,9 +187,7 @@ A structured knowledge base organized across academic disciplines — arts, form
 
 ### :card_file_box: original
 
-This topic contains the original chimera-lab applications, tools, and scaffolds. These are the foundational projects that preceded the current template-driven organization system.
-
-![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/original.topic/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--16-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [original](https://github.com/chimera-lab/original.topic)
 
@@ -205,9 +209,7 @@ Personal workspace for individual contributor resources within the chimera-lab o
 
 ### :card_file_box: projects
 
-This topic contains all chimera-lab project repositories. Each project tracks planning, milestones, and coordination for a specific initiative within the organization.
-
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](https://github.com/chimera-lab/projects.topic/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/projects.topic/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--16-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [projects](https://github.com/chimera-lab/projects.topic)
 
@@ -325,17 +327,17 @@ graph TD
 
 ### :toolbox: chimera-lab-cli
 
-TypeScript CLI (`cmr`) for managing chimera-lab organizations, repositories, documentation, and templates. Provides commands for rendering markdown directives, syncing submodules, managing metadata, scaffolding from templates, and interacting with GitHub — all from a single unified tool.
+`chimera-lab-cli` is a TypeScript monorepo CLI for managing chimera-lab organizations, repositories, documentation, templates, and automation workflows from a single command surface.
 
-[![License](https://img.shields.io/badge/license-Custom-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-cli.app/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-cli.app/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-cli.app/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--15-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-cli.app/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [chimera-lab-cli](https://github.com/chimera-lab/chimera-lab-cli.app)
 
 ### :toolbox: chimera-lab-laravel
 
-Laravel package providing a design-system foundation with web components and a reactive CSS token architecture. Delivers shared UI primitives, typography, spacing, and colour tokens for chimera-lab applications built on Laravel and Blade.
+Laravel design-system package with web components and reactive CSS token architecture
 
-[![License](https://img.shields.io/badge/license-Custom-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-laravel.package/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-laravel.package/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-laravel.package/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--16-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-laravel.package/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [chimera-lab-laravel](https://github.com/chimera-lab/chimera-lab-laravel.package)
 
@@ -359,7 +361,7 @@ Blade package for rendering chimera-lab markdown documents inside Laravel applic
 
 Design system tokens, primitives, and shared styles for chimera-lab UI packages. Defines the foundational layer of colours, spacing, typography, and component primitives consumed by Laravel/Blade packages across the chimera-lab ecosystem.
 
-[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/design-system_blade.package/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)](https://github.com/chimera-lab/design-system_blade.package/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--16-blue?style=flat-square) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [design-system\_blade](https://github.com/chimera-lab/design-system_blade.package)
 
@@ -483,7 +485,7 @@ Template design, inheritance hierarchy, and CLI scaffolding coordination for chi
 
 Public-facing website for the chimera-lab organization, built on Laravel and Tailwind CSS. Tracks design decisions, content structure, deployment pipeline, and feature milestones for chimera-lab.com — covering the landing page, project showcase, blog, and documentation portal.
 
-[![License](https://img.shields.io/badge/license-Custom-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-website.project/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--12-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-website.project/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
+[![License](https://img.shields.io/badge/license-Custom-blue?style=flat-square)](https://github.com/chimera-lab/chimera-lab-website.project/blob/main/LICENSE) ![Last commit](https://img.shields.io/badge/last_commit-2026--05--16-blue?style=flat-square) [![Issues](https://img.shields.io/badge/issues-0-brightgreen?style=flat-square)](https://github.com/chimera-lab/chimera-lab-website.project/issues) ![Visibility](https://img.shields.io/badge/visibility-private-orange?style=flat-square)
 
 [chimera-lab-website](https://github.com/chimera-lab/chimera-lab-website.project)
 
